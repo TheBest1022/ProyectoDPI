@@ -35,8 +35,8 @@ const SeccAuditiva = () => {
                   await sound.playAsync();
                 }}
               >
-                <View style={style.campo} key={index}>
-                  <View style={style.contendor}>
+                <View style={style.campo}>
+                  <View style={style.contendor} key={index}>
                     <Text style={style.text}>SONIDO:</Text>
                     <View style={style.contenedorimagen}>
                       <ImageBackground

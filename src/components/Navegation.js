@@ -8,7 +8,7 @@ import InicioSecionScreen from "../screens/Auth/inicioSesion/InicioSesionScreen"
 //USUARIO
 import RegisterScreen from "../screens/Auth/Usuario/registrarUsuario/RegisterScreen";
 
-//DOCENTE
+//DOCENTE 
 import PantallaDocenteScreen from "../screens/Auth/Docente/pantallaDocente/PantallaDocenteScreen";
 import ListaScreen from "../screens/Auth/Docente/listarDocente/ListaScreen";
 import UserScreen from "../screens/Auth/Docente/registrarDocente/UserScreen";
@@ -264,7 +264,7 @@ const Navegation = () => {
               }}
             />
             <Tab.Screen
-              name="Colores"
+              name="Matematico"
               component={MatematicoScreen}
               options={{
                 headerShown: false,
@@ -311,7 +311,7 @@ const Navegation = () => {
               }}
             />
             <Tab.Screen
-              name="seccionhumano"
+              name="visual"
               component={SeccScreen}
               options={{
                 headerShown: false,
@@ -407,7 +407,7 @@ const Navegation = () => {
               }}
             />
             <Tab.Screen
-              name="seccNumeros"
+              name="Auditiva"
               component={SeccAuditiva}
               options={{
                 headerShown: false,
@@ -431,7 +431,7 @@ const Navegation = () => {
               }}
             />
             <Tab.Screen
-              name="Comunicacion"
+              name="Atencion"
               component={AtencioScreen}
               options={{
                 headerShown: false,
@@ -447,7 +447,7 @@ const Navegation = () => {
               }}
             />
             <Tab.Screen
-              name="Personal"
+              name="Psicomotrocidad"
               component={PsicomotrocidadScreen}
               options={{
                 headerShown: false,
@@ -527,7 +527,7 @@ const Navegation = () => {
               }}
             />
             <Tab.Screen
-              name="razonamiento"
+              name="Lenguaje"
               component={LenguajeScreen}
               options={{
                 headerShown: false,
@@ -658,7 +658,7 @@ const Navegation = () => {
               />
             )}
             <Tab.Screen
-              name="Verbal"
+              name="Habilidades"
               component={HabilidadesSocialesScreen}
               options={{
                 headerShown: false,

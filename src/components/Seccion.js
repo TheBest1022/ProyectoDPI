@@ -68,7 +68,7 @@ const Seccion = ({ temas }) => {
     if (idTema == 14) {
       navigation.navigate("insectos");
     }
-    if (idTema == 15) {
+    if (idTema == 1) {
       navigation.navigate("alimentos");
     }
     if (idTema == 16) {

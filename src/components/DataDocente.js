@@ -25,25 +25,25 @@ const DataDocente = ({ data }) => {
 
   const handleclick = (idCurso) => {
     if (idCurso == 1) {
-      navegation.navigate("seccionhumano", { id: idCurso });
+      navegation.navigate("visual", { id: idCurso });
     }
     if (idCurso == 2) {
-      navegation.navigate("seccNumeros", { id: idCurso });
+      navegation.navigate("Auditiva", { id: idCurso });
     }
     if (idCurso == 3) {
-      navegation.navigate("Personal", { id: idCurso });
+      navegation.navigate("Psicomotrocidad", { id: idCurso });
     }
     if (idCurso == 4) {
-      navegation.navigate("Comunicacion", { id: idCurso });
+      navegation.navigate("Atencion", { id: idCurso });
     }
     if (idCurso == 5) {
-      navegation.navigate("razonamiento", { id: idCurso });
+      navegation.navigate("Lenguaje", { id: idCurso });
     }
     if (idCurso == 6) {
-      navegation.navigate("Verbal", { id: idCurso });
+      navegation.navigate("Habilidades", { id: idCurso });
     }
     if (idCurso == 7) {
-      navegation.navigate("Colores", { id: idCurso });
+      navegation.navigate("Matematico", { id: idCurso });
     }
   };
   const mensajes = (id) => {
