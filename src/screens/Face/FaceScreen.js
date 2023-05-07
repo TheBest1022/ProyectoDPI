@@ -13,11 +13,10 @@ import {
   TouchableNativeFeedback,
   ScrollView
 } from "react-native";
-
 import Name from "../../components/Name";
-import cerrar from "../../../assets/atras.png";
 
 const FaceScreen = () => {
+  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const { auth } = useGlobal();
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
@@ -86,8 +85,8 @@ const FaceScreen = () => {
 
 const style = StyleSheet.create({
   container: {
-    backgroundColor: "#f0f8ff",
-    marginTop: 25,
+    width: "100%",
+    backgroundColor:'white'
   },
   imagenmenu: {
     width: 50,

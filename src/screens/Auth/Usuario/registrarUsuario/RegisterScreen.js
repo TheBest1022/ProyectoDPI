@@ -14,16 +14,15 @@ import {
   Alert,
   ActivityIndicator,
 } from "react-native";
-//IMAGENES
-import usuario from "../../../../../assets/tea.jpg";
-import icon from "../../../../../assets/baby.png";
-import niño from "../../../../../assets/niño.png";
-import correo from "../../../../../assets/correo.png";
-import contra from "../../../../../assets/contra.png";
-import restablecer from "../../../../../assets/restablecer.png";
-import cebe from "../../../../../assets/cg.jpg";
 
 const RegisterScreen = () => {
+  const usuario = {uri:"https://www.dropbox.com/s/nv9k77cwb5i2wbn/tea.jpg?dl=1"}
+  const icon = {uri:"https://www.dropbox.com/s/0ecs7f5qe3nevkh/baby.png?dl=1"}
+  const niño = {uri:"https://www.dropbox.com/s/mwhdzts1pyzwvu4/varon.png?dl=1"}
+  const correo = {uri:"https://www.dropbox.com/s/32dbbybg0mzn29r/correo.png?dl=1"}
+  const contra = {uri:"https://www.dropbox.com/s/6ufy6m7q661xc1s/contra.png?dl=1"}
+  const restablecer = {uri:"https://www.dropbox.com/s/5hw505f6q9fw70z/restablecer.png?dl=1"}
+  const cebe = {uri:"https://www.dropbox.com/s/9wm5612pj2yye5c/cebe.png?dl=1"}
   const navigation = useNavigation();
   const { Register, company, obtenerEscuela } = useGlobal();
   const [filter, setFilter] = useState("");

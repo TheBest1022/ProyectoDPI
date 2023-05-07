@@ -11,9 +11,9 @@ import {
 } from "react-native";
 //IMAGENES
 import Name from "../../../../components/General";
-import profesor from "../../../../../assets/prof.png";
 
 const PantallaDocenteScreen = () => {
+  const profesor = {uri:"https://www.dropbox.com/s/mzj1qapmjvt83ck/prof.png?dl=1"}
   const navegate = useNavigation();
   const handleclick = () => {
     navegate.navigate("Registro");

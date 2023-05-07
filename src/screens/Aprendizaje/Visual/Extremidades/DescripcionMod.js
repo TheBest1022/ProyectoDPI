@@ -9,18 +9,17 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGENES
-import sentido from "../../../../../assets/sentidos.png";
-import Img from "../../../../../assets/humano.png";
-import atras from "../../../../../assets/atras.png";
 
 const DescripcionMod = () => {
+  const Img = {uri:"https://www.dropbox.com/s/3qwy6a1z1fgzrau/sentidos.png?dl=1"}
+  const sentido = {uri:"https://www.dropbox.com/s/3qwy6a1z1fgzrau/sentidos.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const navigation = useNavigation();
   const handlecuerpoPress = () => {
     navigation.navigate("cuerpo");
   };
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const handleExtremidadesPress = () => {
     navigation.navigate("Extremidades");

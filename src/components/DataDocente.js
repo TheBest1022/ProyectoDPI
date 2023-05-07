@@ -8,13 +8,14 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useGlobal } from "../context/GlobalProvider";
-import cabeza from "../../assets/materiales.png";
-import us from "../../assets/use.png";
-import mensaje from "../../assets/mensaje.png";
+
 
 const DataDocente = ({ data }) => {
+  const material = {uri:"https://www.dropbox.com/s/3uofhlg0ioqo8d5/materiales.png?dl=1"}
+  const us = {uri:"https://www.dropbox.com/s/82ndp0y2qu9zvre/use.png?dl=1"}
+  const mensaje = {uri:"https://www.dropbox.com/s/bhd5ln4nq1s29js/mensaje.png?dl=1"}
   const navegation = useNavigation();
-  const { auth, obtenerMensaje, MensajeActualizar } = useGlobal();
+  const { auth, obtenerMensaje} = useGlobal();
   const [visual, setVisual] = useState([]);
   const [auditiva, setAuditiva] = useState([]);
   const [infantil, setInfantil] = useState([]);
@@ -87,7 +88,7 @@ const DataDocente = ({ data }) => {
                       >
                         <View style={style.imagenes}>
                           <ImageBackground
-                            source={cabeza}
+                            source={material}
                             style={style.icon}
                           ></ImageBackground>
                         </View>
@@ -171,7 +172,7 @@ const DataDocente = ({ data }) => {
                       >
                         <View style={style.imagenes}>
                           <ImageBackground
-                            source={cabeza}
+                            source={material}
                             style={style.icon}
                           ></ImageBackground>
                         </View>

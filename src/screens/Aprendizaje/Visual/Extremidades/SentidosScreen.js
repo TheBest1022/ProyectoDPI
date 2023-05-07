@@ -11,9 +11,9 @@ import {
   ImageBackground,
   ScrollView,
 } from "react-native";
-import cerrar from "../../../../../assets/atras.png";
 
 function SentidosScreen() {
+  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {

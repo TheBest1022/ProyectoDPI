@@ -11,10 +11,9 @@ import {
   ImageBackground,
   ScrollView,
 } from "react-native";
-import siguiente from "../../../../../assets/siguiente.png";
-
 
 function ExtremidadesScreen() {
+  const siguiente = {uri:"https://www.dropbox.com/s/o2yz8ywh3a1fh28/siguiente.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {

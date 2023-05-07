@@ -23,7 +23,7 @@ const SolLunaScreen = () => {
   const navigation = useNavigation();
   const [sound, setSound] = React.useState();
   const handlepost = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   useEffect(() => {
     return sound

@@ -1802,8 +1802,8 @@ export const dataAbecedario = [
     Imagen: [
       {
         id: "minuscula",
-        minuscula: {uri:"https://www.dropbox.com/s/kqpjy3t7ctwa778/letrap.png?dl=1"},
-        mayuscula: {uri:"https://www.dropbox.com/s/7casxx7ppg09eps/Pmay.png?dl=1"},
+        minuscula: {uri:"https://www.dropbox.com/s/fynwlip7hj167t8/letraq.png?dl=1"},
+        mayuscula: {uri:"https://www.dropbox.com/s/jcd0qk26091w79c/Qmay.png?dl=1"},
       },
     ],
     module: [
@@ -1915,105 +1915,105 @@ export const dataAbecedario = [
     Imagen: [
       {
         id: "minuscula",
-        minuscula: require("../../assets/letraq.png"),
-        mayuscula: require("../../assets/Qmay.png"),
+        minuscula: {uri:"https://www.dropbox.com/s/fynwlip7hj167t8/letraq.png?dl=1"},
+        mayuscula: {uri:"https://www.dropbox.com/s/jcd0qk26091w79c/Qmay.png?dl=1"},
       },
     ],
     module: [
       {
         id: "sonido1",
-        source: require("../../assets/queso.png"),
+        source: {uri:"https://www.dropbox.com/s/mow5dmb4zgh2h5i/queso.png?dl=1"},
         sound: require("../../assets/Audios/queso.mp3"),
       },
       {
         id: "sonido2",
-        source: require("../../assets/peluquero.png"),
+        source: {uri:"https://www.dropbox.com/s/53iks1ai6qz10f3/peluquero.png?dl=1"},
         sound: require("../../assets/Audios/peluquero.mp3"),
       },
       {
         id: "sonido3",
-        source: require("../../assets/quemadura.png"),
+        source: {uri:"https://www.dropbox.com/s/jkpzii9m977pe4p/quemadura.png?dl=1"},
         sound: require("../../assets/Audios/quemadura.mp3"),
       },
       {
         id: "sonido4",
-        source: require("../../assets/quesitos.png"),
+        source: {uri:"https://www.dropbox.com/s/w2v8b0m6ncgzlv2/quesitos.png?dl=1"},
         sound: require("../../assets/Audios/quesitos.mp3"),
       },
       {
         id: "sonido5",
-        source: require("../../assets/quince.png"),
+        source: {uri:"https://www.dropbox.com/s/w2v8b0m6ncgzlv2/quesitos.png?dl=1"},
         sound: require("../../assets/Audios/quince.mp3"),
       },
       {
         id: "sonido6",
-        source: require("../../assets/paquete.png"),
+        source: {uri:"https://www.dropbox.com/s/dyf25gexvg4jprh/paquete.png?dl=1"},
       },
       {
         id: "sonido7",
-        source: require("../../assets/quitanieves.png"),
+        source: {uri:"https://www.dropbox.com/s/dyf25gexvg4jprh/paquete.png?dl=1"},
         sound: require("../../assets/Audios/quitanieves.mp3"),
       },
       {
         id: "sonido8",
-        source: require("../../assets/parque.png"),
+        source: {uri:"https://www.dropbox.com/s/jd1ymtddb7edngi/parque.png?dl=1"},
         sound: require("../../assets/Audios/parque.mp3"),
       },
       {
         id: "sonido9",
-        source: require("../../assets/raqueta.png"),
+        source: {uri:"https://www.dropbox.com/s/ob6aj9kz22n7qwm/raqueta.png?dl=1"},
         sound: require("../../assets/Audios/raqueta.mp3"),
       },
       {
         id: "sonido10",
-        source: require("../../assets/querer.png"),
+        source: {uri:"https://www.dropbox.com/s/pk20ufdpn4avcy7/querer.png?dl=1"},
         sound: require("../../assets/Audios/querer.mp3"),
       },
       {
         id: "sonido11",
-        source: require("../../assets/mantequilla.png"),
+        source: {uri:"https://www.dropbox.com/s/rjnqj39d2kc29uy/mantequilla.png?dl=1"},
         sound: require("../../assets/Audios/mantequilla.mp3"),
       },
       {
         id: "sonido12",
-        source: require("../../assets/albaricoque.png"),
+        source: {uri:"https://www.dropbox.com/s/w9onrw9csq82rw8/albaricoque.png?dl=1"},
         sound: require("../../assets/Audios/albaricoque.mp3"),
       },
       {
         id: "sonido13",
-        source: require("../../assets/qh.png"),
+        source: {uri:"https://www.dropbox.com/s/r55c43anvabeudm/qh.png?dl=0"},
       },
       {
         id: "sonido14",
-        source: require("../../assets/queimada.png"),
+        source: {uri:"https://www.dropbox.com/s/wj3qw7xj3y0mlbi/queimada.png?dl=1"},
       },
       {
         id: "sonido15",
-        source: require("../../assets/equipo.png"),
+        source: {uri:"https://www.dropbox.com/s/kqpjy3t7ctwa778/letrap.png?dl=1"},
         sound: require("../../assets/Audios/equipo.mp3"),
       },
       {
         id: "sonido16",
-        source: require("../../assets/equipaje.png"),
+        source: {uri:"https://www.dropbox.com/s/h0ff48m3bflul7z/equipo.png?dl=1"},
         sound: require("../../assets/Audios/equipaje.mp3"),
       },
       {
         id: "sonido17",
-        source: require("../../assets/orquesta.png"),
+        source: {uri:"https://www.dropbox.com/s/knqj0sg9lw9rr0b/orquesta.png?dl=1"},
         sound: require("../../assets/Audios/orquesta.mp3"),
       },
       {
         id: "sonido18",
-        source: require("../../assets/corquetas.png"),
+        source: {uri:"https://www.dropbox.com/s/tpgfwpglbx4bp7k/croquetas.png?dl=1"},
         sound: require("../../assets/Audios/croquetas.mp3"),
       },
       {
         id: "sonido19",
-        source: require("../../assets/querubín.png"),
+        source: {uri:"https://www.dropbox.com/s/d79b5rbp16tuzfk/querub%C3%ADn.png?dl=1"},
       },
       {
         id: "sonido20",
-        source: require("../../assets/maquillar.png"),
+        source: {uri:"https://www.dropbox.com/s/rx0pqnbrvkmu2cg/maquillar.png?dl=1"},
       },
     ],
   },
@@ -2418,7 +2418,6 @@ export const dataAbecedario = [
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/v7wsyx2tckclml1/urgente.png?dl=1"},
-        source: require("../../assets/urgente.png"),
       },
       {
         id: "sonido13",

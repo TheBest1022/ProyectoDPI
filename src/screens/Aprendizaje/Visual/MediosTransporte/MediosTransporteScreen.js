@@ -12,9 +12,9 @@ import {
   ImageBackground,
   ScrollView,
 } from "react-native";
-import cerrar from "../../../../../assets/atras.png";
 
 const MediosTransporteScreen = ({ route }) => {
+  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const id = route.params ? route.params.id : null;
   const navigacion = useNavigation();
@@ -30,7 +30,7 @@ const MediosTransporteScreen = ({ route }) => {
       <View>
         {data.map(({ module }, index) => (
           <View key={index} style={style.cont}>
-            {module.map(({ id, source, sonido }, index) => (
+            {module.map(({ source, sonido }, index) => (
               <View key={id} style={style.cont}>
                 <TouchableOpacity
                   key={index}
@@ -110,6 +110,7 @@ const style = StyleSheet.create({
     backgroundColor: "#f0f8ff",
     paddingBottom: "2%",
     width: "100%",
+    height:"100%"
   },
   containerimages: {
     flexDirection: "row",

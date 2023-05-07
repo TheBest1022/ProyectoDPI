@@ -12,10 +12,10 @@ import {
   TouchableOpacity,
   ScrollView,
 } from "react-native";
-import audio from "../../../../assets/audio.png";
-import cerrar from "../../../../assets/atras.png";
 
 const SeccAuditiva = () => {
+  const audio = {uri:"https://www.dropbox.com/s/hk0edrbx763kg7o/audio.png?dl=1"}
+  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {

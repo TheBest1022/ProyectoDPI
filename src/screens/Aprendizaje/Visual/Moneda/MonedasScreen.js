@@ -17,15 +17,14 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGENES
-import Img from "../../../../../assets/moneda.png";
-import atras from "../../../../../assets/atras.png";
 
 const MonedasScreen = () => {
+  const Img = {uri:"https://www.dropbox.com/s/dfpqvodyg82heov/moneda.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderDataMonedaSol = () => {
     return (

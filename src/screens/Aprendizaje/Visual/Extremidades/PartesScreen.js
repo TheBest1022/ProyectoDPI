@@ -11,8 +11,9 @@ import {
   ImageBackground,
   ScrollView,
 } from "react-native";
-import exit from "../../../../../assets/exit.png";
+
 function PartesScreen() {
+  const exit = {uri:"https://www.dropbox.com/s/pai7eu5gt2wxy0i/exit.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {

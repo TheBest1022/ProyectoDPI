@@ -1,7 +1,7 @@
-import React, { useEffect }  from "react";
+import React, {useEffect} from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
-import { dataDigestivo } from "../../../../sample/Visual";
+import { dataOnomatopeyas } from "../../../../sample/Atencion";
 import Layout from "../../../../components/Layout";
 import Name from "../../../../components/General";
 import {
@@ -12,22 +12,21 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGENES
 
-const DigestivoScreen = () => {
-  const Img = {uri:"https://www.dropbox.com/s/kesi3elt0bjlwf6/estomago.png?dl=1"}
+const OnomatopeyaScreen= () => {
   const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
+  const Img = {uri:"https://www.dropbox.com/s/9498n8o1qojv17m/onomatopeyas-de-animales.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("visual");
+    navigation.navigate("Lenguaje");
   };
   const renderData = () => {
     return (
       <View>
-        {dataDigestivo.map(({ module }, index) => (
+        {dataOnomatopeyas.map(({ module }, index) => (
           <View style={style.contendor} key={index}>
-            {module.map(({ img, sonido }, index) => (
+            {module.map(({ source, sonido }, index) => (
               <View style={style.imagen} key={index}>
                 <TouchableOpacity
                   onPress={async () => {
@@ -37,7 +36,7 @@ const DigestivoScreen = () => {
                   }}
                 >
                   <ImageBackground
-                    source={img}
+                    source={source}
                     style={style.foto}
                   ></ImageBackground>
                 </TouchableOpacity>
@@ -49,11 +48,11 @@ const DigestivoScreen = () => {
     );
   };
   useEffect(() => {
-    return sound
-      ? () => {
-          sound.unloadAsync();
-        }
-      : undefined;
+    return () => {
+      if (sound) {
+        sound.unloadAsync();
+      }
+    };
   }, [sound]);
 
   return (
@@ -62,14 +61,15 @@ const DigestivoScreen = () => {
         <View style={style.container}>
           <Name />
 
-          <Text style={style.text}>EL SISTEMA DIGESTIVO</Text>
+          <Text style={style.text}>LAS ONOMATOPEYAS</Text>
 
           <View style={style.contendor}>
             <View style={style.tex}>
               <Text style={style.descripcion}>
-                El aparato digestivo es responsable de descomponer los
-                alimentos, absorber los nutrientes y librar al organismo de los
-                productos de desecho de los alimentos
+                Las onomatopeyas, son palabras que imitan sonidos, pueden ser de
+                fenómenos naturales, sonidos emitidos por los animales, también
+                de timbres, golpes, o de cualquier sonido por eso nos ayudan a
+                hacernos una imagen.
               </Text>
             </View>
             <View style={style.imagen}>
@@ -80,11 +80,10 @@ const DigestivoScreen = () => {
             </View>
           </View>
 
-          <Text style={style.textos}>
-            Los Órganos que conforman el Sistema de Digestión
-          </Text>
+          <Text style={style.textos}>Escuchemos algunos ejemplos</Text>
 
           {renderData()}
+
 
           <View style={style.contendor}>
             <TouchableOpacity onPress={handlebackPress}>
@@ -104,7 +103,6 @@ const style = StyleSheet.create({
   container: {
     marginTop: 30,
     backgroundColor: "#f0f8ff",
-    paddingBottom:60
   },
   contendor: {
     flexDirection: "row",
@@ -113,7 +111,7 @@ const style = StyleSheet.create({
     justifyContent: "center",
   },
   tex: {
-    width: 220,
+    width: 230,
     margin: 8,
     alignSelf: "center",
   },
@@ -121,18 +119,16 @@ const style = StyleSheet.create({
     textAlign: "justify",
     fontSize: 11,
     lineHeight: 18,
-    alignSelf: "center",
   },
   btn: {
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin: 15,
-    marginTop:30
+    margin: 5,
   },
   Img: {
-    width: 150,
-    height: 150,
+    width: 140,
+    height: 140,
     marginTop: 10,
   },
   text: {
@@ -145,24 +141,14 @@ const style = StyleSheet.create({
     fontSize: 12,
     color: "purple",
     fontWeight: "bold",
-    marginLeft: 20,
-    marginTop: 8,
+    marginLeft: 15,
+    marginTop: 5,
   },
   foto: {
-    width: 125,
-    height: 125,
-    margin: 2,
-  },
-  imagen: {
-    flexDirection: "row",
-    alignSelf: "center",
-    marginTop: 8,
-  },
-  texto: {
-    width: 270,
-    alignSelf: "center",
-    margin: 5,
+    width: 90,
+    height: 90,
+    margin: 3,
   },
 });
 
-export default DigestivoScreen;
+export default OnomatopeyaScreen;

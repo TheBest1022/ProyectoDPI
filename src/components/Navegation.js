@@ -52,7 +52,6 @@ import EstacionesScreen from "../screens/Aprendizaje/Visual/Estaciones/Estacione
 import PeligrosoScreen from "../screens/Aprendizaje/Visual/Utencilios/PeligrosoScreen";
 import SexoScreen from "../screens/Aprendizaje/Visual/Etapas/SexoScreen";
 import DiaNocheScreen from "../screens/Aprendizaje/Visual/Estados/DiaNocheScreen";
-import SolLunaScreen from "../screens/Aprendizaje/Visual/Estados/SolLunaScreen";
 import SaboresScreen from "../screens/Aprendizaje/Visual/Sabores/SaboresScreen";
 import CuidadoScreen from "../screens/Aprendizaje/Visual/CuidadoCuerpo/CuidadoScreen";
 import TemperaturaScreen from "../screens/Aprendizaje/Visual/Estados/TemperaturaScreen";
@@ -67,14 +66,12 @@ import EscolaresScreen from "../screens/Aprendizaje/Visual/Utencilios/EscolaresS
 import MarScreen from "../screens/Aprendizaje/Visual/Regiones/MarScreen";
 import SemaforoScreen from "../screens/Aprendizaje/Visual/Semaforo/SemaforoScreen";
 import TransporteScreen from "../screens/Aprendizaje/Visual/MediosTransporte/TransporteScreen";
-import MediosTScreen from "../screens/Aprendizaje/Visual/MediosTransporte/MediosTScreen";
-import MediosAScreen from "../screens/Aprendizaje/Visual/MediosTransporte/MediosAScreen";
-import MediosAcScreen from "../screens/Aprendizaje/Visual/MediosTransporte/MediosAcScreen";
 import MediosComScreen from "../screens/Aprendizaje/Visual/MedioComunicacion/MediosComScreen";
 import NormasScreen from "../screens/Aprendizaje/Visual/NormasConvivencia/NormasScreen";
 import OficiosScreen from "../screens/Aprendizaje/Visual/Oficios/OficiosScreen";
 import SeguridadVialScreen from "../screens/Aprendizaje/Visual/SeguridadVial/SeguridadVialScreen";
 import InstitucionesScreen from "../screens/Aprendizaje/Visual/Instituciones/InstitucionesScreen";
+import MediosTransporteScreen from "../screens/Aprendizaje/Visual/MediosTransporte/MediosTransporteScreen";
 
 //AUDITIVA
 //--SECCION PRINCIPAL AUDITIVA
@@ -86,14 +83,15 @@ import PsicomotrocidadScreen from "../screens/Aprendizaje/Psicomotriz/Psicomotro
 //TRABAJO DE ATENCION
 //--SECCION PRINCIPAL TRABAJO DE ATENCION
 import AtencioScreen from "../screens/Aprendizaje/Atencion/AtencioScreen";
-//TEMAS DE TRABAJO DE ATENCION
-import AbecedarioScreen from "../screens/Aprendizaje/Atencion/Abecedario/AbecedarioScreen";
-import VocalesScreen from "../screens/Aprendizaje/Atencion/Vocales/VocalesScreen";
-import OnomatopeyaScreen from "../screens/Aprendizaje/Atencion/Onomatopeyas/OnomatopeyaScreen";
 
 //TRABAJO DE LENGUAJE COMUNICACION
 //--SECCION PRINCIPAL DE LENGUAJE - COMUNICACION
-import LenguajeScreen from "../screens/Aprendizaje/Lenguje/LenguajeScreen";
+import LenguajeScreen from "../screens/Aprendizaje/Lenguaje/LenguajeScreen";
+//TEMAS DE TRABAJO DE LENGUAJE
+import AbecedarioScreen from "../screens/Aprendizaje/Lenguaje/Abecedario/AbecedarioScreen";
+import VocalesScreen from "../screens/Aprendizaje/Lenguaje/Vocales/VocalesScreen";
+import OnomatopeyaScreen from "../screens/Aprendizaje/Lenguaje/Onomatopeyas/OnomatopeyaScreen";
+
 
 //HABILIDADES SOCIALES
 //--SECCION PRINCIPAL HABILIDADES SOCIALES
@@ -111,7 +109,7 @@ import MensajeScreen from "../screens/Mensaje/MensaggeScreen";
 
 //ASISTENCIA
 import AsistenciaScreen from "../screens/Asistencia/AsistenciaScreen";
-import MediosTransporteScreen from "../screens/Aprendizaje/Visual/MediosTransporte/MediosTransporteScreen";
+
 
 const Tab = createBottomTabNavigator();
 
@@ -495,30 +493,6 @@ const Navegation = () => {
               }}
             />
             <Tab.Screen
-              name="transporteaero"
-              component={MediosAScreen}
-              options={{
-                headerShown: false,
-                tabBarItemStyle: { display: "none" },
-              }}
-            />
-            <Tab.Screen
-              name="transporteacuatico"
-              component={MediosAcScreen}
-              options={{
-                headerShown: false,
-                tabBarItemStyle: { display: "none" },
-              }}
-            />
-            <Tab.Screen
-              name="transporteterrestre"
-              component={MediosTScreen}
-              options={{
-                headerShown: false,
-                tabBarItemStyle: { display: "none" },
-              }}
-            />
-            <Tab.Screen
               name="comunicacion"
               component={MediosComScreen}
               options={{
@@ -617,14 +591,6 @@ const Navegation = () => {
             <Tab.Screen
               name="dia"
               component={DiaNocheScreen}
-              options={{
-                headerShown: false,
-                tabBarItemStyle: { display: "none" },
-              }}
-            />
-            <Tab.Screen
-              name="sol"
-              component={SolLunaScreen}
               options={{
                 headerShown: false,
                 tabBarItemStyle: { display: "none" },

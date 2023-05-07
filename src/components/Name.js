@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, View, StyleSheet, ImageBackground } from "react-native";
 import { useGlobal } from "../context/GlobalProvider";
-import icon from "../../assets/new.png"
 
 const Name = ({title}) => {
+  const icon = {uri:"https://www.dropbox.com/s/6cxpe20l0yr039g/new.png?dl=1"}
   const { auth } = useGlobal();
   return (
     <View style={style.contenedor}>
@@ -24,7 +24,9 @@ const Name = ({title}) => {
 };
 const style = StyleSheet.create({
   contenedor:{
-    backgroundColor:'white'
+    backgroundColor:'white',
+    width: "100%",
+    marginTop:10
   },
   containerDescription: {
     flexDirection: "row",

@@ -12,15 +12,17 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-import estado from "../../../../../assets/estado.png";
-import atras from "../../../../../assets/atras.png";
-const DiaNocheScreen = () => {
+
+const DiaNocheScreen = () => {    
+  const estado = {uri:"https://www.dropbox.com/s/ok5d2ooorl8edjo/estado.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderData = () => {
+
     return (
       <View>
         {dataEstado.map(({ Imagen, module, modulo }, index) => (

@@ -23,9 +23,8 @@ function SeccionScreen() {
 }
 const style = StyleSheet.create({
   container: {
-    marginTop: 30,
-    backgroundColor: "#f0f8ff",
-    marginBottom: 15,
+    width: "100%",
+    backgroundColor:'white'
   },
   containerimages: {
     flexDirection: "row",

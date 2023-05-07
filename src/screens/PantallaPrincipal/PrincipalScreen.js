@@ -12,17 +12,15 @@ import {
   ScrollView,
 } from "react-native";
 
-
-import Img from "../../../assets/estimulacion.png";
-import Img2 from "../../../assets/atencion.png";
-import Img3 from "../../../assets/alegre.png";
-import Img4 from "../../../assets/triste.png";
-import Img5 from "../../../assets/enfadado.png";
-import Img6 from "../../../assets/profesor.png";
-import ver from "../../../assets/vermas.png";
-import cerrar from "../../../assets/exit.png";
-
 const PrincipalScreen = () => {
+  const Img = {uri:"https://www.dropbox.com/s/ihn6nbj57hxsg92/estimulacion.png?dl=1"}
+  const Img2 = {uri:"https://www.dropbox.com/s/9aguell3l8em2b0/atencion.png?dl=1"}
+  const Img3 = {uri:"https://www.dropbox.com/s/xg8dmzqpwlnq0e6/alegre.png?dl=1"}
+  const Img4 = {uri:"https://www.dropbox.com/s/8al8474yxwdrpjl/triste.png?dl=1"}
+  const Img5 = {uri:"https://www.dropbox.com/s/caxu1km66gjfu3h/enfadado.png?dl=1"}
+  const Img6 = {uri:"https://www.dropbox.com/s/697wx323l45ytzc/estudiando.png?dl=1"}
+  const cerrar = {uri:"https://www.dropbox.com/s/pai7eu5gt2wxy0i/exit.png?dl=1"}
+  const ver = {uri:"https://www.dropbox.com/s/8z8qevinklotfud/vermas.png?dl=1"}
   const { auth, LogOut } = useGlobal();
   const navigation = useNavigation();
   const handleback = () => {
@@ -33,10 +31,10 @@ const PrincipalScreen = () => {
       navigation.navigate("Principal");
     }
   };
-  const handle = () => {
+  const handleAprendizajeclick = () => {
     navigation.navigate("Aprendizaje");
   };
-  const animo = () => {
+  const hanldeanimoclick = () => {
     navigation.navigate("Ánimo");
   };
   return (
@@ -89,7 +87,7 @@ const PrincipalScreen = () => {
             </View>
           </View>
 
-          <TouchableOpacity onPress={handle}>
+          <TouchableOpacity onPress={handleAprendizajeclick}>
             <View style={style.ver}>
               <Text style={style.mas}>ver mas</Text>
               <ImageBackground
@@ -124,7 +122,7 @@ const PrincipalScreen = () => {
             </View>
           </View>
 
-          <TouchableOpacity onPress={animo}>
+          <TouchableOpacity onPress={hanldeanimoclick}>
             <View style={style.ver}>
               <Text style={style.mas}>ver mas</Text>
               <ImageBackground
@@ -151,15 +149,14 @@ const PrincipalScreen = () => {
 
 const style = StyleSheet.create({
   container: {
-    backgroundColor: "#f0f8ff",
-    marginTop: 30,
-    paddingBottom: "1%",
+    width: "100%",
+    backgroundColor:'white'
   },
   imagencerrar: {
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin: 15,
+    margin:30,
   },
   curso: {
     padding: 8,
@@ -181,6 +178,8 @@ const style = StyleSheet.create({
     elevation: 3,
     borderRadius: 2,
     backgroundColor: "white",
+    borderWidth:1,
+    borderColor:'navy'
   },
   Img: {
     width: 50,
@@ -191,7 +190,6 @@ const style = StyleSheet.create({
     alignSelf: "center",
     fontWeight: "bold",
     marginRight: 12,
-    marginRight: 20,
     fontSize: 10,
   },
   ver: {
@@ -210,11 +208,11 @@ const style = StyleSheet.create({
     fontWeight: "bold",
   },
   animo: {
-    width: 100,
-    height: 100,
+    width: 120,
+    height: 120,
   },
   estado: {
-    padding: 10,
+    padding: 5,
   },
   est: {
     width: 120,

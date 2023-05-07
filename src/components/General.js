@@ -1,10 +1,9 @@
 import React from "react";
 import { Text, View, StyleSheet, ImageBackground } from "react-native";
 import { useGlobal } from "../context/GlobalProvider";
-import icon from "../../assets/new.png";
-import cg from "../../assets/cg.jpg";
-
 const General = () => {
+  const icon = {uri:"https://www.dropbox.com/s/6cxpe20l0yr039g/new.png?dl=1"}
+  const cg = {uri:"https://www.dropbox.com/s/ccsr46yed39qcme/cg.jpg?dl=1"}
   const { auth } = useGlobal();
   return (
     <View style={style.contenedor}>

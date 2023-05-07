@@ -12,14 +12,14 @@ import {
   ImageBackground,
   ScrollView,
 } from "react-native";
-import Img from "../../../../../assets/comunicacion.png";
-import atras from "../../../../../assets/atras.png";
 
 function MediosComScreen() {
+  const Img = {uri:"https://www.dropbox.com/s/x4aq4bficjn6mim/comunicacion.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderData = () => {
     return (

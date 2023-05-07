@@ -12,15 +12,14 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGENES
-import Img from "../../../../../assets/niñoniña.png";
-import atras from "../../../../../assets/atras.png";
 
 const SexoScreen = () => {
+  const Img = {uri:"https://www.dropbox.com/s/lgyu97nyoqy2p5f/ni%C3%B1oni%C3%B1a.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderData = () => {
     return (

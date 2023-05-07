@@ -12,13 +12,12 @@ import {
   TouchableOpacity,
   FlatList,
 } from "react-native";
-//Imagenes
-import usuario from "../../../../../assets/tea.jpg";
-import restablecer from "../../../../../assets/restablecer.png";
-import cg from "../../../../../assets/cg.jpg";
-import cebe from "../../../../../assets/cebe.png";
 
 const ListaScreen = () => {
+  const usuario = {uri:"https://www.dropbox.com/s/nv9k77cwb5i2wbn/tea.jpg?dl=1"}
+  const restablecer = {uri:"https://www.dropbox.com/s/5hw505f6q9fw70z/restablecer.png?dl=1"}
+  const cg = {uri:"https://www.dropbox.com/s/5hw505f6q9fw70z/restablecer.png?dl=1"}
+  const cebe = {uri:"https://www.dropbox.com/s/9wm5612pj2yye5c/cebe.png?dl=1"}
   const { auth, docente, obtenerDatosDocente } = useGlobal();
   const navigation = useNavigation();
   const handlepost = () => {

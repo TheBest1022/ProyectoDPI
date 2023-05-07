@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
-import { dataAnimals } from "../../../../sample/Visual";
-import Name from "../../../../components/General.js";
-import Layout from "../../../../components/Layout.js";
+import { dataAbecedario } from "../../../../sample/Atencion";
 import {
   StyleSheet,
   View,
@@ -11,19 +9,22 @@ import {
   ImageBackground,
   ScrollView,
 } from "react-native";
+import Name from "../../../../components/General.js";
+import Layout from "../../../../components/Layout.js";
 
-const AnimalPrincipalScreen = ({ navigation, route }) => {
+const AbecedarioScreen = ({ navigation, route }) => {
   const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const id = route.params ? route.params.id : null;
   const navigacion = useNavigation();
   const handlebackPress = () => {
-    navigacion.navigate("animales");
+    navigacion.navigate("Lenguaje");
   };
   const obtenerImagen = (id) => {
-    const data = dataAnimals.filter((item) => {
+    const data = dataAbecedario.filter((item) => {
       return item.id == id;
     });
+
     return (
       <View>
         {data.map(({ module }, index) => (
@@ -47,8 +48,8 @@ const AnimalPrincipalScreen = ({ navigation, route }) => {
       </View>
     );
   };
-  const obtenerAnimal = (id) => {
-    const data = dataAnimals.filter((item) => {
+  const obtenerVocal = (id) => {
+    const data = dataAbecedario.filter((item) => {
       return item.id == id;
     });
 
@@ -56,9 +57,12 @@ const AnimalPrincipalScreen = ({ navigation, route }) => {
       <View style={style.containerimages}>
         {data.map(({ Imagen }, index) => (
           <View key={index} style={style.containerimages}>
-            {Imagen.map(({ id, Img }) => (
+            {Imagen.map(({ id, minuscula, mayuscula }) => (
               <View key={id} style={style.containerimages}>
-                <ImageBackground source={Img} style={style.image} />
+                <ImageBackground source={mayuscula} style={style.image} />
+                <View style={style.minuscula}>
+                  <ImageBackground source={minuscula} style={style.minus} />
+                </View>
               </View>
             ))}
           </View>
@@ -73,7 +77,6 @@ const AnimalPrincipalScreen = ({ navigation, route }) => {
       }
     };
   }, [sound]);
-
   return (
     <Layout>
       <ScrollView>
@@ -91,7 +94,7 @@ const AnimalPrincipalScreen = ({ navigation, route }) => {
                   await sound.playAsync();
                 }}
               >
-                {obtenerAnimal(id)}
+                {obtenerVocal(id)}
               </TouchableOpacity>
             </View>
           </View>
@@ -106,7 +109,7 @@ const AnimalPrincipalScreen = ({ navigation, route }) => {
               ></ImageBackground>
             </TouchableOpacity>
           </View>
-
+          
         </View>
       </ScrollView>
     </Layout>
@@ -166,4 +169,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default AnimalPrincipalScreen;
+export default AbecedarioScreen;

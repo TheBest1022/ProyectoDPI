@@ -12,15 +12,15 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGANES
-import estacion from "../../../../../assets/estacion.png";
-import atras from "../../../../../assets/atras.png";
+
 
 const EstacionesScreen = () => {
+  const estacion = {uri:"https://www.dropbox.com/s/lypcyo25zo5f3hm/estaciones.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderData = () => {
     return (

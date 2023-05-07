@@ -1,5 +1,8 @@
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
+import { AntDesign } from "@expo/vector-icons";
 import Layout from "../../components/Layout";
+import Name from "../../components/General";
 import {
   Text,
   View,
@@ -8,12 +11,9 @@ import {
   TouchableOpacity,
   FlatList,
 } from "react-native";
-import Name from "../../components/General";
-import atras from "../../../assets/atras.png";
-import { useNavigation } from "@react-navigation/native";
-import { AntDesign } from "@expo/vector-icons";
 
 const ArchivoScreen = () => {
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const navigation = useNavigation();
   const handlepost = () => {
     navigation.navigate("seccionhumano");

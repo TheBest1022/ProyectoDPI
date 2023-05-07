@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../../components/Layout";
+import { useNavigation } from "@react-navigation/native";
+import { useGlobal } from "../../context/GlobalProvider";
 import {
   View,
   StyleSheet,
@@ -11,12 +13,10 @@ import {
   Alert,
   TouchableOpacity,
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { useGlobal } from "../../context/GlobalProvider";
 import Name from "../../components/General";
-import enviar from "../../../assets/send.png";
 
 const MensaggeScreen = ({ route }) => {
+  const enviar = {uri:"https://www.dropbox.com/s/zcr44jc6erdb6rn/send.png?dl=1"}
   const navegation = useNavigation();
   const { auth, newMenssage, obtenerMensaje, MensajeActualizar } = useGlobal();
   const [loading, setLoading] = useState(false);

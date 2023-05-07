@@ -1,4 +1,3 @@
-
 //LOS ANIMALES
 export const dataAnimals = [
   {
@@ -733,7 +732,7 @@ export const dataAlimentos = [
     Imagen: [
       {
         id: "imagen",
-        Img: {uri:"https://www.dropbox.com/s/l4z8opjz18bjzco/fruta.png?dl=1"},
+        Img: {uri:"https://www.dropbox.com/s/novffr7xp6yzwyz/fruta.png?dl=1"},
         sonido: require("../../assets/Audios/fruta.mp3"),
       },
     ],

@@ -12,15 +12,14 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGENES
-import frutas from "../../../../../assets/fruta.png";
-import atras from "../../../../../assets/atras.png";
 
 const FrutasScreen = () => {
+  const frutas = {uri:"https://www.dropbox.com/s/novffr7xp6yzwyz/fruta.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlepost = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderData = () => {
     return (
@@ -107,7 +106,7 @@ const style = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "center",
     flexWrap: "wrap",
-    justifyContent: "space-between",
+    justifyContent: "center",
   },
   tex: {
     width: 220,

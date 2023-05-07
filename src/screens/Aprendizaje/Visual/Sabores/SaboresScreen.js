@@ -12,15 +12,14 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGEN
-import Img from "../../../../../assets/sabore.png";
-import atras from "../../../../../assets/atras.png";
 
 const SaboresScreen = () => {
+  const Img = {uri:"https://www.dropbox.com/s/o33s83kex1474uu/sabore.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderData = () => {
     return (

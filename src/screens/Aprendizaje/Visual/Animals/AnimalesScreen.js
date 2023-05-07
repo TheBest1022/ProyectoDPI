@@ -10,22 +10,21 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGENES
-import Img from "../../../../../assets/animalespicto.png";
-import Mamifero from "../../../../../assets/mami.png";
-import Reptiles from "../../../../../assets/reptiles.png";
-import Aves from "../../../../../assets/aereos.png";
-import Anfibios from "../../../../../assets/anfibio.png";
-import Peces from "../../../../../assets/pecesitos.png";
-import Invertebrados from "../../../../../assets/invertebrados.png";
-import Vertebrados from "../../../../../assets/vertebrados.png";
-import atras from "../../../../../assets/atras.png";
 
 const AnimalesScreen = () => {
+  const Img = {uri:"https://www.dropbox.com/s/kzsbi2wgo6xskcn/animalespicto.png?dl=1"}
+  const Mamifero = {uri:"https://www.dropbox.com/s/iulqa2nmw80faw5/mami.png?dl=1"}
+  const Reptiles = {uri:"https://www.dropbox.com/s/lcf2xi4y4j2bcic/reptiles.png?dl=1"}
+  const Aves = {uri:"https://www.dropbox.com/s/cx9fs6tatryx9v8/aves.png?dl=1"}
+  const Anfibios = {uri:"https://www.dropbox.com/s/typituqro6x9ack/anfibios.png?dl=1"}
+  const Peces = {uri:"https://www.dropbox.com/s/tarnyb0xcjoyzur/peces.png?dl=1"}
+  const Invertebrados = {uri:"https://www.dropbox.com/s/1zhy2gol7noz0ut/invertebrados.png?dl=1"}
+  const Vertebrados = {uri:"https://www.dropbox.com/s/9rqacm4nb25ez2g/vertebrados.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound] = React.useState();
   const navigation = useNavigation();
   const handlepostPressPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const handleclick = (navegacion, id) => {
     navigation.navigate(navegacion, { id: id });

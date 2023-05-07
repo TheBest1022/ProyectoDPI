@@ -1,4 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { conexionURL } from "../../helpers/configuracion";
+import { Picker } from "@react-native-picker/picker";
+import { useGlobal } from "../../context/GlobalProvider";
+import { Buffer } from "buffer";
+import ChekComponent from "../../components/ChekComponent";
+import * as FileSystem from "expo-file-system";
+import * as Sharing from "expo-sharing";
+import Layout from "../../components/Layout";
+import Name from "../../components/General";
 import {
   View,
   StyleSheet,
@@ -9,17 +18,6 @@ import {
   ActivityIndicator,
 } from "react-native";
 import axios from "axios";
-import { conexionURL } from "../../helpers/configuracion";
-import * as FileSystem from "expo-file-system";
-import { Buffer } from "buffer";
-import { Picker } from "@react-native-picker/picker";
-import * as Sharing from "expo-sharing";
-import { useGlobal } from "../../context/GlobalProvider";
-import ChekComponent from "../../components/ChekComponent";
-import Layout from "../../components/Layout";
-import Name from "../../components/General";
-import niños from "../../../assets/niños.png";
-import excel from "../../../assets/excel.png";
 
 let data = [
   {
@@ -51,8 +49,9 @@ let data = [
     name: "Materiales para trabajar lógico-matemáticas ",
   },
 ];
-
 const AsistenciaScreen = () => {
+  const niños = {uri:"https://www.dropbox.com/s/b7yo2x9w2md9nc8/ni%C3%B1os.png?dl=1"}
+  const excel = {uri:"https://www.dropbox.com/s/87zn7mottep5xkq/excel.png?dl=1"}
   const { auth, getStudents, student, addAssistence } = useGlobal();
   const [selectStudent, setSelectStudent] = useState([]);
   const [assistence, setAssistence] = useState({

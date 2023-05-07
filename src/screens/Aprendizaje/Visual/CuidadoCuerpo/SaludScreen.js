@@ -12,15 +12,15 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-import sano from "../../../../../assets/sanos.png";
-import enfermo from "../../../../../assets/enfermo.png";
-import atras from "../../../../../assets/atras.png";
 
 const SaludScreen = () => {
+  const enfermo = {uri:"https://www.dropbox.com/s/42dlg89lnp2cxt8/enfermo.png?dl=1"}
+  const sano = {uri:"https://www.dropbox.com/s/8z2t9wjqvrpq300/sanos.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderData = () => {
     return (

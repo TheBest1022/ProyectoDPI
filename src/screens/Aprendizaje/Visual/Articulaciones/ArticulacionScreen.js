@@ -12,15 +12,15 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGENES
-import estirar from "../../../../../assets/estirar.png";
-import atras from "../../../../../assets/atras.png";
+
 
 const ArticulacionScreen = () => {
+  const estirar = {uri:"https://www.dropbox.com/s/7ty3ctoqbyq0s7v/estirar.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderData = () => {
     return (

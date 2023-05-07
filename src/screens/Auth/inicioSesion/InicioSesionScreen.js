@@ -13,12 +13,12 @@ import {
   Alert,
   ActivityIndicator,
 } from "react-native";
-import usuario from "../../../../assets/user.png";
-import candado from "../../../../assets/candado.png";
-import ayudo from "../../../../assets/ayudo.png";
 
 const InicioSecionScreen = () => {
-  const localimage = require("../../../../assets/autismo.png");
+  const localimage =  {uri: "https://www.dropbox.com/s/75vcka0fsxtsteb/autismo.png?dl=1"}
+  const usuario = {uri:"https://www.dropbox.com/s/yb98pj889pwtldd/user.png?dl=1"}
+  const candado = {uri:"https://www.dropbox.com/s/9q04v4hgejvo226/candado.png?dl=1"}
+  const ayudo = {uri:"https://www.dropbox.com/s/fo49vik1n72jl37/ayudo.png?dl=1"}
   const { setAuth, SignIn } = useGlobal();
   const navigation = useNavigation();
   const [user, setUser] = useState({
@@ -121,9 +121,10 @@ const InicioSecionScreen = () => {
 const style = StyleSheet.create({
   /* CONTEDOR - GENERAL*/
   container: {
-    marginTop: 30,
+    marginTop: 2,
     backgroundColor: "white",
-    paddingBottom: 200,
+    width: "100%",
+    height:"100%"
   },
   texto: {
     color: "gold",
@@ -132,10 +133,10 @@ const style = StyleSheet.create({
     alignItems: "center",
   },
   imagengeneral: {
-    width: 340,
-    height: 250,
+    width: 360,
+    height: 300,
     alignSelf: "center",
-    marginTop: 20,
+    marginTop:50
   },
   textocontenedor: {
     padding: 5,
@@ -201,6 +202,7 @@ const style = StyleSheet.create({
   ayudo: {
     width: 350,
     height: 50,
+    marginTop:30
   },
 });
 

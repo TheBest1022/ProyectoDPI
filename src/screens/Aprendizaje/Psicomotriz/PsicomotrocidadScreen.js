@@ -12,9 +12,9 @@ import {
   ScrollView,
 } from "react-native";
 
-import atras from "../../../../assets/atras.png"
 
 const PsicomotrocidadScreen = () => {
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [playing, setPlaying] = useState(false);
 
   const onStateChange = useCallback((state) => {

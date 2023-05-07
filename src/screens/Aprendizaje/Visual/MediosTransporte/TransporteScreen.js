@@ -10,16 +10,15 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-import Img from "../../../../../assets/transporte.png";
-import Terreste from "../../../../../assets/terrestre.png";
-import Aereo from "../../../../../assets/aereo.png";
-import Marítimos from "../../../../../assets/marítimos.png";
-import atras from "../../../../../assets/atras.png";
-
 const TransporteScreen = () => {
+  const Img = {uri:"https://www.dropbox.com/s/6ubn2pkmwqwlvjy/transportes.png?dl=1"}
+  const Terreste = {uri:"https://www.dropbox.com/s/7jhd6txshzom5lr/terrestre.png?dl=1"}
+  const Marítimos = {uri:"https://www.dropbox.com/s/pck4lefffp8a26c/mar%C3%ADtimos.png?dl=1"}
+  const Aereo = {uri:"https://www.dropbox.com/s/0q6fhepxakakwdp/aereos.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const handleTerrestrePress = () => {
     navigation.navigate("MediosTransporteScreen");

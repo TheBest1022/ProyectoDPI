@@ -12,17 +12,16 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-//IMAGENES
-import Img from "../../../../../assets/agua.png";
-import Img2 from "../../../../../assets/viento.png";
-import Img3 from "../../../../../assets/suelo.png";
-import atras from "../../../../../assets/atras.png";
 
 const TrilogiaScreen = () => {
+  const Img = {uri:"https://www.dropbox.com/s/fuqp8ccd5ee5u4r/agua.png?dl=1"}
+  const Img2 = {uri:"https://www.dropbox.com/s/343yopguqh0vn7v/viento.png?dl=1"}
+  const Img3 = {uri:"https://www.dropbox.com/s/r2hayrjpctj4mfi/suelo.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
-    navigation.navigate("seccionhumano");
+    navigation.navigate("visual");
   };
   const renderDataAgua = () => {
     return (

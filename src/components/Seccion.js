@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
+import * as FileSystem from "expo-file-system";
+import * as DocumentPicker from "expo-document-picker";
+import { useGlobal } from "../context/GlobalProvider";
+import { conexionURL } from "../helpers/configuracion.js";
 import {
   Text,
   View,
@@ -8,272 +13,232 @@ import {
   TextInput,
   Linking,
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import * as FileSystem from "expo-file-system";
-import * as DocumentPicker from "expo-document-picker";
-import { useGlobal } from "../context/GlobalProvider";
-import { conexionURL } from "../helpers/configuracion.js";
-import pdf from "../../assets/pdf.png";
-import archivos from "../../assets/delete.png";
-import subir from "../../assets/add.png";
-import recargar from "../../assets/recargar.png";
-import subes from "../../assets/subir.png";
-import atras from "../../assets/atras.png";
 
 const Seccion = ({ temas }) => {
+  const pdf = {uri:"https://www.dropbox.com/s/f6xs1wl26x6euvm/pdf.png?dl=1"}
+  const archivos = {uri:"https://www.dropbox.com/s/1a05zt7blynpbbj/delete.png?dl=1"}
+  const subir = {uri:"https://www.dropbox.com/s/indfeknq0r0r01h/add.png?dl=1"}
+  const recargar = {uri:"https://www.dropbox.com/s/db93u5n82uzzu94/recargar.png?dl=1"}
+  const subes = {uri:"https://www.dropbox.com/s/1honm1r5nq05fa1/subir.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const navigation = useNavigation();
   const { auth, BorrarTema, setRecharge, actualizarPdf} = useGlobal();
   const [search, setSearch] = useState("");
 
   const handleclick = (idTema) => {
     if (idTema == 1) {
-      navigation.navigate("DescripcionMod");
-    }
-    if (idTema == 2) {
-      navigation.navigate("articulacion");
-    }
-    if (idTema == 3) {
-      navigation.navigate("Cara");
-    }
-    if (idTema == 4) {
-      navigation.navigate("Salud");
-    }
-    if (idTema == 5) {
-      navigation.navigate("parteshuesos");
-    }
-    if (idTema == 6) {
-      navigation.navigate("musculos");
-    }
-    if (idTema == 7) {
-      navigation.navigate("digestivo");
-    }
-    if (idTema == 8) {
-      navigation.navigate("respiratorio");
-    }
-    if (idTema == 9) {
-      navigation.navigate("seres");
-    }
-    if (idTema == 10) {
-      navigation.navigate("plantas");
-    }
-    if (idTema == 11) {
-      navigation.navigate("animales");
-    }
-    if (idTema == 12) {
-      navigation.navigate("ambiente");
-    }
-    if (idTema == 13) {
-      navigation.navigate("utiles");
-    }
-    if (idTema == 14) {
-      navigation.navigate("insectos");
-    }
-    if (idTema == 1) {
       navigation.navigate("alimentos");
     }
-    if (idTema == 16) {
+    if (idTema == 2) {
       navigation.navigate("frutas");
     }
-    if (idTema == 17) {
+    if (idTema == 3) {
       navigation.navigate("verduras");
     }
-    if (idTema == 18) {
-      navigation.navigate("estaciones");
+    if (idTema == 4) {
+      navigation.navigate("animales");
     }
-    if (idTema == 19) {
-      navigation.navigate("peligroso");
+    if (idTema == 5) {
+      navigation.navigate("insectos");
     }
-    if (idTema == 20) {
-      navigation.navigate("niño");
-    }
-    if (idTema == 21) {
-      navigation.navigate("dia");
-    }
-    if (idTema == 22) {
-      navigation.navigate("sol");
-    }
-    if (idTema == 23) {
-      navigation.navigate("sabores");
-    }
-    if (idTema == 84) {
-      navigation.navigate("Datos");
-    }
-    if (idTema == 85) {
-      navigation.navigate("mama");
-    }
-    if (idTema == 86) {
-      navigation.navigate("Normas");
-    }
-    if (idTema == 87) {
-      navigation.navigate("padre");
-    }
-    if (idTema == 88) {
-      navigation.navigate("family");
-    }
-    if (idTema == 89) {
-      navigation.navigate("bandera");
-    }
-    if (idTema == 90) {
-      navigation.navigate("mar");
-    }
-    if (idTema == 91) {
-      navigation.navigate("semaforo");
-    }
-    if (idTema == 92) {
-      navigation.navigate("transporte");
-    }
-    if (idTema == 93) {
-      navigation.navigate("comunicacion");
-    }
-    if (idTema == 214) {
-      navigation.navigate("Color");
-    }
-    if (idTema == 215) {
-      navigation.navigate("Primarios");
-    }
-    if (idTema == 216) {
-      navigation.navigate("cuidado");
-    }
-    if (idTema == 217) {
-      navigation.navigate("temperatura");
-    }
-    if (idTema == 218) {
+    if (idTema == 6) {
       navigation.navigate("utilidadanimal");
     }
-    if (idTema == 219) {
-      navigation.navigate("IdentidadSexual");
+    if (idTema == 7) {
+      navigation.navigate("articulacion");
     }
-    if (idTema == 220) {
-      navigation.navigate("AlimentosNutritivos");
-    }
-    if (idTema == 221) {
-      navigation.navigate("Contaminación");
-    }
-    if (idTema == 96) {
-      navigation.navigate("habitaciones");
-    }
-    if (idTema == 113) {
-      navigation.navigate("oficios");
-    }
-    if (idTema == 115) {
-      navigation.navigate("seguridad");
-    }
-    if (idTema == 116) {
-      navigation.navigate("escolares");
-    }
-    if (idTema == 122) {
-      navigation.navigate("instituciones");
-    }
-    if (idTema == 157) {
-      navigation.navigate("niño");
-    }
-    if (idTema == 558) {
-      navigation.navigate("adelante");
-    }
-    if (idTema == 559) {
-      navigation.navigate("Enteros");
-    }
-    if (idTema == 562) {
-      navigation.navigate("moneda");
-    }
-    if (idTema == 563) {
-      navigation.navigate("Numero");
-    }
-    if (idTema == 565) {
-      navigation.navigate("suma");
-    }
-    if (idTema == 566) {
+    if (idTema == 8) {
       navigation.navigate("Color");
     }
-    if (idTema == 512) {
-      navigation.navigate("LetraA", {id:"w"});
+    if (idTema == 9) {
+      navigation.navigate("cuidado");
     }
-    if (idTema == 513) {
-      navigation.navigate("LetraA", {id:"x"});
+    if (idTema == 10) {
+      navigation.navigate("Salud");
     }
-    if (idTema == 514) {
-      navigation.navigate("LetraA", {id:"y"});
+    if (idTema == 11) {
+      navigation.navigate("adelante");
     }
-    if (idTema == 515) {
-      navigation.navigate("LetraA", {id:"z"});
+    if (idTema == 12) {
+      navigation.navigate("estaciones");
     }
-    if (idTema == 573) {
-      navigation.navigate("Vocales");
+    if (idTema == 13) {
+      navigation.navigate("dia");
     }
-    if (idTema == 574) {
-      navigation.navigate("Onomatopeya");
+    if (idTema == 14) {
+      navigation.navigate("temperatura");
     }
-    if (idTema == 128) {
+    if (idTema == 15) {
+      navigation.navigate("seres");
+    }
+    if (idTema == 16) {
+      navigation.navigate("niño");
+    }
+    if (idTema == 17) {
+      navigation.navigate("DescripcionMod");
+    }
+    if (idTema == 18) {
+      navigation.navigate("family");
+    }
+    if (idTema == 19) {
+      navigation.navigate("habitaciones");
+    }
+    if (idTema == 20) {
+      navigation.navigate("parteshuesos");
+    }
+    if (idTema == 21) {
+      navigation.navigate("instituciones");
+    }
+    if (idTema == 22) {
+      navigation.navigate("comunicacion");
+    }
+    if (idTema == 23) {
+      navigation.navigate("transporte");
+    }
+    if (idTema == 24) {
+      navigation.navigate("moneda");
+    }
+    if (idTema == 25) {
+      navigation.navigate("musculos");
+    }
+    if (idTema == 60) {
+      navigation.navigate("plantas");
+    }
+    if (idTema == 61) {
+      navigation.navigate("ambiente");
+    }
+    if (idTema == 62) {
+      navigation.navigate("Normas");
+    }
+    if (idTema == 63) {
+      navigation.navigate("Numero");
+    }
+    if (idTema == 64) {
+      navigation.navigate("Enteros");
+    }
+    if (idTema == 65) {
+      navigation.navigate("oficios");
+    }
+    if (idTema == 66) {
+      navigation.navigate("mar");
+    }
+    if (idTema == 67) {
+      navigation.navigate("Cara");
+    }
+    if (idTema == 68) {
+      navigation.navigate("sabores");
+    }
+    if (idTema == 69) {
+      navigation.navigate("seguridad");
+    }
+    if (idTema == 70) {
+      navigation.navigate("semaforo");
+    }
+    if (idTema == 71) {
+      navigation.navigate("digestivo");
+    }
+    if (idTema == 72) {
+      navigation.navigate("respiratorio");
+    }
+    if (idTema == 73) {
+      navigation.navigate("escolares");
+    }
+    if (idTema == 74) {
+      navigation.navigate("peligroso");
+    }
+    if (idTema == 75) {
+      navigation.navigate("utiles");
+    }
+    //LENGUAJE
+    if (idTema == 76) {
       navigation.navigate("LetraA", {id:"a"});
     }
-    if (idTema == 130) {
+    if (idTema == 77) {
       navigation.navigate("LetraA", {id:"b"});
     }
-    if (idTema == 137) {
+    if (idTema == 78) {
       navigation.navigate("LetraA", {id:"c"});
     }
-    if (idTema == 138) {
+    if (idTema == 79) {
       navigation.navigate("LetraA", {id:"d"});
     }
-    if (idTema == 139) {
+    if (idTema == 80) {
       navigation.navigate("LetraA", {id:"e"});
     }
-    if (idTema == 157) {
+    if (idTema == 81) {
       navigation.navigate("LetraA", {id:"f"});
     }
-    if (idTema == 159) {
+    if (idTema == 82) {
       navigation.navigate("LetraA", {id:"g"});
     }
-    if (idTema == 160) {
+    if (idTema == 83) {
       navigation.navigate("LetraA", {id:"h"});
     }
-    if (idTema == 161) {
+    if (idTema == 84) {
       navigation.navigate("LetraA", {id:"i"});
     }
-    if (idTema == 162) {
+    if (idTema == 85) {
       navigation.navigate("LetraA", {id:"j"});
     }
-    if (idTema == 163) {
+    if (idTema == 86) {
       navigation.navigate("LetraA", {id:"k"});
     }
-    if (idTema == 164) {
+    if (idTema == 87) {
       navigation.navigate("LetraA", {id:"l"});
     }
-    if (idTema == 165) {
+    if (idTema == 88) {
       navigation.navigate("LetraA", {id:"ll"});
     }
-    if (idTema == 166) {
+    if (idTema == 89) {
       navigation.navigate("LetraA", {id:"m"});
     }
-    if (idTema == 167) {
+    if (idTema == 90) {
       navigation.navigate("LetraA", {id:"n"});
     }
-    if (idTema == 168) {
+    if (idTema == 91) {
       navigation.navigate("LetraA", {id:"ñ"});
     }
-    if (idTema == 504) {
+    if (idTema == 92) {
       navigation.navigate("LetraA", {id:"o"});
     }
-    if (idTema == 505) {
+    if (idTema == 93) {
       navigation.navigate("LetraA", {id:"p"});
     }
-    if (idTema == 506) {
+    if (idTema == 94) {
       navigation.navigate("LetraA", {id:"q"});
     }
-    if (idTema == 507) {
+    if (idTema == 95) {
       navigation.navigate("LetraA", {id:"r"});
     }
-    if (idTema == 508) {
+    if (idTema == 96) {
       navigation.navigate("LetraA", {id:"s"});
     }
-    if (idTema == 509) {
+    if (idTema == 97) {
       navigation.navigate("LetraA", {id:"t"});
     }
-    if (idTema == 510) {
+    if (idTema == 98) {
       navigation.navigate("LetraA", {id:"u"});
     }
-    if (idTema == 511) {
+    if (idTema == 99) {
       navigation.navigate("LetraA", {id:"v"});
+    }
+    if (idTema == 100) {
+      navigation.navigate("LetraA", {id:"w"});
+    }
+    if (idTema == 101) {
+      navigation.navigate("LetraA", {id:"x"});
+    }
+    if (idTema == 102) {
+      navigation.navigate("LetraA", {id:"y"});
+    }
+    if (idTema == 103) {
+      navigation.navigate("LetraA", {id:"z"});
+    }
+    if (idTema == 104) {
+      navigation.navigate("Vocales");
+    }
+    if (idTema == 105) {
+      navigation.navigate("Onomatopeya");
     }
   };
   const handlepost = () => {
@@ -519,15 +484,14 @@ const Seccion = ({ temas }) => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 25,
-    backgroundColor: "#f0f8ff",
-    padding: 5,
+    width: "100%",
+    backgroundColor:'white'
   },
   contendor: {
     flexDirection: "row",
     alignSelf: "center",
     marginTop: 10,
-    backgroundColor: "white",
+    backgroundColor: "#f0f8ff",
     padding: 10,
     width: 280,
   },
@@ -596,7 +560,6 @@ const style = StyleSheet.create({
     alignSelf: "center",
   },
   input: {
-    backgroundColor: "#f0f8ff",
     width: 320,
     alignSelf: "center",
     padding: 8,

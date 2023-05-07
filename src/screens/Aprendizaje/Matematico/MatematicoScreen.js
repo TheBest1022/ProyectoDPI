@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Layout from "../../../components/Layout";
 import { View, StyleSheet, ScrollView } from "react-native";
+import { useGlobal } from "../../../context/GlobalProvider";
 import Name from "../../../components/General";
 import Seccion from "../../../components/Seccion";
-import { useGlobal } from "../../../context/GlobalProvider";
 
 const MatematicoScreen = ({route}) => {
   const id = route.params ? route.params.id : null;
