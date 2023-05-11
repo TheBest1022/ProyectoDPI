@@ -26,16 +26,16 @@ export const dataAudios = [
       {
         id: "4",
         source: {
-          uri: "https://www.dropbox.com/s/rzfpnaf5v2218k3/buho.png?dl=1",
+          uri: "https://www.dropbox.com/s/rzfpnaf5v2218k3/jabon.png?dl=1",
         },
-        sonido: require("../../assets/Audios/búho.mp3"),
+        sonido: require("../../assets/Audios/jabón.mp3"),
       },
       {
         id: "5",
         source: {
           uri: "https://www.dropbox.com/s/43vx3bp3qogm8zi/buho.png?dl=1",
         },
-        sonido: require("../../assets/Audios/burro.mp3"),
+        sonido: require("../../assets/Audios/búho.mp3"),
       },
       {
         id: "6",
