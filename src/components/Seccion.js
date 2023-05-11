@@ -16,6 +16,7 @@ import {
 
 const Seccion = ({ temas }) => {
   const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
+  const pdf = {uri:"https://www.dropbox.com/s/f6xs1wl26x6euvm/pdf.png?dl=1"}
   const navigation = useNavigation();
   const { auth, BorrarTema, setRecharge, actualizarPdf} = useGlobal();
   const [search, setSearch] = useState("");
@@ -351,7 +352,6 @@ const Seccion = ({ temas }) => {
                       }}
                     >
                       <ImageBackground
-                        source={archivos}
                         style={style.archivo}
                       ></ImageBackground>
                     </TouchableOpacity>
@@ -361,7 +361,6 @@ const Seccion = ({ temas }) => {
                       }}
                     >
                       <ImageBackground
-                        source={subes}
                         style={style.archiv}
                       ></ImageBackground>
                     </TouchableOpacity>
