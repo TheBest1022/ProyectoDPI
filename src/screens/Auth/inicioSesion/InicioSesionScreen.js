@@ -19,6 +19,7 @@ const InicioSecionScreen = () => {
   const usuario = {uri:"https://www.dropbox.com/s/yb98pj889pwtldd/user.png?dl=1"}
   const candado = {uri:"https://www.dropbox.com/s/9q04v4hgejvo226/candado.png?dl=1"}
   const ayudo = {uri:"https://www.dropbox.com/s/fo49vik1n72jl37/ayudo.png?dl=1"}
+
   const { setAuth, SignIn } = useGlobal();
   const navigation = useNavigation();
   const [user, setUser] = useState({
@@ -27,6 +28,7 @@ const InicioSecionScreen = () => {
   });
   const handleChange = (name, value) => setUser({ ...user, [name]: value });
   const [loading, setLoading] = useState(false);
+
   const handleSubmit = async () => {
     setLoading(true);
     if (user.us === "" || user.password === "") {
@@ -50,6 +52,7 @@ const InicioSecionScreen = () => {
       setLoading(false);
     }
   };
+  
   return (
     <Layout>
       <View style={style.container}>

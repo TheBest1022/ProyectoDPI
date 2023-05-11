@@ -15,12 +15,6 @@ import {
 } from "react-native";
 
 const Seccion = ({ temas }) => {
-  const pdf = {uri:"https://www.dropbox.com/s/f6xs1wl26x6euvm/pdf.png?dl=1"}
-  const archivos = {uri:"https://www.dropbox.com/s/1a05zt7blynpbbj/delete.png?dl=1"}
-  const subir = {uri:"https://www.dropbox.com/s/indfeknq0r0r01h/add.png?dl=1"}
-  const recargar = {uri:"https://www.dropbox.com/s/db93u5n82uzzu94/recargar.png?dl=1"}
-  const subes = {uri:"https://www.dropbox.com/s/1honm1r5nq05fa1/subir.png?dl=1"}
-  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const navigation = useNavigation();
   const { auth, BorrarTema, setRecharge, actualizarPdf} = useGlobal();
   const [search, setSearch] = useState("");
@@ -430,9 +424,6 @@ const Seccion = ({ temas }) => {
       );
     }
   };
-  const clickModal = () => {
-    navigation.navigate("Modal");
-  };
 
   return (
     <View>
@@ -447,7 +438,7 @@ const Seccion = ({ temas }) => {
         </View>
         <View style={style.tema}>
           {auth.IdRol == 5 ? (
-            <TouchableOpacity onPress={clickModal}>
+            <TouchableOpacity>
               <View style={style.contendorpf}>
                 <ImageBackground
                   source={subir}

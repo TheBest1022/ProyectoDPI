@@ -39,7 +39,6 @@ const PrincipalScreen = () => {
   };
   return (
     <Layout>
-      <ScrollView>
         <View style={style.container}>
           <Name title="PRINCIPAL" />
 
@@ -142,7 +141,6 @@ const PrincipalScreen = () => {
           </View>
         </View>
 
-      </ScrollView>
     </Layout>
   );
 };

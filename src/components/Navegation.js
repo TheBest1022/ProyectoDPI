@@ -8,10 +8,6 @@ import InicioSecionScreen from "../screens/Auth/inicioSesion/InicioSesionScreen"
 //USUARIO
 import RegisterScreen from "../screens/Auth/Usuario/registrarUsuario/RegisterScreen";
 
-//DOCENTE 
-import PantallaDocenteScreen from "../screens/Auth/Docente/pantallaDocente/PantallaDocenteScreen";
-import ListaScreen from "../screens/Auth/Docente/listarDocente/ListaScreen";
-import UserScreen from "../screens/Auth/Docente/registrarDocente/UserScreen";
 //PANTALLA-PRINCIPAL
 import PrincipalScreen from "../screens/PantallaPrincipal/PrincipalScreen";
 
@@ -92,7 +88,6 @@ import AbecedarioScreen from "../screens/Aprendizaje/Lenguaje/Abecedario/Abeceda
 import VocalesScreen from "../screens/Aprendizaje/Lenguaje/Vocales/VocalesScreen";
 import OnomatopeyaScreen from "../screens/Aprendizaje/Lenguaje/Onomatopeyas/OnomatopeyaScreen";
 
-
 //HABILIDADES SOCIALES
 //--SECCION PRINCIPAL HABILIDADES SOCIALES
 import HabilidadesSocialesScreen from "../screens/Aprendizaje/Sociales/HabilidadesSocialesScreen";
@@ -101,8 +96,6 @@ import HabilidadesSocialesScreen from "../screens/Aprendizaje/Sociales/Habilidad
 //--SECCION PRINCIPAL LOGICO-MATEMÁTICO
 import MatematicoScreen from "../screens/Aprendizaje/Matematico/MatematicoScreen";
 
-//ARCHIVO
-import ArchivoScreen from "../screens/Archivos/ArchivoScreen";
 
 //MENSAJE
 import MensajeScreen from "../screens/Mensaje/MensaggeScreen";
@@ -205,14 +198,6 @@ const Navegation = () => {
                 }}
               />
             )}
-            <Tab.Screen
-              name="Registro"
-              component={UserScreen}
-              options={{
-                headerShown: false,
-                tabBarItemStyle: { display: "none" },
-              }}
-            />
             <Tab.Screen
               name="cuerpo"
               component={SentidosScreen}
@@ -509,22 +494,6 @@ const Navegation = () => {
               }}
             />
             <Tab.Screen
-              name="lista"
-              component={ListaScreen}
-              options={{
-                headerShown: false,
-                tabBarItemStyle: { display: "none" },
-              }}
-            />
-            <Tab.Screen
-              name="archivo"
-              component={ArchivoScreen}
-              options={{
-                headerShown: false,
-                tabBarItemStyle: { display: "none" },
-              }}
-            />
-            <Tab.Screen
               name="utiles"
               component={UtilesScreen}
               options={{
@@ -604,25 +573,6 @@ const Navegation = () => {
                 tabBarItemStyle: { display: "none" },
               }}
             />
-            {auth.IdRol == 1 && (
-              <Tab.Screen
-                name="Registrar"
-                component={PantallaDocenteScreen}
-                options={{
-                  headerShown: false,
-                }}
-              />
-            )}
-
-            {auth.IdRol == 6 && (
-              <Tab.Screen
-                name="Registrar"
-                component={PantallaDocenteScreen}
-                options={{
-                  headerShown: false,
-                }}
-              />
-            )}
             <Tab.Screen
               name="Habilidades"
               component={HabilidadesSocialesScreen}

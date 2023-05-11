@@ -14,8 +14,12 @@ import {
 } from "react-native";
 
 const SeccAuditiva = () => {
-  const audio = {uri:"https://www.dropbox.com/s/hk0edrbx763kg7o/audio.png?dl=1"}
-  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
+  const audio = {
+    uri: "https://www.dropbox.com/s/hk0edrbx763kg7o/audio.png?dl=1",
+  };
+  const cerrar = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
+  };
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
@@ -34,9 +38,10 @@ const SeccAuditiva = () => {
                   setSound(sound);
                   await sound.playAsync();
                 }}
+                key={index}
               >
                 <View style={style.campo}>
-                  <View style={style.contendor} key={index}>
+                  <View style={style.contendor}>
                     <Text style={style.text}>SONIDO:</Text>
                     <View style={style.contenedorimagen}>
                       <ImageBackground
@@ -83,7 +88,6 @@ const SeccAuditiva = () => {
               ></ImageBackground>
             </TouchableOpacity>
           </View>
-
         </View>
       </ScrollView>
     </Layout>
