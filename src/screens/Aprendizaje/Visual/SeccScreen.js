@@ -20,7 +20,7 @@ const SeccScreen = ({route}) => {
           <Name />
 
           <Seccion temas={tema} />
-
+ 
         </View>
       </ScrollView>
     </Layout>

@@ -436,30 +436,6 @@ const Seccion = ({ temas }) => {
             onChangeText={(text) => setSearch(text)}
           />
         </View>
-        <View style={style.tema}>
-          {auth.IdRol == 5 ? (
-            <TouchableOpacity>
-              <View style={style.contendorpf}>
-                <ImageBackground
-                  source={subir}
-                  style={style.icn}
-                ></ImageBackground>
-              </View>
-            </TouchableOpacity>
-          ) : (
-            <TouchableOpacity
-              onPress={() => {
-                setRecharge(true);
-              }}
-            >
-              <View style={style.contendorpf}>
-                <ImageBackground
-                  style={style.icn}
-                ></ImageBackground>
-              </View>
-            </TouchableOpacity>
-          )}
-        </View>
       </View>
 
       {renderData(search, temas)}
@@ -483,7 +459,7 @@ const style = StyleSheet.create({
     marginTop: 10,
     backgroundColor: "#f0f8ff",
     padding: 10,
-    width: 280,
+    width: 310,
   },
   campo: {
     flexDirection: "row",
@@ -549,19 +525,6 @@ const style = StyleSheet.create({
   tema: {
     alignSelf: "center",
   },
-  input: {
-    width: 320,
-    alignSelf: "center",
-    padding: 8,
-    color: "navy",
-    marginTop: 10,
-    marginRight: 10,
-    borderWidth: 3,
-    borderColor: "navy",
-    borderTopWidth: 0,
-    borderRightWidth: 0,
-    borderLeftWidth: 0,
-  },
   archivo: {
     width: 25,
     height: 25,
@@ -581,8 +544,8 @@ const style = StyleSheet.create({
     alignSelf: "center",
   },
   input: {
-    backgroundColor: "#f0f8ff",
-    width: 320,
+    backgroundColor: "white",
+    width: 350,
     alignSelf: "center",
     padding: 8,
     color: "navy",
