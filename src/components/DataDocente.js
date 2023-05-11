@@ -74,7 +74,7 @@ const DataDocente = ({ data }) => {
                     </View>
                     <View style={style.textociencia}>
                       <Text style={style.des}>
-                        DOCENTE : {item.Nombre_Docente} {item.Apellido_Docente}
+                        DOCENTE : {item.Nombre} {item.Apellido}
                       </Text>
                     </View>
                   </View>
@@ -158,7 +158,7 @@ const DataDocente = ({ data }) => {
                     </View>
                     <View style={style.textociencia}>
                       <Text style={style.des}>
-                        DOCENTE : {item.Nombre_Docente} {item.Apellido_Docente}
+                        DOCENTE : {item.Nombre} {item.Apellido}
                       </Text>
                     </View>
                   </View>
