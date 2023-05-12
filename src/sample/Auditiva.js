@@ -47,7 +47,7 @@ export const dataAudios = [
       {
         id: "7",
         source: {
-          uri: "https://www.dropbox.com/s/u9v3poglcsyukxz/cabra.png?dl=1",
+          uri: "https://www.dropbox.com/s/u9v3poglcsyukxz/cabra.png?dl=1",//
         },
         sonido: require("../../assets/Audios/cabra.mp3"),
       },
