@@ -1,23 +1,79 @@
 import React, { useEffect } from "react";
-import { View, StyleSheet, ScrollView } from "react-native";
+import {
+  View,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+  ImageBackground,
+  Text,
+  Linking,
+} from "react-native";
+import { dataAtencion } from "../../../sample/Atencion";
 import { useGlobal } from "../../../context/GlobalProvider";
 import Layout from "../../../components/Layout";
 import Name from "../../../components/General";
-import Seccion from "../../../components/Seccion";
 
-const AtencioScreenScreen = ({route}) => {
+const AtencioScreenScreen = ({ route }) => {
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const id = route.params ? route.params.id : null;
   const { TemaId, tema, recharge } = useGlobal();
+  const handlebackPress = () => {
+    navigation.navigate("Aprendizaje");
+  };
+  const handlePressPdf = async (link) => {
+    try {
+      const url = `${link}`;
+      console.log(url);
+      const supported = await Linking.canOpenURL(url);
+      if (supported) {
+        await Linking.openURL(url);
+      } else {
+        alert("No se puede abrir el archivo PDF");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   useEffect(() => {
     TemaId(id);
   }, [recharge]);
+  const renderData = () => {
+    return (
+      <View>
+        {dataAtencion.map(({ module }, index) => (
+          <View style={style.contendor} key={index}>
+            {module.map(({ source, Descripcion, link }, index) => (
+              <View style={style.imagen} key={index}>
+                <TouchableOpacity onPress={() => handlePressPdf(link)}>
+                  <ImageBackground
+                    source={source}
+                    style={style.Img}
+                  ></ImageBackground>
+                  <View style={style.descripcion}>
+                    <Text style={style.texto}>{Descripcion}</Text>
+                  </View>
+                </TouchableOpacity>
+              </View>
+            ))}
+          </View>
+        ))}
+      </View>
+    );
+  };
   return (
     <Layout>
       <ScrollView>
         <View style={style.container}>
           <Name />
-
-          <Seccion temas={tema} />
+          {renderData()}
+          <View>
+            <TouchableOpacity onPress={handlebackPress}>
+              <ImageBackground
+                source={atras}
+                style={style.btn}
+              ></ImageBackground>
+            </TouchableOpacity>
+          </View>
         </View>
       </ScrollView>
     </Layout>
@@ -25,13 +81,16 @@ const AtencioScreenScreen = ({route}) => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 25,
-    backgroundColor: "#f0f8ff",
-    padding: 5,
+    width: "100%",
+    backgroundColor: "white",
+    marginTop: 15,
+    paddingTop: 5,
   },
-  campo: {
+  contendor: {
     flexDirection: "row",
     alignSelf: "center",
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
   btn: {
     width: 40,
@@ -39,44 +98,20 @@ const style = StyleSheet.create({
     alignSelf: "center",
     margin: 5,
   },
-  contendorpf: {
-    flexDirection: "row",
-    alignSelf: "center",
-    marginTop: 5,
-    backgroundColor: "#b0e0e6",
-    padding: 10,
-    borderTopEndRadius: 20,
-    borderBottomEndRadius: 20,
-    borderTopLeftRadius: 20,
-    borderBottomLeftRadius: 20,
+  Img: {
+    width: 115,
+    height: 115,
+    margin: 5,
   },
-  conte: {
-    width: 50,
+  descripcion: {
+    width: 110,
     alignSelf: "center",
   },
-  tema: {
-    alignSelf: "center",
-  },
-  input: {
-    backgroundColor: "#f0f8ff",
-    width: 320,
-    alignSelf: "center",
-    padding: 8,
-    color: "navy",
-    marginTop: 10,
-    marginRight: 10,
-    borderWidth: 3,
-    borderColor: "navy",
-    borderTopWidth: 0,
-    borderRightWidth: 0,
-    borderLeftWidth: 0,
-  },
-  modal: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "white",
-    padding: 20,
+  texto: {
+    textAlign: "center",
+    fontWeight:'bold',
+    fontSize:12,
+    color:'navy'
   },
 });
 

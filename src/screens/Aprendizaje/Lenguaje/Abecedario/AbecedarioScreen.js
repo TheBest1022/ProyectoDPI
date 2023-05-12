@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
-import { dataAbecedario } from "../../../../sample/Atencion";
+import { dataAbecedario } from "../../../../sample/Lenguaje";
 import {
   StyleSheet,
   View,

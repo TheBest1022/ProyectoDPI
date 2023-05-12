@@ -413,7 +413,6 @@ const Seccion = ({ temas }) => {
                   }}
                 >
                   <ImageBackground
-                    source={archivos}
                     style={style.archivo}
                   ></ImageBackground>
                 </TouchableOpacity>

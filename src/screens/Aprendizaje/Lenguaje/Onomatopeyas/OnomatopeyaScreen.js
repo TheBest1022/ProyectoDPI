@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
-import { dataOnomatopeyas } from "../../../../sample/Atencion";
+import { dataOnomatopeyas } from "../../../../sample/Lenguaje";
 import Layout from "../../../../components/Layout";
 import Name from "../../../../components/General";
 import {

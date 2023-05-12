@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Audio } from "expo-av";
 import { useNavigation } from "@react-navigation/native";
-import { datavocal } from "../../../../sample/Atencion";
+import { datavocal } from "../../../../sample/Lenguaje";
 import Name from "../../../../components/General";
 import Layout from "../../../../components/Layout";
 import {

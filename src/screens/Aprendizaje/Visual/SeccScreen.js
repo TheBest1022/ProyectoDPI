@@ -6,7 +6,6 @@ import Name from "../../../components/General";
 import Seccion from "../../../components/Seccion";
 
 const SeccScreen = ({route}) => {
-  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const id = route.params ? route.params.id : null;
   const { TemaId, tema, recharge } = useGlobal();
   useEffect(() => {

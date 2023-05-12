@@ -278,7 +278,7 @@ export const dataAudios = [
       {
         id: "40",
         source: {
-          uri: "https://www.dropbox.com/s/t1v3qfjosa212cy/rectangulo.png?dl=1",
+          uri: "https://www.dropbox.com/s/33xr7tyudtcs08y/cuadrado.png?dl=1",
         },
         sonido: require("../../assets/Audios/cuadrado.mp3"),
       },
@@ -390,7 +390,7 @@ export const dataAudios = [
       {
         id: "56",
         source: {
-          uri: "https://www.dropbox.com/s/qh3lz1bqed9mn5k/numeroOcho.png?dl=1",
+          uri: "https://www.dropbox.com/s/4on4kdailuhq7ec/numeronueve.png?dl=1",
         },
         sonido: require("../../assets/Audios/nueve.mp3"),
       },
@@ -481,7 +481,7 @@ export const dataAudios = [
       {
         id: "69",
         source: {
-          uri: "https://www.dropbox.com/s/hflhhsjcn3b7mlk/miedoso.png?dl=1",
+          uri: "https://www.dropbox.com/s/strn9pfzthl9k20/confuso.png?dl=1",
         },
         sonido: require("../../assets/Audios/confuso.mp3"),
       },

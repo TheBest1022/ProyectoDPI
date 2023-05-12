@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
+import { useGlobal } from "../../../context/GlobalProvider";
 import { Audio } from "expo-av";
 import { useNavigation } from "@react-navigation/native";
 import { dataAudios } from "../../../sample/Auditiva";
 import Layout from "../../../components/Layout";
 import Name from "../../../components/General";
+import Auditiva from "../../../components/Auditiva";
 import {
   Text,
   View,
@@ -13,81 +15,19 @@ import {
   ScrollView,
 } from "react-native";
 
-const SeccAuditiva = () => {
-  const audio = {
-    uri: "https://www.dropbox.com/s/hk0edrbx763kg7o/audio.png?dl=1",
-  };
-  const cerrar = {
-    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
-  };
-  const [sound, setSound] = React.useState();
-  const navigation = useNavigation();
-  const handlebackPress = () => {
-    navigation.navigate("Aprendizaje");
-  };
-
-  const renderData = () => {
-    return (
-      <View>
-        {dataAudios.map(({ module }, index) => (
-          <View style={style.campo} key={index}>
-            {module.map(({ sonido, source }, index) => (
-              <TouchableOpacity
-                onPress={async () => {
-                  const { sound } = await Audio.Sound.createAsync(sonido);
-                  setSound(sound);
-                  await sound.playAsync();
-                }}
-                key={index}
-              >
-                <View style={style.campo}>
-                  <View style={style.contendor}>
-                    <Text style={style.text}>SONIDO:</Text>
-                    <View style={style.contenedorimagen}>
-                      <ImageBackground
-                        source={source}
-                        style={style.image}
-                      ></ImageBackground>
-                    </View>
-                  </View>
-                  <View style={style.icn}>
-                    <ImageBackground
-                      source={audio}
-                      style={style.icono}
-                    ></ImageBackground>
-                  </View>
-                </View>
-              </TouchableOpacity>
-            ))}
-          </View>
-        ))}
-      </View>
-    );
-  };
+const SeccAuditiva = ({route}) => {
+  const id = route.params ? route.params.id : null;
+  const { TemaId, tema, recharge } = useGlobal();
   useEffect(() => {
-    return sound
-      ? () => {
-          sound.unloadAsync();
-        }
-      : undefined;
-  }, [sound]);
-
+    TemaId(id);
+  }, [recharge]);
   return (
     <Layout>
       <ScrollView>
         <View style={style.container}>
           <Name />
 
-          {renderData()}
-
-          <View style={style.contenedor}>
-            <TouchableOpacity onPress={handlebackPress}>
-              <ImageBackground
-                source={cerrar}
-                style={style.imagensiguiente}
-              ></ImageBackground>
-            </TouchableOpacity>
-          </View>
+          <Auditiva temas={tema} />
         </View>
       </ScrollView>
     </Layout>
@@ -95,14 +35,14 @@ const SeccAuditiva = () => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 25,
-    backgroundColor: "#f0f8ff",
+    width: "100%",
+    backgroundColor:'white'
   },
   contendor: {
     flexDirection: "row",
     alignSelf: "center",
     marginTop: 10,
-    backgroundColor: "white",
+    backgroundColor: "#f0f8ff",
     padding: 10,
     width: 250,
   },
