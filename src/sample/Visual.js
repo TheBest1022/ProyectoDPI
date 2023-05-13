@@ -1440,7 +1440,7 @@ export const dataColores = [
       {
         id: "Colores7",
         source: {
-          uri: "https://www.dropbox.com/s/a63ndkjakloty24/azul.png?dl=1",
+          uri: "https://www.dropbox.com/s/5mvqfbjb2v0w6oh/blanco.png?dl=1",
         },
         sonido: require("../../assets/Audios/blanco.mp3"),
       },
@@ -1502,7 +1502,7 @@ export const dataColores = [
       {
         id: "Colores16",
         source: {
-          uri: "https://www.dropbox.com/s/qyeu58ji5zp7wd1/celeste.png?dl=1",
+          uri: "https://www.dropbox.com/s/kykvfn4ep4jhxdr/rosado.png?dl=1",
         },
         sonido: require("../../assets/Audios/rosa.mp3"),
       },
