@@ -68,6 +68,10 @@ import OficiosScreen from "../screens/Aprendizaje/Visual/Oficios/OficiosScreen";
 import SeguridadVialScreen from "../screens/Aprendizaje/Visual/SeguridadVial/SeguridadVialScreen";
 import InstitucionesScreen from "../screens/Aprendizaje/Visual/Instituciones/InstitucionesScreen";
 import MediosTransporteScreen from "../screens/Aprendizaje/Visual/MediosTransporte/MediosTransporteScreen";
+import VerboScreen from "../screens/Aprendizaje/Visual/Sociales/VerboScreen";
+import SustantivoScreen from "../screens/Aprendizaje/Visual/Sociales/SustantivoScreen";
+import ValoresScreen from "../screens/Aprendizaje/Visual/Sociales/ValoresScreen";
+import PalabrasMagicasScreen from "../screens/Aprendizaje/Visual/Sociales/PalabrasMagicasScreen";
 
 //AUDITIVA
 //--SECCION PRINCIPAL AUDITIVA
@@ -96,13 +100,11 @@ import HabilidadesSocialesScreen from "../screens/Aprendizaje/Sociales/Habilidad
 //--SECCION PRINCIPAL LOGICO-MATEMÁTICO
 import MatematicoScreen from "../screens/Aprendizaje/Matematico/MatematicoScreen";
 
-
 //MENSAJE
 import MensajeScreen from "../screens/Mensaje/MensaggeScreen";
 
 //ASISTENCIA
 import AsistenciaScreen from "../screens/Asistencia/AsistenciaScreen";
-
 
 const Tab = createBottomTabNavigator();
 
@@ -656,6 +658,38 @@ const Navegation = () => {
             <Tab.Screen
               name="MediosTransporteScreen"
               component={MediosTransporteScreen}
+              options={{
+                headerShown: false,
+                tabBarItemStyle: { display: "none" },
+              }}
+            />
+            <Tab.Screen
+              name="verbo"
+              component={VerboScreen}
+              options={{
+                headerShown: false,
+                tabBarItemStyle: { display: "none" },
+              }}
+            />
+            <Tab.Screen
+              name="sustantivo"
+              component={SustantivoScreen}
+              options={{
+                headerShown: false,
+                tabBarItemStyle: { display: "none" },
+              }}
+            />
+            <Tab.Screen
+              name="valores"
+              component={ValoresScreen}
+              options={{
+                headerShown: false,
+                tabBarItemStyle: { display: "none" },
+              }}
+            />
+            <Tab.Screen
+              name="magicas"
+              component={PalabrasMagicasScreen}
               options={{
                 headerShown: false,
                 tabBarItemStyle: { display: "none" },

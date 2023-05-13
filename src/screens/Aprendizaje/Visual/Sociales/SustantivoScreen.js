@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
-import { dataVerduras } from "../../../../sample/Visual";
+import { useNavigation } from "@react-navigation/native";
+import { dataSustantivos } from "../../../../sample/Visual";
 import Layout from "../../../../components/Layout";
 import Name from "../../../../components/General";
 import {
@@ -13,26 +13,18 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-const VerdurasScreen = () => {
-  const verdura = {uri:"https://www.dropbox.com/s/7w3uoafjkvc54qb/verdura.png?dl=1"}
+const SustantivoScreen = () => {
+  const sustantivo = {uri:"https://www.dropbox.com/s/uhiqgs9ry2kgxtg/perro.png?dl=1"}
   const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlepost = () => {
-    navigation.navigate("visual");
+    navigation.navigate("visual");   
   };
-  useEffect(() => {
-    return sound
-      ? () => {
-          sound.unloadAsync();
-        }
-      : undefined;
-  }, [sound]);
-
   const renderData = () => {
     return (
       <View>
-        {dataVerduras.map(({ module }, index) => (
+        {dataSustantivos.map(({ module }, index) => (
           <View style={style.contendor} key={index}>
             {module.map(({ source, sonido }, index) => (
               <View style={style.imagen} key={index}>
@@ -55,6 +47,13 @@ const VerdurasScreen = () => {
       </View>
     );
   };
+  useEffect(() => {
+    return sound
+      ? () => {
+          sound.unloadAsync();
+        }
+      : undefined;
+  }, [sound]);
 
   return (
     <Layout>
@@ -62,25 +61,21 @@ const VerdurasScreen = () => {
         <View style={style.container}>
           <Name />
 
-          <Text style={style.text}>LAS VERDURAS</Text>
+          <Text style={style.text}>Los Sustantivos</Text>
 
           <View style={style.contendor}>
             <View style={style.tex}>
               <Text style={style.descripcion}>
-                Las verduras son, por lo tanto, hortalizas. Se definen por ser
-                la parte que se puede comer de distintas plantas verdes los
-                tallos, las hojas o el fruto.
+              Son las palabras que utilizamos para nombrar a los seres vivos (personas, animales o plantas), las cosas, las ideas y los sentimientos
               </Text>
             </View>
             <View style={style.imagen}>
               <ImageBackground
-                source={verdura}
-                style={style.verdura}
+                source={sustantivo}
+                style={style.Img}
               ></ImageBackground>
             </View>
           </View>
-
-          <Text style={style.textos}>Las Verduras</Text>
 
           {renderData()}
 
@@ -92,7 +87,7 @@ const VerdurasScreen = () => {
               ></ImageBackground>
             </TouchableOpacity>
           </View>
-          
+
         </View>
       </ScrollView>
     </Layout>
@@ -104,7 +99,6 @@ const style = StyleSheet.create({
     width:"100%",
     marginTop: 30,
     backgroundColor: "white",
-    paddingBottom:20
   },
   contendor: {
     flexDirection: "row",
@@ -126,9 +120,10 @@ const style = StyleSheet.create({
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin: 10,
+    margin: 5,
+    marginTop: 10,
   },
-  verdura: {
+  Img: {
     width: 140,
     height: 140,
     marginTop: 10,
@@ -143,7 +138,7 @@ const style = StyleSheet.create({
     fontSize: 12,
     color: "purple",
     fontWeight: "bold",
-    marginLeft: 20,
+    marginLeft: 22,
     marginTop: 5,
   },
   foto: {
@@ -157,10 +152,10 @@ const style = StyleSheet.create({
     alignSelf: "center",
   },
   Img: {
-    width: 120,
-    height: 120,
-    margin: 3,
+    width: 115,
+    height: 115,
+    margin: 5,
   },
 });
 
-export default VerdurasScreen;
+export default SustantivoScreen;

@@ -145,6 +145,18 @@ const Seccion = ({ temas }) => {
     if (idTema == 41) {
       navigation.navigate("utiles");
     }
+    if (idTema == 355) {
+      navigation.navigate("sustantivo");
+    }
+    if (idTema == 356) {
+      navigation.navigate("verbo");
+    }
+    if (idTema == 357) {
+      navigation.navigate("valores");
+    }
+    if (idTema == 358) {
+      navigation.navigate("magicas");
+    }
     //LENGUAJE
     if (idTema == 42) {
       navigation.navigate("LetraA", {id:"a"});

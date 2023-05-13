@@ -114,10 +114,10 @@ const AnimalPrincipalScreen = ({ navigation, route }) => {
 };
 const style = StyleSheet.create({
   container: {
+    height:"100%",
+    width:"100%",
     marginTop: 30,
-    backgroundColor: "#f0f8ff",
-    paddingBottom: "2%",
-    width: "100%",
+    backgroundColor: "white",
   },
   containerimages: {
     flexDirection: "row",

@@ -11,7 +11,7 @@ import {
   Linking,
 } from "react-native";
 
-const Atencion = ({ temas }) => {
+const Sociales = ({ temas }) => {
   const atras = {
     uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
   };
@@ -187,4 +187,4 @@ const style = StyleSheet.create({
     justifyContent: "space-between",
   },
 });
-export default Atencion;
+export default Sociales;

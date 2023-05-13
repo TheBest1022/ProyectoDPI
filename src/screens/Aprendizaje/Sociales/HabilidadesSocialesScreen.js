@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Layout from "../../../components/Layout";
 import { View, StyleSheet, ScrollView } from "react-native";
-import Name from "../../../components/General";
-import Seccion from "../../../components/Seccion";
 import { useGlobal } from "../../../context/GlobalProvider";
+import Name from "../../../components/General";
+import Sociales from "../../../components/Sociales";
+import Layout from "../../../components/Layout";
 
 const HabilidadesSocialesScreen = ({route}) => {
   const id = route.params ? route.params.id : null;
@@ -16,7 +16,7 @@ const HabilidadesSocialesScreen = ({route}) => {
       <ScrollView>
         <View style={style.container}>
           <Name />
-          <Seccion temas={tema} />
+          <Sociales temas={tema} />
         </View>
       </ScrollView>
     </Layout>
