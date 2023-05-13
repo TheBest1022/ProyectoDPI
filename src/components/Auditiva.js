@@ -8,7 +8,6 @@ import {
   ImageBackground,
   TouchableOpacity,
   TextInput,
-  Linking,
 } from "react-native";
 
 const Auditiva = ({ temas }) => {
@@ -24,7 +23,7 @@ const Auditiva = ({ temas }) => {
   const handlepost = () => {
     navigation.navigate("Aprendizaje");
   };
-  const renderData = (search, temas) => {
+  const renderDataAuditiva = (search, temas) => {
     if (search == "") {
       return (
         <View>
@@ -39,14 +38,12 @@ const Auditiva = ({ temas }) => {
               >
                 <View style={style.campo}>
                   <View style={style.contendor}>
-                    <Text style={style.text}>SONIDO: {item.Descripcion}</Text>
+                    <View style={style.contenedortexto}> 
+                      <Text style={style.text}>SONIDO: {item.Descripcion}</Text>
+                    </View>
                     <View style={style.contenedorimagen}>
                       <ImageBackground
-                        source={
-                          item.Imagen != null
-                            ? item.Imagen
-                            : "https://www.dropbox.com/s/strn9pfzthl9k20/confuso.png?dl=1"
-                        }
+                        source={{ uri: item.Imagen } }
                         style={style.image}
                       ></ImageBackground>
                     </View>
@@ -78,16 +75,12 @@ const Auditiva = ({ temas }) => {
                   await sound.playAsync();
                 }}
               >
-                <View style={style.campo}>
+                <View style={style.campogeneral}>
                   <View style={style.contendor}>
                     <Text style={style.text}>SONIDO: {item.Descripcion}</Text>
                     <View style={style.contenedorimagen}>
                       <ImageBackground
-                        source={
-                          item.Imagen != null
-                            ? item.Imagen
-                            : "https://www.dropbox.com/s/strn9pfzthl9k20/confuso.png?dl=1"
-                        }
+                          source={{ uri: item.Imagen } }
                         style={style.image}
                       ></ImageBackground>
                     </View>
@@ -116,7 +109,7 @@ const Auditiva = ({ temas }) => {
   return (
     <View>
       <View style={style.campo}>
-        <View style={style.campoTexto}>
+        <View>
           <TextInput
             placeholder="Buscar"
             style={style.input}
@@ -126,7 +119,7 @@ const Auditiva = ({ temas }) => {
         </View>
       </View>
 
-      {renderData(search, temas)}
+      {renderDataAuditiva(search, temas)}
 
       <View style={style.conte}>
         <TouchableOpacity onPress={handlepost}>
@@ -146,28 +139,28 @@ const style = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "center",
   },
-  contendor: {
+  campogeneral:{
+    backgroundColor:'red',
     flexDirection: "row",
     alignSelf: "center",
+  },  
+  contendor: {
+    flexDirection: "row",
+    alignSelf: "center", 
     marginTop: 10,
     backgroundColor: "#f0f8ff",
     padding: 10,
     width: 280,
   },
-  campo: {
-    flexDirection: "row",
-    alignSelf: "center",
-    flexWrap: "wrap",
-    justifyContent: "center",
-  },
   text: {
     fontWeight: "bold",
     fontSize: 11,
-    marginTop: 10,
     color: "navy",
-    margin: 10,
-    lineHeight: 18,
+    marginTop: 30,
     alignSelf: "center",
+  },
+  contenedortexto:{
+    width:150
   },
   icono: {
     height: 50,
@@ -185,17 +178,16 @@ const style = StyleSheet.create({
     height: 90,
   },
   contenedorimagen: {
-    marginLeft: 20,
-  },
-  contenedor: {
-    alignItems: "center",
-    margin: 3,
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems:'flex-start',
+    width: 100,
+    marginHorizontal: 10,
   },
   btn: {
     width: 40,
     height: 40,
     margin: 5,
-    alignSelf: "center",
   },
   input: {
     backgroundColor: "white",

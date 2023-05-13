@@ -334,7 +334,7 @@ export const dataAudios = [
       {
         id: "48",
         source: {
-          uri: "https://www.dropbox.com/s/w6zn8n7bv0oiaty/numerouno.png?dl=0",
+          uri: "https://www.dropbox.com/s/w6zn8n7bv0oiaty/numerouno.png?dl=1",
         },
         sonido: require("../../assets/Audios/uno.mp3"),
       },
@@ -551,7 +551,7 @@ export const dataAudios = [
       {
         id: "79",
         source: {
-          uri: "https://www.dropbox.com/s/bti39j60dzlciig/preocupado.png?dl=0",
+          uri: "https://www.dropbox.com/s/bti39j60dzlciig/preocupado.png?dl=1",
         },
         sonido: require("../../assets/Audios/preocupado.mp3"),
       },
@@ -614,7 +614,7 @@ export const dataAudios = [
       {
         id: "88",
         source: {
-          uri: "https://www.dropbox.com/s/ewae74avubzevgl/gris.png?dl=1",
+          uri: "https://www.dropbox.com/s/ewae74avubzevgl/gris.png?dl=1",//
         },
         sonido: require("../../assets/Audios/gris.mp3"),
       },

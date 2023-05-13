@@ -3,7 +3,7 @@ import Layout from "../../../components/Layout";
 import { View, StyleSheet, ScrollView } from "react-native";
 import { useGlobal } from "../../../context/GlobalProvider";
 import Name from "../../../components/General";
-import Seccion from "../../../components/Seccion";
+import Matematico from "../../../components/Matematico";
 
 const MatematicoScreen = ({route}) => {
   const id = route.params ? route.params.id : null;
@@ -11,14 +11,13 @@ const MatematicoScreen = ({route}) => {
   useEffect(() => {
     TemaId(id);
   }, [recharge]);
-
   return (
     <Layout>
       <ScrollView>
         <View style={style.container}>
           <Name />
 
-          <Seccion temas={tema} />
+          <Matematico temas={tema} />
         </View>
       </ScrollView>
     </Layout>

@@ -97,143 +97,143 @@ const Seccion = ({ temas }) => {
     if (idTema == 25) {
       navigation.navigate("musculos");
     }
-    if (idTema == 60) {
+    if (idTema == 26) {
       navigation.navigate("plantas");
     }
-    if (idTema == 61) {
+    if (idTema == 27) {
       navigation.navigate("ambiente");
     }
-    if (idTema == 62) {
+    if (idTema == 28) {
       navigation.navigate("Normas");
     }
-    if (idTema == 63) {
+    if (idTema == 29) {
       navigation.navigate("Numero");
     }
-    if (idTema == 64) {
+    if (idTema == 30) {
       navigation.navigate("Enteros");
     }
-    if (idTema == 65) {
+    if (idTema == 31) {
       navigation.navigate("oficios");
     }
-    if (idTema == 66) {
+    if (idTema == 32) {
       navigation.navigate("mar");
     }
-    if (idTema == 67) {
+    if (idTema == 33) {
       navigation.navigate("Cara");
     }
-    if (idTema == 68) {
+    if (idTema == 34) {
       navigation.navigate("sabores");
     }
-    if (idTema == 69) {
+    if (idTema == 35) {
       navigation.navigate("seguridad");
     }
-    if (idTema == 70) {
+    if (idTema == 36) {
       navigation.navigate("semaforo");
     }
-    if (idTema == 71) {
+    if (idTema == 37) {
       navigation.navigate("digestivo");
     }
-    if (idTema == 72) {
+    if (idTema == 38) {
       navigation.navigate("respiratorio");
     }
-    if (idTema == 73) {
+    if (idTema == 39) {
       navigation.navigate("escolares");
     }
-    if (idTema == 74) {
+    if (idTema == 40) {
       navigation.navigate("peligroso");
     }
-    if (idTema == 75) {
+    if (idTema == 41) {
       navigation.navigate("utiles");
     }
     //LENGUAJE
-    if (idTema == 76) {
+    if (idTema == 42) {
       navigation.navigate("LetraA", {id:"a"});
     }
-    if (idTema == 77) {
+    if (idTema == 43) {
       navigation.navigate("LetraA", {id:"b"});
     }
-    if (idTema == 78) {
+    if (idTema == 44) {
       navigation.navigate("LetraA", {id:"c"});
     }
-    if (idTema == 79) {
+    if (idTema == 45) {
       navigation.navigate("LetraA", {id:"d"});
     }
-    if (idTema == 80) {
+    if (idTema == 46) {
       navigation.navigate("LetraA", {id:"e"});
     }
-    if (idTema == 81) {
+    if (idTema == 47) {
       navigation.navigate("LetraA", {id:"f"});
     }
-    if (idTema == 82) {
+    if (idTema == 48) {
       navigation.navigate("LetraA", {id:"g"});
     }
-    if (idTema == 83) {
+    if (idTema == 49) {
       navigation.navigate("LetraA", {id:"h"});
     }
-    if (idTema == 84) {
+    if (idTema == 50) {
       navigation.navigate("LetraA", {id:"i"});
     }
-    if (idTema == 85) {
+    if (idTema == 51) {
       navigation.navigate("LetraA", {id:"j"});
     }
-    if (idTema == 86) {
+    if (idTema == 52) {
       navigation.navigate("LetraA", {id:"k"});
     }
-    if (idTema == 87) {
+    if (idTema == 53) {
       navigation.navigate("LetraA", {id:"l"});
     }
-    if (idTema == 88) {
+    if (idTema == 54) {
       navigation.navigate("LetraA", {id:"ll"});
     }
-    if (idTema == 89) {
+    if (idTema == 55) {
       navigation.navigate("LetraA", {id:"m"});
     }
-    if (idTema == 90) {
+    if (idTema == 56) {
       navigation.navigate("LetraA", {id:"n"});
     }
-    if (idTema == 91) {
+    if (idTema == 57) {
       navigation.navigate("LetraA", {id:"ñ"});
     }
-    if (idTema == 92) {
+    if (idTema == 58) {
       navigation.navigate("LetraA", {id:"o"});
     }
-    if (idTema == 93) {
+    if (idTema == 59) {
       navigation.navigate("LetraA", {id:"p"});
     }
-    if (idTema == 94) {
+    if (idTema == 60) {
       navigation.navigate("LetraA", {id:"q"});
     }
-    if (idTema == 95) {
+    if (idTema == 61) {
       navigation.navigate("LetraA", {id:"r"});
     }
-    if (idTema == 96) {
+    if (idTema == 62) {
       navigation.navigate("LetraA", {id:"s"});
     }
-    if (idTema == 97) {
+    if (idTema == 63) {
       navigation.navigate("LetraA", {id:"t"});
     }
-    if (idTema == 98) {
+    if (idTema == 64) {
       navigation.navigate("LetraA", {id:"u"});
     }
-    if (idTema == 99) {
+    if (idTema == 65) {
       navigation.navigate("LetraA", {id:"v"});
     }
-    if (idTema == 100) {
+    if (idTema == 66) {
       navigation.navigate("LetraA", {id:"w"});
     }
-    if (idTema == 101) {
+    if (idTema == 67) {
       navigation.navigate("LetraA", {id:"x"});
     }
-    if (idTema == 102) {
+    if (idTema == 68) {
       navigation.navigate("LetraA", {id:"y"});
     }
-    if (idTema == 103) {
+    if (idTema == 69) {
       navigation.navigate("LetraA", {id:"z"});
     }
-    if (idTema == 104) {
+    if (idTema == 70) {
       navigation.navigate("Vocales");
     }
-    if (idTema == 105) {
+    if (idTema == 71) {
       navigation.navigate("Onomatopeya");
     }
   };
