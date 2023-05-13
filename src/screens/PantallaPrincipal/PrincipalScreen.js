@@ -148,13 +148,14 @@ const PrincipalScreen = () => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
+    height:"100%",
     backgroundColor:'white'
   },
   imagencerrar: {
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin:30,
+    margin:20,
   },
   curso: {
     padding: 8,
