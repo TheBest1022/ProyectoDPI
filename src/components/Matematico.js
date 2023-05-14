@@ -22,7 +22,7 @@ const Matematico = ({ temas }) => {
   };
   const handlePressPdf = async (link) => {
     try {
-      const url = `${conexionURL}api/docente/file/${link}`;
+      const url = `${link}`;
       console.log(url);
       const supported = await Linking.canOpenURL(url);
       if (supported) {

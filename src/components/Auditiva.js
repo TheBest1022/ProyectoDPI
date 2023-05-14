@@ -10,6 +10,8 @@ import {
   TextInput,
 } from "react-native";
 
+import { conexionURL } from "../helpers/configuracion";
+
 const Auditiva = ({ temas }) => {
   const audio = {
     uri: "https://www.dropbox.com/s/hk0edrbx763kg7o/audio.png?dl=1",
@@ -23,27 +25,29 @@ const Auditiva = ({ temas }) => {
   const handlepost = () => {
     navigation.navigate("Aprendizaje");
   };
+  const handlePressSound = async (item) => {
+    const { sound } = await Audio.Sound.createAsync({
+      uri: `${conexionURL}api/docente/sound/${item}`,
+    });
+    setSound(sound);
+    await sound.playAsync();
+  };
+
   const renderDataAuditiva = (search, temas) => {
     if (search == "") {
       return (
         <View>
-          {temas.map((item) => (
-            <View style={style.campo} key={item.idTema}>
-              <TouchableOpacity
-                onPress={async () => {
-                  const { sound } = await Audio.Sound.createAsync(item.Sonido);
-                  setSound(sound);
-                  await sound.playAsync();
-                }}
-              >
+          {temas.map((item, index) => (
+            <View style={style.campo} key={index}>
+              <TouchableOpacity onPress={() => handlePressSound(item.Sonido)}>
                 <View style={style.campo}>
                   <View style={style.contendor}>
-                    <View style={style.contenedortexto}> 
+                    <View style={style.contenedortexto}>
                       <Text style={style.text}>SONIDO: {item.Descripcion}</Text>
                     </View>
                     <View style={style.contenedorimagen}>
                       <ImageBackground
-                        source={{ uri: item.Imagen } }
+                        source={{ uri: item.Imagen }}
                         style={style.image}
                       ></ImageBackground>
                     </View>
@@ -68,19 +72,13 @@ const Auditiva = ({ temas }) => {
         <View>
           {buscar.map((item) => (
             <View style={style.campo} key={item.idTema}>
-              <TouchableOpacity
-                onPress={async () => {
-                  const { sound } = await Audio.Sound.createAsync(item.Sonido);
-                  setSound(sound);
-                  await sound.playAsync();
-                }}
-              >
+              <TouchableOpacity onPress={() => handlePressSound(item.Sonido)}>
                 <View style={style.campogeneral}>
                   <View style={style.contendor}>
                     <Text style={style.text}>SONIDO: {item.Descripcion}</Text>
                     <View style={style.contenedorimagen}>
                       <ImageBackground
-                          source={{ uri: item.Imagen }}
+                        source={{ uri: item.Imagen }}
                         style={style.image}
                       ></ImageBackground>
                     </View>
@@ -139,14 +137,14 @@ const style = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "center",
   },
-  campogeneral:{
-    backgroundColor:'red',
+  campogeneral: {
+    backgroundColor: "red",
     flexDirection: "row",
     alignSelf: "center",
-  },  
+  },
   contendor: {
     flexDirection: "row",
-    alignSelf: "center", 
+    alignSelf: "center",
     marginTop: 10,
     backgroundColor: "#f0f8ff",
     padding: 10,
@@ -159,8 +157,8 @@ const style = StyleSheet.create({
     marginTop: 30,
     alignSelf: "center",
   },
-  contenedortexto:{
-    width:150
+  contenedortexto: {
+    width: 150,
   },
   icono: {
     height: 50,
@@ -180,7 +178,7 @@ const style = StyleSheet.create({
   contenedorimagen: {
     flexWrap: "wrap",
     justifyContent: "center",
-    alignItems:'flex-start',
+    alignItems: "flex-start",
     width: 100,
     marginHorizontal: 10,
   },
