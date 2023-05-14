@@ -840,7 +840,7 @@ export const derivadoAnimales = [
         sonido: require("../../assets/Audios/yogur.mp3"),
       },
     ],
-    modulos: [
+    modulo: [
       {
         id: "Animal4",
         source: {
@@ -891,7 +891,7 @@ export const derivadoAnimales = [
         sonido: require("../../assets/Audios/jamón.mp3"),
       },
     ],
-    modulos: [
+    modulo: [
       {
         id: "Animal4",
         source: {
@@ -934,14 +934,16 @@ export const derivadoAnimales = [
         },
         sonido: require("../../assets/Audios/carne.mp3"),
       },
-      {
+    ],
+    modulo:[
+            {
         id: "Animal3",
         source: {
           uri: "https://www.dropbox.com/s/gtkeeqr57cgn87g/muslopollo.png?dl=1",
         },
         sonido: require("../../assets/Audios/muslodepollo.mp3"),
       },
-    ],
+    ]
   },
   {
     id: "Gallina",
@@ -969,14 +971,16 @@ export const derivadoAnimales = [
         },
         sonido: require("../../assets/Audios/lana.mp3"),
       },
-      {
+    ],
+    modulo:[
+            {
         id: "Animal3",
         source: {
           uri: "https://www.dropbox.com/s/7bjsjcp5mnj1v7w/leche.png?dl=1",
         },
         sonido: require("../../assets/Audios/leche.mp3"),
       },
-    ],
+    ]
   },
 ];
 //LOS ALIMENTOS
@@ -1482,7 +1486,7 @@ export const dataColores = [
       {
         id: "Colores13",
         source: {
-          uri: "https://www.dropbox.com/s/aoogstaispf06mc/violeta.png?dl=1",
+          uri: "https://www.dropbox.com/s/ck736ggzguj6yvp/violeta.png?dl=1",
         },
         sonido: require("../../assets/Audios/violeta.mp3"),
       },
@@ -1496,38 +1500,32 @@ export const dataColores = [
       {
         id: "Colores15",
         source: {
-          uri: "https://www.dropbox.com/s/qyeu58ji5zp7wd1/celeste.png?dl=1",
-        },
-      },
-      {
-        id: "Colores16",
-        source: {
           uri: "https://www.dropbox.com/s/kykvfn4ep4jhxdr/rosado.png?dl=1",
         },
         sonido: require("../../assets/Audios/rosa.mp3"),
       },
       {
-        id: "Colores17",
+        id: "Colores16",
         source: {
           uri: "https://www.dropbox.com/s/2vb8l4hdrwhb5pk/beige.png?dl=1",
         },
         sonido: require("../../assets/Audios/beige.mp3"),
       },
       {
-        id: "Colores18",
+        id: "Colores17",
         source: {
           uri: "https://www.dropbox.com/s/84ae37bn5qsuehy/granate.png?dl=1",
         },
         sonido: require("../../assets/Audios/granate.mp3"),
       },
       {
-        id: "Colores19",
+        id: "Colores18",
         source: {
           uri: "https://www.dropbox.com/s/2oipar1oxsuai8z/fucsia.png?dl=1",
         },
       },
       {
-        id: "Colores20",
+        id: "Colores19",
         source: {
           uri: "https://www.dropbox.com/s/zx43pmj16h70346/ocre.png?dl=1",
         },
@@ -2775,7 +2773,7 @@ export const dataHabitaciones = [
       {
         id: "11",
         source: {
-          uri: "https://www.dropbox.com/s/usp2tg4ccw9hvjz/garaje.png?dl=1",
+          uri: "https://www.dropbox.com/s/9tyvpkhc82j5m1p/despacho.png?dl=1",
         },
         sonido: require("../../assets/Audios/despacho.mp3"),
       },
@@ -3001,7 +2999,7 @@ export const dataInstituciones = [
       {
         id: "8",
         source: {
-          uri: "https://www.dropbox.com/s/9c8pgw4zftry8mk/colegio.png?dl=1",
+          uri: "https://www.dropbox.com/s/dn8suovmqiyk1xk/school.png?dl=1",
         },
         sonido: require("../../assets/Audios/colegio.mp3"),
       },
@@ -3015,7 +3013,7 @@ export const dataInstituciones = [
       {
         id: "10",
         source: {
-          uri: "https://www.dropbox.com/s/edkuf3jyt2phbda/bombero.png?dl=1",
+          uri: "https://www.dropbox.com/s/94ylhvlqwb5hv6m/correos.png?dl=1",
         },
         sonido: require("../../assets/Audios/correo.mp3"),
       },
@@ -3682,7 +3680,7 @@ export const dataNormasConviencia = [
       {
         id: "4",
         img: {
-          uri: "https://www.dropbox.com/s/7bxg6jtg7f7spqr/respeto.png?dl=1",
+          uri: "https://www.dropbox.com/s/5rhbxlpquavsky4/respetar.jpg?dl=1",
         },
         sonido: require("../../assets/Audios/respeto.mp3"),
       },
@@ -3746,7 +3744,7 @@ export const dataNumeros = [
       {
         id: "4",
         img: {
-          uri: "https://www.dropbox.com/s/zay74e6fxfy2ha3/numerocuatro.png?dl=4",
+          uri: "https://www.dropbox.com/s/zay74e6fxfy2ha3/numerocuatro.png?dl=1",
         },
         sonido: require("../../assets/Audios/4.mp3"),
       },
@@ -4514,7 +4512,7 @@ export const dataRespiratorio = [
       {
         id: "6",
         img: {
-          uri: "https://www.dropbox.com/s/jqnzhcu91ymff8a/bronquios.png?dl=1",
+          uri: "https://www.dropbox.com/s/cyahmguvgschz9h/pulmon.png?dl=1",
         },
         sonido: require("../../assets/Audios/pulmón.mp3"),
       },

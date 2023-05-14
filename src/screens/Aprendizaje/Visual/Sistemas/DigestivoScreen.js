@@ -102,9 +102,11 @@ const DigestivoScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
+    height:"100%",
+    width:"100%",
     marginTop: 30,
-    backgroundColor: "#f0f8ff",
-    paddingBottom:60
+    backgroundColor: "white",
+    paddingBottom:30
   },
   contendor: {
     flexDirection: "row",
@@ -128,7 +130,7 @@ const style = StyleSheet.create({
     height: 40,
     alignSelf: "center",
     margin: 15,
-    marginTop:30
+    marginTop:60
   },
   Img: {
     width: 150,

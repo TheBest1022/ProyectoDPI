@@ -77,9 +77,11 @@ const NumRomanosScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
+    height:"100%",
+    width:"100%",
     marginTop: 30,
-    backgroundColor: "#f0f8ff",
-    paddingBottom:80
+    backgroundColor: "white",
+    paddingBottom:50
   },
   image: {
     width: 120,
@@ -95,7 +97,7 @@ const style = StyleSheet.create({
   imagencerrar: {
     width: 40,
     height: 40,
-    marginTop: 50,
+    marginTop: 30,
     alignSelf: "center",
   },
   contenedor: {
@@ -103,9 +105,9 @@ const style = StyleSheet.create({
     alignSelf: "center",
   },
   imgr: {
-    width: 110,
-    height: 110,
-    margin: 7,
+    width: 120,
+    height: 120,
+    margin: 8,
   },
 });
 

@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 const DescripcionMod = () => {
-  const Img = {uri:"https://www.dropbox.com/s/3qwy6a1z1fgzrau/sentidos.png?dl=1"}
+  const Img = {uri:"https://www.dropbox.com/s/74kvp8au94kmbn1/humano.png?dl=1"}
   const sentido = {uri:"https://www.dropbox.com/s/3qwy6a1z1fgzrau/sentidos.png?dl=1"}
   const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const navigation = useNavigation();
@@ -72,8 +72,10 @@ const DescripcionMod = () => {
 };
 const style = StyleSheet.create({
   container: {
+    height:"100%",
+    width:"100%",
     marginTop: 30,
-    backgroundColor: "#f0f8ff",
+    backgroundColor: "white",
     paddingBottom: 30,
   },
   contendor: {

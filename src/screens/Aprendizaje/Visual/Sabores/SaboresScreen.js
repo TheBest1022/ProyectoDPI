@@ -139,8 +139,10 @@ const SaboresScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
+    height:"100%",
+    width:"100%",
     marginTop: 30,
-    backgroundColor: "#f0f8ff",
+    backgroundColor: "white",
   },
   contendor: {
     flexDirection: "row",

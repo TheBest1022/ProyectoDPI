@@ -24,7 +24,7 @@ const UtilidadAnimalScreen = () => {
   const renderData = () => {
     return (
       <View>
-        {derivadoAnimales.map(({ Imagen, module, modulos }, index) => (
+        {derivadoAnimales.map(({ Imagen, module, modulo }, index) => (
           <View style={style.contendor} key={index}>
             {Imagen.map(({ Img, sonido }, index) => (
               <View style={style.imagen} key={index}>
@@ -63,7 +63,7 @@ const UtilidadAnimalScreen = () => {
               ))}
             </View>
             <View>
-              {modulos.map(({ source, sonido }, index) => (
+              {modulo.map(({ source, sonido }, index) => (
                 <View style={style.contenedorimagen} key={index}>
                   <View style={style.contedorimagenesiconos}>
                     <TouchableOpacity
@@ -121,8 +121,8 @@ const UtilidadAnimalScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
-    height:"100%",
-    width:"100%",
+    height: "100%",
+    width: "100%",
     marginTop: 30,
     backgroundColor: "white",
   },

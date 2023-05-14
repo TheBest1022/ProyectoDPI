@@ -101,9 +101,11 @@ const MusculosScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
+    height:"100%",
+    width:"100%",
     marginTop: 30,
-    backgroundColor: "#f0f8ff",
-    paddingBottom: '8%',
+    backgroundColor: "white",
+    paddingBottom: "8%",
   },
   contendor: {
     flexDirection: "row",

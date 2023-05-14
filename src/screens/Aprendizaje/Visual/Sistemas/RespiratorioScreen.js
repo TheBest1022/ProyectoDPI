@@ -61,7 +61,7 @@ const RespiratorioScreen = () => {
         <View style={style.container}>
           <Name />
 
-          <Text style={style.text}>EL SISTEMA RESPIRATORI</Text>
+          <Text style={style.text}>EL SISTEMA RESPIRATORIO</Text>
 
           <View style={style.contendor}>
             <View style={style.tex}>
@@ -100,9 +100,11 @@ const RespiratorioScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
+    height:"100%",
+    width:"100%",
     marginTop: 30,
-    backgroundColor: "#f0f8ff",
-    paddingBottom:60
+    backgroundColor: "white",
+    paddingBottom:50
   },
   contendor: {
     flexDirection: "row",
@@ -126,7 +128,7 @@ const style = StyleSheet.create({
     height: 40,
     alignSelf: "center",
     margin: 15,
-    marginTop:50
+    marginTop:70
 
   },
   Img: {

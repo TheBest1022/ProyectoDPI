@@ -15,7 +15,7 @@ import {
 
 const SeresScreen = () => {
   const Img = {uri:"https://www.dropbox.com/s/cvme5kqj5zdqq2i/vivos.png?dl=1"}
-  const enfermo = {uri:"https://www.dropbox.com/s/42dlg89lnp2cxt8/enfermo.png?dl=1"}
+  const enfermo = {uri:"https://www.dropbox.com/s/bpteym9ubvzb8i8/piedra.png?dl=1"}
   const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
@@ -149,8 +149,11 @@ const SeresScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
+    height:"100%",
+    width:"100%",
     marginTop: 30,
-    backgroundColor: "#f0f8ff",
+    backgroundColor: "white",
+    paddingBottom:50
   },
   contendor: {
     flexDirection: "row",
@@ -171,7 +174,7 @@ const style = StyleSheet.create({
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin: 5,
+    marginTop:30,
   },
   Img: {
     width: 140,
