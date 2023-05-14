@@ -191,7 +191,7 @@ const AsistenciaScreen = () => {
               onValueChange={(itemValue) => setFilter(itemValue)}
               style={style.select}
             >
-              <Picker.Item label="Selecciona un curso" value="" />
+              <Picker.Item label="-- Selecionar --" value="" />
               {data.map((course) => (
                 <Picker.Item
                   key={course.id}
@@ -202,7 +202,7 @@ const AsistenciaScreen = () => {
             </Picker>
 
             <View style={style.botones}>
-              <View style={style.registrar}>
+              <View>
                 <TouchableOpacity
                   style={style.btnregistrar}
                   onPress={handleSubmit}
@@ -231,7 +231,7 @@ const AsistenciaScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
-    backgroundColor: "#f0f8ff",
+    backgroundColor: "white",
     marginTop: 30,
     paddingBottom: "100%",
   },
@@ -251,12 +251,13 @@ const style = StyleSheet.create({
     marginTop: 10,
   },
   select: {
-    width: "60%",
-    height: 50,
-    marginLeft: 40,
-    borderRadius: 15,
-    borderColor: "red",
+    width: "80%",
     borderWidth: 2,
+    backgroundColor:'#dcdcdc', 
+    fontSize:10,
+    borderRadius: 25,
+    borderColor:'red',
+    alignSelf:"center"
   },
   botones: {
     alignSelf: "center",

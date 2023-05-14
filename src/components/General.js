@@ -1,9 +1,12 @@
 import React from "react";
 import { Text, View, StyleSheet, ImageBackground } from "react-native";
 import { useGlobal } from "../context/GlobalProvider";
+import { ScrollView } from "react-native-gesture-handler";
 const General = () => {
-  const icon = {uri:"https://www.dropbox.com/s/6cxpe20l0yr039g/new.png?dl=1"}
-  const cg = {uri:"https://www.dropbox.com/s/ccsr46yed39qcme/cg.jpg?dl=1"}
+  const icon = {
+    uri: "https://www.dropbox.com/s/6cxpe20l0yr039g/new.png?dl=1",
+  };
+  const cg = { uri: "https://www.dropbox.com/s/ccsr46yed39qcme/cg.jpg?dl=1" };
   const { auth } = useGlobal();
   return (
     <View style={style.contenedor}>
@@ -12,37 +15,43 @@ const General = () => {
           <ImageBackground source={cg} style={style.imagenes}></ImageBackground>
         </View>
       </View>
-      <View style={style.containerDescription}>
-        <View style={style.con}>
-          <ImageBackground source={icon} style={style.icon}></ImageBackground>
-          <Text style={style.name}>
-            {auth.IdRol == 2
-              ? auth.Nombre_Niño
-              : auth.IdRol == 1
-              ? "ADMIN"
-              : auth.IdRol == 6
-              ? "DIRECTOR"
-              : "DOCENTE"}
-          </Text>
+      <ScrollView>
+        <View style={style.containerDescription}>
+          <View style={style.con}>
+            <ImageBackground source={icon} style={style.icon}></ImageBackground>
+            <Text style={style.name}>
+              {auth.IdRol == 2
+                ? auth.Nombre_Niño
+                : auth.IdRol == 1
+                ? "ADMIN"
+                : auth.IdRol == 6
+                ? "DIRECTOR"
+                : "DOCENTE"}
+            </Text>
+          </View>
+          <View style={style.des}>
+            <Text style={style.welcome}>Te damos la Bienvenida</Text>
+          </View>
         </View>
-        <View style={style.des}>
-          <Text style={style.welcome}>Te damos la Bienvenida</Text>
-        </View>
-      </View>
+      </ScrollView>
     </View>
   );
 };
 const style = StyleSheet.create({
   contenedor: {
-    backgroundColor: "white",
+    backgroundColor: "#e6e6fa",
+    width: "100%",
   },
   containerDescription: {
     flexDirection: "row",
     backgroundColor: "#6495ed",
-    borderColor: "#f5f7fb",
     shadowColor: "#040404",
     shadowRadius: 13,
     elevation: 2,
+    borderColor: "navy",
+    borderWidth: 1,
+    borderLeftWidth:0,
+    borderRightWidth:0
   },
   welcome: {
     color: "white",
@@ -78,6 +87,7 @@ const style = StyleSheet.create({
     flexDirection: "row",
     backgroundColor: "#ededf2",
     width: 350,
+    borderColor: "black",
   },
   inicio: {
     color: "navy",

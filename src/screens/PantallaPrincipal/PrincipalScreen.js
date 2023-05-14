@@ -155,7 +155,7 @@ const style = StyleSheet.create({
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin:20,
+    margin:10,
   },
   curso: {
     padding: 8,

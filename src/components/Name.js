@@ -24,17 +24,20 @@ const Name = ({title}) => {
 };
 const style = StyleSheet.create({
   contenedor:{
-    backgroundColor:'white',
+    backgroundColor:'#e6e6fa',
     width: "100%",
-    marginTop:10
+    marginTop:30
   },
   containerDescription: {
     flexDirection: "row",
-    backgroundColor:'#6495ed',
-    borderColor:'#f5f7fb',
+    backgroundColor: "#6495ed",
     shadowColor: "#040404",
     shadowRadius: 13,
-    elevation: 5,
+    elevation: 2,
+    borderColor: "navy",
+    borderWidth: 1,
+    borderLeftWidth:0,
+    borderRightWidth:0
   },
   welcome: {
     color: "white",
@@ -47,7 +50,7 @@ const style = StyleSheet.create({
     backgroundColor:'white',
     fontSize:18,
     alignSelf:'center',
-    fontWeight:'bold'
+    fontWeight:'bold',
   },
   icon:{
     width:40,
@@ -59,16 +62,17 @@ const style = StyleSheet.create({
   con:{
     flexDirection: "row",
     backgroundColor:'white',
-    width:200
+    width:200,
   },
   des:{
     alignSelf:'center',
     padding:15
   }, 
   encabezado:{
-    padding:15,
+    padding: 10,
     flexDirection: "row",
-    backgroundColor:'white',
+    backgroundColor: "#ededf2",
+    width: 350,
     borderColor:'#f5f7fb',
   },
   inicio:{
