@@ -25,7 +25,7 @@ const HabilidadesSocialesScreen = ({route}) => {
 const style = StyleSheet.create({
   container: {
     marginTop: 25,
-    backgroundColor: "#f0f8ff",
+    backgroundColor: "white",
     padding: 5,
   },
 });

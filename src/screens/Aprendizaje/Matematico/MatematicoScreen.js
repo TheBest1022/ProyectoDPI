@@ -26,8 +26,8 @@ const MatematicoScreen = ({route}) => {
 const style = StyleSheet.create({
   container: {
     marginTop: 25,
-    backgroundColor: "#f0f8ff",
-    padding: 5,
+    backgroundColor: "white",
+    paddingBottom: 5,
   },
 });
 
