@@ -145,16 +145,16 @@ const Seccion = ({ temas }) => {
     if (idTema == 41) {
       navigation.navigate("utiles");
     }
-    if (idTema == 355) {
+    if (idTema == 210) {
       navigation.navigate("sustantivo");
     }
-    if (idTema == 356) {
+    if (idTema == 211) {
       navigation.navigate("verbo");
     }
-    if (idTema == 357) {
+    if (idTema == 212) {
       navigation.navigate("valores");
     }
-    if (idTema == 358) {
+    if (idTema == 213) {
       navigation.navigate("magicas");
     }
     //LENGUAJE

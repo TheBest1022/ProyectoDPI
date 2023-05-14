@@ -80,7 +80,7 @@ const Auditiva = ({ temas }) => {
                     <Text style={style.text}>SONIDO: {item.Descripcion}</Text>
                     <View style={style.contenedorimagen}>
                       <ImageBackground
-                          source={{ uri: item.Imagen } }
+                          source={{ uri: item.Imagen }}
                         style={style.image}
                       ></ImageBackground>
                     </View>

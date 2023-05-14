@@ -47,7 +47,7 @@ export const dataFace = [
       {
         id: "69",
         source: {
-          uri: "https://www.dropbox.com/s/hflhhsjcn3b7mlk/miedoso.png?dl=1",
+          uri: "https://www.dropbox.com/s/strn9pfzthl9k20/confuso.png?dl=1",
         },
         sonido: require("../../assets/Audios/confuso.mp3"),
       },
