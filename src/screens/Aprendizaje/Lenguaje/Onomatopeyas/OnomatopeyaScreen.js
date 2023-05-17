@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
 import { dataOnomatopeyas } from "../../../../sample/Lenguaje";
@@ -13,9 +13,13 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-const OnomatopeyaScreen= () => {
-  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
-  const Img = {uri:"https://www.dropbox.com/s/9498n8o1qojv17m/onomatopeyas-de-animales.png?dl=1"}
+const OnomatopeyaScreen = () => {
+  const atras = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
+  };
+  const Img = {
+    uri: "https://www.dropbox.com/s/9498n8o1qojv17m/onomatopeyas-de-animales.png?dl=1",
+  };
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
@@ -57,10 +61,9 @@ const OnomatopeyaScreen= () => {
 
   return (
     <Layout>
+      <Name />
       <ScrollView>
         <View style={style.container}>
-          <Name />
-
           <Text style={style.text}>LAS ONOMATOPEYAS</Text>
 
           <View style={style.contendor}>
@@ -73,17 +76,13 @@ const OnomatopeyaScreen= () => {
               </Text>
             </View>
             <View style={style.imagen}>
-              <ImageBackground
-                source={Img}
-                style={style.Img}
-              ></ImageBackground>
+              <ImageBackground source={Img} style={style.Img}></ImageBackground>
             </View>
           </View>
 
           <Text style={style.textos}>Escuchemos algunos ejemplos</Text>
 
           {renderData()}
-
 
           <View style={style.contendor}>
             <TouchableOpacity onPress={handlebackPress}>
@@ -93,7 +92,6 @@ const OnomatopeyaScreen= () => {
               ></ImageBackground>
             </TouchableOpacity>
           </View>
-
         </View>
       </ScrollView>
     </Layout>
@@ -101,14 +99,15 @@ const OnomatopeyaScreen= () => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 30,
-    backgroundColor: "#f0f8ff",
+    flex:1,
+    backgroundColor:'white',
+    paddingBottom:"30%"
   },
   contendor: {
     flexDirection: "row",
-    alignSelf: "center",
     flexWrap: "wrap",
     justifyContent: "center",
+    marginBottom: 16,
   },
   tex: {
     width: 230,

@@ -7,6 +7,7 @@ const Name = ({title}) => {
   const { auth } = useGlobal();
   return (
     <View style={style.contenedor}>
+       <View style={style.ralla}><Text></Text></View>
       <View style={style.encabezado}>
         <Text style={style.inicio}>{title}</Text> 
       </View>
@@ -26,7 +27,6 @@ const style = StyleSheet.create({
   contenedor:{
     backgroundColor:'#e6e6fa',
     width: "100%",
-    marginTop:30
   },
   containerDescription: {
     flexDirection: "row",
@@ -69,17 +69,20 @@ const style = StyleSheet.create({
     padding:15
   }, 
   encabezado:{
-    padding: 10,
+    padding: 8,
     flexDirection: "row",
-    backgroundColor: "#ededf2",
-    width: 350,
+    backgroundColor: "navy",
+    width: "100%",
     borderColor:'#f5f7fb',
   },
   inicio:{
-    color:'navy',
+    color:'gold',
     fontSize:20,
     fontWeight:'bold',
     alignSelf:'center',
   },
+  ralla:{
+    backgroundColor:'white'
+  }
 });
 export default Name;

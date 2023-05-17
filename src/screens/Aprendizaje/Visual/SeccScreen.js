@@ -5,7 +5,7 @@ import Layout from "../../../components/Layout";
 import Name from "../../../components/General";
 import Seccion from "../../../components/Seccion";
 
-const SeccScreen = ({route}) => {
+const SeccScreen = ({ route }) => {
   const id = route.params ? route.params.id : null;
   const { TemaId, tema, recharge } = useGlobal();
   useEffect(() => {
@@ -14,12 +14,10 @@ const SeccScreen = ({route}) => {
 
   return (
     <Layout>
+      <Name />
       <ScrollView>
         <View style={style.container}>
-          <Name />
-
           <Seccion temas={tema} />
- 
         </View>
       </ScrollView>
     </Layout>
@@ -28,9 +26,8 @@ const SeccScreen = ({route}) => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor:'white',
-    marginTop: 15,
     paddingTop: 5,
+    paddingBottom:"100%"
   },
 });
 

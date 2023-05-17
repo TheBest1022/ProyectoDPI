@@ -37,7 +37,7 @@ const PsicomotrocidadScreen = () => {
               <View key={index}>
                 <Text style={style.texto}>VIDEO: {Nombre}</Text>
                 <YoutubePlayer
-                  height={240}
+                  height={220}
                   width={350}
                   videoId={link}
                   play={playing}
@@ -52,19 +52,16 @@ const PsicomotrocidadScreen = () => {
   };
   return (
     <Layout>
+      <Name />
       <ScrollView>
         <View style={style.container}>
-          <Name />
           {renderData()}
-
-          <View style={style.containerimages}>
-            <TouchableOpacity onPress={handlebackPress}>
-              <ImageBackground
-                source={atras}
-                style={style.imagensiguiente}
-              ></ImageBackground>
-            </TouchableOpacity>
-          </View>
+          <TouchableOpacity onPress={handlebackPress}>
+            <ImageBackground
+              source={atras}
+              style={style.atras}
+            ></ImageBackground>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </Layout>
@@ -73,30 +70,25 @@ const PsicomotrocidadScreen = () => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor: "white",
-    marginTop: 15,
+    backgroundColor:'white',
+    paddingBottom:"100%"
   },
-  imagensiguiente: {
+  atras: {
     width: 40,
     height: 40,
     alignSelf: "center",
-    marginBottom: 20,
-  },
-  video: {
-    width: 320,
-    height: 240,
+    margin: 5,
   },
   conte: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#F5FCFF",
-    marginTop: 5,
   },
   texto: {
-    marginBottom: 10,
+    marginBottom: 5,
     fontWeight: "bold",
     color: "purple",
+    fontSize: 11,
   },
 });
 

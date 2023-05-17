@@ -12,13 +12,22 @@ import {
   TextInput,
   Alert,
   ActivityIndicator,
+  ScrollView,
 } from "react-native";
 
 const InicioSecionScreen = () => {
-  const localimage =  {uri: "https://www.dropbox.com/s/75vcka0fsxtsteb/autismo.png?dl=1"}
-  const usuario = {uri:"https://www.dropbox.com/s/yb98pj889pwtldd/user.png?dl=1"}
-  const candado = {uri:"https://www.dropbox.com/s/9q04v4hgejvo226/candado.png?dl=1"}
-  const ayudo = {uri:"https://www.dropbox.com/s/fo49vik1n72jl37/ayudo.png?dl=1"}
+  const localimage = {
+    uri: "https://www.dropbox.com/s/36lkwzachncnywe/autismo.png?dl=1",
+  };
+  const usuario = {
+    uri: "https://www.dropbox.com/s/yb98pj889pwtldd/user.png?dl=1",
+  };
+  const candado = {
+    uri: "https://www.dropbox.com/s/9q04v4hgejvo226/candado.png?dl=1",
+  };
+  const ayudo = {
+    uri: "https://www.dropbox.com/s/fo49vik1n72jl37/ayudo.png?dl=1",
+  };
 
   const { setAuth, SignIn } = useGlobal();
   const navigation = useNavigation();
@@ -52,71 +61,76 @@ const InicioSecionScreen = () => {
       setLoading(false);
     }
   };
-  
+
   return (
     <Layout>
-      <View style={style.container}>
-        <View style={style.textocontenedor}>
-          <ImageBackground source={ayudo} style={style.ayudo}></ImageBackground>
-        </View>
-
-        <ImageBackground
-          source={localimage}
-          style={style.imagengeneral}
-        ></ImageBackground>
-
-        <View style={style.contenedorlogin}>
-          <View style={style.logeo}>
+      <ScrollView>
+        <View style={style.container}>
+          <View style={style.textocontenedor}>
             <ImageBackground
-              source={usuario}
-              style={style.user}
+              source={ayudo}
+              style={style.ayudo}
             ></ImageBackground>
-            <TextInput
-              style={style.input}
-              placeholder="DNI"
-              placeholderTextColor="navy"
-              onChangeText={(text) => handleChange("us", text)}
-              value={user.us}
-            />
           </View>
 
-          <View style={style.logeo}>
-            <ImageBackground
-              source={candado}
-              style={style.user}
-            ></ImageBackground>
-            <TextInput
-              style={style.input}
-              placeholder="Contraseña"
-              placeholderTextColor="navy"
-              onChangeText={(text) => handleChange("password", text)}
-              value={user.password}
-              secureTextEntry={true}
-            />
-          </View>
+          <ImageBackground
+            source={localimage}
+            style={style.imagengeneral}
+          ></ImageBackground>
 
-          <View style={style.btniniciar}>
-            <TouchableOpacity
-              style={style.btninciarsesion}
-              onPress={handleSubmit}
-            >
-              <Text style={style.contenedortextiniciar}>Iniciar Sesión</Text>
-            </TouchableOpacity>
-          </View>
+          <View style={style.contenedorlogin}>
+            <View style={style.logeo}>
+              <ImageBackground
+                source={usuario}
+                style={style.user}
+              ></ImageBackground>
+              <TextInput
+                style={style.input}
+                placeholder="DNI"
+                placeholderTextColor="navy"
+                onChangeText={(text) => handleChange("us", text)}
+                value={user.us}
+              />
+            </View>
 
-          <View style={style.btnregister}>
-            {loading ? (
-              <ActivityIndicator size="large" color="#0000ff" />
-            ) : (
-              <TouchableNativeFeedback
-                onPress={() => navigation.navigate("Register")}
+            <View style={style.logeo}>
+              <ImageBackground
+                source={candado}
+                style={style.user}
+              ></ImageBackground>
+              <TextInput
+                style={style.input}
+                placeholder="Contraseña"
+                placeholderTextColor="navy"
+                onChangeText={(text) => handleChange("password", text)}
+                value={user.password}
+                secureTextEntry={true}
+              />
+            </View>
+
+            <View style={style.btniniciar}>
+              <TouchableOpacity
+                style={style.btninciarsesion}
+                onPress={handleSubmit}
               >
-                <Text style={style.contenedortextregistrar}>Registrarse</Text>
-              </TouchableNativeFeedback>
-            )}
+                <Text style={style.contenedortextiniciar}>Iniciar Sesión</Text>
+              </TouchableOpacity>
+            </View>
+
+            <View style={style.btnregister}>
+              {loading ? (
+                <ActivityIndicator size="large" color="#0000ff" />
+              ) : (
+                <TouchableNativeFeedback
+                  onPress={() => navigation.navigate("Register")}
+                >
+                  <Text style={style.contenedortextregistrar}>Registrarse</Text>
+                </TouchableNativeFeedback>
+              )}
+            </View>
           </View>
         </View>
-      </View>
+      </ScrollView>
     </Layout>
   );
 };
@@ -125,9 +139,8 @@ const style = StyleSheet.create({
   /* CONTEDOR - GENERAL*/
   container: {
     marginTop: 2,
-    backgroundColor: "white",
     width: "100%",
-    height:"100%"
+    height: "100%",
   },
   texto: {
     color: "gold",
@@ -139,7 +152,7 @@ const style = StyleSheet.create({
     width: 360,
     height: 300,
     alignSelf: "center",
-    marginTop:50
+    marginTop: 50,
   },
   textocontenedor: {
     padding: 5,
@@ -149,7 +162,7 @@ const style = StyleSheet.create({
   },
   /*BOTONES PRICIPALES*/
   contenedorlogin: {
-    marginTop: 50,
+    paddingBottom: "0%",
   },
   btniniciar: {
     backgroundColor: "gold",
@@ -205,7 +218,7 @@ const style = StyleSheet.create({
   ayudo: {
     width: 350,
     height: 50,
-    marginTop:30
+    marginTop: 30,
   },
 });
 

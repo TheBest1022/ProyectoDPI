@@ -10,10 +10,9 @@ const General = () => {
   const { auth } = useGlobal();
   return (
     <View style={style.contenedor}>
+      <View style={style.ralla}><Text></Text></View>
       <View style={style.contenedorimage}>
-        <View style={style.imagen}>
           <ImageBackground source={cg} style={style.imagenes}></ImageBackground>
-        </View>
       </View>
       <ScrollView>
         <View style={style.containerDescription}>
@@ -111,5 +110,8 @@ const style = StyleSheet.create({
   contenedorimage: {
     marginLeft: 200,
   },
+  ralla:{
+    backgroundColor:'white'
+  }
 });
 export default General;

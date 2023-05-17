@@ -12,9 +12,9 @@ function SeccionScreen() {
   }, [obtenerDatosDocente]);
   return (
     <Layout>
+       <Name title="APRENDIZAJE" />
       <ScrollView>
         <View style={style.container}>
-          <Name title="APRENDIZAJE" />
           <DataDocente data={docente} />
         </View>
       </ScrollView>
@@ -24,7 +24,7 @@ function SeccionScreen() {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor:'white'
+    paddingBottom:"40%"
   },
 });
 

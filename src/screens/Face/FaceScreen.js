@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Audio } from "expo-av";
 import { useGlobal } from "../../context/GlobalProvider";
 import { useNavigation } from "@react-navigation/native";
@@ -11,12 +11,14 @@ import {
   ImageBackground,
   TouchableOpacity,
   TouchableNativeFeedback,
-  ScrollView
+  ScrollView,
 } from "react-native";
 import Name from "../../components/Name";
 
 const FaceScreen = () => {
-  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
+  const cerrar = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
+  };
   const { auth } = useGlobal();
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
@@ -58,13 +60,13 @@ const FaceScreen = () => {
   };
   return (
     <Layout>
+      <Name title="ESTADO" />
       <ScrollView>
         <View style={style.container}>
-          <Name title="ESTADO" />
-
           <View style={style.estado}>
             <Text style={style.description}>
-              ¿Como te encuentras hoy&nbsp;<Text style={style.name}>{auth.Nombre_Niño}</Text>?
+              ¿Como te encuentras hoy&nbsp;
+              <Text style={style.name}>{auth.Nombre_Niño}</Text>?
             </Text>
           </View>
 
@@ -76,7 +78,6 @@ const FaceScreen = () => {
               style={style.imagencerrar}
             ></ImageBackground>
           </TouchableNativeFeedback>
-
         </View>
       </ScrollView>
     </Layout>
@@ -86,7 +87,8 @@ const FaceScreen = () => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor:'white'
+    flex:1,
+    paddingBottom:"30%"
   },
   imagenmenu: {
     width: 50,

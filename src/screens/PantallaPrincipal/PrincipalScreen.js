@@ -13,14 +13,30 @@ import {
 } from "react-native";
 
 const PrincipalScreen = () => {
-  const Img = {uri:"https://www.dropbox.com/s/ihn6nbj57hxsg92/estimulacion.png?dl=1"}
-  const Img2 = {uri:"https://www.dropbox.com/s/9aguell3l8em2b0/atencion.png?dl=1"}
-  const Img3 = {uri:"https://www.dropbox.com/s/xg8dmzqpwlnq0e6/alegre.png?dl=1"}
-  const Img4 = {uri:"https://www.dropbox.com/s/8al8474yxwdrpjl/triste.png?dl=1"}
-  const Img5 = {uri:"https://www.dropbox.com/s/caxu1km66gjfu3h/enfadado.png?dl=1"}
-  const Img6 = {uri:"https://www.dropbox.com/s/697wx323l45ytzc/estudiando.png?dl=1"}
-  const cerrar = {uri:"https://www.dropbox.com/s/pai7eu5gt2wxy0i/exit.png?dl=1"}
-  const ver = {uri:"https://www.dropbox.com/s/8z8qevinklotfud/vermas.png?dl=1"}
+  const Img = {
+    uri: "https://www.dropbox.com/s/ihn6nbj57hxsg92/estimulacion.png?dl=1",
+  };
+  const Img2 = {
+    uri: "https://www.dropbox.com/s/9aguell3l8em2b0/atencion.png?dl=1",
+  };
+  const Img3 = {
+    uri: "https://www.dropbox.com/s/xg8dmzqpwlnq0e6/alegre.png?dl=1",
+  };
+  const Img4 = {
+    uri: "https://www.dropbox.com/s/8al8474yxwdrpjl/triste.png?dl=1",
+  };
+  const Img5 = {
+    uri: "https://www.dropbox.com/s/caxu1km66gjfu3h/enfadado.png?dl=1",
+  };
+  const Img6 = {
+    uri: "https://www.dropbox.com/s/697wx323l45ytzc/estudiando.png?dl=1",
+  };
+  const cerrar = {
+    uri: "https://www.dropbox.com/s/pai7eu5gt2wxy0i/exit.png?dl=1",
+  };
+  const ver = {
+    uri: "https://www.dropbox.com/s/8z8qevinklotfud/vermas.png?dl=1",
+  };
   const { auth, LogOut } = useGlobal();
   const navigation = useNavigation();
   const handleback = () => {
@@ -39,18 +55,15 @@ const PrincipalScreen = () => {
   };
   return (
     <Layout>
+      <Name title="PRINCIPAL" />
+      <ScrollView>
         <View style={style.container}>
-          <Name title="PRINCIPAL" />
-
           <View style={style.curso}>
             <Text style={style.texto}>CONÓCENOS </Text>
           </View>
 
           <View style={style.contenedor}>
-            <ImageBackground
-              source={Img6}
-              style={style.est}
-            ></ImageBackground>
+            <ImageBackground source={Img6} style={style.est}></ImageBackground>
             <View style={style.desciption}>
               <Text style={style.tex}>
                 TEAyudo Aprender es una herramienta de aprendizaje, intervención
@@ -70,10 +83,7 @@ const PrincipalScreen = () => {
 
           <View style={style.contenedor}>
             <View style={style.clase}>
-              <ImageBackground
-                source={Img}
-                style={style.Img}
-              ></ImageBackground>
+              <ImageBackground source={Img} style={style.Img}></ImageBackground>
               <Text style={style.humano}>Estimulación Visual</Text>
             </View>
 
@@ -140,7 +150,7 @@ const PrincipalScreen = () => {
             </TouchableOpacity>
           </View>
         </View>
-
+      </ScrollView>
     </Layout>
   );
 };
@@ -148,14 +158,13 @@ const PrincipalScreen = () => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    height:"100%",
-    backgroundColor:'white'
+    height: "100%",
   },
   imagencerrar: {
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin:10,
+    margin: 10,
   },
   curso: {
     padding: 8,
@@ -177,8 +186,8 @@ const style = StyleSheet.create({
     elevation: 3,
     borderRadius: 2,
     backgroundColor: "white",
-    borderWidth:1,
-    borderColor:'navy'
+    borderWidth: 1,
+    borderColor: "navy",
   },
   Img: {
     width: 50,
@@ -228,9 +237,9 @@ const style = StyleSheet.create({
     fontSize: 10,
     lineHeight: 18,
   },
-  atras:{
-    alignSelf:'center'
-  }
+  atras: {
+    alignSelf: "center",
+  },
 });
 
 export default PrincipalScreen;

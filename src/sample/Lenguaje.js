@@ -3045,7 +3045,7 @@ export const datavocal = [
       {
         id: "vocales",
         mayuscula: {uri:"https://www.dropbox.com/s/nheq2kcrtkm43f0/letraE.png?dl=1"},
-        minuscula: {uri:"https://www.dropbox.com/s/nheq2kcrtkm43f0/letraE.png?dl=1"},
+        minuscula: {uri:"https://www.dropbox.com/s/4lwly04700qasse/eminus.png?dl=1"},
       },
     ],
     modulo: [
@@ -3087,7 +3087,7 @@ export const datavocal = [
     modulo: [
       {
         id: "vocales",
-        img: {uri:"https://www.dropbox.com/s/eugt8kvnezzlkbj/oso.png?dl=1"},
+        img: {uri:"https://www.dropbox.com/s/j8f42dphsjtmy1i/oso.png?dl=1"},
         sonido: require("../../assets/Audios/Oso.mp3"),
       },
     ],
@@ -3105,7 +3105,7 @@ export const datavocal = [
     modulo: [
       {
         id: "vocales",
-        img: {uri:"https://www.dropbox.com/s/cn18woey6sn7myu/uminus.png?dl=1"},
+        img: {uri:"https://www.dropbox.com/s/frhnevfsr7qhf8g/uvas.png?dl=1"},
         sonido: require("../../assets/Audios/Uva.mp3"),
       },
     ],

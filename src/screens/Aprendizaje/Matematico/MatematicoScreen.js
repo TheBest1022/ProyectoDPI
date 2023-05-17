@@ -14,9 +14,9 @@ const MatematicoScreen = ({route}) => {
   return (
     <Layout>
       <ScrollView>
+         <Name />
         <View style={style.container}>
-          <Name />
-
+  
           <Matematico temas={tema} />
         </View>
       </ScrollView>
@@ -25,9 +25,9 @@ const MatematicoScreen = ({route}) => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 25,
-    backgroundColor: "white",
-    paddingBottom: 5,
+    width: "100%",
+    backgroundColor:'white',
+    paddingBottom:"100%"
   },
 });
 

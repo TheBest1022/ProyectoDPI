@@ -72,7 +72,6 @@ export const datalink = [
             Nombre:"Actividades de CONCIENCIA FONOLÓGICA",
             link:"KKeTlkuEafo",
           },
-
         ]
     }
 ]

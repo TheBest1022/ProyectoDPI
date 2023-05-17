@@ -79,9 +79,10 @@ const AbecedarioScreen = ({ navigation, route }) => {
   }, [sound]);
   return (
     <Layout>
+      <Name />
       <ScrollView>
         <View style={style.container}>
-          <Name />
+          
 
           <View style={style.containerimages}>
             <View style={style.contenedor}>
@@ -105,7 +106,7 @@ const AbecedarioScreen = ({ navigation, route }) => {
             <TouchableOpacity onPress={handlebackPress}>
               <ImageBackground
                 source={cerrar}
-                style={style.imagensiguiente}
+                style={style.atras}
               ></ImageBackground>
             </TouchableOpacity>
           </View>
@@ -117,10 +118,10 @@ const AbecedarioScreen = ({ navigation, route }) => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 30,
-    backgroundColor: "#f0f8ff",
-    paddingBottom: "2%",
+    backgroundColor: "white",
     width: "100%",
+    height:"100%",
+    paddingBottom:"50%"
   },
   containerimages: {
     flexDirection: "row",
@@ -140,7 +141,7 @@ const style = StyleSheet.create({
     marginTop: 50,
     marginLeft: 3,
   },
-  imagensiguiente: {
+  atras: {
     width: 40,
     height: 40,
     margin: 5,

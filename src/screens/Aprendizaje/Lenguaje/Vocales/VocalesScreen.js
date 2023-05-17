@@ -12,9 +12,10 @@ import {
   ScrollView,
 } from "react-native";
 
-
 function VocalesScreen() {
-  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
+  const cerrar = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
+  };
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
@@ -103,10 +104,9 @@ function VocalesScreen() {
   }, [sound]);
   return (
     <Layout>
+      <Name />
       <ScrollView>
         <View style={style.container}>
-          <Name />
-
           {renderData()}
 
           <View style={style.containerimages}>
@@ -124,8 +124,8 @@ function VocalesScreen() {
 }
 const style = StyleSheet.create({
   container: {
-    marginTop: 30,
-    backgroundColor: "#f0f8ff",
+    backgroundColor: "white",
+    paddingBottom:"100%"
   },
   containerimages: {
     flexDirection: "row",
@@ -136,6 +136,7 @@ const style = StyleSheet.create({
     height: 110,
     alignSelf: "center",
     marginLeft: 45,
+    marginTop:10
   },
   minus: {
     width: 70,

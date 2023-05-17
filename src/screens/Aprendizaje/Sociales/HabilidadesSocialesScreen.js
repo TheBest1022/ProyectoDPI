@@ -5,7 +5,7 @@ import Name from "../../../components/General";
 import Sociales from "../../../components/Sociales";
 import Layout from "../../../components/Layout";
 
-const HabilidadesSocialesScreen = ({route}) => {
+const HabilidadesSocialesScreen = ({ route }) => {
   const id = route.params ? route.params.id : null;
   const { TemaId, tema, recharge } = useGlobal();
   useEffect(() => {
@@ -13,9 +13,9 @@ const HabilidadesSocialesScreen = ({route}) => {
   }, [recharge]);
   return (
     <Layout>
+      <Name />
       <ScrollView>
         <View style={style.container}>
-          <Name />
           <Sociales temas={tema} />
         </View>
       </ScrollView>
@@ -27,6 +27,7 @@ const style = StyleSheet.create({
     marginTop: 25,
     backgroundColor: "white",
     padding: 5,
+    paddingBottom:"100%"
   },
 });
 

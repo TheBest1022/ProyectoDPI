@@ -3,13 +3,9 @@ import { useGlobal } from "../../../context/GlobalProvider";
 import Layout from "../../../components/Layout";
 import Name from "../../../components/General";
 import Auditiva from "../../../components/Auditiva";
-import {
-  View,
-  StyleSheet,
-  ScrollView,
-} from "react-native";
+import { View, StyleSheet, ScrollView } from "react-native";
 
-const SeccAuditiva = ({route}) => {
+const SeccAuditiva = ({ route }) => {
   const id = route.params ? route.params.id : null;
   const { TemaId, tema, recharge } = useGlobal();
   useEffect(() => {
@@ -17,12 +13,10 @@ const SeccAuditiva = ({route}) => {
   }, [recharge]);
   return (
     <Layout>
+      <Name />
       <ScrollView>
         <View style={style.container}>
-          <Name />
-
           <Auditiva temas={tema} />
-
         </View>
       </ScrollView>
     </Layout>
@@ -31,8 +25,9 @@ const SeccAuditiva = ({route}) => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor:'white'
-  }
+    backgroundColor: "white",
+    paddingBottom:"100%"
+  },
 });
 
 export default SeccAuditiva;

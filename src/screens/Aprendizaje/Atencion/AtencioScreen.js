@@ -14,9 +14,8 @@ const AtencioScreenScreen = ({ route }) => {
   return (
     <Layout>
       <ScrollView>
+                  <Name />
         <View style={style.container}>
-          <Name />
-
           <Atencion temas={tema} />
         </View>
       </ScrollView>
@@ -29,6 +28,7 @@ const style = StyleSheet.create({
     backgroundColor: "white",
     marginTop: 15,
     paddingTop: 5,
+    paddingBottom:"100%"
   },
 });
 
