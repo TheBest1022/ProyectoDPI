@@ -162,7 +162,7 @@ const style = StyleSheet.create({
   },
   /*BOTONES PRICIPALES*/
   contenedorlogin: {
-    paddingBottom: "0%",
+    margin:10
   },
   btniniciar: {
     backgroundColor: "gold",

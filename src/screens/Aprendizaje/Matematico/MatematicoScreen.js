@@ -5,30 +5,27 @@ import { useGlobal } from "../../../context/GlobalProvider";
 import Name from "../../../components/General";
 import Matematico from "../../../components/Matematico";
 
-const MatematicoScreen = ({route}) => {
+const MatematicoScreen = ({ route }) => {
   const id = route.params ? route.params.id : null;
   const { TemaId, tema, recharge } = useGlobal();
   useEffect(() => {
     TemaId(id);
   }, [recharge]);
   return (
-    <Layout>
-      <ScrollView>
-         <Name />
+    <ScrollView>
+      <Layout>
+        <Name />
         <View style={style.container}>
-  
           <Matematico temas={tema} />
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor:'white',
-    paddingBottom:"100%"
   },
 });
 
-export default MatematicoScreen ;
+export default MatematicoScreen;

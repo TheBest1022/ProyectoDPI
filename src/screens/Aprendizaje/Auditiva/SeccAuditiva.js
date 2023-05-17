@@ -12,21 +12,21 @@ const SeccAuditiva = ({ route }) => {
     TemaId(id);
   }, [recharge]);
   return (
-    <Layout>
-      <Name />
-      <ScrollView>
+    <ScrollView style={style.scrollViewContent}>
+      <Layout>
+        <Name />
+
         <View style={style.container}>
           <Auditiva temas={tema} />
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor: "white",
-    paddingBottom:"100%"
+    height: "100%",
   },
 });
 

@@ -111,7 +111,8 @@ const style = StyleSheet.create({
     marginLeft: 200,
   },
   ralla:{
-    backgroundColor:'white'
+    backgroundColor:'white',
+    padding:2
   }
 });
 export default General;

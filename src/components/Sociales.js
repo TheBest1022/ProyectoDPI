@@ -132,7 +132,6 @@ const style = StyleSheet.create({
     alignSelf: "center",
   },
   input: {
-    backgroundColor: "white",
     width: 350,
     alignSelf: "center",
     padding: 8,
@@ -147,7 +146,6 @@ const style = StyleSheet.create({
   },
   container: {
     width: "100%",
-    backgroundColor: "white",
   },
   contendor: {
     flexDirection: "row",

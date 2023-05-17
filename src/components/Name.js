@@ -82,7 +82,8 @@ const style = StyleSheet.create({
     alignSelf:'center',
   },
   ralla:{
-    backgroundColor:'white'
+    backgroundColor:'white',
+    padding:1
   }
 });
 export default Name;

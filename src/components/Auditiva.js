@@ -8,6 +8,7 @@ import {
   ImageBackground,
   TouchableOpacity,
   TextInput,
+  ScrollView,
 } from "react-native";
 
 import { conexionURL } from "../helpers/configuracion";
@@ -19,12 +20,13 @@ const Auditiva = ({ temas }) => {
   const atras = {
     uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
   };
-  const navigation = useNavigation();
-  const [search, setSearch] = useState("");
-  const [sound, setSound] = React.useState();
   const handlepost = () => {
     navigation.navigate("Aprendizaje");
   };
+  const navigation = useNavigation();
+  const [search, setSearch] = useState("");
+  const [sound, setSound] = React.useState();
+
   const handlePressSound = async (item) => {
     const { sound } = await Audio.Sound.createAsync({
       uri: `${conexionURL}api/docente/sound/${item}`,
@@ -107,18 +109,14 @@ const Auditiva = ({ temas }) => {
   return (
     <View>
       <View style={style.campo}>
-        <View>
-          <TextInput
-            placeholder="Buscar"
-            style={style.input}
-            placeholderTextColor="#808080"
-            onChangeText={(text) => setSearch(text)}
-          />
-        </View>
+        <TextInput
+          placeholder="Buscar"
+          style={style.input}
+          placeholderTextColor="#808080"
+          onChangeText={(text) => setSearch(text)}
+        />
       </View>
-
-      {renderDataAuditiva(search, temas)}
-
+        {renderDataAuditiva(search, temas)}
       <View style={style.conte}>
         <TouchableOpacity onPress={handlepost}>
           <ImageBackground source={atras} style={style.btn}></ImageBackground>
@@ -130,8 +128,8 @@ const Auditiva = ({ temas }) => {
 
 const style = StyleSheet.create({
   container: {
-    width: "100%",
-    backgroundColor: "white",
+    flex:1,
+    backgroundColor: "blue",
   },
   campo: {
     flexDirection: "row",
@@ -146,9 +144,14 @@ const style = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "center",
     marginTop: 10,
-    backgroundColor: "#f0f8ff",
+    backgroundColor: "white",
     padding: 10,
     width: 280,
+    borderWidth: 3,
+    borderColor: "gold",
+    borderTopWidth: 0,
+    borderRightWidth: 0,
+    borderLeftWidth: 0,
   },
   text: {
     fontWeight: "bold",
@@ -182,13 +185,7 @@ const style = StyleSheet.create({
     width: 100,
     marginHorizontal: 10,
   },
-  btn: {
-    width: 40,
-    height: 40,
-    margin: 5,
-  },
   input: {
-    backgroundColor: "white",
     width: 350,
     alignSelf: "center",
     padding: 8,
@@ -204,6 +201,14 @@ const style = StyleSheet.create({
   conte: {
     width: 50,
     alignSelf: "center",
+  },
+  btn: {
+    width: 40,
+    height: 40,
+    margin: 10,
+  },
+  scrollViewContent: {
+    flexGrow: 1,
   },
 });
 

@@ -12,21 +12,19 @@ const LenguajeScreen = ({ route }) => {
   }, [recharge]);
 
   return (
-    <Layout>
-      <Name />
-      <ScrollView>
+    <ScrollView>
+      <Layout>
+        <Name />
         <View style={style.container}>
           <Seccion temas={tema} />
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor: "white",
-    paddingBottom: "100%",
   },
 });
 

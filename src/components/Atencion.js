@@ -38,7 +38,7 @@ const Atencion = ({ temas }) => {
     if (search == "") {
       return (
         <View>
-          <View style={style.contendor} > 
+          <View style={style.container} > 
             {temas.map((item) => (
               <View style={style.contendor} key={item.idTema}>
                 <View style={style.imagen}>
@@ -132,7 +132,6 @@ const style = StyleSheet.create({
     alignSelf: "center",
   },
   input: {
-    backgroundColor: "white",
     width: 350,
     alignSelf: "center",
     padding: 8,
@@ -154,7 +153,13 @@ const style = StyleSheet.create({
     alignSelf: "center",
     flexWrap: "wrap",
     justifyContent: "center",
-    marginTop:10
+    marginTop:10,
+  },
+  container:{
+    flexDirection: "row",
+    alignSelf: "center",
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
   btn: {
     width: 40,
@@ -180,6 +185,7 @@ const style = StyleSheet.create({
   },
   imagen: {
     width: 120,
+    margin:5,
   },
   contenedor: {
     flexDirection: "row",

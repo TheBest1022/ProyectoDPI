@@ -51,9 +51,9 @@ const PsicomotrocidadScreen = () => {
     );
   };
   return (
-    <Layout>
-      <Name />
-      <ScrollView>
+    <ScrollView>
+      <Layout>
+        <Name />
         <View style={style.container}>
           {renderData()}
           <TouchableOpacity onPress={handlebackPress}>
@@ -63,21 +63,20 @@ const PsicomotrocidadScreen = () => {
             ></ImageBackground>
           </TouchableOpacity>
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor:'white',
-    paddingBottom:"100%"
+    backgroundColor: "white",
   },
   atras: {
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin: 5,
+    margin: 10,
   },
   conte: {
     flex: 1,

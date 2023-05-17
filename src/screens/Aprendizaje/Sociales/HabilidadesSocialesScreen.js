@@ -12,22 +12,20 @@ const HabilidadesSocialesScreen = ({ route }) => {
     TemaId(id);
   }, [recharge]);
   return (
-    <Layout>
-      <Name />
-      <ScrollView>
+    <ScrollView>
+      <Layout>
+        <Name />
         <View style={style.container}>
           <Sociales temas={tema} />
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 25,
-    backgroundColor: "white",
-    padding: 5,
-    paddingBottom:"100%"
+    width: "100%",
+    height: "100%",
   },
 });
 

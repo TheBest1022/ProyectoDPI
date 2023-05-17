@@ -12,23 +12,20 @@ const AtencioScreenScreen = ({ route }) => {
     TemaId(id);
   }, [recharge]);
   return (
-    <Layout>
-      <ScrollView>
-                  <Name />
+    <ScrollView>
+      <Layout>
+        <Name />
         <View style={style.container}>
           <Atencion temas={tema} />
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor: "white",
-    marginTop: 15,
     paddingTop: 5,
-    paddingBottom:"100%"
   },
 });
 
