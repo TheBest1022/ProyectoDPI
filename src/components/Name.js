@@ -83,7 +83,6 @@ const style = StyleSheet.create({
   },
   ralla:{
     backgroundColor:'white',
-    padding:1
   }
 });
 export default Name;

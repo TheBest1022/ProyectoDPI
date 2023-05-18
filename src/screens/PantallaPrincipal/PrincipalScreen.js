@@ -54,9 +54,9 @@ const PrincipalScreen = () => {
     navigation.navigate("Ánimo");
   };
   return (
-    <Layout>
-      <Name title="PRINCIPAL" />
-      <ScrollView>
+    <ScrollView>
+      <Layout>
+        <Name title="PRINCIPAL" />
         <View style={style.container}>
           <View style={style.curso}>
             <Text style={style.texto}>CONÓCENOS </Text>
@@ -150,8 +150,8 @@ const PrincipalScreen = () => {
             </TouchableOpacity>
           </View>
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 
@@ -164,7 +164,6 @@ const style = StyleSheet.create({
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin: 10,
   },
   curso: {
     padding: 8,

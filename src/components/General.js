@@ -112,7 +112,6 @@ const style = StyleSheet.create({
   },
   ralla:{
     backgroundColor:'white',
-    padding:2
   }
 });
 export default General;
