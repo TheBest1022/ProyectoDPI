@@ -1,6 +1,5 @@
 import React, { useState} from "react";
 import { useNavigation } from "@react-navigation/native";
-import { conexionURL } from "../helpers/configuracion.js";
 import {
   Text,
   View,
@@ -147,6 +146,10 @@ const style = StyleSheet.create({
   container: {
     width: "100%",
     backgroundColor: "white",
+    flexDirection: "row",
+    alignSelf: "center",
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
   contendor: {
     flexDirection: "row",
@@ -154,12 +157,6 @@ const style = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "center",
     marginTop:10,
-  },
-  container:{
-    flexDirection: "row",
-    alignSelf: "center",
-    flexWrap: "wrap",
-    justifyContent: "center",
   },
   btn: {
     width: 40,
