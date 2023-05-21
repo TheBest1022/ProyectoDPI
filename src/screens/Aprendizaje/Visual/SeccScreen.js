@@ -28,6 +28,7 @@ const style = StyleSheet.create({
   container: {
     width: "100%",
     paddingTop: 5,
+    alignSelf:'center'
   },
 });
 

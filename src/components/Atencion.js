@@ -122,13 +122,12 @@ const Atencion = ({ temas }) => {
 };
 
 const style = StyleSheet.create({
+
+//BUSQUEDAD
   campo: {
     flexDirection: "row",
     alignSelf: "center",
-  },
-  conte: {
-    width: 50,
-    alignSelf: "center",
+    backgroundColor:'red'
   },
   input: {
     width: 350,
@@ -143,20 +142,10 @@ const style = StyleSheet.create({
     borderRightWidth: 0,
     borderLeftWidth: 0,
   },
-  container: {
-    width: "100%",
-    backgroundColor: "white",
-    flexDirection: "row",
+  //BTN ATRAS
+  conte: {
+    width: 50,
     alignSelf: "center",
-    flexWrap: "wrap",
-    justifyContent: "center",
-  },
-  contendor: {
-    flexDirection: "row",
-    alignSelf: "center",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    marginTop:10,
   },
   btn: {
     width: 40,
@@ -164,12 +153,18 @@ const style = StyleSheet.create({
     alignSelf: "center",
     margin: 5,
   },
+//IMAGEN
   Img: {
     width: 100,
     aspectRatio: 1,
     flexDirection: "row",
     alignSelf: "center",
   },
+    imagen: {
+    width: 120,
+    margin:5,
+  },
+  //TEXTO
   descripcion: {
     width: 110,
     alignSelf: "center",
@@ -180,14 +175,6 @@ const style = StyleSheet.create({
     fontSize: 12,
     color: "navy",
   },
-  imagen: {
-    width: 120,
-    margin:5,
-  },
-  contenedor: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-between",
-  },
+
 });
 export default Atencion;

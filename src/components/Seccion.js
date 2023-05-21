@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import  FileSystem from "expo-file-system";
-import  DocumentPicker from "expo-document-picker";
+import FileSystem from "expo-file-system";
+import DocumentPicker from "expo-document-picker";
 import { useGlobal } from "../context/GlobalProvider";
 import { conexionURL } from "../helpers/configuracion.js";
 import {
@@ -15,10 +15,12 @@ import {
 } from "react-native";
 
 const Seccion = ({ temas }) => {
-  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
-  const pdf = {uri:"https://www.dropbox.com/s/f6xs1wl26x6euvm/pdf.png?dl=1"}
+  const atras = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
+  };
+  const pdf = { uri: "https://www.dropbox.com/s/f6xs1wl26x6euvm/pdf.png?dl=1" };
   const navigation = useNavigation();
-  const { auth, BorrarTema, setRecharge, actualizarPdf} = useGlobal();
+  const { auth, BorrarTema, setRecharge, actualizarPdf } = useGlobal();
   const [search, setSearch] = useState("");
 
   const handleclick = (idTema) => {
@@ -159,88 +161,88 @@ const Seccion = ({ temas }) => {
     }
     //LENGUAJE
     if (idTema == 42) {
-      navigation.navigate("LetraA", {id:"a"});
+      navigation.navigate("LetraA", { id: "a" });
     }
     if (idTema == 43) {
-      navigation.navigate("LetraA", {id:"b"});
+      navigation.navigate("LetraA", { id: "b" });
     }
     if (idTema == 44) {
-      navigation.navigate("LetraA", {id:"c"});
+      navigation.navigate("LetraA", { id: "c" });
     }
     if (idTema == 45) {
-      navigation.navigate("LetraA", {id:"d"});
+      navigation.navigate("LetraA", { id: "d" });
     }
     if (idTema == 46) {
-      navigation.navigate("LetraA", {id:"e"});
+      navigation.navigate("LetraA", { id: "e" });
     }
     if (idTema == 47) {
-      navigation.navigate("LetraA", {id:"f"});
+      navigation.navigate("LetraA", { id: "f" });
     }
     if (idTema == 48) {
-      navigation.navigate("LetraA", {id:"g"});
+      navigation.navigate("LetraA", { id: "g" });
     }
     if (idTema == 49) {
-      navigation.navigate("LetraA", {id:"h"});
+      navigation.navigate("LetraA", { id: "h" });
     }
     if (idTema == 50) {
-      navigation.navigate("LetraA", {id:"i"});
+      navigation.navigate("LetraA", { id: "i" });
     }
     if (idTema == 51) {
-      navigation.navigate("LetraA", {id:"j"});
+      navigation.navigate("LetraA", { id: "j" });
     }
     if (idTema == 52) {
-      navigation.navigate("LetraA", {id:"k"});
+      navigation.navigate("LetraA", { id: "k" });
     }
     if (idTema == 53) {
-      navigation.navigate("LetraA", {id:"l"});
+      navigation.navigate("LetraA", { id: "l" });
     }
     if (idTema == 54) {
-      navigation.navigate("LetraA", {id:"ll"});
+      navigation.navigate("LetraA", { id: "ll" });
     }
     if (idTema == 55) {
-      navigation.navigate("LetraA", {id:"m"});
+      navigation.navigate("LetraA", { id: "m" });
     }
     if (idTema == 56) {
-      navigation.navigate("LetraA", {id:"n"});
+      navigation.navigate("LetraA", { id: "n" });
     }
     if (idTema == 57) {
-      navigation.navigate("LetraA", {id:"ñ"});
+      navigation.navigate("LetraA", { id: "ñ" });
     }
     if (idTema == 58) {
-      navigation.navigate("LetraA", {id:"o"});
+      navigation.navigate("LetraA", { id: "o" });
     }
     if (idTema == 59) {
-      navigation.navigate("LetraA", {id:"p"});
+      navigation.navigate("LetraA", { id: "p" });
     }
     if (idTema == 60) {
-      navigation.navigate("LetraA", {id:"q"});
+      navigation.navigate("LetraA", { id: "q" });
     }
     if (idTema == 61) {
-      navigation.navigate("LetraA", {id:"r"});
+      navigation.navigate("LetraA", { id: "r" });
     }
     if (idTema == 62) {
-      navigation.navigate("LetraA", {id:"s"});
+      navigation.navigate("LetraA", { id: "s" });
     }
     if (idTema == 63) {
-      navigation.navigate("LetraA", {id:"t"});
+      navigation.navigate("LetraA", { id: "t" });
     }
     if (idTema == 64) {
-      navigation.navigate("LetraA", {id:"u"});
+      navigation.navigate("LetraA", { id: "u" });
     }
     if (idTema == 65) {
-      navigation.navigate("LetraA", {id:"v"});
+      navigation.navigate("LetraA", { id: "v" });
     }
     if (idTema == 66) {
-      navigation.navigate("LetraA", {id:"w"});
+      navigation.navigate("LetraA", { id: "w" });
     }
     if (idTema == 67) {
-      navigation.navigate("LetraA", {id:"x"});
+      navigation.navigate("LetraA", { id: "x" });
     }
     if (idTema == 68) {
-      navigation.navigate("LetraA", {id:"y"});
+      navigation.navigate("LetraA", { id: "y" });
     }
     if (idTema == 69) {
-      navigation.navigate("LetraA", {id:"z"});
+      navigation.navigate("LetraA", { id: "z" });
     }
     if (idTema == 70) {
       navigation.navigate("Vocales");
@@ -254,8 +256,8 @@ const Seccion = ({ temas }) => {
   };
   const handlePress = async (link) => {
     try {
-      const url =`${conexionURL}api/docente/file/${link}`;
-      console.log(url)
+      const url = `${conexionURL}api/docente/file/${link}`;
+      console.log(url);
       const supported = await Linking.canOpenURL(url);
       if (supported) {
         await Linking.openURL(url);
@@ -263,7 +265,7 @@ const Seccion = ({ temas }) => {
         alert("No se puede abrir el archivo PDF");
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
   const handleDelete = async (id) => {
@@ -363,18 +365,14 @@ const Seccion = ({ temas }) => {
                         handleDelete(item.idTema);
                       }}
                     >
-                      <ImageBackground
-                        style={style.archivo}
-                      ></ImageBackground>
+                      <ImageBackground style={style.archivo}></ImageBackground>
                     </TouchableOpacity>
                     <TouchableOpacity
                       onPress={() => {
                         pickDocument(item.idTema);
                       }}
                     >
-                      <ImageBackground
-                        style={style.archiv}
-                      ></ImageBackground>
+                      <ImageBackground style={style.archiv}></ImageBackground>
                     </TouchableOpacity>
                   </View>
                 )}
@@ -424,9 +422,7 @@ const Seccion = ({ temas }) => {
                     handleDelete(item.idTema);
                   }}
                 >
-                  <ImageBackground
-                    style={style.archivo}
-                  ></ImageBackground>
+                  <ImageBackground style={style.archivo}></ImageBackground>
                 </TouchableOpacity>
               </View>
             </View>
@@ -438,15 +434,13 @@ const Seccion = ({ temas }) => {
 
   return (
     <View>
-      <View style={style.campo}>
-        <View style={style.campoTexto}>
-          <TextInput
-            placeholder="Buscar"
-            style={style.input}
-            placeholderTextColor="#808080"
-            onChangeText={(text) => setSearch(text)}
-          />
-        </View>
+      <View style={style.campoTexto}>
+        <TextInput
+          placeholder="Buscar"
+          style={style.input}
+          placeholderTextColor="#808080"
+          onChangeText={(text) => setSearch(text)}
+        />
       </View>
 
       {renderData(search, temas)}
@@ -462,7 +456,7 @@ const Seccion = ({ temas }) => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor:'white'
+    alignSelf: "center",
   },
   contendor: {
     flexDirection: "row",
@@ -470,7 +464,7 @@ const style = StyleSheet.create({
     marginTop: 10,
     backgroundColor: "white",
     padding: 10,
-    width: 310,
+    width: 280,
     borderWidth: 3,
     borderColor: "gold",
     borderTopWidth: 0,
@@ -485,7 +479,7 @@ const style = StyleSheet.create({
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin:5
+    margin: 5,
   },
   text: {
     fontWeight: "bold",
@@ -500,13 +494,16 @@ const style = StyleSheet.create({
     width: 70,
     alignSelf: "center",
   },
-  descripcion: {
-    width: 250,
-    alignSelf: "center",
-  },
   general: {
     flexDirection: "row",
     alignSelf: "center",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    marginLeft:30
+  },
+  contenedorgeneral: {
+    alignSelf: "center",
+    justifyContent: "justify",
   },
   contpdf: {
     alignSelf: "center",
@@ -534,9 +531,6 @@ const style = StyleSheet.create({
     width: 50,
     alignSelf: "center",
   },
-  tema: {
-    alignSelf: "center",
-  },
   archivo: {
     width: 25,
     height: 25,
@@ -550,10 +544,6 @@ const style = StyleSheet.create({
   contarchivo: {
     alignSelf: "center",
     marginTop: 9,
-    marginLeft: 5,
-  },
-  tema: {
-    alignSelf: "center",
   },
   input: {
     width: 350,
