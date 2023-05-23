@@ -100,8 +100,6 @@ const OnomatopeyaScreen = () => {
 const style = StyleSheet.create({
   container: {
     flex:1,
-    backgroundColor:'white',
-    paddingBottom:"30%"
   },
   contendor: {
     flexDirection: "row",

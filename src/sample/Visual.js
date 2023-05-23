@@ -437,7 +437,7 @@ export const dataAnimals = [
       {
         id: "Animal1",
         source: {
-          uri: "https://www.dropbox.com/s/3k0r7cd89o3dkib/perro.png?dl=1",
+          uri: "https://www.dropbox.com/s/uhiqgs9ry2kgxtg/perro.png?dl=1",
         },
         sonido: require("../../assets/Audios/perro.mp3"),
       },
@@ -521,7 +521,7 @@ export const dataAnimals = [
       {
         id: "Animal13",
         source: {
-          uri: "https://www.dropbox.com/s/eugt8kvnezzlkbj/oso.png?dl=1",
+          uri: "https://www.dropbox.com/s/j8f42dphsjtmy1i/oso.png?dl=1",
         },
         sonido: require("../../assets/Audios/Oso.mp3"),
       },

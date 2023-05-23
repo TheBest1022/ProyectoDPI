@@ -118,10 +118,8 @@ const AbecedarioScreen = ({ navigation, route }) => {
 };
 const style = StyleSheet.create({
   container: {
-    backgroundColor: "white",
     width: "100%",
     height:"100%",
-    paddingBottom:"50%"
   },
   containerimages: {
     flexDirection: "row",

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
 import { dataNumeros } from "../../../../sample/Visual";
@@ -13,7 +13,9 @@ import {
 } from "react-native";
 
 function NumberScreen() {
-  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
+  const cerrar = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
+  };
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
@@ -53,8 +55,8 @@ function NumberScreen() {
     };
   }, [sound]);
   return (
-    <Layout>
-      <ScrollView>
+    <ScrollView>
+      <Layout>
         <View style={style.container}>
           <Name />
 
@@ -68,19 +70,15 @@ function NumberScreen() {
               ></ImageBackground>
             </TouchableOpacity>
           </View>
-
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 }
 const style = StyleSheet.create({
   container: {
-    height:"100%",
-    width:"100%",
-    marginTop: 30,
-    backgroundColor: "white",
-    paddingBottom: 15,
+    height: "100%",
+    width: "100%",
   },
   containerimages: {
     flexDirection: "row",

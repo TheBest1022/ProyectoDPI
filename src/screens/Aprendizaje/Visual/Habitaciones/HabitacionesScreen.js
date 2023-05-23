@@ -82,9 +82,6 @@ const style = StyleSheet.create({
   container: {
     height:"100%",
     width:"100%",
-    marginTop: 30,
-    backgroundColor: "white",
-    paddingBottom: 30,
   },
   imagepartes: {
     width: 120,

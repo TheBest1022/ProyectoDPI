@@ -149,11 +149,8 @@ const SeresScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
-    height:"100%",
     width:"100%",
-    marginTop: 30,
-    backgroundColor: "white",
-    paddingBottom:50
+    height:"100%"
   },
   contendor: {
     flexDirection: "row",

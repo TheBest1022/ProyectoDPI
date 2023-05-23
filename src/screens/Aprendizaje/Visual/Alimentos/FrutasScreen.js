@@ -14,8 +14,12 @@ import {
 } from "react-native";
 
 const FrutasScreen = () => {
-  const frutas = {uri:"https://www.dropbox.com/s/novffr7xp6yzwyz/fruta.png?dl=1"}
-  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
+  const frutas = {
+    uri: "https://www.dropbox.com/s/novffr7xp6yzwyz/fruta.png?dl=1",
+  };
+  const atras = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
+  };
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlepost = () => {
@@ -56,8 +60,8 @@ const FrutasScreen = () => {
   }, [sound]);
 
   return (
-    <Layout>
-      <ScrollView>
+    <ScrollView>
+      <Layout>
         <View style={style.container}>
           <Name />
 
@@ -90,19 +94,16 @@ const FrutasScreen = () => {
               ></ImageBackground>
             </TouchableOpacity>
           </View>
-
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 const style = StyleSheet.create({
   container: {
-    height:"100%",
-    width:"100%",
-    marginTop: 30,
+    height: "100%",
+    width: "100%",
     backgroundColor: "white",
-    paddingBottom:20
   },
   contendor: {
     flexDirection: "row",

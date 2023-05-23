@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
 import { dataRostro } from "../../../../sample/Visual";
@@ -14,8 +14,12 @@ import {
 } from "react-native";
 
 const RostrosScreen = () => {
-  const Img = {uri:"https://www.dropbox.com/s/ir0f330qdk50jjk/cara.png?dl=1"}
-  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
+  const Img = {
+    uri: "https://www.dropbox.com/s/ir0f330qdk50jjk/cara.png?dl=1",
+  };
+  const atras = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
+  };
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {
@@ -55,8 +59,8 @@ const RostrosScreen = () => {
     };
   }, [sound]);
   return (
-    <Layout>
-      <ScrollView>
+    <ScrollView>
+      <Layout>
         <View style={style.container}>
           <Name />
 
@@ -71,14 +75,11 @@ const RostrosScreen = () => {
               </Text>
             </View>
             <View style={style.imagen}>
-              <ImageBackground
-                source={Img}
-                style={style.Img}
-              ></ImageBackground>
+              <ImageBackground source={Img} style={style.Img}></ImageBackground>
             </View>
           </View>
 
-          {renderData()}          
+          {renderData()}
 
           <View style={style.contendor}>
             <TouchableOpacity onPress={handlebackPress}>
@@ -88,19 +89,15 @@ const RostrosScreen = () => {
               ></ImageBackground>
             </TouchableOpacity>
           </View>
-
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 const style = StyleSheet.create({
   container: {
-    height:"100%",
-    width:"100%",
-    marginTop: 30,
-    backgroundColor: "white",
-    paddingBottom: 12,
+    height: "100%",
+    width: "100%",
   },
   contendor: {
     flexDirection: "row",

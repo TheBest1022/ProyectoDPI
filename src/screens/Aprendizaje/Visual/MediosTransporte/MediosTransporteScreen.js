@@ -106,9 +106,6 @@ const MediosTransporteScreen = ({ route }) => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 30,
-    backgroundColor: "#f0f8ff",
-    paddingBottom: "2%",
     width: "100%",
     height:"100%"
   },

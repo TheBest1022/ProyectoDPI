@@ -140,10 +140,8 @@ const SexoScreen = () => {
 
 const style = StyleSheet.create({
   container: {
-    height:"100%",
     width:"100%",
-    marginTop: 30,
-    backgroundColor: "white",
+    height:"100%"
   },
   contendor: {
     flexDirection: "row",

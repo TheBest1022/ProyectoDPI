@@ -70,7 +70,6 @@ const PsicomotrocidadScreen = () => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor: "white",
   },
   atras: {
     width: 40,

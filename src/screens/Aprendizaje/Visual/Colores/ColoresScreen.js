@@ -101,9 +101,8 @@ function ColoresScreen() {
 
 const style = StyleSheet.create({
   container: {
-    marginTop: 30,
-    backgroundColor: "#f0f8ff",
-    paddingBottom: 10,
+    height: "100%",
+    width: "100%",
   },
   contendor: {
     flexDirection: "row",

@@ -25,7 +25,6 @@ const AtencioScreenScreen = ({ route }) => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    paddingTop: 5,
   },
 });
 

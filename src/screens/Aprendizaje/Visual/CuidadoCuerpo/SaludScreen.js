@@ -159,8 +159,8 @@ const SaludScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 30,
-    backgroundColor: "#f0f8ff",
+    width:"100%",
+    height:"100%"
   },
   contendor: {
     flexDirection: "row",
