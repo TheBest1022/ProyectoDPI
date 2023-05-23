@@ -57,7 +57,7 @@ const AsistenciaScreen = () => {
   const [assistence, setAssistence] = useState({
     estudiante: [],
     docente: auth.idDocente,
-    usuario: auth.usuario,
+    usuario: auth.Id,
     empresa: auth.id_empresa,
   });
   const [filter, setFilter] = useState("");
@@ -90,9 +90,9 @@ const AsistenciaScreen = () => {
     try {
       const { status, data } = await addAssistence(assistence);
       if (status == 201) {
-        console.log(data.message);
+        Alert(data.message);
       } else {
-        console.log(data.message);
+        Alert(data.message);
       }
     } catch (error) {
       console.error(error);
@@ -231,9 +231,8 @@ const AsistenciaScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
-    backgroundColor: "white",
-    marginTop: 30,
-    paddingBottom: "100%",
+    width:"100%",
+    height:"100%"
   },
   texto: {
     fontWeight: "bold",
