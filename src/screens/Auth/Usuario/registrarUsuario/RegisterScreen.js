@@ -215,9 +215,8 @@ const RegisterScreen = () => {
 
 const style = StyleSheet.create({
   container: {
-    backgroundColor: "#f0f8ff",
-    marginTop: 30,
-    paddingBottom: "26%",
+    width:"100%",
+    height:"100%"
   },
   imagenlogin: {
     width: 360,

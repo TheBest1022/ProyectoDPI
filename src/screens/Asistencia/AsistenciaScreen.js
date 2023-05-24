@@ -16,6 +16,7 @@ import {
   Text,
   ImageBackground,
   ActivityIndicator,
+  Alert
 } from "react-native";
 import axios from "axios";
 
@@ -90,9 +91,9 @@ const AsistenciaScreen = () => {
     try {
       const { status, data } = await addAssistence(assistence);
       if (status == 201) {
-        Alert(data.message);
+        Alert.alert(data.message);
       } else {
-        Alert(data.message);
+        Alert.alert(data.message);
       }
     } catch (error) {
       console.error(error);
