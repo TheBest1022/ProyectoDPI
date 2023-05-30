@@ -14,102 +14,142 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/p4qxqabp9f0y7do/ara%C3%B1a.png?dl=1"},
-        sonido: require("../../assets/Audios/Araña.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/ou3ovlu6xyclt3c/abeja.png?dl=1"},
-        sonido: require("../../assets/Audios/abeja.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/9r0npdb3wic27ua/aguila.png?dl=1"},
-        sonido: require("../../assets/Audios/águila.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/fuqp8ccd5ee5u4r/agua.png?dl=1"},
-        sonido: require("../../assets/Audios/agua.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/oo5o06krp1yt97v/ambulancia.png?dl=1"},
-        sonido: require("../../assets/Audios/ambulancia.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/19k88q3nafqud43/ardilla.png?dl=1"},
-        sonido: require("../../assets/Audios/ardilla.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/ul8f4tfi67neiw8/abogado.png?dl=1"},
-        sonido: require("../../assets/Audios/abogado.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/67mixtogll4ngbc/abanico.png?dl=1"},
-        sonido: require("../../assets/Audios/abanico.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/z0ib6z826o6hjqn/avispa.png?dl=1"},
-        sonido: require("../../assets/Audios/avispa.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/6s8wugyhjbndj8f/avestruz.png?dl=1"},
-        sonido: require("../../assets/Audios/avestruz.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/khfb3vkdgpxa3l8/aceitunas.png?dl=1"},
-        sonido: require("../../assets/Audios/aceituna.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/yo978vbjqhufwa1/abuelo.png?dl=1"},
-        sonido: require("../../assets/Audios/abuelo.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/0g5zzj2d3j01fh3/acordeon.png?dl=1"},
-        sonido: require("../../assets/Audios/acordeón.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/vqne12gno75kult/alambre.png?dl=1"},
-        sonido: require("../../assets/Audios/alambre.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/08ddq348oj4o0lb/almohada.png?dl=1"},
-        sonido: require("../../assets/Audios/almohada.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/uite8sita30xc8o/arcoiris.png?dl=1"},
-        sonido: require("../../assets/Audios/arcoiris.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/cbvsicbgsuc5ocs/aro.png?dl=1"},
-        sonido: require("../../assets/Audios/aro.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/oj1xo8tch4k6kdc/angel.png?dl=1"},
-        sonido: require("../../assets/Audios/ángel.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/o2q9wb06hs057j6/arbol.png?dl=1"},
-        sonido: require("../../assets/Audios/árbol.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/s11iwm4dl73vdex/arpa.png?dl=1"},
-        sonido: require("../../assets/Audios/arpa.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -127,102 +167,142 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/aczbtj1gm0slenu/burro.png?dl=1"},
-        sound: require("../../assets/Audios/burro.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/7brjk48yxr05b7g/ballena.png?dl=1"},
-        sound: require("../../assets/Audios/ballena.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/h6ianbbryvjpapu/barco.png?dl=1"},
-        sound: require("../../assets/Audios/barco.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/kr2p0n61m4fq9vl/banco.png?dl=1"},
-        sound: require("../../assets/Audios/banco.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/7n9wup5xj6d83bs/ba%C3%B1era.png?dl=1"},
-        sound: require("../../assets/Audios/bañera.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/ryp9vo5auxndmmc/buitre.png?dl=1"},
-        sound: require("../../assets/Audios/buitre.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/43vx3bp3qogm8zi/buho.png?dl=1"},
-        sound: require("../../assets/Audios/búho.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/qyfm4jz7jkz7ipn/burbuja.png?dl=1"},
-        sound: require("../../assets/Audios/burbuja.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/i9ynja4vayajh5z/bufanda.png?dl=1"},
-        sound: require("../../assets/Audios/bufanda.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/1xrdmm62kl2oxti/brocoli.png?dl=1"},
-        sound: require("../../assets/Audios/brócoli.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/0ietlqhg6cluvd2/brocha.png?dl=1"},
-        sound: require("../../assets/Audios/brocha.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/bt3en292s1dr1md/botella.png?dl=1"},
-        sound: require("../../assets/Audios/botella.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/x0mqzjdpzy8co6w/bicicleta.png?dl=1"},
-        sound: require("../../assets/Audios/bicicleta.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/5mvqfbjb2v0w6oh/blanco.png?dl=1"},
-        sound: require("../../assets/Audios/blanco.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/b721gu6deanqln0/biberon.png?dl=1"},
-        sound: require("../../assets/Audios/biberón.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/xp6uge0n21mg1lu/bandeja.png?dl=1"},
-        sound: require("../../assets/Audios/bandeja.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/t8vjxu4ygksefz3/barbilla.png?dl=1"},
-        sound: require("../../assets/Audios/barbilla.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/ybdi9rt2wa6mflg/bandera.png?dl=1"},
-        sound: require("../../assets/Audios/bandera.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/u3857ihumsksxn6/bar.png?dl=1"},
-        sound: require("../../assets/Audios/bar.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/25gkzs6ozs0933a/barba.png?dl=1"},
-        sound: require("../../assets/Audios/barba.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -240,102 +320,142 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/a0kcoys5fyoia6d/corona.png?dl=1"},
-        sound: require("../../assets/Audios/corona.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/0tfu5t032xyp785/cortina.png?dl=1"},
-        sound: require("../../assets/Audios/cortina.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/4x5pso1hyaba61q/cine.png?dl=1"},
-        sound: require("../../assets/Audios/cine.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/i3hlilwn9dd4m1a/conejo.png?dl=1"},
-        sound: require("../../assets/Audios/conejo.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/uwqkukvzmm4etv5/carpintera.png?dl=1"},
-        sound: require("../../assets/Audios/carpintera.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/eigljsafmbf571b/calculadora.png?dl=1"},
-        sound: require("../../assets/Audios/calculadora.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/g1awxstjfv71on5/cama.png?dl=1"},
-        sound: require("../../assets/Audios/cama.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/cnu2hmec3a76l9f/camello.png?dl=1"},
-        sound: require("../../assets/Audios/camello.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/tje6q5ttj62c4xu/campana.png?dl=1"},
-        sound: require("../../assets/Audios/campana.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/u5ckii6f8l5z67h/canario.jpg?dl=1"},
-        sound: require("../../assets/Audios/canario.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/c9p07s1s05vbfpl/cangrejo.png?dl=1"},
-        sound: require("../../assets/Audios/cangrejo.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/5chpsvok365huk8/canguro.png?dl=1"},
-        sound: require("../../assets/Audios/canguro.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/5fe34anq5rf20bh/canicas.png?dl=1"},
-        sound: require("../../assets/Audios/canicas.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/rm41etisj20ubqp/casa.png?dl=1"},
-        sound: require("../../assets/Audios/casa.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/bvxgxuaawl39x6g/caracol.png?dl=1"},
-        sound: require("../../assets/Audios/caracol.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/tjpumnkjuj1ix39/caramelo.png?dl=1"},
-        sound: require("../../assets/Audios/caramelo.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/wvy0b2wa8ypw12b/carne.png?dl=1"},
-        sound: require("../../assets/Audios/carne.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/2vzma0o4856jfsv/carta.png?dl=1"},
-        sound: require("../../assets/Audios/carta.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/l31w1gwyy3jqfla/cebolla.png?dl=1"},
-        sound: require("../../assets/Audios/cebolla.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/5pvvlbtmnfxbhvg/cuchillo.png?dl=1"},
-        sound: require("../../assets/Audios/cuchillo.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -353,32 +473,44 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/kg9ya8obyf5by2m/dado.png?dl=1"},
-        sound: require("../../assets/Audios/dado.mp3"),
+                 sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/lyupz63iwryk1u3/destornillador.png?dl=1"},
-        sound: require("../../assets/Audios/destornillador.mp3"),
+                 sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/bhl8cx0iev4l6dp/delfin.png?dl=1"},
-        sound: require("../../assets/Audios/delfín.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/duv0rpiijki9sr3/dedo.png?dl=1"},
-        sound: require("../../assets/Audios/dedo.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/brj8qy5f87rjh0a/flaco.png?dl=1"},
-        sound: require("../../assets/Audios/delgado.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/9rcl9wumncqc4m5/dientes.png?dl=1"},
-        sound: require("../../assets/Audios/dientes.mp3"),
+                 sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
@@ -387,67 +519,93 @@ export const dataAbecedario = [
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/ve9neywx676xrll/medico.png?dl=1"},
-        sound: require("../../assets/Audios/doctor.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/c7nhpzf5b3w8pc1/dormir.png?dl=1"},
-        sound: require("../../assets/Audios/dormir.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/sik1fl785rh7z3w/duende.png?dl=1"},
-        sound: require("../../assets/Audios/duende.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/ax1uj7fv7agtjrf/dentista.png?dl=1"},
-        sound: require("../../assets/Audios/dentista.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/r54g0k66pq78a0m/desayuno.png?dl=1"},
-        sound: require("../../assets/Audios/desayuno.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/oy27r56pya77z3d/desierto.png?dl=1"},
-        sound: require("../../assets/Audios/desierto.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source:  {uri:"https://www.dropbox.com/s/suswp67nwcg6nz1/dinero.png?dl=1"},
-        sound: require("../../assets/Audios/dinero.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source:  {uri:"https://www.dropbox.com/s/h268eefg03a4lwo/dulce.png?dl=1"},
-        sound: require("../../assets/Audios/dulce.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source:  {uri:"https://www.dropbox.com/s/mfixn5qhcybi14c/duro.png?dl=1"},
-        sound: require("../../assets/Audios/duro.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source:  {uri:"https://www.dropbox.com/s/8xlycihr7gkzdne/ducha.png?dl=1"},
-        sound: require("../../assets/Audios/ducha.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source:  {uri:"https://www.dropbox.com/s/mgir4604ooci5vz/diamante.png?dl=1"},
-        sound: require("../../assets/Audios/diamante.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source:  {uri:"https://www.dropbox.com/s/hgtslqr9ykjkl7k/dinosaurio.png?dl=1"},
-        sound: require("../../assets/Audios/dinosaurio.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source:  {uri:"https://www.dropbox.com/s/nd5agvod2qpsam0/diadema.png?dl=1"},
-        sound: require("../../assets/Audios/diadema.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -465,42 +623,58 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/mmifo80lxp09hxc/Fmay.png?dl=1"},
-        sound: require("../../assets/Audios/elefante.mp3"),
+                 sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/c8n1tgbgnypduom/enano.png?dl=1"},
-        sound: require("../../assets/Audios/enano.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/bpjhs8p92xo7k3y/edificio.png?dl=1"},
-        sound: require("../../assets/Audios/edificio.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/4aujqp9qm37h100/embudo.png?dl=1"},
-        sound: require("../../assets/Audios/embudo.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/uw6zj3d2qlegtu0/empanada.png?dl=1"},
-        sound: require("../../assets/Audios/empanada.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/7299030n97qa5hm/enchufe.png?dl=1"},
-        sound: require("../../assets/Audios/enchufe.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/x1eehafiq2yzwp0/espalda.png?dl=1"},
-        sound: require("../../assets/Audios/espalda.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/vrek3l99fq3c5jk/ensalada.png?dl=1"},
-        sound: require("../../assets/Audios/ensalada.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
@@ -509,37 +683,51 @@ export const dataAbecedario = [
       {
         id: "sonido10",
         source:{uri:"https://www.dropbox.com/s/nm9yjvb8tsl7vx8/escoba.png?dl=1"},
-        sound: require("../../assets/Audios/escoba.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/jsu4k5zmwdo4sb6/escribir.png?dl=1"},
-        sound: require("../../assets/Audios/escribir.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source:{uri:"https://www.dropbox.com/s/yxf8357x1uslsja/escuchar.png?dl=1"},
-        sound: require("../../assets/Audios/escuchar.mp3"),
-      },
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
+      },         
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/siypn0dtig26d4w/espada.png?dl=1"},
-        sound: require("../../assets/Audios/espada.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/zcpqd776c98or7q/espejo.png?dl=1"},
-        sound: require("../../assets/Audios/espejo.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/ftv6fzb944hggms/espina.png?dl=1"},
-        sound: require("../../assets/Audios/espina.mp3"),
-      },
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
+      }, 
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/hxxdsazsppe3gic/espinaca.png?dl=1"},
-        sound: require("../../assets/Audios/espinaca.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
@@ -548,17 +736,23 @@ export const dataAbecedario = [
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/bvzf7grs31c810q/esponja.png?dl=1"},
-        sound: require("../../assets/Audios/esponja.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/kesi3elt0bjlwf6/estomago.png?dl=1"},
-        sound: require("../../assets/Audios/estómago.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/rg40njqnsqaymp4/estudiar.png?dl=1"},
-        sound: require("../../assets/Audios/estudiar.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -576,67 +770,93 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source:  {uri:"https://www.dropbox.com/s/0giym1p50as39jg/foca.png?dl=1"},
-        sound: require("../../assets/Audios/foca.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source:  {uri:"https://www.dropbox.com/s/e6p5bv58ogruonl/falda.png?dl=1"},
-        sound: require("../../assets/Audios/falda.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source:  {uri:"https://www.dropbox.com/s/4qfopu2ahzg8g9g/farmacia.png?dl=1"},
-        sound: require("../../assets/Audios/farmacia.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source:  {uri:"https://www.dropbox.com/s/fe5t57xhn43ssbj/ferreteria.png?dl=1"},
-        sound: require("../../assets/Audios/ferretería.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source:  {uri:"https://www.dropbox.com/s/8yfdjcvd5dbnnre/filete.png?dl=1"},
-        sound: require("../../assets/Audios/filete.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source:  {uri:"https://www.dropbox.com/s/8yfdjcvd5dbnnre/filete.png?dl=1"},
-        sound: require("../../assets/Audios/flan.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source:  {uri:"https://www.dropbox.com/s/cjg23jkou7h1y4t/flauta.png?dl=1"},
-        sound: require("../../assets/Audios/flauta.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source:  {uri:"https://www.dropbox.com/s/6czrcpgutxwnb02/flamenco.png?dl=1"},
-        sound: require("../../assets/Audios/flamenco.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source:  {uri:"https://www.dropbox.com/s/0nhldupw63nxji6/flores.png?dl=1"},
-        sound: require("../../assets/Audios/flores.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/j1canpc2ikx3f8h/foto.png?dl=1"},
-        sound: require("../../assets/Audios/foto.mp3"),
-      },
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
+      }, 
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/0ul3nqjtusl3f1r/frambuesa.png?dl=1"},
-        sound: require("../../assets/Audios/frambuesas.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/k0ql6j4zynskuqn/freidora.png?dl=1"},
-        sound: require("../../assets/Audios/freidoraeléctrica.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/k5sl4ihq6hsxplr/fresa.png?dl=1"},
-        sound: require("../../assets/Audios/fresa.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
@@ -645,32 +865,44 @@ export const dataAbecedario = [
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/1zpjf8tx6ou50ks/fuerte.png?dl=1"},
-        sound: require("../../assets/Audios/fuerte.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/cxl2ep05pzco28q/futbol.png?dl=1"},
-        sound: require("../../assets/Audios/fútbol.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/qubi730cqrejzmz/frente.png?dl=1"},
-        sound: require("../../assets/Audios/frente.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/e9qik5c5mg5sa8j/candela.png?dl=1"},
-        sound: require("../../assets/Audios/fuego.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/4qfopu2ahzg8g9g/farmacia.png?dl=1"},
-        sound: require("../../assets/Audios/farmacia.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/vj6gjz51a3rulnm/frio.png?dl=1"},
-        sound: require("../../assets/Audios/frío.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -688,12 +920,16 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source:  {uri:"https://www.dropbox.com/s/y84jwgwu9kqu5fv/gallina.png?dl=1"},
-        sound: require("../../assets/Audios/gallina.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source:  {uri:"https://www.dropbox.com/s/xt9448hmmjubrts/gallo.png?dl=1"},
-        sound: require("../../assets/Audios/gallo.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
@@ -702,62 +938,86 @@ export const dataAbecedario = [
       {
         id: "sonido4",
         source:  {uri:"https://www.dropbox.com/s/alsk03jla3dd7ur/gato.png?dl=1"},
-        sound: require("../../assets/Audios/gato.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source:  {uri:"https://www.dropbox.com/s/jc0v40dbhvp8msa/gafas.png?dl=1"},
-        sound: require("../../assets/Audios/gafas.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source:  {uri:"https://www.dropbox.com/s/dlnsl3t83zjvaqt/gaita.png?dl=1"},
-        sound: require("../../assets/Audios/gaita.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source:  {uri:"https://www.dropbox.com/s/a71bump85xv7jko/galleta.png?dl=1"},
-        sound: require("../../assets/Audios/galleta.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source:  {uri:"https://www.dropbox.com/s/efu1o6v71xdlr13/garbanzo.png?dl=1"},
-        sound: require("../../assets/Audios/garbanzo.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source:  {uri:"https://www.dropbox.com/s/9m2cc87vv0ep3p2/gel.png?dl=1"},
-        sound: require("../../assets/Audios/gel.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source:  {uri:"https://www.dropbox.com/s/uv5c92m8kvet0mz/gatear.png?dl=1"},
-        sound: require("../../assets/Audios/gatear.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source:  {uri:"https://www.dropbox.com/s/4sx2rnyc61g5b20/genio.png?dl=1"},
-        sound: require("../../assets/Audios/genio.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source:  {uri:"https://www.dropbox.com/s/3polf0vgr9bkb9j/girasol.png?dl=1"},
-        sound: require("../../assets/Audios/girasol.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source:  {uri:"https://www.dropbox.com/s/zbgmzo0hztkaz3e/globo.png?dl=1"},
-        sound: require("../../assets/Audios/globo.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source:  {uri:"https://www.dropbox.com/s/sknpcln43v0fzw7/golosinas.png?dl=1"},
-        sound: require("../../assets/Audios/golosinas.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source:  {uri:"https://www.dropbox.com/s/xeaacv59awuycdi/gordo.png?dl=1"},
-        sound: require("../../assets/Audios/gordo.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
@@ -766,22 +1026,30 @@ export const dataAbecedario = [
       {
         id: "sonido17",
         source:  {uri:"https://www.dropbox.com/s/qdivbo485t6l9jy/gorila.png?dl=1"},
-        sound: require("../../assets/Audios/gorila.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source:  {uri:"https://www.dropbox.com/s/ik7yu0smmiajwl2/guantes.png?dl=1"},
-        sound: require("../../assets/Audios/guantes.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source:  {uri:"https://www.dropbox.com/s/09tyxlfiu1xng2c/guitarra.png?dl=1"},
-        sound: require("../../assets/Audios/guitarra.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source:  {uri:"https://www.dropbox.com/s/06uf8kn9s8aqdjz/gusano.png?dl=1"},
-        sound: require("../../assets/Audios/gusano.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -799,82 +1067,114 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/rm39iz9541zaawj/huevo.png?dl=1"},
-        sound: require("../../assets/Audios/huevo.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/p73t42qmk6dg6fn/hada.png?dl=1"},
-        sound: require("../../assets/Audios/hada.mp3"),
+                  sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/pg0wi636a6ls2ka/hamburgesa.png?dl=1"},
-        sound: require("../../assets/Audios/hamburguesa.mp3"),
+                 sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/xty1n63h3jsxumf/harina.png?dl=1"},
-        sound: require("../../assets/Audios/harina.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/3dd8h06fce1p49j/heladeria.png?dl=1"},
-        sound: require("../../assets/Audios/heladería.mp3"),
+                 sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/2vtupihs4oag1xj/herida.png?dl=1"},
-        sound: require("../../assets/Audios/herida.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/z4g4y6g6uzmy42y/hermana.png?dl=1"},
-        sound: require("../../assets/Audios/hermana.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/6f9kl1t1aajmdy1/hexagono.png?dl=1"},
-        sound: require("../../assets/Audios/hexágono.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/rp9kdqfhvq3hkf1/hielo.png?dl=1"},
-        sound: require("../../assets/Audios/hielo.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/28dl4e2ya73i7oi/hierba.png?dl=1"},
-        sound: require("../../assets/Audios/hierba.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/4xuypghmh2lw86y/higo.png?dl=1"},
-        sound: require("../../assets/Audios/higo.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/neau64604ujodfq/hipopotamo.png?dl=1"},
-        sound: require("../../assets/Audios/hipopótamo.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/nwlpmnny858st7y/hombro.png?dl=1"},
-        sound: require("../../assets/Audios/hombro.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/csivk8ujotpfcyz/hombre.png?dl=1"},
-        sound: require("../../assets/Audios/hombre.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/u7jk75jgsntn29c/hormiga.png?dl=1"},
-        sound: require("../../assets/Audios/hormiga.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/zpljl2jrtxr1u4k/horno.png?dl=1"},
-        sound: require("../../assets/Audios/horno.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
@@ -883,17 +1183,23 @@ export const dataAbecedario = [
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/w3g4y1zcrix2pno/hamster.png?dl=1"},
-        sound: require("../../assets/Audios/hámster.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/v69s5j0ipxp7lfu/higado.png?dl=1"},
-        sound: require("../../assets/Audios/hígado.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/nbzkyr9htobu6fr/hiena.png?dl=1"},
-        sound: require("../../assets/Audios/hiena.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -911,52 +1217,72 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/gzcq25v5tb4bshu/iman.png?dl=1"},
-        sound: require("../../assets/Audios/imán.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/1236gm49iqj3t2b/iglesia.png?dl=1"},
-        sound: require("../../assets/Audios/iglesia.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/tgbunto3bujouid/iglu.png?dl=1"},
-        sound: require("../../assets/Audios/iglú.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/qdgj3277oc5wn23/ingeniero.png?dl=1"},
-        sound: require("../../assets/Audios/ingeniero.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/pq131mlkij06vjt/insectos.png?dl=1"},
-        sound: require("../../assets/Audios/insectos.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/kgmngxu4p6i9qvb/interruptor.png?dl=1"},
-        sound: require("../../assets/Audios/interruptor.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/5ce5dsd1igh9zio/intestino.png?dl=1"},
-        sound: require("../../assets/Audios/intestino.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/1bfmgvj6g5n4klj/inyeccion.png?dl=1"},
-        sound: require("../../assets/Audios/inyectar.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/6qv81x6ruy284vk/isla.png?dl=1"},
-        sound: require("../../assets/Audios/isla.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/91c5z5newx91x9i/indice.png?dl=1"},
-        sound: require("../../assets/Audios/índice.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
@@ -969,37 +1295,51 @@ export const dataAbecedario = [
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/3ygbq1ehq3la8ep/iguana.png?dl=1"},
-        sound: require("../../assets/Audios/iguana.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/3ygbq1ehq3la8ep/iguana.png?dl=1"},
-        sound: require("../../assets/Audios/incendio.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/vzpqycqwix7pxh1/impresora.png?dl=1"},
-        sound: require("../../assets/Audios/impresora.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/oetgqy7uyi5spl6/signo.jpg?dl=1"},
-        sound: require("../../assets/Audios/igual.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/2m64n68adx88d6v/internet.png?dl=1"},
-        sound: require("../../assets/Audios/internet.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/v21p1zef2xhbk07/india.png?dl=1"},
-        sound: require("../../assets/Audios/india.mp3"),
-      },
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
+      },    
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/xyfhnkqnp33gs2n/izquierda.png?dl=1"},
-        sound: require("../../assets/Audios/izquierda.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
@@ -1021,57 +1361,79 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/39uewhrq83albhr/jirafa.png?dl=1"},
-        sound: require("../../assets/Audios/jirafa.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/8rhecityq0r0y0x/jabali.png?dl=1"},
-        sound: require("../../assets/Audios/jabalí.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/rzfpnaf5v2218k3/jabon.png?dl=1"},
-        sound: require("../../assets/Audios/jabón.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/lxh6ctpuq4vtz8m/jamon.png?dl=1"},
-        sound: require("../../assets/Audios/jamón.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/tk01h2v3s1yv6am/jarabe.png?dl=1"},
-        sound: require("../../assets/Audios/jarabe.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/78iml8qosoxq557/jardinero.png?dl=1"},
-        sound: require("../../assets/Audios/jardinero.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/rsi4zvlk84z3xom/jarra.png?dl=1"},
-        sound: require("../../assets/Audios/jarra.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/40qjrpw94vu57zg/jaula.png?dl=1"},
-        sound: require("../../assets/Audios/jaula.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/jeexhfd0m6snlzb/joyas.png?dl=1"},
-        sound: require("../../assets/Audios/joyas.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/pysyq99bodeaenq/judo.png?dl=1"},
-        sound: require("../../assets/Audios/judo.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/rhkv5obvjo3h8z9/juguetes.png?dl=1"},
-        sound: require("../../assets/Audios/juguetes.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
@@ -1080,12 +1442,16 @@ export const dataAbecedario = [
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/mlt7cdaoh5zdljr/jardin.png?dl=1"},
-        sound: require("../../assets/Audios/jardín.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/5jyj51sd8dz250q/jarron.jpg?dl=1"},
-        sound: require("../../assets/Audios/jarrón.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
@@ -1098,22 +1464,30 @@ export const dataAbecedario = [
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/jg1t7ak1pwgop33/jengibre.png?dl=1"},
-        sound: require("../../assets/Audios/jugar.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/439zur156vyyhkh/jugo.png?dl=1"},
-        sound: require("../../assets/Audios/zumo.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/u4k4ma7l1d8xs9k/juntar.png?dl=1"},
-        sound: require("../../assets/Audios/juntar.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/sqv9xsorboirgim/junio.png?dl=1"},
-        sound: require("../../assets/Audios/junio.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -1131,32 +1505,44 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/8rn8mbl2qjv44i0/Koala.png?dl=1"},
-        sound: require("../../assets/Audios/koala.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/9f4t9urivbllos0/ketchup.png?dl=1"},
-        sound: require("../../assets/Audios/ketchup.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/0ldcoaoaetpperh/kiosco.png?dl=1"},
-        sound: require("../../assets/Audios/kiosco.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/mrav8a4llkolzzd/kiwi.png?dl=1"},
-        sound: require("../../assets/Audios/kiwi.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/j0zd4zhrovu1ztf/karate.png?dl=1"},
-        sound: require("../../assets/Audios/karate.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/pk5z0d35bif4qxy/kilogramo.png?dl=1"},
-        sound: require("../../assets/Audios/kilogramo.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -1174,102 +1560,142 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/mrv4kf75pfn2hci/loro.png?dl=1"},
-        sound: require("../../assets/Audios/loro.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/umfxkgsu4vetnsw/lengua.png?dl=1"},
-        sound: require("../../assets/Audios/lengua.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/r7g4fc9faj1be88/labios.png?dl=1"},
-        sound: require("../../assets/Audios/labios.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/q847yssojlibyq7/ladrar.jpg?dl=1"},
-        sound: require("../../assets/Audios/ladrar.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/ekazrdkaubld24s/lagartija.png?dl=1"},
-        sound: require("../../assets/Audios/lagartija.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/fmpmxzpp4obfrsx/lagarto.jpg?dl=1"},
-        sound: require("../../assets/Audios/lagarto.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/htrxha9ufolca01/lago.png?dl=1"},
-        sound: require("../../assets/Audios/lago.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/94bt9nkinqqgaxs/lana.png?dl=1"},
-        sound: require("../../assets/Audios/lana.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/cyqivvszhn938jz/lanzar.png?dl=1"},
-        sound: require("../../assets/Audios/lanzar.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/t7f11bbh8zic6iq/lavanderia.png?dl=1"},
-        sound: require("../../assets/Audios/lavandería.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/gvzc1x74twuoly4/lazo.png?dl=1"},
-        sound: require("../../assets/Audios/lazo.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/gvzc1x74twuoly4/lazo.png?dl=1"},
-        sound: require("../../assets/Audios/leche.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/26zcapl1um53t76/leer.png?dl=1"},
-        sound: require("../../assets/Audios/leer.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/k2f21so58kbdzm1/lechuga.png?dl=1"},
-        sound: require("../../assets/Audios/lechuga.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/s8pxur8re7yanww/leona.png?dl=1"},
-        sound: require("../../assets/Audios/leona.mp3"),
+                  sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/kronlytkpeyv5qx/leopardo.png?dl=1"},
-        sound: require("../../assets/Audios/leopardo.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/l3k3bvhzvsumgyk/libro.png?dl=1"},
-        sound: require("../../assets/Audios/libro.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/5rjfq96d4an2dn5/lampara.png?dl=1"},
-        sound: require("../../assets/Audios/lámpara.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/oja15zoxyzfjw1b/lapiz.png?dl=1"},
-        sound: require("../../assets/Audios/lápiz.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/yvscunlxt60rsnk/leon.png?dl=1"},
-        sound: require("../../assets/Audios/león.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -1287,62 +1713,86 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/gb7eqtwzcye0x06/letrall.png?dl=1"},
-        sound: require("../../assets/Audios/llaves.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/e3ta481l1fhw9ny/llegar.png?dl=1"},
-        sound: require("../../assets/Audios/llegar.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/l729yhvjhger0dm/llenar.png?dl=1"},
-        sound: require("../../assets/Audios/llenar.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/y1zgf66b9k0ju4w/llevar.png?dl=1"},
-        sound: require("../../assets/Audios/llevar.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/kl8mws4goi3cjbn/llorar.png?dl=1"},
-        sound: require("../../assets/Audios/llorar.mp3"),
+                 sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/r3ajb8vgkbd8jx7/lluvia.png?dl=1"},
-        sound: require("../../assets/Audios/lluvia.mp3"),
+                  sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/rfl6cy66ntv7w2b/llama.png?dl=1"},
-        sound: require("../../assets/Audios/llama.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/40usi5p8gmo532s/llano.png?dl=1"},
-        sound: require("../../assets/Audios/llano.mp3"),
-      },
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
+      },    
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/ozo1way7b3hakqc/llamar.png?dl=1"},
-        sound: require("../../assets/Audios/llamar.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/2hfvc8fbi31y6ny/llanta.png?dl=1"},
-        sound: require("../../assets/Audios/llanta.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/wdmo1njvu9p896v/llavero.png?dl=1"},
-        sound: require("../../assets/Audios/llavero.mp3"),
-      },
-      {
+                  sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
+      },    
+      {   
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/bn5lgwz2utwh14f/lleno.png?dl=1"},
-        sound: require("../../assets/Audios/lleno.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -1360,102 +1810,142 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/ckl3adob3dvtsf0/mam%C3%A1.png?dl=1"},
-        sound: require("../../assets/Audios/mamá.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/xsyxebp3pnwypy3/macarrones.png?dl=1"},
-        sound: require("../../assets/Audios/macarrones.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/aghvt75rvwc2twt/maceta.png?dl=1"},
-        sound: require("../../assets/Audios/maceta.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/ou0occz6fbfxqu2/madera.png?dl=1"},
-        sound: require("../../assets/Audios/madera.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/e0cwyspav2lzwu7/maestra.png?dl=1"},
-        sound: require("../../assets/Audios/maestra.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/0zyd7mlrfq5x844/magia.png?dl=1"},
-        sound: require("../../assets/Audios/magia.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/x4ipi5o8uypjp3z/maleta.jpg?dl=1"},
-        sound: require("../../assets/Audios/maleta.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/dckdnvtc7x6a9ak/mono.png?dl=1"},
-        sound: require("../../assets/Audios/mono.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/48s9tucmyhplg0i/manos.png?dl=1"},
-        sound: require("../../assets/Audios/mano.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/olyts8txzbo9sxd/mancha.png?dl=1"},
-        sound: require("../../assets/Audios/mancha.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/y4zlhvzmyx4lgh8/mandarina.png?dl=1"},
-        sound: require("../../assets/Audios/mandarina.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/rjnqj39d2kc29uy/mantequilla.png?dl=1"},
-        sound: require("../../assets/Audios/mantequilla.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/jtbza8zl5zyhrhr/manzana.png?dl=1"},
-        sound: require("../../assets/Audios/manzana.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/cdvrugrue8pvw7u/mapa.png?dl=1"},
-        sound: require("../../assets/Audios/mapa.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/uwjkep1p1m0obni/mar.png?dl=1"},
-        sound: require("../../assets/Audios/mar.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/0whyrzljy6l8326/mariposa.png?dl=1"},
-        sound: require("../../assets/Audios/mariposa.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/3u9qjjq50003g14/martillo.png?dl=1"},
-        sound: require("../../assets/Audios/martillo.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/aqy6k83whlfd3qz/maiz.png?dl=1"},
-        sound: require("../../assets/Audios/maíz.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/dsxz58lavmfny8i/mejilla.png?dl=1"},
-        sound: require("../../assets/Audios/mejilla.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/kab2cgxht0uptl9/melon.png?dl=1"},
-        sound: require("../../assets/Audios/melón.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -1473,27 +1963,37 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/jedhr602nxllvh2/nada.png?dl=1"},
-        sound: require("../../assets/Audios/nada.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/evx6bwzxswpn9ji/nacimiento.png?dl=1"},
-        sound: require("../../assets/Audios/nacimiento.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/f5r0h92u82u0c6c/nadador.png?dl=1"},
-        sound: require("../../assets/Audios/nadador.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/1h9e19x0vb6w4mo/narizon.png?dl=1"},
-        sound: require("../../assets/Audios/nariz.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/9c3shj4ml6fweop/naturaleza.png?dl=1"},
-        sound: require("../../assets/Audios/naturaleza.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
@@ -1502,12 +2002,16 @@ export const dataAbecedario = [
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/3hf2skelcnp7bae/niebla.png?dl=1"},
-        sound: require("../../assets/Audios/niebla.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/iwmiggszfxdgcul/negro.png?dl=1"},
-        sound: require("../../assets/Audios/negro.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
@@ -1516,57 +2020,79 @@ export const dataAbecedario = [
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/6p8ndqmn0faozlb/nervioso.png?dl=1"},
-        sound: require("../../assets/Audios/nervioso.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/atfvgf48amarqwq/nevera.png?dl=1"},
-        sound: require("../../assets/Audios/nevera.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/zpxg4do3ytxk6do/nido.png?dl=1"},
-        sound: require("../../assets/Audios/nido.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/zpxg4do3ytxk6do/nido.png?dl=1"},
-        sound: require("../../assets/Audios/nieta.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/qy5u1c4mek9ompo/noticia.png?dl=1"},
-        sound: require("../../assets/Audios/noticia.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/8fayx5pjjsmras1/noche.png?dl=1"},
-        sound: require("../../assets/Audios/noche.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/7r9n3k0abdv2ytp/nube.png?dl=1"},
-        sound: require("../../assets/Audios/nube.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/g06lubazfa9oecf/natacion.png?dl=1"},
-        sound: require("../../assets/Audios/natación.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/dnirinohrdepsx7/ni%C3%B1a.png?dl=1"},
-        sound: require("../../assets/Audios/niña.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/rj5z9tf56h24eju/nieve.png?dl=1"},
-        sound: require("../../assets/Audios/nieve.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/fsip79hwnw94jm5/naranjo.png?dl=1"},
-        sound: require("../../assets/Audios/naranjo.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -1584,17 +2110,23 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/7n9wup5xj6d83bs/ba%C3%B1era.png?dl=1"},
-        sound: require("../../assets/Audios/bañera.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/dnirinohrdepsx7/ni%C3%B1a.png?dl=1"},
-        sound: require("../../assets/Audios/niña.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/4blxakvhgs2s3hk/u%C3%B1a.png?dl=1"},
-        sound: require("../../assets/Audios/uña.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
@@ -1604,82 +2136,116 @@ export const dataAbecedario = [
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/3exedcvtp1fvooj/le%C3%B1ador.png?dl=1"},
-        sound: require("../../assets/Audios/leñador.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
-        source: {uri:"https://www.dropbox.com/s/z2ine6vjlu3i194/pu%C3%B1o.png?dl=1"},
-        sound: require("../../assets/Audios/puño.mp3"),
+        source: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        },
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/uo594pki6639pyc/a%C3%B1o.png?dl=1"},
-        sound: require("../../assets/Audios/año.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/p4qxqabp9f0y7do/ara%C3%B1a.png?dl=1"},
-        sound: require("../../assets/Audios/Araña.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/3s0k9wd4koxv75e/pi%C3%B1a.png?dl=1"},
-        sound: require("../../assets/Audios/piña.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/cbqk03aig8w5hpz/alba%C3%B1il.png?dl=1"},
-        sound: require("../../assets/Audios/albañil.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/536fu0wabdbqcnh/pa%C3%B1al.png?dl=1"},
-        sound: require("../../assets/Audios/pañal.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/0rqoc1ij6uav9cs/oto%C3%B1o.png?dl=1"},
-        sound: require("../../assets/Audios/otoño.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/361f75kdwr1r8vz/orde%C3%B1ar.png?dl=1"},
-        sound: require("../../assets/Audios/ordeñar.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/dm5qedx0w0mkcej/mu%C3%B1ecas.png?dl=1"},
-        sound: require("../../assets/Audios/muñeca.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/wms9mae25dxqn0k/se%C3%B1alar.png?dl=1"},
-        sound: require("../../assets/Audios/señalar.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/1986u7bml2cwkwg/espa%C3%B1ol.jpg?dl=1"},
-        sound: require("../../assets/Audios/español.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/1gq4g35l0ldhsbt/mo%C3%B1o.png?dl=1"},
-        sound: require("../../assets/Audios/moño.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/h6fcvtb3t2y6q5s/ara%C3%B1ar.png?dl=1"},
-        sound: require("../../assets/Audios/arañar.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/fiql3d1ybyrrd6e/mu%C3%B1eca.png?dl=1"},
-        sound: require("../../assets/Audios/muñeca.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/7n9wup5xj6d83bs/ba%C3%B1era.png?dl=1"},
-        sound: require("../../assets/Audios/bañera.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -1697,102 +2263,142 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/eugt8kvnezzlkbj/oso.png?dl=1"},
-        sound: require("../../assets/Audios/Oso.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/ds99jze52peep59/obedecer.png?dl=1"},
-        sound: require("../../assets/Audios/obedecer.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/un08c8du4xfplex/obispo.png?dl=1"},
-        sound: require("../../assets/Audios/obispo.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/b36t0ma6q3xauj1/oca.png?dl=1"},
-        sound: require("../../assets/Audios/oca.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/uu1lvjwkgjs40wo/oceano.png?dl=1"},
-        sound: require("../../assets/Audios/océano.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/3x37qwi089iqk7s/oficina.png?dl=1"},
-        sound: require("../../assets/Audios/oficina.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/bfbkf98lcdezo0t/ogro.png?dl=1"},
-        sound: require("../../assets/Audios/ogro.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/axs2k55lsf25339/ola.png?dl=1"},
-        sound: require("../../assets/Audios/ola.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/b749d7nyqwpb79u/oler.png?dl=1"},
-        sound: require("../../assets/Audios/oler.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/73ati5q27pc4gwn/ordenar.png?dl=1"},
-        sound: require("../../assets/Audios/ordenar.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/361f75kdwr1r8vz/orde%C3%B1ar.png?dl=1"},
-        sound: require("../../assets/Audios/ordeñar.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/yz5j7p55lxy29lr/oreja.jpg?dl=1"},
-        sound: require("../../assets/Audios/oreja.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/xjg87v52nttd467/oro.png?dl=1"},
-        sound: require("../../assets/Audios/oro.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/knqj0sg9lw9rr0b/orquesta.png?dl=1"},
-        sound: require("../../assets/Audios/orquesta.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/eoppnjb68tmfyla/oruga.png?dl=1"},
-        sound: require("../../assets/Audios/oruga.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/7919irc9rlqrm1k/oveja.png?dl=1"},
-        sound: require("../../assets/Audios/oveja.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/j4itf2tsrej0zjf/ovilla.png?dl=1"},
-        sound: require("../../assets/Audios/ovillo.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/08s05mdll51llh5/ovalo.png?dl=1"},
-        sound: require("../../assets/Audios/ovalado.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/i2v9zffg3ewyitd/oir.png?dl=1"},
-        sound: require("../../assets/Audios/oír.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/rdh2dpxwpj9hmzo/ojos.png?dl=1"},
-        sound: require("../../assets/Audios/ojos.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -1810,102 +2416,142 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/rqzm58gcck0hlb5/pap%C3%A1.png?dl=1"},
-        sound: require("../../assets/Audios/papá.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/s9szt0to8i3zmjm/pavo.png?dl=1"},
-        sound: require("../../assets/Audios/pavo.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/s9szt0to8i3zmjm/pavo.png?dl=1"},
-        sound: require("../../assets/Audios/pagar.mp3"),
-      },
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
+      },    
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/4poqtdlz5igye0o/pala.png?dl=1"},
-        sound: require("../../assets/Audios/pala.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/x4r60yalsgz49rr/paloma.png?dl=1"},
-        sound: require("../../assets/Audios/paloma.mp3"),
-      },
+                  sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
+      },       
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/v5q1fdtcvc4q8iq/palomitas.png?dl=1"},
-        sound: require("../../assets/Audios/palomitas.mp3"),
+                  sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/q5xgiq3eekktl7d/pan.png?dl=1"},
-        sound: require("../../assets/Audios/pan.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/3xzf353fr4l6t2k/panadera.png?dl=1"},
-        sound: require("../../assets/Audios/panadera.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/u3pzj87clm2zo8l/pandereta.png?dl=1"},
-        sound: require("../../assets/Audios/pandereta.mp3"),
-      },
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
+      },     
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/78os7dla5suuv0c/pantera.png?dl=1"},
-        sound: require("../../assets/Audios/pantera.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/f8qa89339khth0w/parada.png?dl=1"},
-        sound: require("../../assets/Audios/parada.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/roxcf7c0ey9ike5/paraguas.png?dl=1"},
-        sound: require("../../assets/Audios/paraguas.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/0nyn798el5hy3tz/pared.png?dl=1"},
-        sound: require("../../assets/Audios/pared.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/jd1ymtddb7edngi/parque.png?dl=1"},
-        sound: require("../../assets/Audios/parque.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/5grx4d0xi26qp5x/pasas.png?dl=1"},
-        sound: require("../../assets/Audios/pasas.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/4te3v1ruw72o35b/pasear.png?dl=1"},
-        sound: require("../../assets/Audios/pasear.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/3et014fxer0cngk/pastor.png?dl=1"},
-        sound: require("../../assets/Audios/pastor.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/iiw0b5abqvd1w71/peluche.png?dl=1"},
-        sound: require("../../assets/Audios/peluche.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/4krj9lg84m4yl0m/payaso.png?dl=1"},
-        sound: require("../../assets/Audios/payaso.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/qa5hv80qh2zbzsc/peluca.png?dl=1"},
-        sound: require("../../assets/Audios/peluca.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -1923,27 +2569,37 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/mow5dmb4zgh2h5i/queso.png?dl=1"},
-        sound: require("../../assets/Audios/queso.mp3"),
+                  sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/53iks1ai6qz10f3/peluquero.png?dl=1"},
-        sound: require("../../assets/Audios/peluquero.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/jkpzii9m977pe4p/quemadura.png?dl=1"},
-        sound: require("../../assets/Audios/quemadura.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/w2v8b0m6ncgzlv2/quesitos.png?dl=1"},
-        sound: require("../../assets/Audios/quesitos.mp3"),
+                  sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/w2v8b0m6ncgzlv2/quesitos.png?dl=1"},
-        sound: require("../../assets/Audios/quince.mp3"),
+                 sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
@@ -1952,35 +2608,47 @@ export const dataAbecedario = [
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/dyf25gexvg4jprh/paquete.png?dl=1"},
-        sound: require("../../assets/Audios/quitanieves.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/jd1ymtddb7edngi/parque.png?dl=1"},
-        sound: require("../../assets/Audios/parque.mp3"),
+                 sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/ob6aj9kz22n7qwm/raqueta.png?dl=1"},
-        sound: require("../../assets/Audios/raqueta.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/pk20ufdpn4avcy7/querer.png?dl=1"},
-        sound: require("../../assets/Audios/querer.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/rjnqj39d2kc29uy/mantequilla.png?dl=1"},
-        sound: require("../../assets/Audios/mantequilla.mp3"),
+               sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/w9onrw9csq82rw8/albaricoque.png?dl=1"},
-        sound: require("../../assets/Audios/albaricoque.mp3"),
+                sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
-        id: "sonido13",
+        id: "sonido13",         
         source: {uri:"https://www.dropbox.com/s/r55c43anvabeudm/qh.png?dl=0"},
       },
       {
@@ -1990,22 +2658,30 @@ export const dataAbecedario = [
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/kqpjy3t7ctwa778/letrap.png?dl=1"},
-        sound: require("../../assets/Audios/equipo.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/h0ff48m3bflul7z/equipo.png?dl=1"},
-        sound: require("../../assets/Audios/equipaje.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/knqj0sg9lw9rr0b/orquesta.png?dl=1"},
-        sound: require("../../assets/Audios/orquesta.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/tpgfwpglbx4bp7k/croquetas.png?dl=1"},
-        sound: require("../../assets/Audios/croquetas.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
@@ -2031,92 +2707,128 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/41dokr95g6p1g0f/rosa.png?dl=1"},
-        sound: require("../../assets/Audios/rosa.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/bt4d43flinpqorn/radio.png?dl=1"},
-        sound: require("../../assets/Audios/radio.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/bt4d43flinpqorn/radio.png?dl=1"},
-        sound: require("../../assets/Audios/radiografía.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/id1agigj3d1b9ra/rallar.png?dl=1"},
-        sound: require("../../assets/Audios/rallar.mp3"),
+                    sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/pl8nopc81nysq1k/rama.png?dl=1"},
-        sound: require("../../assets/Audios/rama.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/jyh48696hrhyzch/rampa.png?dl=1"},
-        sound: require("../../assets/Audios/rampa.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/1s697bfu4fh3nnz/rana.png?dl=1"},
-        sound: require("../../assets/Audios/rana.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/ob6aj9kz22n7qwm/raqueta.png?dl=1"},
-        sound: require("../../assets/Audios/raqueta.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/8sp9144hs8d8uzc/rascarse.png?dl=1"},
-        sound: require("../../assets/Audios/rascar.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/avdg0wrs8w71cqi/rastrillo.png?dl=1"},
-        sound: require("../../assets/Audios/rastrillo.mp3"),
+                   sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/0rnqha717u2bzi9/rayar.png?dl=1"},
-        sound: require("../../assets/Audios/rayar.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/1gcosclahogz9a4/raiz.png?dl=1"},
-        sound: require("../../assets/Audios/raíz.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/1gcosclahogz9a4/raiz.png?dl=1"},
-        sound: require("../../assets/Audios/recibir.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/da7xuaitfhr7rlo/reciclar.png?dl=1"},
-        sound: require("../../assets/Audios/reciclar.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/n9y3z0pshg3tf7w/recoger.png?dl=1"},
-        sound: require("../../assets/Audios/recoger.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/4tq3an7tqeu4uol/recortar.png?dl=1"},
-        sound: require("../../assets/Audios/recortar.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/vxxcsl2gvalbxuy/regalo.png?dl=1"},
-        sound: require("../../assets/Audios/regalo.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/ytml2tcvreo5qpr/reina.png?dl=1"},
-        sound: require("../../assets/Audios/reina.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
@@ -2125,7 +2837,9 @@ export const dataAbecedario = [
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/lbocdbt5kr31vf4/reno.png?dl=1"},
-        sound: require("../../assets/Audios/reno.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -2143,97 +2857,135 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/z4plyd2pl6onn0b/sandia.png?dl=1"},
-        sound: require("../../assets/Audios/sandía.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/4lqs3nwvd1rj5x1/sacerdote.png?dl=1"},
-        sound: require("../../assets/Audios/sacerdote.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/tffn73v8zvxz5q8/saco.png?dl=1"},
-        sound: require("../../assets/Audios/saco.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/55fhjkbs1lhbftp/sal.png?dl=1"},
-        sound: require("../../assets/Audios/sal.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/toom1pgx3h2nn46/salado.png?dl=1"},
-        sound: require("../../assets/Audios/salado.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/7xro79mto0stobo/salchicha.png?dl=1"},
-        sound: require("../../assets/Audios/salchicha.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/tcxd5ma4fbv9oy0/salero.png?dl=1"},
-        sound: require("../../assets/Audios/salero.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/muorndwxony1qks/salpicar.png?dl=1"},
-        sound: require("../../assets/Audios/salpicar.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/mslkyer586h4xqg/saltar.png?dl=1"},
-        sound: require("../../assets/Audios/saltar.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/3bmg8xr3hnqfs92/saludar.png?dl=1"},
-        sound: require("../../assets/Audios/saludar.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source:{uri:"https://www.dropbox.com/s/x2g4hd27xzhvfjw/salon.png?dl=1"},
-        sound: require("../../assets/Audios/salón.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/0z7oa4cef4t5pl1/sangre.png?dl=1"},
-        sound: require("../../assets/Audios/sangre.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/0z7oa4cef4t5pl1/sangre.png?dl=1"},
-        sound: require("../../assets/Audios/sartén.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/xip1r09aqhqtcbh/secretario.png?dl=1"},
-        sound: require("../../assets/Audios/secretario.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source:{uri:"https://www.dropbox.com/s/wyxxd30t25bl844/selva.png?dl=1"},
-        sound: require("../../assets/Audios/selva.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/ascjuiqgihg7yqe/semilla.png?dl=1"},
-        sound: require("../../assets/Audios/semilla.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/uv2pegc8wmxp82u/semaforo.png?dl=1"},
-        sound: require("../../assets/Audios/semáforo.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/ba8rbg7au25ga1u/serpiente.png?dl=0"},
-        sound: require("../../assets/Audios/serpiente.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/l8cucs4zf0xucti/serrucho.png?dl=1"},
-        sound: require("../../assets/Audios/serrucho.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
@@ -2255,87 +3007,121 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source:{uri:"https://www.dropbox.com/s/lvk40w9uxqo46ba/tallarin.png?dl=1"},
-        sound: require("../../assets/Audios/tallarines.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/ylrnsxftm8v9p2y/toro.png?dl=1"},
-        sound: require("../../assets/Audios/toro.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/65stqv13igrp91e/tampon.png?dl=1"},
-        sound: require("../../assets/Audios/tampón.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/90vkpycs5mnks8q/talon.png?dl=1"},
-        sound: require("../../assets/Audios/talon.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/uxbny1npj4p93g7/tablet.png?dl=1"},
-        sound: require("../../assets/Audios/tablet.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/lf1bzwjx3euh7ep/tachar.png?dl=0"},
-        sound: require("../../assets/Audios/tachar.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/r88s25q5b7hynsl/taladro.png?dl=1"},
-        sound: require("../../assets/Audios/taladro.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/c6258gqz5c6qgsn/tallo.png?dl=1"},
-        sound: require("../../assets/Audios/tallo.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/1lpmf8k7m9tpkgu/tambor.png?dl=1"},
-        sound: require("../../assets/Audios/tambor.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/ce9j736rpgwpjct/tapa.png?dl=1"},
-        sound: require("../../assets/Audios/tapa.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/dhrdi1vyxw0ugoq/taxi.png?dl=1"},
-        sound: require("../../assets/Audios/taxi.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/ozb4ybkso4di1x0/taza.png?dl=1"},
-        sound: require("../../assets/Audios/taza.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/hrw66u5hdleh092/techo.png?dl=1"},
-        sound: require("../../assets/Audios/techo.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/g5j7wterl6i2dv1/teclado.png?dl=1"},
-        sound: require("../../assets/Audios/teclado.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/tq5r959zinsjo1z/tela.png?dl=1"},
-        sound: require("../../assets/Audios/tela.mp3"),
+                     sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/lxobz55zglmvv6g/tejer.png?dl=1"},
-        sound: require("../../assets/Audios/tejer.mp3"),
+                       sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
-        id: "sonido17",
+        id: "sonido17",     
         source: {uri:"https://www.dropbox.com/s/iwsjk78ope0opfg/tenis.png?dl=1"},
-        sound: require("../../assets/Audios/tenis.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
@@ -2344,12 +3130,16 @@ export const dataAbecedario = [
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/fqditoln15e3200/tiburon.png?dl=1"},
-        sound: require("../../assets/Audios/tiburón.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/yw06zdcnv46gbj4/tienda.png?dl=1"},
-        sound: require("../../assets/Audios/tienda.mp3"),
+                      sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -2367,12 +3157,16 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/frhnevfsr7qhf8g/uvas.png?dl=1"},
-        sound: require("../../assets/Audios/uvas.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/42m3c1n623d9a30/ubre.png?dl=1"},
-        sound: require("../../assets/Audios/ubre.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
@@ -2385,7 +3179,9 @@ export const dataAbecedario = [
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/nb879i540gttkcz/unicornio.png?dl=1"},
-        sound: require("../../assets/Audios/unicornio.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
@@ -2394,17 +3190,23 @@ export const dataAbecedario = [
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/wakbhu9tofizzvu/unir.png?dl=1"},
-        sound: require("../../assets/Audios/unir.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/isr3gqeaxi5y7wz/universo.png?dl=1"},
-        sound: require("../../assets/Audios/universo.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/w6zn8n7bv0oiaty/numerouno.png?dl=1"},
-        sound: require("../../assets/Audios/uno.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido10",
@@ -2413,7 +3215,9 @@ export const dataAbecedario = [
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/tytu94r9l08fg8l/untar.png?dl=1"},
-        sound: require("../../assets/Audios/untar.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido12",
@@ -2422,27 +3226,37 @@ export const dataAbecedario = [
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/4oagwasoznnoijq/urna.png?dl=1"},
-        sound: require("../../assets/Audios/urna.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/8kekofe46m0iyrs/urraca.png?dl=1"},
-        sound: require("../../assets/Audios/urraca.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/8kekofe46m0iyrs/urraca.png?dl=1"},
-        sound: require("../../assets/Audios/utilizar.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/bm96gxpyqbjm0qn/ultimo.png?dl=1"},
-        sound: require("../../assets/Audios/último.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/4blxakvhgs2s3hk/u%C3%B1a.png?dl=1"},
-        sound: require("../../assets/Audios/uña.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido18",
@@ -2451,7 +3265,9 @@ export const dataAbecedario = [
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/ysqbwxze95v4vip/universidad.png?dl=1"},
-        sound: require("../../assets/Audios/universidad.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido20",
@@ -2473,27 +3289,37 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/vb9regzyyye4lhc/vaca.png?dl=1"},
-        sound: require("../../assets/Audios/vaca.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/yzybfq1g4xxt06u/vaciar.png?dl=1"},
-        sound: require("../../assets/Audios/vaciar.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/2q4erteylgvch97/vacuna.png?dl=1"},
-        sound: require("../../assets/Audios/vacuna.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/dljsxf4zcx2mt1k/vainilla.png?dl=1"},
-        sound: require("../../assets/Audios/vainilla.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/oa239z662mmrvzh/vajilla.png?dl=1"},
-        sound: require("../../assets/Audios/vajilla.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido6",
@@ -2502,12 +3328,16 @@ export const dataAbecedario = [
       {
         id: "sonido7",
         source: {uri:"https://www.dropbox.com/s/165hh8bb7nv7rpi/vampiro.png?dl=1"},
-        sound: require("../../assets/Audios/vampiro.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/3v3l143l8pikk8z/vaquero.png?dl=1"},
-        sound: require("../../assets/Audios/vaquero.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido9",
@@ -2516,7 +3346,9 @@ export const dataAbecedario = [
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/34ov9vnxybky9h0/vaso.png?dl=1"},
-        sound: require("../../assets/Audios/vaso.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
       {
         id: "sonido11",
@@ -2525,27 +3357,23 @@ export const dataAbecedario = [
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/vw7ylbjr7nunjuo/vela.png?dl=1"},
-        sound: require("../../assets/Audios/vela.mp3"),
       },
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/syk23ib0asyw1wa/venda.png?dl=1"},
-        sound: require("../../assets/Audios/venda.mp3"),
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/qkffzaj3dodwf0c/vender.png?dl=1"},
-        sound: require("../../assets/Audios/vender.mp3"),
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/6c28r4bp4ab6bv6/ventana.png?dl=1"},
-        sound: require("../../assets/Audios/ventana.mp3"),
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/e7yglndql2lboha/ventilador.png?dl=1"},
-        sound: require("../../assets/Audios/ventilador.mp3"),
+
       },
       {
         id: "sonido17",
@@ -2554,17 +3382,17 @@ export const dataAbecedario = [
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/33igqyq1kubzr1p/vestido.png?dl=1"},
-        sound: require("../../assets/Audios/vestido.mp3"),
+
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/7ci0804e0xrpdnr/viajar.png?dl=1"},
-        sound: require("../../assets/Audios/viajar.mp3"),
+
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/343yopguqh0vn7v/viento.png?dl=1"},
-        sound: require("../../assets/Audios/viento.mp3"),
+
       },
     ],
   },
@@ -2582,17 +3410,17 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/qupxeb7dxo88ljt/whisky.png?dl=1"},
-        sound: require("../../assets/Audios/whisky.mp3"),
+
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/yodv40c07v6e8n1/water.png?dl=1"},
-        sound: require("../../assets/Audios/water.mp3"),
+
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/mrav8a4llkolzzd/kiwi.png?dl=1"},
-        sound: require("../../assets/Audios/kiwi.mp3"),
+
       },
     ],
   },
@@ -2610,32 +3438,32 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/v7xnogma5a20h5i/xilofono.png?dl=1"},
-        sound: require("../../assets/Audios/xilófono.mp3"),
+
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/nhvccimrasmzv8c/saxofon.png?dl=1"},
-        sound: require("../../assets/Audios/saxofón.mp3"),
+
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/dhrdi1vyxw0ugoq/taxi.png?dl=1"},
-        sound: require("../../assets/Audios/taxi.mp3"),
+
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/dhrdi1vyxw0ugoq/taxi.png?dl=1"},
-        sound: require("../../assets/Audios/exprimidor.mp3"),
+  
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/264hckc2fdn3r2z/exprimir.png?dl=1"},
-        sound: require("../../assets/Audios/exprimir.mp3"),
+  
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/cousxj1su59p8of/extender.jpg?dl=1"},
-        sound: require("../../assets/Audios/extender.mp3"),
+    
       },
       {
         id: "sonido7",
@@ -2648,7 +3476,7 @@ export const dataAbecedario = [
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/pecmxaoiq4sery9/extintor.png?dl=1"},
-        sound: require("../../assets/Audios/extintor.mp3"),
+
       },
       {
         id: "sonido10",
@@ -2665,42 +3493,42 @@ export const dataAbecedario = [
       {
         id: "sonido13",
         source: {uri:"https://www.dropbox.com/s/oofk5inzuej0w0p/excluir.png?dl=1"},
-        sound: require("../../assets/Audios/excluir.mp3"),
+
       },
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/3yd8cfbgqfcbxzy/exponer.png?dl=1"},
-        sound: require("../../assets/Audios/exponer.mp3"),
+  
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/n7cxuaiqri866bl/extraer.png?dl=1"},
-        sound: require("../../assets/Audios/extraer.mp3"),
+
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/oaazzh0m6xms9wv/explosivo.png?dl=1"},
-        sound: require("../../assets/Audios/explosivo.mp3"),
+
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/gg98h05xz25ovix/explotar.png?dl=1"},
-        sound: require("../../assets/Audios/explosión.mp3"),
+
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/h0xiwtvdxrwxgzb/expulsar.png?dl=1"},
-        sound: require("../../assets/Audios/expulsar.mp3"),
+
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/h0xiwtvdxrwxgzb/expulsar.png?dl=1"},
-        sound: require("../../assets/Audios/explorar.mp3"),
+
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/t2dmt9c3f3wdk7a/excavadora.png?dl=1"},
-        sound: require("../../assets/Audios/excavadora.mp3"),
+
       },
     ],
   },
@@ -2718,27 +3546,26 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/uhumqzor8osilb7/yema.png?dl=1"},
-        sound: require("../../assets/Audios/yema.mp3"),
+
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/idlvb84vtnhll11/yo.png?dl=1"},
-        sound: require("../../assets/Audios/yo.mp3"),
+
       },
       {
         id: "sonido3",
         source: {uri:"https://www.dropbox.com/s/qbw7ayl8lpft24p/yoga.png?dl=1"},
-        sound: require("../../assets/Audios/yoga.mp3"),
+   
       },
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/lqqfoc0kp12thqu/yudo.png?dl=1"},
-        sound: require("../../assets/Audios/yudo.mp3"),
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/3g476s4l9dnhhg3/yogur.png?dl=1"},
-        sound: require("../../assets/Audios/yogur.mp3"),
+
       },
       {
         id: "sonido6",
@@ -2759,17 +3586,17 @@ export const dataAbecedario = [
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/pxbul043zyq7g66/yate.png?dl=1"},
-        sound: require("../../assets/Audios/yate.mp3"),
+
       },
       {
         id: "sonido11",
         source: {uri:"https://www.dropbox.com/s/wv37vpiphsmxc6m/yoy%C3%B3.png?dl=1"},
-        sound: require("../../assets/Audios/yoyó.mp3"),
+
       },
       {
         id: "sonido12",
         source: {uri:"https://www.dropbox.com/s/5fd8jvcyxpcmnh2/yeso.png?dl=1"},
-        sound: require("../../assets/Audios/yeso.mp3"),
+
       },
       {
         id: "sonido13",
@@ -2782,27 +3609,27 @@ export const dataAbecedario = [
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/bpxssbsrq62ppvu/yunque.png?dl=1"},
-        sound: require("../../assets/Audios/yunque.mp3"),
+  
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/rovnu2t1pn0qmdc/ayudar.png?dl=1"},
-        sound: require("../../assets/Audios/ayuda.mp3"),
+     
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/wj6sk97q4eobw1q/ayer.png?dl=1"},
-        sound: require("../../assets/Audios/ayer.mp3"),
+     
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/wj6sk97q4eobw1q/ayer.png?dl=1"},
-        sound: require("../../assets/Audios/bayas.mp3"),
+       
       },
       {
         id: "sonido20",
         source: {uri:"https://www.dropbox.com/s/g8p702x3oopcs9c/rey.png?dl=1"},
-        sound: require("../../assets/Audios/rey.mp3"),
+ 
       },
     ],
   },
@@ -2820,12 +3647,12 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {uri:"https://www.dropbox.com/s/bm9e13zfz3jlxa6/zorro.png?dl=1"},
-        sound: require("../../assets/Audios/zorro.mp3"),
+   
       },
       {
         id: "sonido2",
         source: {uri:"https://www.dropbox.com/s/rw8jgbpn04s13fk/zambomba.jpg?dl=1"},
-        sound: require("../../assets/Audios/zambomba.mp3"),
+    
       },
       {
         id: "sonido3",
@@ -2834,17 +3661,17 @@ export const dataAbecedario = [
       {
         id: "sonido4",
         source: {uri:"https://www.dropbox.com/s/q01s3m73ezvacbh/zanahoria.png?dl=1"},
-        sound: require("../../assets/Audios/zanahoria.mp3"),
+ 
       },
       {
         id: "sonido5",
         source: {uri:"https://www.dropbox.com/s/q2oa8l1pl5kg600/zapateria.png?dl=1"},
-        sound: require("../../assets/Audios/zapatería.mp3"),
+     
       },
       {
         id: "sonido6",
         source: {uri:"https://www.dropbox.com/s/i3p5oz340w2m6u3/zapatos.png?dl=1"},
-        sound: require("../../assets/Audios/zapatos.mp3"),
+    
       },
       {
         id: "sonido7",
@@ -2853,17 +3680,17 @@ export const dataAbecedario = [
       {
         id: "sonido8",
         source: {uri:"https://www.dropbox.com/s/7y6vl5nfsl38mx2/zoologico.png?dl=1"},
-        sound: require("../../assets/Audios/zoológico.mp3"),
+      
       },
       {
         id: "sonido9",
         source: {uri:"https://www.dropbox.com/s/2tanpk6a2tj5otm/zumbar.png?dl=1"},
-        sound: require("../../assets/Audios/zumbar.mp3"),
+
       },
       {
         id: "sonido10",
         source: {uri:"https://www.dropbox.com/s/oz2rlarqi1d6xt8/zumo.png?dl=1"},
-        sound: require("../../assets/Audios/zumo.mp3"),
+   
       },
       {
         id: "sonido11",
@@ -2880,32 +3707,32 @@ export const dataAbecedario = [
       {
         id: "sonido14",
         source: {uri:"https://www.dropbox.com/s/jrbb4tb35zteuxw/organizar.png?dl=1"},
-        sound: require("../../assets/Audios/organizar.mp3"),
+
       },
       {
         id: "sonido15",
         source: {uri:"https://www.dropbox.com/s/s3iyx077xjxb87m/pellizcar.png?dl=1"},
-        sound: require("../../assets/Audios/pellizcar.mp3"),
+ 
       },
       {
         id: "sonido16",
         source: {uri:"https://www.dropbox.com/s/oja15zoxyzfjw1b/lapiz.png?dl=1"},
-        sound: require("../../assets/Audios/lápiz.mp3"),
+
       },
       {
         id: "sonido17",
         source: {uri:"https://www.dropbox.com/s/gdsjl1apwgya8g7/pizza.png?dl=1"},
-        sound: require("../../assets/Audios/pizza.mp3"),
+
       },
       {
         id: "sonido18",
         source: {uri:"https://www.dropbox.com/s/uhx7g0lnbmmb1m5/azada.png?dl=1"},
-        sound: require("../../assets/Audios/azada.mp3"),
+        
       },
       {
         id: "sonido19",
         source: {uri:"https://www.dropbox.com/s/a63ndkjakloty24/azul.png?dl=1"},
-        sound: require("../../assets/Audios/azul.mp3"),
+ 
       },
       {
         id: "sonido20",
@@ -2923,97 +3750,97 @@ export const dataOnomatopeyas = [
       {
         id: "Animal1",
         source: {uri:"https://www.dropbox.com/s/yvscunlxt60rsnk/leon.png?dl=1"},
-        sonido: require("../../assets/Audios/rugir.mp3"),
+
       },
       {
         id: "Animal2",
         source: {uri:"https://www.dropbox.com/s/3k0r7cd89o3dkib/perro.png?dl=1"},
-        sonido: require("../../assets/Audios/ladrar.mp3"),
+
       },
       {
         id: "Animal3",
         source: {uri:"https://www.dropbox.com/s/7919irc9rlqrm1k/oveja.png?dl=1"},
-        sonido: require("../../assets/Audios/balar.mp3"),
+
       },
       {
         id: "Animal4",
         source: {uri:"https://www.dropbox.com/s/s8pxur8re7yanww/leona.png?dl=1"},
-        sonido: require("../../assets/Audios/rugir.mp3"),
+
       },
       {
         id: "Animal5",
         source: {uri:"https://www.dropbox.com/s/ofbelc39g6lkoe4/pato.png?dl=1"},
-        sonido: require("../../assets/Audios/graznar.mp3"),
+
       },
       {
         id: "Animal6",
         source: {uri:"https://www.dropbox.com/s/vk1bddif0ihjgbh/pollo.png?dl=1"},
-        sonido: require("../../assets/Audios/piar.mp3"),
+
       },
       {
         id: "Animal7",
         source: {uri:"https://www.dropbox.com/s/vb9regzyyye4lhc/vaca.png?dl=1"},
-        sonido: require("../../assets/Audios/mugir.mp3"),
+    
       },
       {
         id: "Animal8",
         source: {uri:"https://www.dropbox.com/s/alsk03jla3dd7ur/gato.png?dl=1"},
-        sonido: require("../../assets/Audios/maullar.mp3"),
+
       },
       {
         id: "Animal9",
         source: {uri:"https://www.dropbox.com/s/xrb909uxp22l59t/lobo.png?dl=1"},
-        sonido: require("../../assets/Audios/aullar.mp3"),
+
       },
       {
         id: "Animal10",
         source: {uri:"https://www.dropbox.com/s/0ohtz5tqxnh8bpt/coche.png?dl=1"},
-        sonido: require("../../assets/Audios/carro.mp3"),
+ 
       },
       {
         id: "Animal11",
         source: {uri:"https://www.dropbox.com/s/y84jwgwu9kqu5fv/gallina.png?dl=1"},
-        sonido: require("../../assets/Audios/cacarear.mp3"),
+       
       },
       {
         id: "Animal12",
         source: {uri:"https://www.dropbox.com/s/t30tdnfpfsv63d6/sapo.png?dl=1"},
-        sonido: require("../../assets/Audios/croar.mp3"),
+      
       },
       {
         id: "Animal13",
         source: {uri:"https://www.dropbox.com/s/ws4kdcpvpsswx9x/cerdo.png?dl=1"},
-        sonido: require("../../assets/Audios/gruñir.mp3"),
+   
       },
       {
         id: "Animal14",
         source: {uri:"https://www.dropbox.com/s/rv8f0lb6tk1ns5q/caballo.png?dl=1"},
-        sonido: require("../../assets/Audios/relinchar.mp3"),
+        
       },
       {
         id: "Animal15",
         source: {uri:"https://www.dropbox.com/s/ou3ovlu6xyclt3c/abeja.png?dl=1"},
-        sonido: require("../../assets/Audios/zumbar.mp3"),
+        
       },
       {
         id: "Animal16",
         source: {uri:"https://www.dropbox.com/s/aczbtj1gm0slenu/burro.png?dl=1"},
-        sonido: require("../../assets/Audios/rebuznar.mp3"),
+      
       },
       {
         id: "Animal18",
         source: {uri:"https://www.dropbox.com/s/5n1rwj966uglobx/elefante.png?dl=1"},
-        sonido: require("../../assets/Audios/ELEPHANT.mp3"),
+     
       },
       {
         id: "Animal19",
         source: {uri:"https://www.dropbox.com/s/x4r60yalsgz49rr/paloma.png?dl=1"},
-        sonido: require("../../assets/Audios/PajarosBIRD4.mp3"),
+    
       },
       {
         id: "Animal20",
         source: {uri:"https://www.dropbox.com/s/b73q40iryxgpul5/estornudar.png?dl=1"},
-        sonido: require("../../assets/Audios/sneeze.mp3"),
+       
       },
     ],
   },
@@ -3034,7 +3861,9 @@ export const datavocal = [
       {
         id: "vocales",
         img: {uri:"https://www.dropbox.com/s/p4qxqabp9f0y7do/ara%C3%B1a.png?dl=1"},
-        sonido: require("../../assets/Audios/Araña.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -3052,7 +3881,9 @@ export const datavocal = [
       {
         id: "vocales",
         img: {uri:"https://www.dropbox.com/s/c8n1tgbgnypduom/enano.png?dl=1"},
-        sonido: require("../../assets/Audios/enano.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -3070,7 +3901,9 @@ export const datavocal = [
       {
         id: "vocales",
         img: {uri:"https://www.dropbox.com/s/gzcq25v5tb4bshu/iman.png?dl=1"},
-        sonido: require("../../assets/Audios/Iman.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -3088,7 +3921,9 @@ export const datavocal = [
       {
         id: "vocales",
         img: {uri:"https://www.dropbox.com/s/j8f42dphsjtmy1i/oso.png?dl=1"},
-        sonido: require("../../assets/Audios/Oso.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
@@ -3106,7 +3941,9 @@ export const datavocal = [
       {
         id: "vocales",
         img: {uri:"https://www.dropbox.com/s/frhnevfsr7qhf8g/uvas.png?dl=1"},
-        sonido: require("../../assets/Audios/Uva.mp3"),
+        sonido: {
+          uri: "https://www.dropbox.com/s/lnz3ibll4qdb2uw/bonito.mp3?dl=1",
+        }
       },
     ],
   },
