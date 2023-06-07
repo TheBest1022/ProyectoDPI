@@ -54,6 +54,7 @@ const DataDocente = ({ data }) => {
     const filter = data.filter((item) => {
       return item.idDocente == id;
     });
+    console.log(filter)
     if (id != undefined) {
       return (
         <View>
