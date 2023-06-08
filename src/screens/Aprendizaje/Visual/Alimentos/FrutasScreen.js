@@ -103,7 +103,6 @@ const style = StyleSheet.create({
   container: {
     height: "100%",
     width: "100%",
-    backgroundColor: "white",
   },
   contendor: {
     flexDirection: "row",

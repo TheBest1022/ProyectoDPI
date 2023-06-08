@@ -124,8 +124,8 @@ function VocalesScreen() {
 }
 const style = StyleSheet.create({
   container: {
-    backgroundColor: "white",
-    paddingBottom:"100%"
+    width: "100%",
+    height:"100%",
   },
   containerimages: {
     flexDirection: "row",

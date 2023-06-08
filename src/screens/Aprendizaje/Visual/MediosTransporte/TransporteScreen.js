@@ -103,7 +103,6 @@ const TransporteScreen = () => {
 const style = StyleSheet.create({
   container: {
     marginTop: 30,
-    backgroundColor: "#f0f8ff",
   },
   contendor: {
     flexDirection: "row",
