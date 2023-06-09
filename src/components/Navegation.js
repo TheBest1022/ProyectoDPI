@@ -106,7 +106,7 @@ import MensajeScreen from "../screens/Mensaje/MensaggeScreen";
 //ASISTENCIA
 import AsistenciaScreen from "../screens/Asistencia/AsistenciaScreen";
 
-//TEST-RIAZ 
+//TEST-RIAZ
 import RiasScreen from "../screens/Rias/RiasScreen";
 
 const Tab = createBottomTabNavigator();
@@ -174,12 +174,10 @@ const Navegation = () => {
                   color={color}
                 />
               );
-            }else if (route.name === "Rias") {
+            } else if (route.name === "Rias") {
               return (
                 <Ionicons
-                  name={
-                    focused ? "md-reader-outline" : "md-reader-outline"
-                  }
+                  name={focused ? "md-reader-outline" : "md-reader-outline"}
                   size={size}
                   color={color}
                 />
@@ -200,6 +198,13 @@ const Navegation = () => {
             <Tab.Screen
               name="Ánimo"
               component={FaceScreen}
+              options={{
+                headerShown: false,
+              }}
+            />
+            <Tab.Screen
+              name="Rias"
+              component={RiasScreen}
               options={{
                 headerShown: false,
               }}
