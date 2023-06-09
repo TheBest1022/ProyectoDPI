@@ -106,6 +106,9 @@ import MensajeScreen from "../screens/Mensaje/MensaggeScreen";
 //ASISTENCIA
 import AsistenciaScreen from "../screens/Asistencia/AsistenciaScreen";
 
+//TEST-RIAZ 
+import RiasScreen from "../screens/Rias/RiasScreen";
+
 const Tab = createBottomTabNavigator();
 
 const Navegation = () => {
@@ -166,6 +169,16 @@ const Navegation = () => {
                 <Ionicons
                   name={
                     focused ? "md-person-circle" : "md-person-circle-outline"
+                  }
+                  size={size}
+                  color={color}
+                />
+              );
+            }else if (route.name === "Rias") {
+              return (
+                <Ionicons
+                  name={
+                    focused ? "md-reader-outline" : "md-reader-outline"
                   }
                   size={size}
                   color={color}
