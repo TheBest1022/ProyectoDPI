@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Audio } from "expo-av";
 import { useGlobal } from "../../context/GlobalProvider";
 import { useNavigation } from "@react-navigation/native";
+import { Picker } from "@react-native-picker/picker";
 import { dataFace } from "../../sample/Face";
 import Layout from "../../components/Layout";
 import {
@@ -70,6 +71,12 @@ const FaceScreen = () => {
             </Text>
           </View>
 
+          <Picker style={style.select}>
+            <Picker.Item label="Opción 1" value="opcion1" style={style.picker}/>
+            <Picker.Item label="Opción 2" value="opcion2" />
+            <Picker.Item label="Opción 3" value="opcion3" />
+          </Picker>
+
           {renderData()}
 
           <TouchableNativeFeedback onPress={handlebackPress}>
@@ -87,15 +94,15 @@ const FaceScreen = () => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    flex:1,
-    paddingBottom:"30%"
+    flex: 1,
+    paddingBottom: "30%",
   },
   imagenmenu: {
     width: 50,
     height: 50,
   },
   estado: {
-    padding: 15,
+    padding: 10,
   },
   description: {
     color: "black",
@@ -125,6 +132,13 @@ const style = StyleSheet.create({
   name: {
     color: "blue",
     fontWeight: "bold",
+  },
+  //select
+  select: {
+    backgroundColor: "#dcdcdc",
+    width:"90%",
+    alignSelf:'center',
+    margin:5,
   },
 });
 

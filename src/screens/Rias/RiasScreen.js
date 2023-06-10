@@ -263,6 +263,7 @@ const RiasScreen = () => {
                   <Text style={style.buttonText}>Registrar</Text>
                 </TouchableOpacity>
               </View>
+              
             </View>
           </View>
         </View>

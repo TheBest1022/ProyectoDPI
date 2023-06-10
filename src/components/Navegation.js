@@ -109,6 +109,10 @@ import AsistenciaScreen from "../screens/Asistencia/AsistenciaScreen";
 //TEST-RIAZ
 import RiasScreen from "../screens/Rias/RiasScreen";
 
+//Pruebas
+import PruebasScreen from "../screens/Pruebas/PruebasScreen";
+import PreguntasScreen from "../screens/Pruebas/PreguntasScreen";
+
 const Tab = createBottomTabNavigator();
 
 const Navegation = () => {
@@ -177,7 +181,15 @@ const Navegation = () => {
             } else if (route.name === "Rias") {
               return (
                 <Ionicons
-                  name={focused ? "md-reader-outline" : "md-reader-outline"}
+                  name={focused ? "md-reader" : "md-reader-outline"}
+                  size={size}
+                  color={color}
+                />
+              );
+            } else if (route.name === "Examen") {
+              return (
+                <Ionicons
+                  name={focused ? "md-document" : "md-document-outline"}
                   size={size}
                   color={color}
                 />
@@ -205,6 +217,13 @@ const Navegation = () => {
             <Tab.Screen
               name="Rias"
               component={RiasScreen}
+              options={{
+                headerShown: false,
+              }}
+            />
+            <Tab.Screen
+              name="Examen"
+              component={PruebasScreen}
               options={{
                 headerShown: false,
               }}
@@ -708,6 +727,14 @@ const Navegation = () => {
             <Tab.Screen
               name="magicas"
               component={PalabrasMagicasScreen}
+              options={{
+                headerShown: false,
+                tabBarItemStyle: { display: "none" },
+              }}
+            />
+            <Tab.Screen
+              name="preguntas"
+              component={PreguntasScreen}
               options={{
                 headerShown: false,
                 tabBarItemStyle: { display: "none" },
