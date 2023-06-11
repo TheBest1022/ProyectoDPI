@@ -16,7 +16,7 @@ const AnimalesScreen = () => {
   const Mamifero = {uri:"https://www.dropbox.com/s/iulqa2nmw80faw5/mami.png?dl=1"}
   const Reptiles = {uri:"https://www.dropbox.com/s/lcf2xi4y4j2bcic/reptiles.png?dl=1"}
   const Aves = {uri:"https://www.dropbox.com/s/cx9fs6tatryx9v8/aves.png?dl=1"}
-  const Anfibios = {uri:"https://www.dropbox.com/s/typituqro6x9ack/anfibios.png?dl=1"}
+  const Anfibios = {uri:"https://www.dropbox.com/s/yurrvev64sjy2jk/anfibio.png?dl=1"}
   const Peces = {uri:"https://www.dropbox.com/s/tarnyb0xcjoyzur/peces.png?dl=1"}
   const Invertebrados = {uri:"https://www.dropbox.com/s/1zhy2gol7noz0ut/invertebrados.png?dl=1"}
   const Vertebrados = {uri:"https://www.dropbox.com/s/9rqacm4nb25ez2g/vertebrados.png?dl=1"}

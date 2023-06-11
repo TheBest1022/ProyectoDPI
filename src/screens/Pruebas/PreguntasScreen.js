@@ -80,10 +80,11 @@ const style = StyleSheet.create({
     width: "100%",
     padding: 5,
     alignSelf: "center",
+    width:"90%"
   },
   pregunta: {
     fontWeight: "bold",
-    fontSize: 15,
+    fontSize: 13,
     textAlign: "center",
   },
   //Imagen

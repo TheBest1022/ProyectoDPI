@@ -127,7 +127,6 @@ const style = StyleSheet.create({
   campo: {
     flexDirection: "row",
     alignSelf: "center",
-    backgroundColor:'red'
   },
   input: {
     width: 350,
@@ -151,7 +150,7 @@ const style = StyleSheet.create({
     width: 40,
     height: 40,
     alignSelf: "center",
-    margin: 5,
+    margin: 10,
   },
 //IMAGEN
   Img: {
@@ -175,6 +174,12 @@ const style = StyleSheet.create({
     fontSize: 12,
     color: "navy",
   },
-
+//container
+container:{
+  flexDirection: "row",
+  alignSelf: "center",
+  flexWrap: "wrap",
+  justifyContent: "center",
+}
 });
 export default Atencion;

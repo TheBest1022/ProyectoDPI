@@ -53,13 +53,6 @@ export const dataAnimals = [
         sonido: require("../../assets/Audios/atún.mp3"),
       },
       {
-        id: "Animal7",
-        source: {
-          uri: "https://www.dropbox.com/s/x0ppuhirdc4klhb/bacalao.png?dl=1",
-        },
-        sonido: require("../../assets/Audios/bacalao.mp3"),
-      },
-      {
         id: "Animal8",
         source: {
           uri: "https://www.dropbox.com/s/3p2q33u7dqriqyc/besugo.png?dl=1",
@@ -569,13 +562,6 @@ export const dataAnimals = [
         },
         sonido: require("../../assets/Audios/murciélago.mp3"),
       },
-      {
-        id: "Animal21",
-        source: {
-          uri: "https://www.dropbox.com/s/krfjao0ed4vz30b/panda.png?dl=1",
-        },
-        sonido: require("../../assets/Audios/osopanda.mp3"),
-      },
     ],
   },
   {
@@ -652,6 +638,52 @@ export const dataAnimals = [
         },
         sonido: require("../../assets/Audios/caracol.mp3"),
       },
+      {
+        id: "Animal11",
+        source: {
+          uri: "https://www.dropbox.com/s/vf9xx1oe6ket2pm/renacuajo.png?dl=1",
+        },
+      },
+      {
+        id: "Animal12",
+        source: {
+          uri: "https://www.dropbox.com/s/m8atfpto4goa9pf/cucaracha.jpg?dl=1",
+        },
+        sonido: require("../../assets/Audios/cucaracha.mp3"),
+      },
+      {
+        id: "Animal13",
+        source: {
+          uri: "https://www.dropbox.com/s/njm56jncohpjz8s/mosca.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/mosca.mp3"),
+      },
+      {
+        id: "Animal14",
+        source: {
+          uri: "https://www.dropbox.com/s/z0ib6z826o6hjqn/avispa.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/avispa.mp3"),
+      },
+      {
+        id: "Animal15",
+        source: {
+          uri: "https://www.dropbox.com/s/aczwm6ums139bwf/larva.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/larva.mp3"),
+      },
+      {
+        id: "Animal16",
+        source: {
+          uri: "https://www.dropbox.com/s/owirm4bdo5azebu/mosquito.png?dl=1",
+        },
+      },
+      {
+        id: "Animal17",
+        source: {
+          uri: "https://www.dropbox.com/s/fqdl0jibvt9ij1o/piojo.png?dl=1",
+        },
+      },
     ],
   },
   {
@@ -703,7 +735,7 @@ export const dataAnimals = [
       {
         id: "Animal6",
         source: {
-          uri: "https://www.dropbox.com/s/3ygbq1ehq3la8ep/iguana.png?dl=1",
+          uri: "https://www.dropbox.com/s/xrb909uxp22l59t/lobo.png?dl=1",
         },
         sonido: require("../../assets/Audios/lobo.mp3"),
       },
@@ -724,9 +756,83 @@ export const dataAnimals = [
       {
         id: "Animal9",
         source: {
-          uri: "https://www.dropbox.com/s/eugt8kvnezzlkbj/oso.png?dl=1",
+          uri: "https://www.dropbox.com/s/j8f42dphsjtmy1i/oso.png?dl=1",
         },
         sonido: require("../../assets/Audios/Oso.mp3"),
+      },
+      {
+        id: "Animal10",
+        source: {
+          uri: "https://www.dropbox.com/s/8rn8mbl2qjv44i0/Koala.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/koala.mp3"),
+      },
+      {
+        id: "Animal11",
+        source: {
+          uri: "https://www.dropbox.com/s/nbzkyr9htobu6fr/hiena.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/hiena.mp3"),
+      },
+      {
+        id: "Animal12",
+        source: {
+          uri: "https://www.dropbox.com/s/iu8kfzibyz7d5lj/manta.png?dl=1",
+        },
+      },
+      {
+        id: "Animal13",
+        source: {
+          uri: "https://www.dropbox.com/s/rv8f0lb6tk1ns5q/caballo.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/caballo.mp3"),
+      },
+      {
+        id: "Animal14",
+        source: {
+          uri: "https://www.dropbox.com/s/0giym1p50as39jg/foca.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/foca.mp3"),
+      },
+      {
+        id: "Animal15",
+        source: {
+          uri: "https://www.dropbox.com/s/siaom2cvueq8a42/pira%C3%B1a.png?dl=1",
+        },
+      },
+      {
+        id: "Animal16",
+        source: {
+          uri: "https://www.dropbox.com/s/bhl8cx0iev4l6dp/delfin.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/delfín.mp3"),
+      },
+      {
+        id: "Animal17",
+        source: {
+          uri: "https://www.dropbox.com/s/lbocdbt5kr31vf4/reno.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/reno.mp3"),
+      },
+      {
+        id: "Animal18",
+        source: {
+          uri: "https://www.dropbox.com/s/whkxe41plitrmva/caballito.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/caballito.mp3"),
+      },
+      {
+        id: "Animal19",
+        source: {
+          uri: "https://www.dropbox.com/s/fmpmxzpp4obfrsx/lagarto.jpg?dl=1",
+        },
+        sonido: require("../../assets/Audios/lagarto.mp3"),
+      },
+      {
+        id: "Animal19",
+        source: {
+          uri: "https://www.dropbox.com/s/1uod9i9ijl6faaz/varano.png?dl=1",
+        },
       },
     ],
   },
@@ -2098,7 +2204,7 @@ export const dataTemperatura = [
       {
         id: "frio2",
         img: {
-          uri: "https://www.dropbox.com/s/kuedb0jzydfbmql/chompa.png?dl=1",
+          uri: "https://www.dropbox.com/s/4rbekab2pd582kh/abrigo.png?dl=1",
         },
         sonido: require("../../assets/Audios/poncho.mp3"),
       },
@@ -2437,7 +2543,7 @@ export const dataPartescuerpo = [
       {
         id: "2",
         source: {
-          uri: "https://www.dropbox.com/s/r7g4fc9faj1be88/labios.png?dl=1",
+          uri: "https://www.dropbox.com/s/umfxkgsu4vetnsw/lengua.png?dl=1",
         },
         sonido: require("../../assets/Audios/lengua.mp3"),
       },
@@ -2585,14 +2691,14 @@ export const dataSentidos = [
       {
         id: "1",
         source: {
-          uri: "https://www.dropbox.com/s/qu16xfak1941jsu/boca.png?dl=1",
+          uri: "https://www.dropbox.com/s/ev0tof62katkb2b/gustos.png?dl=1",
         },
         sonido: require("../../assets/Audios/gustar.mp3"),
       },
       {
         id: "2",
         source: {
-          uri: "https://www.dropbox.com/s/qu16xfak1941jsu/boca.png?dl=1",
+          uri: "https://www.dropbox.com/s/degt3779h6u4ddn/olfato.png?dl=1",
         },
         sonido: require("../../assets/Audios/oler.mp3"),
       },
@@ -3001,7 +3107,7 @@ export const dataInstituciones = [
       {
         id: "9",
         source: {
-          uri: "https://www.dropbox.com/s/edkuf3jyt2phbda/bombero.png?dl=1",
+          uri: "https://www.dropbox.com/s/4wqv5s4m9ha0qi5/bomberos.png?dl=1",
         },
         sonido: require("../../assets/Audios/bombero.mp3"),
       },

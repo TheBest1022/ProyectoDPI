@@ -14,6 +14,7 @@ import {
 
 function PartesScreen() {
   const exit = {uri:"https://www.dropbox.com/s/pai7eu5gt2wxy0i/exit.png?dl=1"}
+  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const navigation = useNavigation();
   const handlebackPress = () => {

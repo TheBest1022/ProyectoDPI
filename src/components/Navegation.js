@@ -186,7 +186,7 @@ const Navegation = () => {
                   color={color}
                 />
               );
-            } else if (route.name === "Examen") {
+            } else if (route.name === "Prácticas") {
               return (
                 <Ionicons
                   name={focused ? "md-document" : "md-document-outline"}
@@ -214,16 +214,18 @@ const Navegation = () => {
                 headerShown: false,
               }}
             />
+            {auth.IdRol == 8 && (
+              <Tab.Screen
+                name="Rias"
+                component={RiasScreen}
+                options={{
+                  headerShown: false,
+                }}
+              />
+            )}
             <Tab.Screen
-              name="Rias"
-              component={RiasScreen}
-              options={{
-                headerShown: false,
-              }}
-            />
-            <Tab.Screen
-              name="Examen"
-              component={PruebasScreen}
+              name="Aprendizaje"
+              component={SeccionScreen}
               options={{
                 headerShown: false,
               }}
@@ -232,6 +234,15 @@ const Navegation = () => {
               <Tab.Screen
                 name="Asistencia"
                 component={AsistenciaScreen}
+                options={{
+                  headerShown: false,
+                }}
+              />
+            )}
+            {auth.IdRol == 5 && (
+              <Tab.Screen
+                name="Prácticas"
+                component={PruebasScreen}
                 options={{
                   headerShown: false,
                 }}
@@ -307,13 +318,6 @@ const Navegation = () => {
               options={{
                 headerShown: false,
                 tabBarItemStyle: { display: "none" },
-              }}
-            />
-            <Tab.Screen
-              name="Aprendizaje"
-              component={SeccionScreen}
-              options={{
-                headerShown: false,
               }}
             />
             <Tab.Screen

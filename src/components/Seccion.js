@@ -464,12 +464,18 @@ const style = StyleSheet.create({
     marginTop: 10,
     backgroundColor: "white",
     padding: 10,
-    width: 280,
+    width: "80%",
     borderWidth: 3,
     borderColor: "gold",
     borderTopWidth: 0,
     borderRightWidth: 0,
     borderLeftWidth: 0,
+    borderRadius:10
+  },
+  general: {
+    flexDirection: "row",
+    alignSelf: "center",
+    justifyContent: "center",
   },
   campo: {
     flexDirection: "row",
@@ -493,13 +499,6 @@ const style = StyleSheet.create({
     height: 70,
     width: 70,
     alignSelf: "center",
-  },
-  general: {
-    flexDirection: "row",
-    alignSelf: "center",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    marginLeft:30
   },
   contenedorgeneral: {
     alignSelf: "center",
