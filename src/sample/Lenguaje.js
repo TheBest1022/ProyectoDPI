@@ -18,7 +18,7 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {
-          uri: "https://www.dropbox.com/s/p4qxqabp9f0y7do/ara%C3%B1a.png?dl=1",
+          uri: "https://www.dropbox.com/s/fw4jik6nykjvg1w/ara%C3%B1a.png?dl=1",
         },
         sonido: require("../../assets/Audios/Araña.mp3"),
       },
@@ -130,7 +130,7 @@ export const dataAbecedario = [
       {
         id: "sonido17",
         source: {
-          uri: "https://www.dropbox.com/s/cbvsicbgsuc5ocs/aro.png?dl=1",
+          uri: "https://www.dropbox.com/s/ut17o9d2ql3367t/aro.png?dl=1",
         },
         sonido: require("../../assets/Audios/aro.mp3"),
       },
@@ -835,7 +835,7 @@ export const dataAbecedario = [
       {
         id: "sonido6",
         source: {
-          uri: "https://www.dropbox.com/s/2oipar1oxsuai8z/fucsia.png?dl=1",
+          uri: "https://www.dropbox.com/s/vcc04iqolarw609/fantasma.png?dl=1",
         },
       },
       {
@@ -2246,7 +2246,7 @@ export const dataAbecedario = [
       {
         id: "sonido8",
         source: {
-          uri: "https://www.dropbox.com/s/p4qxqabp9f0y7do/ara%C3%B1a.png?dl=1",
+          uri: "https://www.dropbox.com/s/fw4jik6nykjvg1w/ara%C3%B1a.png?dl=1",
         },
         sonido: require("../../assets/Audios/Araña.mp3"),
       },
@@ -2353,7 +2353,7 @@ export const dataAbecedario = [
       {
         id: "sonido1",
         source: {
-          uri: "https://www.dropbox.com/s/eugt8kvnezzlkbj/oso.png?dl=1",
+          uri: "https://www.dropbox.com/s/j8f42dphsjtmy1i/oso.png?dl=1",
         },
         sonido: require("../../assets/Audios/Oso.mp3"),
       },
@@ -2748,7 +2748,7 @@ export const dataAbecedario = [
       {
         id: "sonido13",
         source: {
-          uri: "https://www.dropbox.com/s/r55c43anvabeudm/qh.png?dl=0",
+          uri: "https://www.dropbox.com/s/r55c43anvabeudm/qh.png?dl=1",
         },
       },
       {
@@ -3006,7 +3006,7 @@ export const dataAbecedario = [
       {
         id: "sonido6",
         source: {
-          uri: "https://www.dropbox.com/s/7xro79mto0stobo/salchicha.png?dl=1",
+          uri: "https://www.dropbox.com/s/jxlfzu9slfp6c66/salchicha.png?dl=1",
         },
         sonido: require("../../assets/Audios/salchicha.mp3"),
       },
@@ -3089,7 +3089,7 @@ export const dataAbecedario = [
       {
         id: "sonido18",
         source: {
-          uri: "https://www.dropbox.com/s/ba8rbg7au25ga1u/serpiente.png?dl=0",
+          uri: "https://www.dropbox.com/s/ba8rbg7au25ga1u/serpiente.png?dl=1",
         },
         sonido: require("../../assets/Audios/serpiente.mp3"),
       },
@@ -3161,7 +3161,7 @@ export const dataAbecedario = [
       {
         id: "sonido6",
         source: {
-          uri: "https://www.dropbox.com/s/lf1bzwjx3euh7ep/tachar.png?dl=0",
+          uri: "https://www.dropbox.com/s/lf1bzwjx3euh7ep/tachar.png?dl=1",
         },
         sonido: require("../../assets/Audios/tachar.mp3"),
       },
@@ -3375,7 +3375,7 @@ export const dataAbecedario = [
       {
         id: "sonido15",
         source: {
-          uri: "https://www.dropbox.com/s/pvjdivi1ddah8ir/utiles.png?dl=1",
+          uri: "https://www.dropbox.com/s/4281qh4enfhiowt/utilizar.png?dl=1",
         },
       },
       {
@@ -3846,13 +3846,13 @@ export const dataAbecedario = [
       {
         id: "sonido14",
         source: {
-          uri: "https://www.dropbox.com/s/ktib8vdzl1hias0/yerba.png?dl=0",
+          uri: "https://www.dropbox.com/s/ktib8vdzl1hias0/yerba.png?dl=1",
         },
       },
       {
         id: "sonido15",
         source: {
-          uri: "https://www.dropbox.com/s/bpxssbsrq62ppvu/yunque.png?dl=1",
+          uri: "https://www.dropbox.com/s/i33sk4iiz2jinjp/yunque.png?dl=1",
         },
         sonido: require("../../assets/Audios/yunque.mp3"),
       },
@@ -3924,14 +3924,14 @@ export const dataAbecedario = [
       {
         id: "sonido5",
         source: {
-          uri: "https://www.dropbox.com/s/q2oa8l1pl5kg600/zapateria.png?dl=1",
+          uri: "https://www.dropbox.com/s/to7hsnow6lfrrj4/zapateria.png?dl=1",
         },
         sonido: require("../../assets/Audios/zapatería.mp3"),
       },
       {
         id: "sonido6",
         source: {
-          uri: "https://www.dropbox.com/s/i3p5oz340w2m6u3/zapatos.png?dl=1",
+          uri: "https://www.dropbox.com/s/fhbum07y8cstokh/zapatos.png?dl=1",
         },
         sonido: require("../../assets/Audios/zapatos.mp3"),
       },
@@ -3990,7 +3990,7 @@ export const dataAbecedario = [
       {
         id: "sonido15",
         source: {
-          uri: "https://www.dropbox.com/s/s3iyx077xjxb87m/pellizcar.png?dl=1",
+          uri: "https://www.dropbox.com/s/7a00srlcelkka8a/pellizcar.png?dl=1",
         },
         sonido: require("../../assets/Audios/pellizcar.mp3"),
       },
@@ -4047,7 +4047,7 @@ export const dataOnomatopeyas = [
       {
         id: "Animal2",
         source: {
-          uri: "https://www.dropbox.com/s/3k0r7cd89o3dkib/perro.png?dl=1",
+          uri: "https://www.dropbox.com/s/uhiqgs9ry2kgxtg/perro.png?dl=1",
         },
         sonido: require("../../assets/Audios/ladrar.mp3"),
       },
@@ -4182,7 +4182,7 @@ export const datavocal = [
           uri: "https://www.dropbox.com/s/gfuj4pquaals8tt/letraA.png?dl=1",
         },
         minuscula: {
-          uri: "hhttps://www.dropbox.com/s/o5hfzvwao3uvodz/aminus.png?dl=1",
+          uri: "https://www.dropbox.com/s/o5hfzvwao3uvodz/aminus.png?dl=1",
         },
       },
     ],
@@ -4190,7 +4190,7 @@ export const datavocal = [
       {
         id: "vocales",
         img: {
-          uri: "https://www.dropbox.com/s/p4qxqabp9f0y7do/ara%C3%B1a.png?dl=1",
+          uri: "https://www.dropbox.com/s/fw4jik6nykjvg1w/ara%C3%B1a.png?dl=1",
         },
         sonido: require("../../assets/Audios/Araña.mp3"),
       },

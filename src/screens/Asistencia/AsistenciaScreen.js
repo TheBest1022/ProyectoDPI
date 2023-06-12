@@ -174,7 +174,6 @@ const AsistenciaScreen = () => {
                   );
                   const isChecked =
                     studentObj && studentObj.estado === "ASISTIÓ";
-
                   return (
                     <ChekComponent
                       key={index}

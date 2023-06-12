@@ -165,22 +165,24 @@ const RiasScreen = () => {
           <View style={style.date}>
             <View style={style.dateName}>
               <Text style={style.text}>Nombre y Apellido</Text>
-              <Picker style={style.select}>
-                <Picker.Item label="-- Seleccionar --" value="" />
-                {student.map((item) => {
+              <Picker
+                selectedValue={filter}
+                onValueChange={(itemValue) => setFilter(itemValue)}
+                style={style.select}
+              >
+                <Picker.Item label="-- Seleccionar --" value="id" />
+                {student.map((item) => (
                   <Picker.Item
                     key={item.id}
                     label={item.name}
                     value={item.id}
-                    id="datos"
-                  />;
-                })}
+                  />
+                ))}
               </Picker>
               <Text style={style.text}>Examinador</Text>
               <TextInput
                 style={style.inputNivel}
                 placeholder="Examinador"
-                id="nombre"
                 value={user.nombre}
                 onChangeText={(text) => handleChange("nombre", text)}
               />
@@ -191,13 +193,12 @@ const RiasScreen = () => {
                   selectedValue={filter}
                   onValueChange={(itemValue) => setFilter(itemValue)}
                 >
-                  <Picker.Item label="-- Seleccionar --" value="" />
+                  <Picker.Item label="-- Seleccionar --" value="id" />
                   {company.map((item) => (
                     <Picker.Item
                       key={item.id}
                       label={item.nombre}
                       value={item.id}
-                      id="empresa"
                     />
                   ))}
                 </Picker>
@@ -211,7 +212,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.input}
                     placeholder="Sexo"
-                    id="sexo"
                     value={user.sexo}
                     onChangeText={(text) => handleChange("sexo", text)}
                   />
@@ -223,13 +223,12 @@ const RiasScreen = () => {
                     selectedValue={filter}
                     onValueChange={(itemValue) => setFilter(itemValue)}
                   >
-                    <Picker.Item label="-- Nivel --" value="" />
+                    <Picker.Item label="-- Nivel --" value="id" />
                     {data.map((item) => (
                       <Picker.Item
                         key={item.id}
                         label={item.nivel}
                         value={item.id}
-                        id="nivel"
                       />
                     ))}
                   </Picker>
@@ -244,7 +243,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.input}
                     placeholder="Fecha de Ev."
-                    id="Evaluacion"
                     value={user.fechaEval}
                     onChangeText={(text) => handleChange("fechaEval", text)}
                   />
@@ -254,7 +252,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.input}
                     placeholder="Fecha de Nac."
-                    id="Nacimiento"
                     value={user.fechaNac}
                     onChangeText={(text) => handleChange("fechaNac", text)}
                   />
@@ -273,7 +270,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRias}
                     placeholder="Pt."
-                    id="Adivinanza"
                     value={user.adivinanza}
                     onChangeText={(text) => handleChange("Adivinanza", text)}
                   />
@@ -283,7 +279,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRias}
                     placeholder="Pt."
-                    id="Categorias"
                     value={user.categorias}
                     onChangeText={(text) => handleChange("categoria", text)}
                   />
@@ -295,7 +290,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRias}
                     placeholder="Pt."
-                    id="Analogias"
                     value={user.analogias}
                     onChangeText={(text) => handleChange("analogias", text)}
                   />
@@ -307,7 +301,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRias}
                     placeholder="Pt."
-                    id="Figuras"
                     value={user.figuras}
                     onChangeText={(text) => handleChange("figuras", text)}
                   />
@@ -317,7 +310,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRias}
                     placeholder="Pt."
-                    id="Verbal"
                     value={user.verbal}
                     onChangeText={(text) => handleChange("verbal", text)}
                   />
@@ -329,7 +321,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRias}
                     placeholder="Pt."
-                    id="NoVerbal"
                     value={user.no_verbal}
                     onChangeText={(text) => handleChange("no_verbal", text)}
                   />
@@ -341,7 +332,6 @@ const RiasScreen = () => {
                     <TextInput
                       style={style.inputRiasPt}
                       placeholder="Ad."
-                      id="ad"
                       value={user.ad}
                       onChangeText={(text) => handleChange("ad", text)}
                     />
@@ -354,7 +344,6 @@ const RiasScreen = () => {
                     <TextInput
                       style={style.inputRiasPt}
                       placeholder="An."
-                      id="an"
                       value={user.an}
                       onChangeText={(text) => handleChange("an", text)}
                     />
@@ -388,7 +377,6 @@ const RiasScreen = () => {
                     <TextInput
                       style={style.inputRiasPt}
                       placeholder="Ca."
-                      id="ca"
                       value={user.ca}
                       onChangeText={(text) => handleChange("ca", text)}
                     />
@@ -401,7 +389,6 @@ const RiasScreen = () => {
                     <TextInput
                       style={style.inputRiasPt}
                       placeholder="Fi."
-                      id="fi"
                       value={user.fi}
                       onChangeText={(text) => handleChange("fi", text)}
                     />
@@ -474,14 +461,12 @@ const RiasScreen = () => {
                     <TextInput
                       style={style.inputRiasPt}
                       placeholder="Mv."
-                      id="mv"
                       value={user.mv}
                       onChangeText={(text) => handleChange("mv", text)}
                     />
                     <TextInput
                       style={style.inputRiasPt}
                       placeholder="Mnv."
-                      id="mnv"
                       value={user.mvn}
                       onChangeText={(text) => handleChange("mvn", text)}
                     />
@@ -498,7 +483,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRiasPtSuma}
                     editable={false}
-                    id="TotalRV"
                     value={user.TotalRv}
                     onChangeText={(text) => handleChange("TotalRv", text)}
                   />
@@ -506,7 +490,6 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRiasPtSuma}
                     editable={false}
-                    id="TotalNRv"
                     value={user.TotalNRv}
                     onChangeText={(text) => handleChange("TotalNRv", text)}
                   />
@@ -514,14 +497,12 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRiasPtsSuma}
                     editable={false}
-                    id="Total"
                     value={user.Total}
                     onChangeText={(text) => handleChange("Total", text)}
                   />
                   <TextInput
                     style={style.inputRiasPtSuma}
                     editable={false}
-                    id="Memoria"
                     value={user.Memoria}
                     onChangeText={(text) => handleChange("Memoria", text)}
                   />
@@ -537,8 +518,7 @@ const RiasScreen = () => {
                       <Text style={style.textIndice}>I. VERBAL</Text>
                       <TextInput
                         style={style.inputRiasPtIndice}
-                        id="Indice_Verbal"
-                        value={user.Indice_verbal}
+                        value={user.Indiceverbal}
                         onChangeText={(text) =>
                           handleChange("Indiceverbal", text)
                         }
@@ -548,8 +528,7 @@ const RiasScreen = () => {
                       <Text style={style.textIndice}>I. NO VERBAL</Text>
                       <TextInput
                         style={style.inputRiasPtIndice}
-                        id="Indice_No_Verbal"
-                        value={user.Indice_No_verbal}
+                        value={user.IndiceNoverbal}
                         onChangeText={(text) =>
                           handleChange("IndiceNoverbal", text)
                         }
@@ -559,8 +538,7 @@ const RiasScreen = () => {
                       <Text style={style.textIndice}>I. GENERAL</Text>
                       <TextInput
                         style={style.inputRiasPtIndice}
-                        id="Indice_General"
-                        value={user.Indice_General}
+                        value={user.IndiceGeneral}
                         onChangeText={(text) =>
                           handleChange("IndiceGeneral", text)
                         }
@@ -570,8 +548,7 @@ const RiasScreen = () => {
                       <Text style={style.textIndice}>I. MEMORIA</Text>
                       <TextInput
                         style={style.inputRiasPtIndice}
-                        id="Indice_Memoria"
-                        value={user.Indice_Memoria}
+                        value={user.IndiceMemoria}
                         onChangeText={(text) =>
                           handleChange("IndiiceMemoria", text)
                         }

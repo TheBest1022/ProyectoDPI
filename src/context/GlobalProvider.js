@@ -14,6 +14,7 @@ export const useGlobal = () => {
 export const GlobalContextProvider = ({ children }) => {
   const [auth, setAuth] = useState(null);
   const [docente, setDocente] = useState([]);
+  const [psicologo, setpsicologo] = useState()
   const [recharge, setRecharge] = useState(false);
   const [tema, setTema] = useState([]);
   const [student, setStudent] = useState([]);
@@ -103,6 +104,9 @@ export const GlobalContextProvider = ({ children }) => {
     return await axios.post(`${conexionURL}api/student/assistence`, assistence);
   };
 
+  //Psicologo
+
+
   return (
     <GlobalContext.Provider
       value={{
@@ -112,6 +116,7 @@ export const GlobalContextProvider = ({ children }) => {
         recharge,
         student,
         company,
+        psicologo,
         SignIn,
         LogOut,
         setAuth,
