@@ -115,7 +115,9 @@ export const GlobalContextProvider = ({ children }) => {
   };
 
   //Psicologo
-
+  const insertRias = async (rias)=>{
+    return await axios.post(`${conexionURL}api/piscogolo/psicologo/register`, rias)
+  }
 
   return (
     <GlobalContext.Provider
@@ -147,7 +149,8 @@ export const GlobalContextProvider = ({ children }) => {
         getStudents,
         addAssistence,
         obtenerEscuela,
-        FaceId
+        FaceId,
+        insertRias
       }}
     >
       {children}
