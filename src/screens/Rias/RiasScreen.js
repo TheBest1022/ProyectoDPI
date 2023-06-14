@@ -16,24 +16,27 @@ import Name from "../../components/Name";
 
 let data = [
   {
-    id: 1,
+    id: "Inicial",
     nivel: "Inicial",
   },
   {
-    id: 2,
+    id: "Primaria",
     nivel: "Primaria",
   },
   {
-    id: 3,
+    id: "Secundaria",
     nivel: "Secundaria",
   },
 ];
 
 const RiasScreen = () => {
   const navigation = useNavigation();
-  const { Register, company, obtenerEscuela, getStudents, student, auth } = useGlobal();
+  const { insertRias, company, obtenerEscuela, getStudents, student, auth } =
+    useGlobal();
   const handleChange = (name, value) => setUser({ ...user, [name]: value });
   const [filter, setFilter] = useState("");
+  const [filterApoderado, setFilterApoderado] = useState("");
+  const [filterDegree, setFilterDegree] = useState("");
   const [loading, setLoading] = useState(false);
   const [Alumno, setAlumno] = useState({
     empresa: auth.id_empresa,
@@ -67,46 +70,51 @@ const RiasScreen = () => {
     IndiceGeneral: "",
     IndiceMemoria: "",
   });
+  let filterCompany =
+    company.length != 0 &&
+    company.filter((item) => auth.id_empresa === item.id);
   const handleSubmit = async () => {
     setLoading(true);
-    user.empresa = filter;
     if (
-      apoderado === "" ||
-      nombre === "" ||
-      empresa === "" ||
-      sexo === "" ||
-      nivel === "" ||
-      fechaEval === "" ||
-      fechaNac === "" ||
-      adivinanza === "" ||
-      categorias === "" ||
-      analogias === "" ||
-      figuras === "" ||
-      verbal === "" ||
-      no_verbal === "" ||
-      ad === "" ||
-      an === "" ||
-      ca === "" ||
-      fi === "" ||
-      mv === "" ||
-      mvn === "" ||
-      TotalRv === "" ||
-      TotalNRv === "" ||
-      Total === "" ||
-      Memoria === "" ||
-      Indiceverbal === "" ||
-      IndiceNoverbal === "" ||
-      IndiceGeneral === "" ||
-      IndiceMemoria === ""
+      user.apoderado === "" ||
+      user.nombre === "" ||
+      user.empresa === "" ||
+      user.sexo === "" ||
+      user.nivel === "" ||
+      user.fechaEval === "" ||
+      user.fechaNac === "" ||
+      user.adivinanza === "" ||
+      user.categorias === "" ||
+      user.analogias === "" ||
+      user.figuras === "" ||
+      user.verbal === "" ||
+      user.no_verbal === "" ||
+      user.ad === "" ||
+      user.an === "" ||
+      user.ca === "" ||
+      user.fi === "" ||
+      user.mv === "" ||
+      user.mvn === "" ||
+      user.Indiceverbal === "" ||
+      user.IndiceNoverbal === "" ||
+      user.IndiceGeneral === "" ||
+      user.IndiceMemoria === ""
     ) {
       setLoading(false);
       Alert.alert("Existen campos vacíos");
       return;
     }
+    user.empresa = filter;
+    user.apoderado = filterApoderado;
+    user.nivel = filterDegree;
+    user.TotalRv = parseInt(user.ad) + parseInt(user.an);
+    user.TotalNRv = parseInt(user.ca) + parseInt(user.fi);
+    user.Total = parseInt(user.TotalRv) + parseInt(user.TotalNRv);
+    user.Memoria = parseInt(user.mv) + parseInt(user.mvn);
     try {
-      const { status, data } = await Register(user);
+      const { status, data } = await insertRias(user);
       if (status == 201) {
-        Alert.alert("Registrado");
+        Alert.alert(data.message);
         setUser({
           apoderado: "",
           nombre: "",
@@ -165,11 +173,11 @@ const RiasScreen = () => {
             <View style={style.dateName}>
               <Text style={style.text}>Nombre y Apellido</Text>
               <Picker
-                selectedValue={filter}
-                onValueChange={(itemValue) => setFilter(itemValue)}
+                selectedValue={filterApoderado}
+                onValueChange={(itemValue) => setFilterApoderado(itemValue)}
                 style={style.select}
               >
-                <Picker.Item label="-- Seleccionar --" value="id" />
+                <Picker.Item label="-- Seleccionar --" value="" />
                 {student.map((item) => (
                   <Picker.Item
                     key={item.id}
@@ -192,14 +200,15 @@ const RiasScreen = () => {
                   selectedValue={filter}
                   onValueChange={(itemValue) => setFilter(itemValue)}
                 >
-                  <Picker.Item label="-- Seleccionar --" value="id" />
-                  {company.map((item) => (
-                    <Picker.Item
-                      key={item.id}
-                      label={item.nombre}
-                      value={item.id}
-                    />
-                  ))}
+                  <Picker.Item label="-- Seleccionar --" value="" />
+                  {filterCompany &&
+                    filterCompany.map((item) => (
+                      <Picker.Item
+                        key={item.id}
+                        label={item.nombre}
+                        value={item.id}
+                      />
+                    ))}
                 </Picker>
               </View>
             </View>
@@ -219,10 +228,10 @@ const RiasScreen = () => {
                   <Text style={style.text}>Nivel Educativo</Text>
                   <Picker
                     style={style.selectNivel}
-                    selectedValue={filter}
-                    onValueChange={(itemValue) => setFilter(itemValue)}
+                    selectedValue={filterDegree}
+                    onValueChange={(itemValue) => setFilterDegree(itemValue)}
                   >
-                    <Picker.Item label="-- Nivel --" value="id" />
+                    <Picker.Item label="-- Nivel --" value="" />
                     {data.map((item) => (
                       <Picker.Item
                         key={item.id}
@@ -270,7 +279,7 @@ const RiasScreen = () => {
                     style={style.inputRias}
                     placeholder="Pt."
                     value={user.adivinanza}
-                    onChangeText={(text) => handleChange("Adivinanza", text)}
+                    onChangeText={(text) => handleChange("adivinanza", text)}
                   />
                 </View>
                 <View style={style.formDateRias}>
@@ -279,7 +288,7 @@ const RiasScreen = () => {
                     style={style.inputRias}
                     placeholder="Pt."
                     value={user.categorias}
-                    onChangeText={(text) => handleChange("categoria", text)}
+                    onChangeText={(text) => handleChange("categorias", text)}
                   />
                 </View>
                 <View style={style.formDateRias}>
@@ -482,27 +491,48 @@ const RiasScreen = () => {
                   <TextInput
                     style={style.inputRiasPtSuma}
                     editable={false}
-                    value={user.TotalRv}
+                    value={`${
+                      user.ad == "" || user.an == ""
+                        ? ""
+                        : parseInt(user.ad) + parseInt(user.an)
+                    }`}
                     onChangeText={(text) => handleChange("TotalRv", text)}
                   />
                   <Text style={style.signo}>+</Text>
                   <TextInput
                     style={style.inputRiasPtSuma}
                     editable={false}
-                    value={user.TotalNRv}
+                    value={`${
+                      user.ca == "" || user.fi == ""
+                        ? ""
+                        : parseInt(user.ca) + parseInt(user.fi)
+                    }`}
                     onChangeText={(text) => handleChange("TotalNRv", text)}
                   />
                   <Text style={style.signo}>=</Text>
                   <TextInput
                     style={style.inputRiasPtsSuma}
                     editable={false}
-                    value={user.Total}
+                    value={`${
+                      user.ad == "" ||
+                      user.an == "" ||
+                      user.ca == "" ||
+                      user.fi == ""
+                        ? ""
+                        : parseInt(user.ad) +
+                          parseInt(user.an) +
+                          (parseInt(user.ca) + parseInt(user.fi))
+                    }`}
                     onChangeText={(text) => handleChange("Total", text)}
                   />
                   <TextInput
                     style={style.inputRiasPtSuma}
                     editable={false}
-                    value={user.Memoria}
+                    value={`${
+                      user.mv == "" || user.mvn == ""
+                        ? ""
+                        : parseInt(user.mv) + parseInt(user.mvn)
+                    }`}
                     onChangeText={(text) => handleChange("Memoria", text)}
                   />
                 </View>
@@ -549,7 +579,7 @@ const RiasScreen = () => {
                         style={style.inputRiasPtIndice}
                         value={user.IndiceMemoria}
                         onChangeText={(text) =>
-                          handleChange("IndiiceMemoria", text)
+                          handleChange("IndiceMemoria", text)
                         }
                       />
                     </View>
@@ -561,13 +591,6 @@ const RiasScreen = () => {
                 <TouchableOpacity style={style.button} onPress={handleSubmit}>
                   <Text style={style.buttonText}>Registrar</Text>
                 </TouchableOpacity>
-              </View>
-              <View>
-                {loading ? (
-                  <ActivityIndicator size="large" color="#0000ff" />
-                ) : (
-                  <Text></Text>
-                )}
               </View>
             </View>
           </View>
@@ -581,7 +604,7 @@ const style = StyleSheet.create({
   container: {
     width: "100%",
     padding: 16,
-    backgroundColor:'white'
+    backgroundColor: "white",
   },
   //containerRias
   containerRias: {
