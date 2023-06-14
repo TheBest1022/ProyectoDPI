@@ -33,7 +33,10 @@ const RiasScreen = () => {
   const navigation = useNavigation();
   const { insertRias, company, obtenerEscuela, getStudents, student, auth } =
     useGlobal();
-  const handleChange = (name, value) => setUser({ ...user, [name]: value });
+    const handleChange = (name, value) => {
+      setUser((prevUser) => ({ ...prevUser, [name]: value }));
+    };
+    
   const [filter, setFilter] = useState("");
   const [filterApoderado, setFilterApoderado] = useState("");
   const [filterDegree, setFilterDegree] = useState("");
@@ -74,13 +77,11 @@ const RiasScreen = () => {
     company.length != 0 &&
     company.filter((item) => auth.id_empresa === item.id);
   const handleSubmit = async () => {
+    console.log(user)
     setLoading(true);
     if (
-      user.apoderado === "" ||
       user.nombre === "" ||
-      user.empresa === "" ||
       user.sexo === "" ||
-      user.nivel === "" ||
       user.fechaEval === "" ||
       user.fechaNac === "" ||
       user.adivinanza === "" ||
@@ -577,7 +578,7 @@ const RiasScreen = () => {
                       <Text style={style.textIndice}>I. MEMORIA</Text>
                       <TextInput
                         style={style.inputRiasPtIndice}
-                        value={user.IndceMemoria}
+                        value={user.IndiceMemoria}
                         onChangeText={(text) =>
                           handleChange("IndiceMemoria", text)
                         }
@@ -676,6 +677,7 @@ const style = StyleSheet.create({
     backgroundColor: "#d3d3d3",
     borderRadius: 10,
     textAlign: "center",
+    color:'black'
   },
   formDateRias: {
     flexDirection: "row",
