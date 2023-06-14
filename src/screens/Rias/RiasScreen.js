@@ -547,7 +547,7 @@ const RiasScreen = () => {
                       <Text style={style.textIndice}>I. MEMORIA</Text>
                       <TextInput
                         style={style.inputRiasPtIndice}
-                        value={user.IndiceMemoria}
+                        value={user.IndceMemoria}
                         onChangeText={(text) =>
                           handleChange("IndiiceMemoria", text)
                         }
