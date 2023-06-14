@@ -572,7 +572,7 @@ export const dataPreguntas = [
       },
       {
         id: "2",
-        pregunta: "¿Qué fruta es una zanahoria?",
+        pregunta: "¿Qué verdura es una zanahoria?",
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/tsbtels82ynxvbt/pepino.png?dl=1",

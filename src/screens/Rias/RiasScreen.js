@@ -30,9 +30,8 @@ let data = [
 ];
 
 const RiasScreen = () => {
-  const { Register, company, obtenerEscuela, getStudents, student, auth } =
-    useGlobal();
   const navigation = useNavigation();
+  const { Register, company, obtenerEscuela, getStudents, student, auth } = useGlobal();
   const handleChange = (name, value) => setUser({ ...user, [name]: value });
   const [filter, setFilter] = useState("");
   const [loading, setLoading] = useState(false);
@@ -582,6 +581,7 @@ const style = StyleSheet.create({
   container: {
     width: "100%",
     padding: 16,
+    backgroundColor:'white'
   },
   //containerRias
   containerRias: {

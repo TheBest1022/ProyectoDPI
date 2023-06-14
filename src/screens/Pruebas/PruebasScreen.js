@@ -21,7 +21,7 @@ const PruebasScreen = () => {
     navigation.navigate("Principal");
   };
   const handleclick = (id) => {
-    navigation.navigate("preguntas",{id:id});
+    navigation.navigate("preguntas", { id: id });
   };
   const renderData = () => {
     return (
@@ -34,7 +34,7 @@ const PruebasScreen = () => {
                   <View style={style.imagen}>
                     <TouchableOpacity
                       onPress={() => {
-                        handleclick(id)
+                        handleclick(id);
                       }}
                     >
                       <ImageBackground
@@ -58,8 +58,10 @@ const PruebasScreen = () => {
     <ScrollView>
       <Layout>
         <Name />
-        {renderData()}
+
         <View style={style.contendor}>
+        <Text style={style.text}>APLICAMOS LO APRENDIDO</Text>
+        {renderData()}
           <TouchableOpacity onPress={handlebackpress}>
             <ImageBackground source={atras} style={style.btn}></ImageBackground>
           </TouchableOpacity>
@@ -74,7 +76,7 @@ const style = StyleSheet.create({
     alignSelf: "center",
     flexWrap: "wrap",
     justifyContent: "center",
-    marginTop: 10,
+    backgroundColor:'white'
   },
   btn: {
     width: 40,
@@ -101,6 +103,15 @@ const style = StyleSheet.create({
   },
   imagen: {
     width: 120,
+  },
+  //text
+  text: {
+    color: "navy",
+    fontSize: 25,
+    textAlign: "center",
+    padding: 5,
+    fontWeight: "bold",
+    alignSelf: "center",
   },
 });
 export default PruebasScreen;

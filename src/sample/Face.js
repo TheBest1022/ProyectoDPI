@@ -117,7 +117,7 @@ export const dataFace = [
       {
         id: "79",
         source: {
-          uri: "https://www.dropbox.com/s/bti39j60dzlciig/preocupado.png?dl=0",
+          uri: "https://www.dropbox.com/s/bti39j60dzlciig/preocupado.png?dl=1",
         },
         sonido: require("../../assets/Audios/preocupado.mp3"),
       },

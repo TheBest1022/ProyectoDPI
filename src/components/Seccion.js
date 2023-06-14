@@ -15,14 +15,186 @@ import {
 } from "react-native";
 
 const Seccion = ({ temas }) => {
-  const atras = {
-    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
-  };
-  const pdf = { uri: "https://www.dropbox.com/s/f6xs1wl26x6euvm/pdf.png?dl=1" };
   const navigation = useNavigation();
   const { auth, BorrarTema, setRecharge, actualizarPdf } = useGlobal();
   const [search, setSearch] = useState("");
+  const handlePress = async (link) => {
+    try {
+      const url = `${conexionURL}api/docente/file/${link}`;
+      console.log(url);
+      const supported = await Linking.canOpenURL(url);
+      if (supported) {
+        await Linking.openURL(url);
+      } else {
+        alert("No se puede abrir el archivo PDF");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const handleDelete = async (id) => {
+    try {
+      await BorrarTema(id);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const uploadFile = async (fileUri, fileName) => {
+    const apiUrl = "http://192.168.0.23:3000/api/docente/upload"; // Reemplaza 'your-server-url' con la dirección de tu servidor
+    const fileData = await FileSystem.readAsStringAsync(fileUri, {
+      encoding: FileSystem.EncodingType.Base64,
+    });
 
+    const formData = new FormData();
+    formData.append("file", {
+      uri: fileUri,
+      name: fileName,
+      type: "multipart/form-data",
+    });
+
+    try {
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+
+      if (response.ok) {
+        const jsonResponse = await response.json();
+        console.log(jsonResponse.message);
+      } else {
+        console.log("Error al subir el archivo");
+      }
+    } catch (error) {
+      console.error("Error en la conexión", error);
+    }
+  };
+  const pickDocument = async (id) => {
+    const result = await DocumentPicker.getDocumentAsync({});
+
+    if (result.type === "success") {
+      const fileUri = result.uri;
+      const fileName = result.name;
+      try {
+        await actualizarPdf({ idTema: id, Pdf: fileName });
+        await uploadFile(fileUri, fileName);
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      console.log("No se seleccionó ningún archivo");
+    }
+  };
+  const renderData = (search, temas) => {
+    if (search == "") {
+      return (
+        <View>
+          {temas.map((item) => (
+            <View style={style.general} key={item.idTema}>
+              <View style={style.contendor}>
+                <View style={style.descripcion}>
+                  <TouchableOpacity
+                    onPress={() => {
+                      handleclick(item.idTema);
+                    }}
+                  >
+                    <Text style={style.text}>TEMA: {item.Descripcion}</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+              <View style={style.contpdf}>
+                <TouchableOpacity
+                  onPress={() =>
+                    handlePress(
+                      item.Pdf != null
+                        ? item.Pdf
+                        : "https://www.dropbox.com/s/c729dxy7begmapj/TEMA%20NO%20EXISTENTE.pdf?dl=1"
+                    )
+                  }
+                >
+                  <ImageBackground
+                    source={pdf}
+                    style={style.pdf}
+                  ></ImageBackground>
+                </TouchableOpacity>
+              </View>
+
+              <View style={style.contarchivo}>
+                {auth.IdRol == 5 && (
+                  <View style={style.contenedoresiconos}>
+                    <TouchableOpacity
+                      onPress={() => {
+                        handleDelete(item.idTema);
+                      }}
+                    >
+                      <ImageBackground style={style.archivo}></ImageBackground>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                      onPress={() => {
+                        pickDocument(item.idTema);
+                      }}
+                    >
+                      <ImageBackground style={style.archiv}></ImageBackground>
+                    </TouchableOpacity>
+                  </View>
+                )}
+              </View>
+            </View>
+          ))}
+        </View>
+      );
+    } else {
+      const buscar = temas.filter((item) => {
+        return item.Descripcion.includes(search);
+      });
+      return (
+        <View>
+          {buscar.map((item) => (
+            <View style={style.general} key={item.idTema}>
+              <View style={style.contendor}>
+                <View style={style.descripcion}>
+                  <TouchableOpacity
+                    onPress={() => {
+                      handleclick(item.idTema);
+                    }}
+                  >
+                    <Text style={style.text}>TEMA: {item.Descripcion}</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+              <View style={style.contpdf}>
+                <TouchableOpacity
+                  onPress={() =>
+                    handlePress(
+                      item.Pdf != null
+                        ? item.Pdf
+                        : "https://www.dropbox.com/s/c729dxy7begmapj/TEMA%20NO%20EXISTENTE.pdf?dl=1"
+                    )
+                  }
+                >
+                  <ImageBackground
+                    source={pdf}
+                    style={style.pdf}
+                  ></ImageBackground>
+                </TouchableOpacity>
+              </View>
+              <View style={style.contarchivo}>
+                <TouchableOpacity
+                  onPress={() => {
+                    handleDelete(item.idTema);
+                  }}
+                >
+                  <ImageBackground style={style.archivo}></ImageBackground>
+                </TouchableOpacity>
+              </View>
+            </View>
+          ))}
+        </View>
+      );
+    }
+  };
   const handleclick = (idTema) => {
     if (idTema == 1) {
       navigation.navigate("alimentos");
@@ -251,187 +423,13 @@ const Seccion = ({ temas }) => {
       navigation.navigate("Onomatopeya");
     }
   };
-  const handlepost = () => {
+    const handlepost = () => {
     navigation.navigate("Aprendizaje");
   };
-  const handlePress = async (link) => {
-    try {
-      const url = `${conexionURL}api/docente/file/${link}`;
-      console.log(url);
-      const supported = await Linking.canOpenURL(url);
-      if (supported) {
-        await Linking.openURL(url);
-      } else {
-        alert("No se puede abrir el archivo PDF");
-      }
-    } catch (error) {
-      console.log(error);
-    }
+    const atras = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
   };
-  const handleDelete = async (id) => {
-    try {
-      await BorrarTema(id);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  const uploadFile = async (fileUri, fileName) => {
-    const apiUrl = "http://192.168.0.23:3000/api/docente/upload"; // Reemplaza 'your-server-url' con la dirección de tu servidor
-    const fileData = await FileSystem.readAsStringAsync(fileUri, {
-      encoding: FileSystem.EncodingType.Base64,
-    });
-
-    const formData = new FormData();
-    formData.append("file", {
-      uri: fileUri,
-      name: fileName,
-      type: "multipart/form-data",
-    });
-
-    try {
-      const response = await fetch(apiUrl, {
-        method: "POST",
-        body: formData,
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
-
-      if (response.ok) {
-        const jsonResponse = await response.json();
-        console.log(jsonResponse.message);
-      } else {
-        console.log("Error al subir el archivo");
-      }
-    } catch (error) {
-      console.error("Error en la conexión", error);
-    }
-  };
-  const pickDocument = async (id) => {
-    const result = await DocumentPicker.getDocumentAsync({});
-
-    if (result.type === "success") {
-      const fileUri = result.uri;
-      const fileName = result.name;
-      try {
-        await actualizarPdf({ idTema: id, Pdf: fileName });
-        await uploadFile(fileUri, fileName);
-      } catch (error) {
-        console.log(error);
-      }
-    } else {
-      console.log("No se seleccionó ningún archivo");
-    }
-  };
-  const renderData = (search, temas) => {
-    if (search == "") {
-      return (
-        <View>
-          {temas.map((item) => (
-            <View style={style.general} key={item.idTema}>
-              <View style={style.contendor}>
-                <View style={style.descripcion}>
-                  <TouchableOpacity
-                    onPress={() => {
-                      handleclick(item.idTema);
-                    }}
-                  >
-                    <Text style={style.text}>TEMA: {item.Descripcion}</Text>
-                  </TouchableOpacity>
-                </View>
-              </View>
-              <View style={style.contpdf}>
-                <TouchableOpacity
-                  onPress={() =>
-                    handlePress(
-                      item.Pdf != null
-                        ? item.Pdf
-                        : "https://www.dropbox.com/s/c729dxy7begmapj/TEMA%20NO%20EXISTENTE.pdf?dl=1"
-                    )
-                  }
-                >
-                  <ImageBackground
-                    source={pdf}
-                    style={style.pdf}
-                  ></ImageBackground>
-                </TouchableOpacity>
-              </View>
-
-              <View style={style.contarchivo}>
-                {auth.IdRol == 5 && (
-                  <View style={style.contenedoresiconos}>
-                    <TouchableOpacity
-                      onPress={() => {
-                        handleDelete(item.idTema);
-                      }}
-                    >
-                      <ImageBackground style={style.archivo}></ImageBackground>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                      onPress={() => {
-                        pickDocument(item.idTema);
-                      }}
-                    >
-                      <ImageBackground style={style.archiv}></ImageBackground>
-                    </TouchableOpacity>
-                  </View>
-                )}
-              </View>
-            </View>
-          ))}
-        </View>
-      );
-    } else {
-      const buscar = temas.filter((item) => {
-        return item.Descripcion.includes(search);
-      });
-      return (
-        <View>
-          {buscar.map((item) => (
-            <View style={style.general} key={item.idTema}>
-              <View style={style.contendor}>
-                <View style={style.descripcion}>
-                  <TouchableOpacity
-                    onPress={() => {
-                      handleclick(item.idTema);
-                    }}
-                  >
-                    <Text style={style.text}>TEMA: {item.Descripcion}</Text>
-                  </TouchableOpacity>
-                </View>
-              </View>
-              <View style={style.contpdf}>
-                <TouchableOpacity
-                  onPress={() =>
-                    handlePress(
-                      item.Pdf != null
-                        ? item.Pdf
-                        : "https://www.dropbox.com/s/c729dxy7begmapj/TEMA%20NO%20EXISTENTE.pdf?dl=1"
-                    )
-                  }
-                >
-                  <ImageBackground
-                    source={pdf}
-                    style={style.pdf}
-                  ></ImageBackground>
-                </TouchableOpacity>
-              </View>
-              <View style={style.contarchivo}>
-                <TouchableOpacity
-                  onPress={() => {
-                    handleDelete(item.idTema);
-                  }}
-                >
-                  <ImageBackground style={style.archivo}></ImageBackground>
-                </TouchableOpacity>
-              </View>
-            </View>
-          ))}
-        </View>
-      );
-    }
-  };
-
+  const pdf = { uri: "https://www.dropbox.com/s/f6xs1wl26x6euvm/pdf.png?dl=1" };
   return (
     <View>
       <View style={style.campoTexto}>

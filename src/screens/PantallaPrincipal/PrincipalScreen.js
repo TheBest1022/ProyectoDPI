@@ -161,8 +161,10 @@ const style = StyleSheet.create({
     height: "100%",
   },
   imagencerrar: {
-    width: 40,
-    height: 40,
+    width: 70,
+    height: 70,
+  },
+  atras: {
     alignSelf: "center",
   },
   curso: {
@@ -235,9 +237,6 @@ const style = StyleSheet.create({
     textAlign: "justify",
     fontSize: 10,
     lineHeight: 18,
-  },
-  atras: {
-    alignSelf: "center",
   },
 });
 

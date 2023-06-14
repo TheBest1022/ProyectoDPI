@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Layout from "../../components/Layout";
 import Name from "../../components/General";
 import {
@@ -10,16 +10,18 @@ import {
   View,
 } from "react-native";
 import { dataPreguntas } from "../../sample/Prueba";
+import Cronometro from "../../components/Cronometro";
 
 const PreguntasScreen = ({ navigation, route }) => {
   const id = route.params ? route.params.id : null;
+
   const renderData = () => {
     let data = dataPreguntas.filter((item) => {
       return item.id == id;
     });
     return (
-      <View>
-        <View style={style.container}>
+      <View style={style.container}>
+        <View>
           {data.map(({ Question }, index) => (
             <View key={index}>
               {Question.map(({ pregunta, imagenes }, index) => (
@@ -51,7 +53,9 @@ const PreguntasScreen = ({ navigation, route }) => {
     <ScrollView>
       <Layout>
         <Name />
-        <Text style={style.text}>APLICAMOS LO APRENDIDO</Text>
+        <View style={style.containerAprendido}>
+          <Cronometro />
+        </View>
         {renderData()}
       </Layout>
     </ScrollView>
@@ -61,14 +65,7 @@ const style = StyleSheet.create({
   container: {
     height: "100%",
     width: "100%",
-  },
-  //Aplicamos lo Aprendido
-  text: {
-    color: "navy",
-    fontSize: 25,
-    textAlign: "center",
-    padding: 5,
-    fontWeight: "bold",
+    backgroundColor: "white",
   },
   //Imagen
   Img: {
@@ -80,7 +77,7 @@ const style = StyleSheet.create({
     width: "100%",
     padding: 5,
     alignSelf: "center",
-    width:"90%"
+    width: "90%",
   },
   pregunta: {
     fontWeight: "bold",
@@ -94,6 +91,13 @@ const style = StyleSheet.create({
   },
   Imagen: {
     margin: 5,
+  },
+  //ContainerAprendido
+  containerAprendido: {
+    flexDirection: "row",
+    alignSelf: "center",
+    width: "100%",
+    justifyContent:'center'
   },
 });
 

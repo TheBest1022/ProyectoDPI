@@ -239,7 +239,7 @@ const Navegation = () => {
                 }}
               />
             )}
-            {auth.IdRol == 5 && (
+            {auth.IdRol == 2 || auth.IdRol == 8 ? (
               <Tab.Screen
                 name="Prácticas"
                 component={PruebasScreen}
@@ -247,7 +247,8 @@ const Navegation = () => {
                   headerShown: false,
                 }}
               />
-            )}
+            ) : null}
+
             <Tab.Screen
               name="cuerpo"
               component={SentidosScreen}

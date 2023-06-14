@@ -17,6 +17,7 @@ export const GlobalContextProvider = ({ children }) => {
   const [psicologo, setpsicologo] = useState()
   const [recharge, setRecharge] = useState(false);
   const [tema, setTema] = useState([]);
+  const [face, setFace] = useState([])
   const [student, setStudent] = useState([]);
   const [company, setCompany] = useState([]);
   //Funciones
@@ -89,6 +90,15 @@ export const GlobalContextProvider = ({ children }) => {
       console.log(error);
     }
   };
+  const FaceId = async (id) => {
+    try {
+      const { data } = await axios.get(`${conexionURL}api/student/face/${id}`);
+      setFace(data);
+    } catch (error) {
+      console.log(error);
+    }
+    return;
+  };
   //Empresa
   const obtenerEscuela = async () => {
     try {
@@ -117,6 +127,7 @@ export const GlobalContextProvider = ({ children }) => {
         student,
         company,
         psicologo,
+        face,
         SignIn,
         LogOut,
         setAuth,
@@ -136,6 +147,7 @@ export const GlobalContextProvider = ({ children }) => {
         getStudents,
         addAssistence,
         obtenerEscuela,
+        FaceId
       }}
     >
       {children}
