@@ -223,13 +223,15 @@ const Navegation = () => {
                 }}
               />
             )}
-            <Tab.Screen
-              name="Aprendizaje"
-              component={SeccionScreen}
-              options={{
-                headerShown: false,
-              }}
-            />
+            {auth.IdRol != 8 && (
+              <Tab.Screen
+                name="Aprendizaje"
+                component={SeccionScreen}
+                options={{
+                  headerShown: false,
+                }}
+              />
+            )}
             {auth.IdRol == 5 && (
               <Tab.Screen
                 name="Asistencia"

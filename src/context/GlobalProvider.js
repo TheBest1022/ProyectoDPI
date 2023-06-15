@@ -14,7 +14,7 @@ export const useGlobal = () => {
 export const GlobalContextProvider = ({ children }) => {
   const [auth, setAuth] = useState(null);
   const [docente, setDocente] = useState([]);
-  const [psicologo, setpsicologo] = useState()
+  const [psicologo, setPsicologo] = useState()
   const [recharge, setRecharge] = useState(false);
   const [tema, setTema] = useState([]);
   const [face, setFace] = useState([])
@@ -116,8 +116,18 @@ export const GlobalContextProvider = ({ children }) => {
 
   //Psicologo
   const insertRias = async (rias)=>{
-    return await axios.post(`${conexionURL}api/piscogolo/psicologo/register`, rias)
+    return await axios.post(`${conexionURL}api/psicologo/psicologo/register`, rias)
   }
+  const getPsicologo = async (id) => {
+    try {
+      const { data } = await axios.get(
+        `${conexionURL}api/psicologo/psicologo/${id}`
+      );
+      setPsicologo(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <GlobalContext.Provider
@@ -150,7 +160,8 @@ export const GlobalContextProvider = ({ children }) => {
         addAssistence,
         obtenerEscuela,
         FaceId,
-        insertRias
+        insertRias,
+        getPsicologo
       }}
     >
       {children}

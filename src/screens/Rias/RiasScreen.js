@@ -7,12 +7,14 @@ import {
   Text,
   TouchableOpacity,
   Alert,
+  ActivityIndicator,
 } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { useGlobal } from "../../context/GlobalProvider";
 import { useNavigation } from "@react-navigation/native";
 import Layout from "../../components/Layout";
 import Name from "../../components/Name";
+import DateTimePicker from "@react-native-community/datetimepicker";
 
 let data = [
   {
@@ -29,18 +31,66 @@ let data = [
   },
 ];
 
+let sexo = [
+  {
+    id: "Masculino",
+    nivel: "Masculino",
+  },
+  {
+    id: "Femenino",
+    nivel: "Femenino",
+  },
+];
+
 const RiasScreen = () => {
+  //Navegacion
   const navigation = useNavigation();
-  const { insertRias, company, obtenerEscuela, getStudents, student, auth } =
-    useGlobal();
-    const handleChange = (name, value) => {
-      setUser((prevUser) => ({ ...prevUser, [name]: value }));
-    };
-    
+  //Provaider
+  const {
+    insertRias,
+    company,
+    obtenerEscuela,
+    getStudents,
+    student,
+    auth,
+    getPsicologo,
+    psicologo,
+  } = useGlobal();
+  //stattus
   const [filter, setFilter] = useState("");
+  const [filterpsicologo, setFilterpsicologo] = useState("");
   const [filterApoderado, setFilterApoderado] = useState("");
   const [filterDegree, setFilterDegree] = useState("");
+  const [filterSexo, setFilterSexo] = useState("");
   const [loading, setLoading] = useState(false);
+  const [fechaEval, setFechaEval] = useState(new Date());
+  const [fechaNac, setFechaNac] = useState(new Date());
+  const [showFechaEvalPicker, setShowFechaEvalPicker] = useState(false);
+  const [showFechaNacPicker, setShowFechaNacPicker] = useState(false);
+  //Date
+  const handleFechaEvalChange = (event, selectedDate) => {
+    setShowFechaEvalPicker(false);
+    if (selectedDate) {
+      setFechaEval(selectedDate);
+      const fechaEvalStr = formatDate(selectedDate); // Convertir fechaEval a cadena en formato "yyyy-mm-dd"
+      setUser((prevUser) => ({ ...prevUser, fechaEval: fechaEvalStr }));
+    }
+  };
+  const handleFechaNacChange = (event, selectedDate) => {
+    setShowFechaNacPicker(false);
+    if (selectedDate) {
+      setFechaNac(selectedDate);
+      const fechaNacStr = formatDate(selectedDate); // Convertir fechaNac a cadena en formato "yyyy-mm-dd"
+      setUser((prevUser) => ({ ...prevUser, fechaNac: fechaNacStr }));
+    }
+  };
+  const showFechaEvalDatePicker = () => {
+    setShowFechaEvalPicker(true);
+  };
+  const showFechaNacDatePicker = () => {
+    setShowFechaNacPicker(true);
+  };
+  //Funciones
   const [Alumno, setAlumno] = useState({
     empresa: auth.id_empresa,
   });
@@ -73,17 +123,13 @@ const RiasScreen = () => {
     IndiceGeneral: "",
     IndiceMemoria: "",
   });
-  let filterCompany =
-    company.length != 0 &&
-    company.filter((item) => auth.id_empresa === item.id);
   const handleSubmit = async () => {
-    console.log(user)
     setLoading(true);
+    const fechaEvalStr = formatDate(fechaEval); // Convertir fechaEval a cadena en formato "yyyy-mm-dd"
+    const fechaNacStr = formatDate(fechaNac); // Convertir fechaNac a cadena en formato "yyyy-mm-dd"
+    user.fechaEval = fechaEvalStr;
+    user.fechaNac = fechaNacStr;
     if (
-      user.nombre === "" ||
-      user.sexo === "" ||
-      user.fechaEval === "" ||
-      user.fechaNac === "" ||
       user.adivinanza === "" ||
       user.categorias === "" ||
       user.analogias === "" ||
@@ -108,6 +154,8 @@ const RiasScreen = () => {
     user.empresa = filter;
     user.apoderado = filterApoderado;
     user.nivel = filterDegree;
+    user.sexo = filterSexo;
+    user.nombre = filterpsicologo;
     user.TotalRv = parseInt(user.ad) + parseInt(user.an);
     user.TotalNRv = parseInt(user.ca) + parseInt(user.fi);
     user.Total = parseInt(user.TotalRv) + parseInt(user.TotalNRv);
@@ -156,13 +204,27 @@ const RiasScreen = () => {
       setLoading(false);
     }
   };
-
+  const formatDate = (date) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+  const handleChange = (name, value) => {
+    setUser((prevUser) => ({ ...prevUser, [name]: value }));
+  };
+  let filterCompany =
+    company.length != 0 &&
+    company.filter((item) => auth.id_empresa === item.id);
+  //useEffect
   useEffect(() => {
     obtenerEscuela();
   }, []);
-
   useEffect(() => {
     getStudents(auth.id_empresa);
+  }, []);
+  useEffect(() => {
+    getPsicologo(auth.id_empresa);
   }, []);
 
   return (
@@ -172,7 +234,9 @@ const RiasScreen = () => {
         <View style={style.container}>
           <View style={style.date}>
             <View style={style.dateName}>
-              <Text style={style.text}>Nombre y Apellido</Text>
+              <Text style={style.text}>
+                Nombre y Apellido <Text style={style.obligatorio}>*</Text>
+              </Text>
               <Picker
                 selectedValue={filterApoderado}
                 onValueChange={(itemValue) => setFilterApoderado(itemValue)}
@@ -187,15 +251,28 @@ const RiasScreen = () => {
                   />
                 ))}
               </Picker>
-              <Text style={style.text}>Examinador</Text>
-              <TextInput
-                style={style.inputNivel}
-                placeholder="Examinador"
-                value={user.nombre}
-                onChangeText={(text) => handleChange("nombre", text)}
-              />
+              <Text style={style.text}>
+                Examinador <Text style={style.obligatorio}>*</Text>
+              </Text>
+              <Picker
+                selectedValue={filterpsicologo}
+                onValueChange={(itemValue) => setFilterpsicologo(itemValue)}
+                style={style.select}
+              >
+                <Picker.Item label="-- Seleccionar --" value="" />
+                {psicologo &&
+                  psicologo.map((item) => (
+                    <Picker.Item
+                      key={item.id}
+                      label={item.name}
+                      value={item.id}
+                    />
+                  ))}
+              </Picker>
               <View style={style.dateCentro}>
-                <Text style={style.text}>Centro Educativo</Text>
+                <Text style={style.text}>
+                  Centro Educativo <Text style={style.obligatorio}>*</Text>
+                </Text>
                 <Picker
                   style={style.select}
                   selectedValue={filter}
@@ -214,21 +291,33 @@ const RiasScreen = () => {
               </View>
             </View>
 
-            <View style={style.formDateSexo}>
-              <View style={style.formSexo}>
-                <View style={style.dateSexo}>
-                  <Text style={style.text}>Sexo</Text>
-                  <TextInput
-                    style={style.input}
-                    placeholder="Sexo"
-                    value={user.sexo}
-                    onChangeText={(text) => handleChange("sexo", text)}
-                  />
-                </View>
-                <View style={style.dateSexo}>
-                  <Text style={style.text}>Nivel Educativo</Text>
+            <View style={style.formDate}>
+              <View style={style.form}>
+                <View style={style.item}>
+                  <Text style={style.text}>
+                    Sexo <Text style={style.obligatorio}>*</Text>
+                  </Text>
                   <Picker
-                    style={style.selectNivel}
+                    style={style.selectItem}
+                    selectedValue={filterSexo}
+                    onValueChange={(itemValue) => setFilterSexo(itemValue)}
+                  >
+                    <Picker.Item label="-- Sexo --" value="" />
+                    {sexo.map((item) => (
+                      <Picker.Item
+                        key={item.id}
+                        label={item.nivel}
+                        value={item.id}
+                      />
+                    ))}
+                  </Picker>
+                </View>
+                <View style={style.item}>
+                  <Text style={style.text}>
+                    Nivel Educativo <Text style={style.obligatorio}>*</Text>
+                  </Text>
+                  <Picker
+                    style={style.selectItem}
                     selectedValue={filterDegree}
                     onValueChange={(itemValue) => setFilterDegree(itemValue)}
                   >
@@ -248,22 +337,44 @@ const RiasScreen = () => {
             <View style={style.formDate}>
               <View style={style.form}>
                 <View style={style.dateFecha}>
-                  <Text style={style.text}>Fecha de Evaluación</Text>
-                  <TextInput
-                    style={style.input}
-                    placeholder="Fecha de Ev."
-                    value={user.fechaEval}
-                    onChangeText={(text) => handleChange("fechaEval", text)}
-                  />
+                  <Text style={style.textFecha}>
+                    Fecha de Evaluación <Text style={style.obligatorio}>*</Text>
+                  </Text>
+                  <TouchableOpacity onPress={showFechaEvalDatePicker}>
+                    <TextInput
+                      value={fechaEval ? fechaEval.toDateString() : ""}
+                      editable={false}
+                    />
+                  </TouchableOpacity>
+                  {showFechaEvalPicker && (
+                    <DateTimePicker
+                      value={fechaEval ? fechaEval : new Date()}
+                      mode="date"
+                      placeholder="Fecha de Ev."
+                      onChange={handleFechaEvalChange}
+                      format="YYYY-MM-DD"
+                    />
+                  )}
                 </View>
                 <View style={style.dateFecha}>
-                  <Text style={style.text}>Fecha de Nacimiento</Text>
-                  <TextInput
-                    style={style.input}
-                    placeholder="Fecha de Nac."
-                    value={user.fechaNac}
-                    onChangeText={(text) => handleChange("fechaNac", text)}
-                  />
+                  <Text style={style.textFecha}>
+                    Fecha de Nacimiento <Text style={style.obligatorio}>*</Text>
+                  </Text>
+                  <TouchableOpacity onPress={showFechaNacDatePicker}>
+                    <TextInput
+                      value={fechaNac ? fechaNac.toDateString() : ""}
+                      editable={false}
+                    />
+                  </TouchableOpacity>
+                  {showFechaNacPicker && (
+                    <DateTimePicker
+                      value={fechaNac ? fechaNac : new Date()}
+                      mode="date"
+                      placeholder="Fecha de Nac."
+                      onChange={handleFechaNacChange}
+                      format="YYYY-MM-DD"
+                    />
+                  )}
                 </View>
               </View>
             </View>
@@ -593,6 +704,14 @@ const RiasScreen = () => {
                   <Text style={style.buttonText}>Registrar</Text>
                 </TouchableOpacity>
               </View>
+
+              <View>
+                {loading ? (
+                  <ActivityIndicator size="large" color="#0000ff" />
+                ) : (
+                  <Text></Text>
+                )}
+              </View>
             </View>
           </View>
         </View>
@@ -615,6 +734,7 @@ const style = StyleSheet.create({
   text: {
     fontWeight: "bold",
     padding: 5,
+    color: "navy",
   },
   select: {
     backgroundColor: "#f8f8ff",
@@ -634,6 +754,8 @@ const style = StyleSheet.create({
     margin: 3,
     backgroundColor: "#d3d3d3",
     borderRadius: 10,
+    color: "black",
+    fontWeight: "bold",
   },
   inputNivel: {
     width: "100%",
@@ -645,6 +767,8 @@ const style = StyleSheet.create({
     margin: 3,
     backgroundColor: "#d3d3d3",
     borderRadius: 10,
+    color: "black",
+    fontWeight: "bold",
   },
   selectForm: {
     backgroundColor: "#2e8b57",
@@ -677,7 +801,8 @@ const style = StyleSheet.create({
     backgroundColor: "#d3d3d3",
     borderRadius: 10,
     textAlign: "center",
-    color:'black'
+    color: "black",
+    fontWeight: "bold",
   },
   formDateRias: {
     flexDirection: "row",
@@ -709,6 +834,8 @@ const style = StyleSheet.create({
     backgroundColor: "#d3d3d3",
     borderRadius: 10,
     textAlign: "center",
+    color: "black",
+    fontWeight: "bold",
   },
   inputRiasPtColor: {
     backgroundColor: "#2e8b57",
@@ -721,6 +848,8 @@ const style = StyleSheet.create({
     alignSelf: "center",
     borderRadius: 10,
     textAlign: "center",
+    color: "black",
+    fontWeight: "bold",
   },
   inputRiasPts: {
     backgroundColor: "#2e8b57",
@@ -733,6 +862,8 @@ const style = StyleSheet.create({
     alignSelf: "center",
     borderRadius: 10,
     textAlign: "center",
+    color: "black",
+    fontWeight: "bold",
   },
   containerSumaRias: {
     backgroundColor: "#9400d3",
@@ -762,6 +893,8 @@ const style = StyleSheet.create({
     backgroundColor: "#d3d3d3",
     borderRadius: 10,
     textAlign: "center",
+    color: "black",
+    fontWeight: "bold",
   },
   signo: {
     alignSelf: "center",
@@ -778,6 +911,8 @@ const style = StyleSheet.create({
     alignSelf: "center",
     borderRadius: 10,
     textAlign: "center",
+    color: "black",
+    fontWeight: "bold",
   },
   //button
   containerButton: {
@@ -824,6 +959,8 @@ const style = StyleSheet.create({
     backgroundColor: "#d3d3d3",
     borderRadius: 10,
     textAlign: "center",
+    color: "black",
+    fontWeight: "bold",
   },
   textIndice: {
     fontWeight: "bold",
@@ -831,18 +968,37 @@ const style = StyleSheet.create({
     fontSize: 14,
   },
   //selectivelDateSexo
-  selectNivel: {
-    width: "160%",
+  selectItem: {
+    width: "100%",
     backgroundColor: "#f8f8ff",
-  },
-  dateSexo: {
+    justifyContent: "space-between",
     alignSelf: "center",
+    alignContent: "center",
+    alignItems: "center",
   },
-  formSexo: {
-    flexDirection: "row",
+  item: {
+    flex: 1,
+    margin: 10,
   },
-  formDateSexo: {
-    flexDirection: "row",
+  //obligatorio
+  obligatorio: {
+    color: "red",
+  },
+  dateFecha: {
+    textAlign: "center",
+    flex: 1,
+    margin: 5,
+    textAlign: "center",
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "navy",
+    padding: 15,
+  },
+  textFecha: {
+    fontWeight: "bold",
+    color: "navy",
+    fontSize: 12,
+    paddingBottom: 5,
   },
 });
 
