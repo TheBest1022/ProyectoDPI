@@ -389,18 +389,40 @@ const RiasScreen = () => {
                   <Text style={style.textAdivinanza}>Adivinanza (Ad)</Text>
                   <TextInput
                     style={style.inputRias}
-                    placeholder="Pt."
+                    placeholder="Pt"
                     value={user.adivinanza}
-                    onChangeText={(text) => handleChange("adivinanza", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("adivinanza", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={3}
                   />
                 </View>
                 <View style={style.formDateRias}>
                   <Text style={style.textAdivinanza}>Categorías (Ca)</Text>
                   <TextInput
                     style={style.inputRias}
-                    placeholder="Pt."
+                    placeholder="Pt"
                     value={user.categorias}
-                    onChangeText={(text) => handleChange("categorias", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("categorias", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={3}
                   />
                 </View>
                 <View style={style.formDateRias}>
@@ -409,9 +431,20 @@ const RiasScreen = () => {
                   </Text>
                   <TextInput
                     style={style.inputRias}
-                    placeholder="Pt."
+                    placeholder="Pt"
                     value={user.analogias}
-                    onChangeText={(text) => handleChange("analogias", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("analogias", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={3}
                   />
                 </View>
                 <View style={style.formDateRias}>
@@ -420,18 +453,40 @@ const RiasScreen = () => {
                   </Text>
                   <TextInput
                     style={style.inputRias}
-                    placeholder="Pt."
+                    placeholder="Pt"
                     value={user.figuras}
-                    onChangeText={(text) => handleChange("figuras", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("figuras", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={3}
                   />
                 </View>
                 <View style={style.formDateRias}>
                   <Text style={style.textAdivinanza}>Memoria Verbal (Mv)</Text>
                   <TextInput
                     style={style.inputRias}
-                    placeholder="Pt."
+                    placeholder="Pt"
                     value={user.verbal}
-                    onChangeText={(text) => handleChange("verbal", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("verbal", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={3}
                   />
                 </View>
                 <View style={style.formDateRias}>
@@ -440,9 +495,20 @@ const RiasScreen = () => {
                   </Text>
                   <TextInput
                     style={style.inputRias}
-                    placeholder="Pt."
+                    placeholder="Pt"
                     value={user.no_verbal}
-                    onChangeText={(text) => handleChange("no_verbal", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("no_verbal", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={3}
                   />
                 </View>
 
@@ -451,37 +517,59 @@ const RiasScreen = () => {
                     <Text style={style.text}>RA. VERBAL</Text>
                     <TextInput
                       style={style.inputRiasPt}
-                      placeholder="Ad."
+                      placeholder="Ad"
                       value={user.ad}
-                      onChangeText={(text) => handleChange("ad", text)}
+                      onChangeText={(text) => {
+                        // Remover caracteres no numéricos
+                        const numericText = text.replace(/[^0-9]/g, "");
+
+                        // Limitar a dos dígitos
+                        const truncatedText = numericText.slice(0, 3);
+
+                        // Actualizar el estado con el valor filtrado
+                        handleChange("ad", truncatedText);
+                      }}
+                      keyboardType="numeric"
+                      maxLength={3}
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Ca."
+                      placeholder="Ca"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPt}
-                      placeholder="An."
+                      placeholder="An"
                       value={user.an}
-                      onChangeText={(text) => handleChange("an", text)}
+                      onChangeText={(text) => {
+                        // Remover caracteres no numéricos
+                        const numericText = text.replace(/[^0-9]/g, "");
+
+                        // Limitar a dos dígitos
+                        const truncatedText = numericText.slice(0, 3);
+
+                        // Actualizar el estado con el valor filtrado
+                        handleChange("an", truncatedText);
+                      }}
+                      keyboardType="numeric"
+                      maxLength={3}
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Fi."
+                      placeholder="Fi"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Mv."
+                      placeholder="Mv"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Mnv."
+                      placeholder="Mnv"
                       editable={false}
                       placeholderTextColor="white"
                     />
@@ -490,37 +578,59 @@ const RiasScreen = () => {
                     <Text style={style.text}>NO VERBAL</Text>
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Ad."
+                      placeholder="Ad"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPt}
-                      placeholder="Ca."
+                      placeholder="Ca"
                       value={user.ca}
-                      onChangeText={(text) => handleChange("ca", text)}
+                      onChangeText={(text) => {
+                        // Remover caracteres no numéricos
+                        const numericText = text.replace(/[^0-9]/g, "");
+
+                        // Limitar a dos dígitos
+                        const truncatedText = numericText.slice(0, 3);
+
+                        // Actualizar el estado con el valor filtrado
+                        handleChange("ca", truncatedText);
+                      }}
+                      keyboardType="numeric"
+                      maxLength={3}
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="An."
+                      placeholder="An"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPt}
-                      placeholder="Fi."
+                      placeholder="Fi"
                       value={user.fi}
-                      onChangeText={(text) => handleChange("fi", text)}
+                      onChangeText={(text) => {
+                        // Remover caracteres no numéricos
+                        const numericText = text.replace(/[^0-9]/g, "");
+
+                        // Limitar a dos dígitos
+                        const truncatedText = numericText.slice(0, 3);
+
+                        // Actualizar el estado con el valor filtrado
+                        handleChange("fi", truncatedText);
+                      }}
+                      keyboardType="numeric"
+                      maxLength={3}
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Mv."
+                      placeholder="Mv"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Mnv."
+                      placeholder="Mnv"
                       editable={false}
                       placeholderTextColor="white"
                     />
@@ -556,39 +666,61 @@ const RiasScreen = () => {
                     <Text style={style.text}>MEMORIA</Text>
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Ad."
+                      placeholder="Ad"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Ca."
+                      placeholder="Ca"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="An."
+                      placeholder="An"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPts}
-                      placeholder="Fi."
+                      placeholder="Fi"
                       editable={false}
                       placeholderTextColor="white"
                     />
                     <TextInput
                       style={style.inputRiasPt}
-                      placeholder="Mv."
+                      placeholder="Mv"
                       value={user.mv}
-                      onChangeText={(text) => handleChange("mv", text)}
+                      onChangeText={(text) => {
+                        // Remover caracteres no numéricos
+                        const numericText = text.replace(/[^0-9]/g, "");
+
+                        // Limitar a dos dígitos
+                        const truncatedText = numericText.slice(0, 3);
+
+                        // Actualizar el estado con el valor filtrado
+                        handleChange("mv", truncatedText);
+                      }}
+                      keyboardType="numeric"
+                      maxLength={3}
                     />
                     <TextInput
                       style={style.inputRiasPt}
-                      placeholder="Mnv."
+                      placeholder="Mnv"
                       value={user.mvn}
-                      onChangeText={(text) => handleChange("mvn", text)}
+                      onChangeText={(text) => {
+                        // Remover caracteres no numéricos
+                        const numericText = text.replace(/[^0-9]/g, "");
+
+                        // Limitar a dos dígitos
+                        const truncatedText = numericText.slice(0, 3);
+
+                        // Actualizar el estado con el valor filtrado
+                        handleChange("mvn", truncatedText);
+                      }}
+                      keyboardType="numeric"
+                      maxLength={3}
                     />
                   </View>
                 </View>
@@ -608,7 +740,18 @@ const RiasScreen = () => {
                         ? ""
                         : parseInt(user.ad) + parseInt(user.an)
                     }`}
-                    onChangeText={(text) => handleChange("TotalRv", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("TotalRv", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={3}
                   />
                   <Text style={style.signo}>+</Text>
                   <TextInput
@@ -619,7 +762,18 @@ const RiasScreen = () => {
                         ? ""
                         : parseInt(user.ca) + parseInt(user.fi)
                     }`}
-                    onChangeText={(text) => handleChange("TotalNRv", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("TotalNRv", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={3}
                   />
                   <Text style={style.signo}>=</Text>
                   <TextInput
@@ -635,7 +789,18 @@ const RiasScreen = () => {
                           parseInt(user.an) +
                           (parseInt(user.ca) + parseInt(user.fi))
                     }`}
-                    onChangeText={(text) => handleChange("Total", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("Total", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={2}
                   />
                   <TextInput
                     style={style.inputRiasPtSuma}
@@ -645,7 +810,18 @@ const RiasScreen = () => {
                         ? ""
                         : parseInt(user.mv) + parseInt(user.mvn)
                     }`}
-                    onChangeText={(text) => handleChange("Memoria", text)}
+                    onChangeText={(text) => {
+                      // Remover caracteres no numéricos
+                      const numericText = text.replace(/[^0-9]/g, "");
+
+                      // Limitar a dos dígitos
+                      const truncatedText = numericText.slice(0, 3);
+
+                      // Actualizar el estado con el valor filtrado
+                      handleChange("Memoria", truncatedText);
+                    }}
+                    keyboardType="numeric"
+                    maxLength={2}
                   />
                 </View>
               </View>
@@ -660,9 +836,18 @@ const RiasScreen = () => {
                       <TextInput
                         style={style.inputRiasPtIndice}
                         value={user.Indiceverbal}
-                        onChangeText={(text) =>
-                          handleChange("Indiceverbal", text)
-                        }
+                        onChangeText={(text) => {
+                          // Remover caracteres no numéricos
+                          const numericText = text.replace(/[^0-9]/g, "");
+
+                          // Limitar a dos dígitos
+                          const truncatedText = numericText.slice(0, 3);
+
+                          // Actualizar el estado con el valor filtrado
+                          handleChange("Indiceverbal", truncatedText);
+                        }}
+                        keyboardType="numeric"
+                        maxLength={3}
                       />
                     </View>
                     <View style={style.Rias}>
@@ -670,9 +855,18 @@ const RiasScreen = () => {
                       <TextInput
                         style={style.inputRiasPtIndice}
                         value={user.IndiceNoverbal}
-                        onChangeText={(text) =>
-                          handleChange("IndiceNoverbal", text)
-                        }
+                        onChangeText={(text) => {
+                          // Remover caracteres no numéricos
+                          const numericText = text.replace(/[^0-9]/g, "");
+
+                          // Limitar a dos dígitos
+                          const truncatedText = numericText.slice(0, 3);
+
+                          // Actualizar el estado con el valor filtrado
+                          handleChange("IndiceNoverbal", truncatedText);
+                        }}
+                        keyboardType="numeric"
+                        maxLength={3}
                       />
                     </View>
                     <View style={style.Rias}>
@@ -680,9 +874,18 @@ const RiasScreen = () => {
                       <TextInput
                         style={style.inputRiasPtIndice}
                         value={user.IndiceGeneral}
-                        onChangeText={(text) =>
-                          handleChange("IndiceGeneral", text)
-                        }
+                        onChangeText={(text) => {
+                          // Remover caracteres no numéricos
+                          const numericText = text.replace(/[^0-9]/g, "");
+
+                          // Limitar a dos dígitos
+                          const truncatedText = numericText.slice(0, 3);
+
+                          // Actualizar el estado con el valor filtrado
+                          handleChange("IndiceGeneral", truncatedText);
+                        }}
+                        keyboardType="numeric"
+                        maxLength={3}
                       />
                     </View>
                     <View style={style.Rias}>
@@ -690,9 +893,18 @@ const RiasScreen = () => {
                       <TextInput
                         style={style.inputRiasPtIndice}
                         value={user.IndiceMemoria}
-                        onChangeText={(text) =>
-                          handleChange("IndiceMemoria", text)
-                        }
+                        onChangeText={(text) => {
+                          // Remover caracteres no numéricos
+                          const numericText = text.replace(/[^0-9]/g, "");
+
+                          // Limitar a dos dígitos
+                          const truncatedText = numericText.slice(0, 3);
+
+                          // Actualizar el estado con el valor filtrado
+                          handleChange("IndiceMemoria", truncatedText);
+                        }}
+                        keyboardType="numeric"
+                        maxLength={3}
                       />
                     </View>
                   </View>
