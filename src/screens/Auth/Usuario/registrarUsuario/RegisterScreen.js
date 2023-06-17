@@ -16,13 +16,27 @@ import {
 } from "react-native";
 
 const RegisterScreen = () => {
-  const usuario = {uri:"https://www.dropbox.com/s/nv9k77cwb5i2wbn/tea.jpg?dl=1"}
-  const icon = {uri:"https://www.dropbox.com/s/0ecs7f5qe3nevkh/baby.png?dl=1"}
-  const niño = {uri:"https://www.dropbox.com/s/mwhdzts1pyzwvu4/varon.png?dl=1"}
-  const correo = {uri:"https://www.dropbox.com/s/32dbbybg0mzn29r/correo.png?dl=1"}
-  const contra = {uri:"https://www.dropbox.com/s/6ufy6m7q661xc1s/contra.png?dl=1"}
-  const restablecer = {uri:"https://www.dropbox.com/s/5hw505f6q9fw70z/restablecer.png?dl=1"}
-  const cebe = {uri:"https://www.dropbox.com/s/9wm5612pj2yye5c/cebe.png?dl=1"}
+  const usuario = {
+    uri: "https://www.dropbox.com/s/nv9k77cwb5i2wbn/tea.jpg?dl=1",
+  };
+  const icon = {
+    uri: "https://www.dropbox.com/s/0ecs7f5qe3nevkh/baby.png?dl=1",
+  };
+  const niño = {
+    uri: "https://www.dropbox.com/s/mwhdzts1pyzwvu4/varon.png?dl=1",
+  };
+  const correo = {
+    uri: "https://www.dropbox.com/s/32dbbybg0mzn29r/correo.png?dl=1",
+  };
+  const contra = {
+    uri: "https://www.dropbox.com/s/6ufy6m7q661xc1s/contra.png?dl=1",
+  };
+  const restablecer = {
+    uri: "https://www.dropbox.com/s/5hw505f6q9fw70z/restablecer.png?dl=1",
+  };
+  const cebe = {
+    uri: "https://www.dropbox.com/s/ccsr46yed39qcme/cg.jpg?dl=1",
+  };
   const navigation = useNavigation();
   const { Register, company, obtenerEscuela } = useGlobal();
   const [filter, setFilter] = useState("");
@@ -85,8 +99,8 @@ const RegisterScreen = () => {
   }, []);
 
   return (
-    <Layout>
-      <ScrollView>
+    <ScrollView>
+      <Layout>
         <View style={style.container}>
           <View style={style.encabezado}>
             <TouchableNativeFeedback onPress={handlepost}>
@@ -208,15 +222,19 @@ const RegisterScreen = () => {
             </View>
           </View>
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 
 const style = StyleSheet.create({
   container: {
-    width:"100%",
-    height:"100%"
+    width: "100%",
+    height: "100%",
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+
   },
   imagenlogin: {
     width: 360,
@@ -292,7 +310,8 @@ const style = StyleSheet.create({
   encabezado: {
     flexDirection: "row",
     backgroundColor: "#2a80b9",
-    padding: 15,
+    padding: 20,
+    width:"100%"
   },
   restablecer: {
     width: 25,

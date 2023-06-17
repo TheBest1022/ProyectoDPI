@@ -63,8 +63,8 @@ const InicioSecionScreen = () => {
   };
 
   return (
-    <Layout>
-      <ScrollView>
+    <ScrollView>
+      <Layout>
         <View style={style.container}>
           <View style={style.textocontenedor}>
             <ImageBackground
@@ -130,15 +130,14 @@ const InicioSecionScreen = () => {
             </View>
           </View>
         </View>
-      </ScrollView>
-    </Layout>
+      </Layout>
+    </ScrollView>
   );
 };
 
 const style = StyleSheet.create({
   /* CONTEDOR - GENERAL*/
   container: {
-    marginTop: 2,
     width: "100%",
     height: "100%",
   },
@@ -162,7 +161,7 @@ const style = StyleSheet.create({
   },
   /*BOTONES PRICIPALES*/
   contenedorlogin: {
-    margin:10
+    margin: 10,
   },
   btniniciar: {
     backgroundColor: "gold",

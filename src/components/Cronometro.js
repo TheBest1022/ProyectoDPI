@@ -2,22 +2,33 @@ import React, { useEffect, useState, useRef } from "react";
 import { useGlobal } from "../context/GlobalProvider";
 import { useNavigation } from "@react-navigation/native";
 import { Picker } from "@react-native-picker/picker";
+import { Audio } from "expo-av";
 import {
   Text,
   StyleSheet,
   View,
   ImageBackground,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 
 const Cronometro = () => {
-  const navigation = useNavigation();
-  const { auth, student } = useGlobal();
+  const { auth, student, insertTimePractice, getStudents } = useGlobal();
+
   const [filter, setFilter] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [sound, setSound] = React.useState();
   const [tiempoTranscurrido, setTiempoTranscurrido] = useState(0);
   const [cronometroActivo, setCronometroActivo] = useState(false);
   const [mostrarTiempo, setMostrarTiempo] = useState(false);
+
   const intervalRef = useRef(null);
+
+  const [user, setUser] = useState({
+    apoderado: "",
+    time: "",
+  });
+
   const iniciarCronometro = () => {
     setCronometroActivo(true);
     intervalRef.current = setInterval(() => {
@@ -42,6 +53,33 @@ const Cronometro = () => {
 
     return `${formattedMinutes}:${formattedSeconds}`;
   };
+  const handleSubmit = async () => {
+    setLoading(true);
+    user.apoderado = auth.IdRol == 2 ? auth.id : filter != "" ? filter : "";
+    user.time = formatTime(tiempoTranscurrido);
+    if (user.apoderado === "" || user.time === "") {
+      setLoading(false);
+      Alert.alert("ERROR");
+      return;
+    }
+    try {
+      const { status, data } = await insertTimePractice(user);
+      if (status == 201) {
+        Alert.alert("Tiempo Registrado");
+        setUser({
+          apoderado: "",
+          time: "",
+        });
+        setLoading(false);
+      } else {
+        Alert.alert(`${data.message}`);
+        setLoading(false);
+      }
+    } catch (error) {
+      Alert.alert(error);
+      setLoading(false);
+    }
+  };
   const cronometro = {
     uri: "https://www.dropbox.com/s/grc0g2hmxxw3s1p/cronometro.png?dl=1",
   };
@@ -51,6 +89,9 @@ const Cronometro = () => {
   const send = {
     uri: "https://www.dropbox.com/s/p77g5sk8w65v3uw/expediente.png?dl=1",
   };
+  useEffect(() => {
+    getStudents(auth.id_empresa);
+  }, []);
 
   return (
     <View style={style.container}>
@@ -60,7 +101,9 @@ const Cronometro = () => {
             <View style={style.estado}>
               <TouchableOpacity
                 style={[style.cronometroButton, style.iniciarButton]}
-                onPress={iniciarCronometro}
+                onPress={async () => {
+                  iniciarCronometro();
+                }}
               >
                 <ImageBackground
                   source={cronometro}
@@ -72,7 +115,9 @@ const Cronometro = () => {
                 <View>
                   <TouchableOpacity
                     style={[style.cronometroButtonDetenner]}
-                    onPress={detenerCronometro}
+                    onPress={async () => {
+                      detenerCronometro();
+                    }}
                   >
                     <ImageBackground
                       source={stop}
@@ -83,7 +128,9 @@ const Cronometro = () => {
                 <View>
                   <TouchableOpacity
                     style={[style.cronometroButtonRegistrar]}
-                    onPress={detenerCronometro}
+                    onPress={async () => {
+                      handleSubmit();
+                    }}
                   >
                     <ImageBackground
                       source={send}
@@ -116,7 +163,7 @@ const Cronometro = () => {
               onValueChange={(itemValue) => setFilter(itemValue)}
               style={style.select}
             >
-              <Picker.Item label="-- Alumno --" value="id" />
+              <Picker.Item label="-- Alumno --" value="" />
               {student.map((item) => (
                 <Picker.Item key={item.id} label={item.name} value={item.id} />
               ))}
@@ -124,7 +171,9 @@ const Cronometro = () => {
             <View style={style.estado}>
               <TouchableOpacity
                 style={[style.cronometroButton, style.iniciarButton]}
-                onPress={iniciarCronometro}
+                onPress={async () => {
+                  iniciarCronometro();
+                }}
               >
                 <ImageBackground
                   source={cronometro}
@@ -136,7 +185,9 @@ const Cronometro = () => {
                 <View>
                   <TouchableOpacity
                     style={[style.cronometroButtonDetenner]}
-                    onPress={detenerCronometro}
+                    onPress={async () => {
+                      detenerCronometro();
+                    }}
                   >
                     <ImageBackground
                       source={stop}
@@ -147,7 +198,9 @@ const Cronometro = () => {
                 <View>
                   <TouchableOpacity
                     style={[style.cronometroButtonRegistrar]}
-                    onPress={detenerCronometro}
+                    onPress={async () => {
+                      handleSubmit();
+                    }}
                   >
                     <ImageBackground
                       source={send}

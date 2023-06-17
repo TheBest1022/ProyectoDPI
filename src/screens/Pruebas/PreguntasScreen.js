@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Layout from "../../components/Layout";
 import Name from "../../components/General";
+import { Audio } from "expo-av";
 import {
   ScrollView,
   StyleSheet,
@@ -14,7 +15,7 @@ import Cronometro from "../../components/Cronometro";
 
 const PreguntasScreen = ({ navigation, route }) => {
   const id = route.params ? route.params.id : null;
-
+  const [sound, setSound] = React.useState();
   const renderData = () => {
     let data = dataPreguntas.filter((item) => {
       return item.id == id;
@@ -30,9 +31,17 @@ const PreguntasScreen = ({ navigation, route }) => {
                     <Text style={style.pregunta}>{pregunta}</Text>
                   </View>
                   <View style={style.containerImagen}>
-                    {imagenes.map(({ uri }, index) => (
+                    {imagenes.map(({ uri, sonido }, index) => (
                       <View style={style.Imagen} key={index}>
-                        <TouchableOpacity>
+                        <TouchableOpacity
+                          onPress={async () => {
+                            const { sound } = await Audio.Sound.createAsync(
+                              sonido
+                            );
+                            setSound(sound);
+                            await sound.playAsync();
+                          }}
+                        >
                           <ImageBackground
                             source={{ uri: uri }}
                             style={style.Img}
@@ -49,6 +58,13 @@ const PreguntasScreen = ({ navigation, route }) => {
       </View>
     );
   };
+  useEffect(() => {
+    return () => {
+      if (sound) {
+        sound.unloadAsync();
+      }
+    };
+  }, [sound]);
   return (
     <ScrollView>
       <Layout>
@@ -97,7 +113,7 @@ const style = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "center",
     width: "100%",
-    justifyContent:'center'
+    justifyContent: "center",
   },
 });
 

@@ -121,7 +121,7 @@ const RiasScreen = () => {
     Indiceverbal: "",
     IndiceNoverbal: "",
     IndiceGeneral: "",
-    IndiceMemoria: "",
+    IndiceMemoria: ""
   });
   const handleSubmit = async () => {
     setLoading(true);

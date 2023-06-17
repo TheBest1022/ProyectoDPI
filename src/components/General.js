@@ -25,7 +25,10 @@ const General = () => {
                 ? "ADMIN"
                 : auth.IdRol == 6
                 ? "DIRECTOR"
-                : "DOCENTE"}
+                : auth.IdRol == 5
+                ? "DOCENTE"
+                : "PSICOLOGO"
+                }
             </Text>
           </View>
           <View style={style.des}>

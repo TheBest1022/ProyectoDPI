@@ -12,9 +12,6 @@ import {
 } from "react-native";
 
 const Matematico = ({ temas }) => {
-  const atras = {
-    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
-  };
   const navigation = useNavigation();
   const [search, setSearch] = useState("");
   const handlepost = () => {
@@ -97,6 +94,9 @@ const Matematico = ({ temas }) => {
         </View>
       );
     }
+  };
+   const atras = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
   };
   return (
     <View style={style.container}>

@@ -14,10 +14,10 @@ export const useGlobal = () => {
 export const GlobalContextProvider = ({ children }) => {
   const [auth, setAuth] = useState(null);
   const [docente, setDocente] = useState([]);
-  const [psicologo, setPsicologo] = useState()
+  const [psicologo, setPsicologo] = useState();
   const [recharge, setRecharge] = useState(false);
   const [tema, setTema] = useState([]);
-  const [face, setFace] = useState([])
+  const [face, setFace] = useState([]);
   const [student, setStudent] = useState([]);
   const [company, setCompany] = useState([]);
   //Funciones
@@ -99,6 +99,12 @@ export const GlobalContextProvider = ({ children }) => {
     }
     return;
   };
+  const insertTimeFace = async (data) => {
+    return await axios.post(`${conexionURL}api/student/score/emotion`, data);
+  };
+  const insertTimePractice = async (data) => {
+    return await axios.post(`${conexionURL}api/student/score/practice`, data);
+  };
   //Empresa
   const obtenerEscuela = async () => {
     try {
@@ -115,9 +121,12 @@ export const GlobalContextProvider = ({ children }) => {
   };
 
   //Psicologo
-  const insertRias = async (rias)=>{
-    return await axios.post(`${conexionURL}api/psicologo/psicologo/register`, rias)
-  }
+  const insertRias = async (rias) => {
+    return await axios.post(
+      `${conexionURL}api/psicologo/psicologo/register`,
+      rias
+    );
+  };
   const getPsicologo = async (id) => {
     try {
       const { data } = await axios.get(
@@ -161,7 +170,9 @@ export const GlobalContextProvider = ({ children }) => {
         obtenerEscuela,
         FaceId,
         insertRias,
-        getPsicologo
+        getPsicologo,
+        insertTimeFace,
+        insertTimePractice,
       }}
     >
       {children}
