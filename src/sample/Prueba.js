@@ -239,6 +239,18 @@ export const dataPruebas = [
       },
     ],
   },
+  {
+    id: "Espaciales",
+    Img: [
+      {
+        id: "20",
+        img: {
+          uri: "https://www.dropbox.com/s/jawy5e7t9wvvtla/conceptosespaciales.png?dl=1",
+        },
+        descripcion: "Conceptos Espaciles",
+      },
+    ],
+  },
 ];
 
 export const dataPreguntas = [
@@ -1508,6 +1520,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/ds41hg8pidqrp46/manouno.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/0apubtffv6r9kh8/manodos.png?dl=1",
@@ -1522,10 +1535,11 @@ export const dataPreguntas = [
         pregunta: "¿Cúal es el número 2?",
         imagenes: [
           {
-            uri: "https://www.dropbox.com/s/0apubtffv6r9kh8/manodos.png?dl=1",
+            uri: "https://www.dropbox.com/s/phc0457jwaw6fbj/manotres.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/phc0457jwaw6fbj/manotres.png?dl=1",
+            uri: " https://www.dropbox.com/s/0apubtffv6r9kh8/manodos.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/ds41hg8pidqrp46/manouno.png?dl=1",
@@ -1537,13 +1551,14 @@ export const dataPreguntas = [
         pregunta: "¿Cúal es el número 3?",
         imagenes: [
           {
-            uri: "https://www.dropbox.com/s/phc0457jwaw6fbj/manotres.png?dl=1",
+            uri: "https://www.dropbox.com/s/0apubtffv6r9kh8/manodos.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/ds41hg8pidqrp46/manouno.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/0apubtffv6r9kh8/manodos.png?dl=1",
+            uri: "https://www.dropbox.com/s/phc0457jwaw6fbj/manotres.png?dl=1 ",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1559,6 +1574,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/gaiem0filypciuz/manocuatro.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1570,10 +1586,11 @@ export const dataPreguntas = [
             uri: "https://www.dropbox.com/s/huz0a4a048un2gw/manoseis.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/gaiem0filypciuz/manocuatro.png?dl=1",
+            uri: " https://www.dropbox.com/s/11lfcvvxe626qo4/manocinco.png?dl=1 ",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
-            uri: "https://www.dropbox.com/s/11lfcvvxe626qo4/manocinco.png?dl=1",
+            uri: "https://www.dropbox.com/s/gaiem0filypciuz/manocuatro.png?dl=1",
           },
         ],
       },
@@ -1589,6 +1606,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/huz0a4a048un2gw/manoseis.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1597,10 +1615,11 @@ export const dataPreguntas = [
         pregunta: "¿Cúal es el número 7?",
         imagenes: [
           {
-            uri: "https://www.dropbox.com/s/ra50dwclud5496t/manonueve.png?dl=1",
+            uri: "https://www.dropbox.com/s/y55cw2w2ibbn9a9/manosiete.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
-            uri: "https://www.dropbox.com/s/y55cw2w2ibbn9a9/manosiete.png?dl=1",
+            uri: " https://www.dropbox.com/s/ra50dwclud5496t/manonueve.png?dl=1 ",
           },
           {
             uri: "https://www.dropbox.com/s/y4ead6izpt51naq/manoOcho.png?dl=1",
@@ -1616,6 +1635,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/y4ead6izpt51naq/manoOcho.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/ra50dwclud5496t/manonueve.png?dl=1",
@@ -1627,10 +1647,11 @@ export const dataPreguntas = [
         pregunta: "¿Cúal es el número 9?",
         imagenes: [
           {
-            uri: "https://www.dropbox.com/s/y4ead6izpt51naq/manoOcho.png?dl=1",
+            uri: "https://www.dropbox.com/s/ra50dwclud5496t/manonueve.png?dl=1 ",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
-            uri: "https://www.dropbox.com/s/ra50dwclud5496t/manonueve.png?dl=1",
+            uri: "https://www.dropbox.com/s/y4ead6izpt51naq/manoOcho.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/y55cw2w2ibbn9a9/manosiete.png?dl=1",
@@ -1649,6 +1670,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/vh3tfl5uihom1jb/manodiez.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1666,6 +1688,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/3bmg8xr3hnqfs92/saludar.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/v1ngikcepgg042o/morder.png?dl=1",
@@ -1678,6 +1701,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/rovnu2t1pn0qmdc/ayudar.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/xxpjclxp6g38u78/pelear.png?dl=1",
@@ -1696,6 +1720,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/pk20ufdpn4avcy7/querer.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/936jzjianegh1lu/escupir.png?dl=1",
@@ -1714,6 +1739,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/8x1azykizce3bzl/empatia.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1726,6 +1752,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/zqnuti2jfwi17eh/amigo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/aksbbqotjcqie14/molestar.png?dl=1",
@@ -1746,6 +1773,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/7mp8an5gqs0xsya/policia.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/9jr2vtawk1amvib/enfermera.png?dl=1",
@@ -1758,6 +1786,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/ve9neywx676xrll/medico.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/qdgj3277oc5wn23/ingeniero.png?dl=1",
@@ -1776,6 +1805,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/edkuf3jyt2phbda/bombero.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/ul8f4tfi67neiw8/abogado.png?dl=1",
@@ -1788,6 +1818,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/zoduuho2xls958y/sastre.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/ghfmqf6m0iisfq0/agricultor.png?dl=1",
@@ -1802,13 +1833,14 @@ export const dataPreguntas = [
         pregunta: "¿Qué personaje es un astronauta?",
         imagenes: [
           {
-            uri: "https://www.dropbox.com/s/3fmwluxxzxny6h3/astronauta.png?dl=1",
+            uri: "https://www.dropbox.com/s/lomirqyjfditok8/veterinario.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/uwqkukvzmm4etv5/carpintera.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/lomirqyjfditok8/veterinario.png?dl=1",
+            uri: "https://www.dropbox.com/s/3fmwluxxzxny6h3/astronauta.png?dl=1 ",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1821,6 +1853,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/e0cwyspav2lzwu7/maestra.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/99u7h87hmqjs5wx/mecanico.png?dl=1",
@@ -1833,6 +1866,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/lomirqyjfditok8/veterinario.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/uyao5yvfvmnxcyo/alcalde.png?dl=1",
@@ -1850,10 +1884,11 @@ export const dataPreguntas = [
             uri: "https://www.dropbox.com/s/w7mar8cmurdj89k/arquitecto.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/ul8f4tfi67neiw8/abogado.png?dl=1",
+            uri: "https://www.dropbox.com/s/3fmwluxxzxny6h3/astronauta.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/3fmwluxxzxny6h3/astronauta.png?dl=1",
+            uri: "https://www.dropbox.com/s/ul8f4tfi67neiw8/abogado.png?dl=1 ",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1866,6 +1901,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/ghfmqf6m0iisfq0/agricultor.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/7mp8an5gqs0xsya/policia.png?dl=1",
@@ -1877,10 +1913,11 @@ export const dataPreguntas = [
         pregunta: "¿Qué personaje es un albañil?",
         imagenes: [
           {
-            uri: "https://www.dropbox.com/s/e0cwyspav2lzwu7/maestra.png?dl=1",
+            uri: "https://www.dropbox.com/s/cbqk03aig8w5hpz/alba%C3%B1il.png?dl=1 ",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
-            uri: "https://www.dropbox.com/s/cbqk03aig8w5hpz/alba%C3%B1il.png?dl=1",
+            uri: "https://www.dropbox.com/s/e0cwyspav2lzwu7/maestra.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/edkuf3jyt2phbda/bombero.png?dl=1",
@@ -1895,10 +1932,11 @@ export const dataPreguntas = [
             uri: "https://www.dropbox.com/s/3oskfhgcskhmqol/farmaceutica.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/uyao5yvfvmnxcyo/alcalde.png?dl=1",
+            uri: "https://www.dropbox.com/s/zoduuho2xls958y/sastre.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/zoduuho2xls958y/sastre.png?dl=1",
+            uri: "https://www.dropbox.com/s/uyao5yvfvmnxcyo/alcalde.png?dl=1 ",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1908,6 +1946,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/w7mar8cmurdj89k/arquitecto.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/qdgj3277oc5wn23/ingeniero.png?dl=1",
@@ -1929,6 +1968,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/uwqkukvzmm4etv5/carpintera.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1938,6 +1978,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/3oskfhgcskhmqol/farmaceutica.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/99u7h87hmqjs5wx/mecanico.png?dl=1",
@@ -1959,6 +2000,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/xip1r09aqhqtcbh/secretario.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -1970,7 +2012,8 @@ export const dataPreguntas = [
             uri: "https://www.dropbox.com/s/7mp8an5gqs0xsya/policia.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/ve9neywx676xrll/medico.png?dl=1",
+            uri: "https://www.dropbox.com/s/99u7h87hmqjs5wx/mecanico.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/ul8f4tfi67neiw8/abogado.png?dl=1",
@@ -1983,6 +2026,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/qdgj3277oc5wn23/ingeniero.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/cbqk03aig8w5hpz/alba%C3%B1il.png?dl=1",
@@ -2001,6 +2045,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/sf6mr425pxj4uze/psicologo.jpg?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/99u7h87hmqjs5wx/mecanico.png?dl=1",
@@ -2018,6 +2063,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/493yscu5bw46qlo/verano.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/7tgd7m7j94dqyhz/invierno.png?dl=1",
@@ -2036,6 +2082,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/7tgd7m7j94dqyhz/invierno.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/493yscu5bw46qlo/verano.png?dl=1",
@@ -2048,6 +2095,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/0rqoc1ij6uav9cs/oto%C3%B1o.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/md8h6uwhn28wecl/primavera.jpg?dl=1",
@@ -2059,7 +2107,7 @@ export const dataPreguntas = [
       },
       {
         id: "4",
-        pregunta: "¿Cuando las hay muchas flores es porqu estamos en ...?",
+        pregunta: "¿Cuando hay muchas flores es porque estamos en ...?",
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/7tgd7m7j94dqyhz/invierno.png?dl=1",
@@ -2069,6 +2117,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/md8h6uwhn28wecl/primavera.jpg?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2083,6 +2132,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/6mmexoa2uhofrfi/comisaria.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/7bg80reds6lerp5/hospital.png?dl=1",
@@ -2104,6 +2154,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/7bg80reds6lerp5/hospital.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2116,6 +2167,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/1236gm49iqj3t2b/iglesia.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/jzzzit4pdfhavug/gasolinera.png?dl=1",
@@ -2134,6 +2186,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/4x5pso1hyaba61q/cine.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2146,6 +2199,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/rk3bdia247qv8bf/estaciondetren.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/94ylhvlqwb5hv6m/correos.png?dl=1",
@@ -2158,6 +2212,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/6qyk30sc4jd8c6h/restaurante.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/ioti6ov57g6drnj/museo.png?dl=1",
@@ -2173,6 +2228,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/jzzzit4pdfhavug/gasolinera.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/6mmexoa2uhofrfi/comisaria.png?dl=1",
@@ -2191,6 +2247,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/dn8suovmqiyk1xk/school.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/7bg80reds6lerp5/hospital.png?dl=1",
@@ -2209,6 +2266,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/4wqv5s4m9ha0qi5/bomberos.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2221,6 +2279,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/94ylhvlqwb5hv6m/correos.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/6qyk30sc4jd8c6h/restaurante.png?dl=1",
@@ -2233,6 +2292,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/9oy77aud5mxdvke/Bancos.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/dn8suovmqiyk1xk/school.png?dl=1",
@@ -2254,6 +2314,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/pusrvted5wqvl0c/piscina.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2263,6 +2324,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/jd1ymtddb7edngi/parque.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/rk3bdia247qv8bf/estaciondetren.png?dl=1",
@@ -2278,6 +2340,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/ioti6ov57g6drnj/museo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/dn8suovmqiyk1xk/school.png?dl=1",
@@ -2294,13 +2357,14 @@ export const dataPreguntas = [
     Question: [
       {
         id: "1",
-        pregunta: "¿Cúal transporte aéreo?",
+        pregunta: "¿Cúales son los transportes aéreos?",
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/qlb05peo0p0w49o/autobus.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/mevh61vivr34038/avion.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/h6ianbbryvjpapu/barco.png?dl=1",
@@ -2309,10 +2373,41 @@ export const dataPreguntas = [
       },
       {
         id: "2",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/33ges1asibiqojp/tren.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/b2nahv0mxind82u/avioneta.jpg?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/pmvuisxgo8b4dxo/piraguas.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "3",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/mu2fkvs5wh8hs36/helicoptero.png?dl=1",
+             sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/o5gow9ukjextqhj/motoacua.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/m02tk11wwcdt3ds/camion.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "4",
         pregunta: "¿Cúal es un transporte acuático?",
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/v9pqkqu3plgtx8n/bote.jpg?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/mu2fkvs5wh8hs36/helicoptero.png?dl=1",
@@ -2323,7 +2418,37 @@ export const dataPreguntas = [
         ],
       },
       {
-        id: "3",
+        id: "5",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/fzeysf5cegvmkd7/grua.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/pjrlcw8as8lgxhl/pesquero.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/egrsy2paugtn660/globoaereo.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "6",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/zjop6lou4xfe6fk/cuatri.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/cd9u4icbvs3onnm/cohete.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/kcguzfzlr7gd6o8/lancha.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+        ],
+      },
+      {
+        id: "7",
         pregunta: "¿Cúal es un transporte terrestre",
         imagenes: [
           {
@@ -2331,9 +2456,40 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/6ti2i0o44ugbzec/tractor.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/cd9u4icbvs3onnm/cohete.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "3",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/u6a4wfqlq1lqoiz/canoa.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/egrsy2paugtn660/globoaereo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/b30bmkt5nhqcrga/moto.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+        ],
+      },
+      {
+        id: "3",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/rv8f0lb6tk1ns5q/caballo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/ztppdd2pxpu6j54/submarino.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/mevh61vivr34038/avion.png?dl=1",
           },
         ],
       },
@@ -2348,6 +2504,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/fgl7fl9z9z70pqp/bocas.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/48s9tucmyhplg0i/manos.png?dl=1",
@@ -2369,6 +2526,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/r7g4fc9faj1be88/labios.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2378,6 +2536,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/1h9e19x0vb6w4mo/narizon.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/t8vjxu4ygksefz3/barbilla.png?dl=1",
@@ -2396,6 +2555,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/rdh2dpxwpj9hmzo/ojos.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/3rp2cq483etri3p/pierna.jpg?dl=1",
@@ -2408,6 +2568,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/t8wl0og4kba7iwi/cejas.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/o9z64bod41g495q/pie.png?dl=1",
@@ -2426,6 +2587,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/sfcx6f46nwh0wfl/pesta%C3%B1a.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/x1eehafiq2yzwp0/espalda.png?dl=1",
@@ -2438,6 +2600,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/t8vjxu4ygksefz3/barbilla.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/yoei3hfyvlnzf2p/codo.png?dl=1",
@@ -2459,6 +2622,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/dsxz58lavmfny8i/mejilla.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2473,6 +2637,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/tjpumnkjuj1ix39/caramelo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/n001qovks8hzwkr/limon.png?dl=1",
@@ -2494,6 +2659,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/55fhjkbs1lhbftp/sal.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2506,6 +2672,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/hqgbhe5mzs3i5dm/cafe.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/khfb3vkdgpxa3l8/aceitunas.png?dl=1",
@@ -2520,10 +2687,11 @@ export const dataPreguntas = [
             uri: "https://www.dropbox.com/s/1xrdmm62kl2oxti/brocoli.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/n001qovks8hzwkr/limon.png?dl=1",
+            uri: "https://www.dropbox.com/s/ki8dwb2s4yto0hv/helado.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
-            uri: "https://www.dropbox.com/s/ki8dwb2s4yto0hv/helado.png?dl=1",
+            uri: "https://www.dropbox.com/s/n001qovks8hzwkr/limon.png?dl=1 ",
           },
         ],
       },
@@ -2538,6 +2706,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/oja15zoxyzfjw1b/lapiz.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/rzfpnaf5v2218k3/jabon.png?dl=1",
@@ -2558,6 +2727,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/t1i12n7hyptsfjp/tajador.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2569,6 +2739,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/13bfrrzjmewczuy/pegamento.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/r88s25q5b7hynsl/taladro.png?dl=1",
@@ -2580,12 +2751,14 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/3h1khwpl16bmxpq/borrador.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/4zyzquyc5wdx0qy/alcohol.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/l2430esattigwkz/cartulinas.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2600,6 +2773,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/pt1x5gim19xod1r/acuarelas.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2614,6 +2788,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/cd4zt7rkt6gka52/mochila.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2631,6 +2806,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/rzfpnaf5v2218k3/jabon.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/5pvvlbtmnfxbhvg/cuchillo.png?dl=1",
@@ -2645,6 +2821,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/azk4itbtmwtplv3/cepillo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/t1i12n7hyptsfjp/tajador.png?dl=1",
@@ -2656,12 +2833,14 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/kkqpskz0en1jkeu/toalla.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/13bfrrzjmewczuy/pegamento.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/6qqx5v7aq0lmyy6/cremas.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2676,6 +2855,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/kt4y93oxqwat7dr/pastadental.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2687,6 +2867,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/ggeif1mt8ng6tiu/talco.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/pt1x5gim19xod1r/acuarelas.png?dl=1",
@@ -2698,12 +2879,14 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/d4b48b1ez5uh8ba/peine.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/7299030n97qa5hm/enchufe.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/27768tao4opii06/acondicionador.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2718,12 +2901,14 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/t24mddlqy6jpnn8/plancha.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/rzfpnaf5v2218k3/jabon.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/5pvvlbtmnfxbhvg/cuchillo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2732,6 +2917,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/3u9qjjq50003g14/martillo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/azk4itbtmwtplv3/cepillo.png?dl=1",
@@ -2752,6 +2938,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/r88s25q5b7hynsl/taladro.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2763,6 +2950,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/vqne12gno75kult/alambre.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/l2430esattigwkz/cartulinas.png?dl=1",
@@ -2774,12 +2962,14 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/7299030n97qa5hm/enchufe.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/ggeif1mt8ng6tiu/talco.png?dl=1",
           },
           {
             uri: "https://www.dropbox.com/s/xbc2vum4qy4arsr/alicate.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2791,6 +2981,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/5yrynh1t9d9ye1c/aguja.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/cd4zt7rkt6gka52/mochila.png?dl=1",
@@ -2808,6 +2999,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/74os7w2osplv8px/semaforojo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/emghaz3vid4lnsq/semaforoambar.png?dl=1",
@@ -2826,6 +3018,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/emghaz3vid4lnsq/semaforoambar.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/h0ou18ix82ixrp4/semaforoverde.png?dl=1",
@@ -2844,6 +3037,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/h0ou18ix82ixrp4/semaforoverde.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
         ],
       },
@@ -2861,6 +3055,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/ev0tof62katkb2b/gustos.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/s15v0gxeemo8rng/ojo.png?dl=1",
@@ -2873,6 +3068,7 @@ export const dataPreguntas = [
         imagenes: [
           {
             uri: "https://www.dropbox.com/s/s15v0gxeemo8rng/ojo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/ize7sozg8saj8hw/o%C3%ADdo.png?dl=1",
@@ -2891,6 +3087,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/degt3779h6u4ddn/olfato.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/ev0tof62katkb2b/gustos.png?dl=1",
@@ -2906,6 +3103,7 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/yr4bs9q1uuu0bps/mano.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
           },
           {
             uri: "https://www.dropbox.com/s/s15v0gxeemo8rng/ojo.png?dl=1",
@@ -2920,10 +3118,144 @@ export const dataPreguntas = [
             uri: "https://www.dropbox.com/s/yr4bs9q1uuu0bps/mano.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/ize7sozg8saj8hw/o%C3%ADdo.png?dl=1",
+            uri: "https://www.dropbox.com/s/degt3779h6u4ddn/olfato.png?dl=1",
           },
           {
-            uri: "https://www.dropbox.com/s/degt3779h6u4ddn/olfato.png?dl=1",
+            uri: "https://www.dropbox.com/s/ize7sozg8saj8hw/o%C3%ADdo.png?dl=1 ",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "Espaciales",
+    Question: [
+      {
+        id: "1",
+        pregunta: "Señala la pelota que se encuentra adelante",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/73pziy50i4wbnsm/delante.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/kv803yk768lba91/detras.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/65g53wnrknhz7er/arriba.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "2",
+        pregunta: "Señala la pelota que se encuentra atrás",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/65g53wnrknhz7er/arriba.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/kv803yk768lba91/detras.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/73pziy50i4wbnsm/delante.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "3",
+        pregunta: "Señala la pelota que se encuentra arriba",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/s2b9eoce0jwwrvx/abajo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/73pziy50i4wbnsm/delante.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/65g53wnrknhz7er/arriba.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+        ],
+      },
+      {
+        id: "4",
+        pregunta: "Señala la pelota que se encuentra abajo",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/73pziy50i4wbnsm/delante.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/s2b9eoce0jwwrvx/abajo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/kv803yk768lba91/detras.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "5",
+        pregunta: "Señala la pelota que se encuentra dentro",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/gt6jh9jwdgmmr3j/dentro.png?dl=1",
+             sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/s2b9eoce0jwwrvx/abajo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/zpydsbkppclx9rh/fuera.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "6",
+        pregunta: "Señala la pelota que se encuentra afuera",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/65g53wnrknhz7er/arriba.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/zpydsbkppclx9rh/fuera.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/gt6jh9jwdgmmr3j/dentro.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "7",
+        pregunta: "Señala la flecha que va a la izquierda",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/khi4z8wbj05tv8a/derecha.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/gt6jh9jwdgmmr3j/dentro.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/xyfhnkqnp33gs2n/izquierda.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+        ],
+      },
+      {
+        id: "8",
+        pregunta: "Señala la flecha que va a la derecha",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/khi4z8wbj05tv8a/derecha.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/xyfhnkqnp33gs2n/izquierda.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/gt6jh9jwdgmmr3j/dentro.png?dl=1",
           },
         ],
       },

@@ -26,14 +26,9 @@ const ValoresScreen = () => {
       <View>
         {dataValores.map(({ module }, index) => (
           <View style={style.contendor} key={index}>
-            {module.map(({ source, sonido }, index) => (
+            {module.map(({ source}, index) => (
               <View style={style.imagen} key={index}>
                 <TouchableOpacity
-                  onPress={async () => {
-                    const { sound } = await Audio.Sound.createAsync(sonido);
-                    setSound(sound);
-                    await sound.playAsync();
-                  }}
                 >
                   <ImageBackground
                     source={source}

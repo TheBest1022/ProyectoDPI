@@ -11,23 +11,27 @@ import {
   TouchableOpacity,
 } from "react-native";
 const TransporteScreen = () => {
-  const Img = {uri:"https://www.dropbox.com/s/6ubn2pkmwqwlvjy/transportes.png?dl=1"}
-  const Terreste = {uri:"https://www.dropbox.com/s/7jhd6txshzom5lr/terrestre.png?dl=1"}
-  const Marítimos = {uri:"https://www.dropbox.com/s/pck4lefffp8a26c/mar%C3%ADtimos.png?dl=1"}
-  const Aereo = {uri:"https://www.dropbox.com/s/0q6fhepxakakwdp/aereos.png?dl=1"}
-  const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const navigation = useNavigation();
   const handlebackPress = () => {
     navigation.navigate("visual");
   };
-  const handleTerrestrePress = () => {
-    navigation.navigate("MediosTransporteScreen");
+  const handleclick = (navegacion, id) => {
+    navigation.navigate(navegacion, { id: id });
   };
-  const handleAereosPress = () => {
-    navigation.navigate("MediosTransporteScreen");
+  const Img = {
+    uri: "https://www.dropbox.com/s/6ubn2pkmwqwlvjy/transportes.png?dl=1",
   };
-  const handleAcuaticosPress = () => {
-    navigation.navigate("MediosTransporteScreen");
+  const Terreste = {
+    uri: "https://www.dropbox.com/s/7jhd6txshzom5lr/terrestre.png?dl=1",
+  };
+  const Marítimos = {
+    uri: "https://www.dropbox.com/s/pck4lefffp8a26c/mar%C3%ADtimos.png?dl=1",
+  };
+  const Aereo = {
+    uri: "https://www.dropbox.com/s/3b22qqgwkz971x2/aereo.png?dl=1",
+  };
+  const atras = {
+    uri: "https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1",
   };
   return (
     <Layout>
@@ -46,10 +50,7 @@ const TransporteScreen = () => {
               </Text>
             </View>
             <View style={style.imagen}>
-              <ImageBackground
-                source={Img}
-                style={style.Img}
-              ></ImageBackground>
+              <ImageBackground source={Img} style={style.Img}></ImageBackground>
             </View>
           </View>
 
@@ -59,7 +60,11 @@ const TransporteScreen = () => {
 
           <View style={style.contenedoriconos}>
             <View style={style.imagen}>
-              <TouchableOpacity onPress={handleTerrestrePress}>
+              <TouchableOpacity
+                onPress={() => {
+                  handleclick("MediosTransporteScreen", "Terrestres");
+                }}
+              >
                 <ImageBackground
                   source={Terreste}
                   style={style.ft}
@@ -67,7 +72,11 @@ const TransporteScreen = () => {
               </TouchableOpacity>
             </View>
             <View style={style.imagen}>
-              <TouchableOpacity onPress={handleAereosPress}>
+              <TouchableOpacity
+                onPress={() => {
+                  handleclick("MediosTransporteScreen", "Aereos");
+                }}
+              >
                 <ImageBackground
                   source={Aereo}
                   style={style.ft}
@@ -78,7 +87,11 @@ const TransporteScreen = () => {
 
           <View style={style.contenedoriconos}>
             <View style={style.imagen}>
-              <TouchableOpacity onPress={handleAcuaticosPress}>
+              <TouchableOpacity
+                onPress={() => {
+                  handleclick("MediosTransporteScreen", "Acuatico");
+                }}
+              >
                 <ImageBackground
                   source={Marítimos}
                   style={style.ft}
@@ -102,7 +115,8 @@ const TransporteScreen = () => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 30,
+    width:"100%",
+    height:"100%"
   },
   contendor: {
     flexDirection: "row",

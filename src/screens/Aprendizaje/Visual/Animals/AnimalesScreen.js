@@ -12,6 +12,14 @@ import {
 } from "react-native";
 
 const AnimalesScreen = () => {
+  const [sound] = React.useState();
+  const navigation = useNavigation();
+  const handlepostPressPress = () => {
+    navigation.navigate("visual");
+  };
+  const handleclick = (navegacion, id) => {
+    navigation.navigate(navegacion, { id: id });
+  };
   const Img = {uri:"https://www.dropbox.com/s/kzsbi2wgo6xskcn/animalespicto.png?dl=1"}
   const Mamifero = {uri:"https://www.dropbox.com/s/iulqa2nmw80faw5/mami.png?dl=1"}
   const Reptiles = {uri:"https://www.dropbox.com/s/lcf2xi4y4j2bcic/reptiles.png?dl=1"}
@@ -21,15 +29,6 @@ const AnimalesScreen = () => {
   const Invertebrados = {uri:"https://www.dropbox.com/s/1zhy2gol7noz0ut/invertebrados.png?dl=1"}
   const Vertebrados = {uri:"https://www.dropbox.com/s/9rqacm4nb25ez2g/vertebrados.png?dl=1"}
   const atras = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
-  const [sound] = React.useState();
-  const navigation = useNavigation();
-  const handlepostPressPress = () => {
-    navigation.navigate("visual");
-  };
-  const handleclick = (navegacion, id) => {
-    navigation.navigate(navegacion, { id: id });
-  };
-
   useEffect(() => {
     return sound
       ? () => {

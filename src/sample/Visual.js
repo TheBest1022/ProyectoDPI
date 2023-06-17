@@ -829,7 +829,7 @@ export const dataAnimals = [
         sonido: require("../../assets/Audios/lagarto.mp3"),
       },
       {
-        id: "Animal19",
+        id: "Animal20",
         source: {
           uri: "https://www.dropbox.com/s/1uod9i9ijl6faaz/varano.png?dl=1",
         },
@@ -3285,13 +3285,6 @@ export const dataMediosComunicacion = [
         },
         sonido: require("../../assets/Audios/vídeo.mp3"),
       },
-      {
-        id: "19",
-        source: {
-          uri: "https://www.dropbox.com/s/ozo1way7b3hakqc/llamar.png?dl=1",
-        },
-        sonido: require("../../assets/Audios/llamar.mp3"),
-      },
     ],
   },
 ];
@@ -3432,6 +3425,13 @@ export const dataMediosTransporte = [
         },
         sonido: require("../../assets/Audios/cohete.mp3"),
       },
+      {
+        id: "6",
+        source: {
+          uri: "https://www.dropbox.com/s/glzx9pn0ut41qmh/paracaidas.png?dl=1",
+        },
+        sonido: require("../../assets/Audios/cohete.mp3"),
+      },
     ],
   },
   {
@@ -3476,7 +3476,7 @@ export const dataMediosTransporte = [
       {
         id: "5",
         source: {
-          uri: "https://www.dropbox.com/s/o5gow9ukjextqhj/motoacua.png?dl=1",
+          uri: "https://www.dropbox.com/s/ztppdd2pxpu6j54/submarino.png?dl=1",
         },
         sonido: require("../../assets/Audios/submarino.mp3"),
       },
@@ -3496,7 +3496,7 @@ export const dataMediosTransporte = [
       {
         id: "8",
         source: {
-          uri: "https://www.dropbox.com/s/ayebl347h7176t1/pedales.png?dl=0",
+          uri: "https://www.dropbox.com/s/ayebl347h7176t1/pedales.png?dl=1",
         },
       },
       {
@@ -5047,7 +5047,6 @@ export const dataValores = [
         source: {
           uri: "https://www.dropbox.com/s/7bxg6jtg7f7spqr/respeto.png?dl=1",
         },
-        sonido: require("../../assets/Audios/respeto.mp3"),
       },
       {
         id: "3",

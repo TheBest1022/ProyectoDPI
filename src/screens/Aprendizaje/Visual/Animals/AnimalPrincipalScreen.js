@@ -13,7 +13,6 @@ import {
 } from "react-native";
 
 const AnimalPrincipalScreen = ({ navigation, route }) => {
-  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   const [sound, setSound] = React.useState();
   const id = route.params ? route.params.id : null;
   const navigacion = useNavigation();
@@ -24,6 +23,7 @@ const AnimalPrincipalScreen = ({ navigation, route }) => {
     const data = dataAnimals.filter((item) => {
       return item.id == id;
     });
+    
     return (
       <View>
         {data.map(({ module }, index) => (
@@ -73,7 +73,7 @@ const AnimalPrincipalScreen = ({ navigation, route }) => {
       }
     };
   }, [sound]);
-
+ const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   return (
     <Layout>
       <ScrollView>
@@ -156,6 +156,7 @@ const style = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    alignSelf:'center'
   },
   imagenes: {
     width: 90,

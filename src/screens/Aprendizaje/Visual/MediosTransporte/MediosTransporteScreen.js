@@ -13,8 +13,7 @@ import {
   ScrollView,
 } from "react-native";
 
-const MediosTransporteScreen = ({ route }) => {
-  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
+const MediosTransporteScreen = ({ navigation, route }) => {
   const [sound, setSound] = React.useState();
   const id = route.params ? route.params.id : null;
   const navigacion = useNavigation();
@@ -30,7 +29,7 @@ const MediosTransporteScreen = ({ route }) => {
       <View>
         {data.map(({ module }, index) => (
           <View key={index} style={style.cont}>
-            {module.map(({ source, sonido }, index) => (
+            {module.map(({ id, source, sonido }, index) => (
               <View key={id} style={style.cont}>
                 <TouchableOpacity
                   key={index}
@@ -75,6 +74,7 @@ const MediosTransporteScreen = ({ route }) => {
       }
     };
   }, [sound]);
+  const cerrar = {uri:"https://www.dropbox.com/s/t1gtw5hq3n6bja2/atras.png?dl=1"}
   return (
     <Layout>
       <ScrollView>
@@ -83,11 +83,6 @@ const MediosTransporteScreen = ({ route }) => {
 
           <Text style={style.texto}>MEDIOS DE TRANSPORTE</Text>
 
-          <View style={style.containerimages}>
-            <View style={style.contenedor}>
-              <TouchableOpacity>{obtenerImagenPrincipal(id)}</TouchableOpacity>
-            </View>
-          </View>
 
           <View style={style.cont}>{obtenerImagen(id)}</View>
 
@@ -107,7 +102,8 @@ const MediosTransporteScreen = ({ route }) => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    height:"100%"
+    height:"100%",
+    alignItems:'center'
   },
   containerimages: {
     flexDirection: "row",
@@ -117,8 +113,8 @@ const style = StyleSheet.create({
     marginHorizontal: 20,
   },
   image: {
-    width: 110,
-    height: 110,
+    width: 180,
+    height: 180,
     marginTop: 10,
   },
   minus: {
@@ -133,12 +129,6 @@ const style = StyleSheet.create({
     margin: 5,
     alignSelf: "center",
   },
-  letra: {
-    width: 200,
-    height: 40,
-    alignSelf: "center",
-    marginTop: 5,
-  },
   contenedor: {
     alignItems: "center",
     margin: 3,
@@ -150,8 +140,8 @@ const style = StyleSheet.create({
     alignItems: "center",
   },
   imagenes: {
-    width: 90,
-    height: 90,
+    width: 130,
+    height: 130,
     margin: 2,
   },
   texto:{

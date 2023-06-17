@@ -105,13 +105,11 @@ const style = StyleSheet.create({
     marginTop: 5,
   },
   imagenes: {
-    width: 50,
-    height: 50,
-    marginRight: 150,
-    marginLeft: 150,
+    width: 70,
+    height: 70,
   },
   contenedorimage: {
-    marginLeft: 200,
+    alignSelf:'center'
   },
   ralla:{
     backgroundColor:'white',

@@ -51,7 +51,7 @@ const Face = ({ faces }) => {
     setTimeout(() => {
       setMostrarTiempo(false);
       setTiempoTranscurrido(0);
-    }, 7000);
+    }, 5000);
   };
 
   const formatTime = (time) => {
@@ -199,6 +199,8 @@ const Face = ({ faces }) => {
           </View>
         )}
 
+        <View style={style.containerTime}>
+
         {cronometroActivo && !mostrarTiempo ? (
           <Text style={style.cronometroText}>
             {formatTime(tiempoTranscurrido)}
@@ -210,9 +212,14 @@ const Face = ({ faces }) => {
             style={style.cronometroText}
           >{`Tiempo transcurrido: ${formatTime(tiempoTranscurrido)}`}</Text>
         )}
+        </View>
+
+
 
         {renderData(faces)}
       </View>
+
+      
       <TouchableOpacity onPress={handlebackPress}>
         <ImageBackground
           source={cerrar}
@@ -305,6 +312,13 @@ const style = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "center",
   },
+  //container Time
+  containerTime:{
+    alignSelf: 'center',
+    alignItems: 'center',  // Agrega esta propiedad para centrar horizontalmente
+    justifyContent: 'center',  // Agrega esta propiedad para centrar verticalmente
+    width: '100%',  // Ajusta el ancho del contenedor según tus necesidades
+  }
 });
 
 export default Face;
