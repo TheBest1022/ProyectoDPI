@@ -9,13 +9,9 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import { useGlobal } from "../context/GlobalProvider";
 
-
 const DataDocente = ({ data }) => {
-  const material = {uri:"https://www.dropbox.com/s/3uofhlg0ioqo8d5/materiales.png?dl=1"}
-  const us = {uri:"https://www.dropbox.com/s/82ndp0y2qu9zvre/use.png?dl=1"}
-  const mensaje = {uri:"https://www.dropbox.com/s/bhd5ln4nq1s29js/mensaje.png?dl=1"}
   const navegation = useNavigation();
-  const { auth, obtenerMensaje} = useGlobal();
+  const { auth, obtenerMensaje, obtenerDocente} = useGlobal();
   const [visual, setVisual] = useState([]);
   const [auditiva, setAuditiva] = useState([]);
   const [infantil, setInfantil] = useState([]);
@@ -23,6 +19,10 @@ const DataDocente = ({ data }) => {
   const [lenguaje, setLenguaje] = useState([]);
   const [habilidades, setHabilidades] = useState([]);
   const [matematico, setMatematico] = useState([]);
+
+  const material = { uri: "https://www.dropbox.com/s/3uofhlg0ioqo8d5/materiales.png?dl=1"};
+  const us = { uri: "https://www.dropbox.com/s/82ndp0y2qu9zvre/use.png?dl=1" };
+  const mensaje = { uri: "https://www.dropbox.com/s/bhd5ln4nq1s29js/mensaje.png?dl=1" };
 
   const handleclick = (idCurso) => {
     if (idCurso == 1) {
@@ -285,8 +285,15 @@ const DataDocente = ({ data }) => {
     habilidades(6);
     matematico(7);
   }, [obtenerMensaje]);
+  useEffect(() => {
+    obtenerDocente();
+  }, []);
 
-  return <View>{renderData(data, auth.idDocente)}</View>;
+  return (
+    <View>
+      <View>{renderData(data, auth.idDocente)}</View>
+    </View>
+  );
 };
 
 const style = StyleSheet.create({

@@ -251,6 +251,18 @@ export const dataPruebas = [
       },
     ],
   },
+  {
+    id: "Geometricas",
+    Img: [
+      {
+        id: "21",
+        img: {
+          uri: "https://www.dropbox.com/s/1swf4t5b7tuifau/figurasgeometricas.png?dl=1",
+        },
+        descripcion: "Figuras Geométricas",
+      },
+    ],
+  },
 ];
 
 export const dataPreguntas = [
@@ -3256,6 +3268,107 @@ export const dataPreguntas = [
           },
           {
             uri: "https://www.dropbox.com/s/gt6jh9jwdgmmr3j/dentro.png?dl=1",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "Geometricas",
+    Question: [
+      {
+        id: "1",
+        pregunta: "¿Cuál figura geométrica es un triángulo?",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/z8c7iwlxd9apiow/triangulo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/y2izzs7vfn01y2d/circulo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/t1v3qfjosa212cy/rectangulo.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "2",
+        pregunta: "¿Cuál figura geométrica es un círculo?",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/y2izzs7vfn01y2d/circulo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/t1v3qfjosa212cy/rectangulo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/z8c7iwlxd9apiow/triangulo.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "3",
+        pregunta: "¿Cuál figura geométrica es un rectángulo?",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/t1v3qfjosa212cy/rectangulo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/z8c7iwlxd9apiow/triangulo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/y2izzs7vfn01y2d/circulo.png?dl=1",
+          },
+        ],
+      },
+      {
+        id: "4",
+        pregunta: "¿Cuál figura geométrica es un cuadrado?",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/08s05mdll51llh5/ovalo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/ofq808wdlkutx3v/rombo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/33xr7tyudtcs08y/cuadrado.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+        ],
+      },
+      {
+        id: "5",
+        pregunta: "¿Cuál figura geométrica es un rombo?",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/33xr7tyudtcs08y/cuadrado.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/08s05mdll51llh5/ovalo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/ofq808wdlkutx3v/rombo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+        ],
+      },
+      {
+        id: "6",
+        pregunta: "¿Cuál figura geométrica es un ovalado?",
+        imagenes: [
+          {
+            uri: "https://www.dropbox.com/s/08s05mdll51llh5/ovalo.png?dl=1",
+            sonido: require("../../assets/Audios/correcto.mp3"),
+          },
+          {
+            uri: "https://www.dropbox.com/s/ofq808wdlkutx3v/rombo.png?dl=1",
+          },
+          {
+            uri: "https://www.dropbox.com/s/33xr7tyudtcs08y/cuadrado.png?dl=1", 
           },
         ],
       },
