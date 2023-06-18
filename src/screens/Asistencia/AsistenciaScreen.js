@@ -236,7 +236,7 @@ const style = StyleSheet.create({
   },
   texto: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: 25,
     alignSelf: "center",
     padding: 10,
   },
@@ -252,7 +252,7 @@ const style = StyleSheet.create({
   select: {
     width: "80%",
     borderWidth: 2,
-    backgroundColor:'#dcdcdc', 
+    backgroundColor:'#f8f8ff', 
     fontSize:10,
     borderRadius: 25,
     borderColor:'red',

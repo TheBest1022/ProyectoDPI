@@ -33,6 +33,7 @@ export const GlobalContextProvider = ({ children }) => {
   const registerDocente = async (user) => {
     return await axios.post(`${conexionURL}api/docente/register`, user);
   };
+  //DATOS DOCENTE - CURSO
   const obtenerDatosDocente = async (id) => {
     try {
       const { data } = await axios.get(`${conexionURL}api/docente/names/${id}`);
@@ -45,7 +46,6 @@ export const GlobalContextProvider = ({ children }) => {
     const res = await fetch(`${conexionURL}api/docente/${id}`, {
       method: "GET",
     });
-
     return await res.json();
   };
   const Actualizar = async (user) => {

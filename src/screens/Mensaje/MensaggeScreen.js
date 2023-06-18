@@ -98,7 +98,7 @@ const MensaggeScreen = ({ route }) => {
 
         {auth.IdRol == 5 && (
           <View style={style.campoTexto}>
-            <Text style={style.newMessage}>Nuevo Mensaje</Text>
+            <Text style={style.newMessage}>Mensaje Nuevo</Text>
             <TextInput
               style={style.texto}
               placeholder="Nuevo  Mensaje..."
@@ -138,47 +138,35 @@ const MensaggeScreen = ({ route }) => {
 };
 const style = StyleSheet.create({
   container: {
-    marginTop: 25,
-    backgroundColor: "#f0f8ff",
-  },
-  campoTexto: {
-    marginTop: 10,
+    width:'100%',
+    height:'100%'
   },
   newMessage: {
     fontSize: 15,
     fontWeight: "bold",
-    margin: 3,
-    marginLeft: 6,
+    margin: 5,
   },
   texto: {
     borderWidth: 2,
     borderColor: "black",
-    paddingBottom: 90,
-    paddingTop: 90,
-    paddingLeft: 10,
-    width: 400,
-    alignSelf: "center",
-  },
-  iconos: {
-    flexDirection: "row",
+    width: "95%",
+    height:"50%",
     alignSelf: "center",
   },
   icn: {
-    width: 25,
-    height: 25,
-    margin: 10,
+    width: 30,
+    height: 30,
+    margin: 15,
   },
   send: {
-    marginLeft: 350,
-  },
-  campoTexto: {
-    marginTop: 10,
+    alignSelf:"flex-end",
   },
   table: {
     borderWidth: 2,
     borderColor: "#ccc",
     marginVertical: 10,
-    width:380,
+    width:"95%",
+    height:"100%",
     alignSelf:'center',
     paddingHorizontal: 10,
     backgroundColor:'white',
@@ -199,6 +187,9 @@ const style = StyleSheet.create({
     borderBottomWidth: 1, // Agregar bordes inferiores a las celdas
     borderBottomColor: '#ccc', // Cambiar el color de los bordes inferiores
   },
+  iconos:{
+    alignSelf:"flex-end",
+  }
 });
 
 export default MensaggeScreen;

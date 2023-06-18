@@ -76,7 +76,6 @@ const style = StyleSheet.create({
     alignSelf: "center",
     flexWrap: "wrap",
     justifyContent: "center",
-    backgroundColor:'white'
   },
   btn: {
     width: 40,

@@ -171,7 +171,7 @@ const style = StyleSheet.create({
   texto: {
     textAlign: "center",
     fontWeight: "bold",
-    fontSize: 12,
+    fontSize: 11,
     color: "navy",
   },
 //container
