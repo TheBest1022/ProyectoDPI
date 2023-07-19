@@ -90,7 +90,7 @@ const Seccion = ({ temas }) => {
   const renderData = (search, temas) => {
     if (search == "") {
       return (
-        <View>
+        <View >
           {temas.map((item) => (
             <View style={style.general} key={item.idTema}>
               <View style={style.contendor}>
@@ -454,7 +454,6 @@ const Seccion = ({ temas }) => {
 const style = StyleSheet.create({
   container: {
     width: "100%",
-    alignSelf: "center",
   },
   contendor: {
     flexDirection: "row",
@@ -462,7 +461,7 @@ const style = StyleSheet.create({
     marginTop: 10,
     backgroundColor: "white",
     padding: 10,
-    width: "80%",
+    width: "60%",
     borderWidth: 3,
     borderColor: "gold",
     borderTopWidth: 0,
@@ -471,9 +470,8 @@ const style = StyleSheet.create({
     borderRadius:10
   },
   general: {
-    flexDirection: "row",
     alignSelf: "center",
-    justifyContent: "center",
+    flexDirection: "row",
   },
   campo: {
     flexDirection: "row",
@@ -505,7 +503,7 @@ const style = StyleSheet.create({
   contpdf: {
     alignSelf: "center",
     marginTop: 10,
-    marginLeft: 5,
+    marginLeft: 30,
   },
   pdf: {
     width: 30,

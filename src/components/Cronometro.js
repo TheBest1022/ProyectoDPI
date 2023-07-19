@@ -234,7 +234,6 @@ const Cronometro = () => {
 
 const style = StyleSheet.create({
   container: {
-    backgroundColor: "white",
     width: "100%",
   },
   estado: {
